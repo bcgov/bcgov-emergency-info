@@ -17,12 +17,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Bcgov\\Emergency_Info\\": "src/Bcgov/Emergency_Info/"
+			"Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Bcgov\\Emergency_Info\\Tests\\": "Tests/"
+			"Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
 		}
 	},
 	"scripts": {

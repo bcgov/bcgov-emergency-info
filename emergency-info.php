@@ -4,7 +4,7 @@
  *
  * @link              https://apps.itsm.gov.bc.ca/bitbucket/projects/WPP/repos/bcgov-emergency-info
  * @since             1.0.0
- * @package           Emergency_Info
+ * @package           EmergencyInfo
  *
  * @wordpress-plugin
  * Plugin Name:       BCGov Emergency Info BC
@@ -27,14 +27,14 @@ if ( ! defined( 'WPINC' ) ) {
 /**
 * Loads the autoloader.
 */
-if ( ! class_exists( 'Bcgov\\Emergency_Info\\Plugin' ) ) {
+if ( ! class_exists( 'Bcgov\\EmergencyInfo\\Plugin' ) ) {
     $local_composer  = __DIR__ . '/vendor/autoload.php';
     $server_composer = __DIR__ . '/../../../../vendor/autoload.php';
     if ( file_exists( $local_composer ) || file_exists( $server_composer ) ) {
         if ( file_exists( $server_composer ) ) {
             require_once $server_composer;
         }
-        if ( ! class_exists( 'Bcgov\\Emergency_Info\\Plugin' ) ) {
+        if ( ! class_exists( 'Bcgov\\EmergencyInfo\\Plugin' ) ) {
             require_once $local_composer;
         }
     }
@@ -60,8 +60,8 @@ register_deactivation_hook( __FILE__, 'deactivate_emergency_info' );
  * @since    1.0.0
  */
 function run_emergency_info() {
-	if ( class_exists( 'Bcgov\Emergency_Info\Plugin' ) ) {
-		new Bcgov\Emergency_Info\Plugin();
+	if ( class_exists( 'Bcgov\EmergencyInfo\Plugin' ) ) {
+		new Bcgov\EmergencyInfo\Plugin();
 	}
 }
 

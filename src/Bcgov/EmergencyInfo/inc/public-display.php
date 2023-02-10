@@ -7,8 +7,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Emergency_Info
- * @subpackage Emergency_Info/inc
+ * @package    EmergencyInfo
+ * @subpackage EmergencyInfo/inc
  */
 
 ?>

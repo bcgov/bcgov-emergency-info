@@ -1,8 +1,8 @@
 <?php
-namespace Bcgov\Emergency_Info;
+namespace Bcgov\EmergencyInfo;
 
 use Bcgov\Common\Tests\CommonTestCase;
-use Bcgov\Emergency_Info\Admin;
+use Bcgov\EmergencyInfo\Admin;
 
 /**
  * AdminTest class.
@@ -12,7 +12,7 @@ class AdminTest extends CommonTestCase {
     /**
      * Admin instance.
      *
-     * @var Bcgov\Emergency_Info\Admin
+     * @var Bcgov\EmergencyInfo\Admin
      */
     protected $admin;
 

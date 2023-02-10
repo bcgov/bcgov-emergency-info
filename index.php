@@ -2,5 +2,5 @@
 /**
  * Silence is golden.
  *
- * @package    Emergency_Info
+ * @package    EmergencyInfo
  */

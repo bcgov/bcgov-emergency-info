@@ -1,5 +1,5 @@
 <?php
-namespace Bcgov\Emergency_Info;
+namespace Bcgov\EmergencyInfo;
 
 use Exception;
 use Bcgov\Common\Loader;
@@ -17,8 +17,8 @@ use Bcgov\Common\i18n;
  *
  * @link       http://example.com
  * @since      1.0.0
- * @package    Emergency_Info
- * @subpackage Emergency_Info/Plugin
+ * @package    EmergencyInfo
+ * @subpackage EmergencyInfo/Plugin
  * @author     GovWordPress <govwordpress@gov.bc.ca>
  */
 class Plugin {

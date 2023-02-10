@@ -21,7 +21,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Emergency_Info
+ * @package    EmergencyInfo
  */
 
 // If uninstall not called from WordPress, then exit.
