@@ -1,0 +1,16 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+bower_components
+node_modules
+npm-debug.log
+vendor
+.DS_Store
+._*
+.env
+tests/_output
+.phpdocs
+.audit
+coverage
+dist/scripts/*.php
+.phpunit.result.cache
+composer.lock

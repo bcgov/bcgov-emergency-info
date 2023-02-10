@@ -1,0 +1,31 @@
+{
+	"name": "bcgov-plugin",
+	"version": "1.0.0",
+	"author": "Bcgov Wordpress <govwordpress@gov.bc.ca>",
+	"repository": {
+		"type": "git",
+		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/plugin-template.git"
+	},
+	"bugs": {
+		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/plugin-template/issues"
+	},
+	"licenses": "MIT",
+	"scripts": {
+		"build": "wp-scripts build src/scripts/admin src/scripts/public --output-path=dist",
+		"format": "wp-scripts format ./src",
+		"lint:css": "wp-scripts lint-style ./src/styles",
+		"lint:js": "wp-scripts lint-js ./src/scripts",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start src/scripts/admin src/scripts/public --output-path=dist",
+		"test:e2e": "wp-scripts test-e2e",
+		"test": "wp-scripts test-unit-js"
+	},
+	"engines": {
+		"npm": ">=8.0.0 <9.0.0",
+		"node": ">=16.0.0 <17.0.0"
+	},
+	"devDependencies": {
+		"@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.git",
+		"@wordpress/scripts": "^25.3.0"
+	}
+}
