@@ -1,6 +1,6 @@
 {
-	"name": "bcgov-plugin/plugin-name",
-	"version": "1.3.0",
+	"name": "bcgov-plugin/emergency-info",
+	"version": "1.0.0",
 	"type": "wordpress-plugin",
 	"require": {
 		"composer/installers": "^1.0"
@@ -17,12 +17,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Bcgov\\Plugin_Name\\": "src/Bcgov/Plugin_Name/"
+			"Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Bcgov\\Plugin_Name\\Tests\\": "Tests/"
+			"Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
 		}
 	},
 	"scripts": {

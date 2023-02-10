@@ -1,25 +1,16 @@
 <?php
-namespace Bcgov\Plugin_Name;
+namespace Bcgov\EmergencyInfo;
 
-use \Bcgov\Plugin_Name\Plugin;
-
-/**
- * The admin-specific functionality of Plugin_Name.
- *
- * @link       http://example.com
- * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/admin
- */
+use \Bcgov\EmergencyInfo\Plugin;
 
 /**
- * The admin-specific functionality of Plugin_Name.
+ * The admin-specific functionality of EmergencyInfo.
  *
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/admin
+ * @package    EmergencyInfo
+ * @subpackage EmergencyInfo/admin
  * @author     GovWordPress <govwordpress@gov.bc.ca>
  */
 class Admin {

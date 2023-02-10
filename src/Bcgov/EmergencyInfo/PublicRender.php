@@ -1,16 +1,16 @@
 <?php
-namespace Bcgov\Plugin_Name;
+namespace Bcgov\EmergencyInfo;
 
-use \Bcgov\Plugin_Name\Plugin;
+use \Bcgov\EmergencyInfo\Plugin;
 
 /**
- * The public-facing functionality of Plugin_Name.
+ * The public-facing functionality of EmergencyInfo.
  *
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/public
+ * @package    EmergencyInfo
+ * @subpackage EmergencyInfo/public
  * @author     GovWordPress <govwordpress@gov.bc.ca>
  */
 class PublicRender {

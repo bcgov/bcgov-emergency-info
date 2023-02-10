@@ -1,13 +1,13 @@
 {
-	"name": "bcgov-plugin",
+	"name": "bcgov-emergency-info",
 	"version": "1.0.0",
 	"author": "Bcgov Wordpress <govwordpress@gov.bc.ca>",
 	"repository": {
 		"type": "git",
-		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/plugin-template.git"
+		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/bcgov-emergency-info.git"
 	},
 	"bugs": {
-		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/plugin-template/issues"
+		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/bcgov-emergency-info/issues"
 	},
 	"licenses": "MIT",
 	"scripts": {
