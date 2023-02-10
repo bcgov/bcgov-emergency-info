@@ -2,20 +2,20 @@
 /**
  * The plugin bootstrap file
  *
- * @link              http://example.com
+ * @link              https://apps.itsm.gov.bc.ca/bitbucket/projects/WPP/repos/bcgov-emergency-info
  * @since             1.0.0
- * @package           Plugin_Name
+ * @package           Emergency_Info
  *
  * @wordpress-plugin
- * Plugin Name:       BCGov WordPress Plugin Boilerplate
- * Plugin URI:        http://example.com
- * Description:       Plugin_Description.
- * Version:           1.3.0
- * Author:            Your Name
- * Author URI:        http://author.com/
+ * Plugin Name:       BCGov Emergency Info BC
+ * Plugin URI:        https://apps.itsm.gov.bc.ca/bitbucket/projects/WPP/repos/bcgov-emergency-info
+ * Description:       Provides custom functionality for the Emergency Info BC (EIBC) site.
+ * Version:           1.0.0
+ * Author:            Michael Haswell
+ * Author URI:        https://apps.itsm.gov.bc.ca/bitbucket/users/mhaswell
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       plugin-name
+ * Text Domain:       emergency-info
  * Domain Path:       /languages
  */
 
@@ -27,14 +27,14 @@ if ( ! defined( 'WPINC' ) ) {
 /**
 * Loads the autoloader.
 */
-if ( ! class_exists( 'Bcgov\\Plugin_Name\\Plugin' ) ) {
+if ( ! class_exists( 'Bcgov\\Emergency_Info\\Plugin' ) ) {
     $local_composer  = __DIR__ . '/vendor/autoload.php';
     $server_composer = __DIR__ . '/../../../../vendor/autoload.php';
     if ( file_exists( $local_composer ) || file_exists( $server_composer ) ) {
         if ( file_exists( $server_composer ) ) {
             require_once $server_composer;
         }
-        if ( ! class_exists( 'Bcgov\\Plugin_Name\\Plugin' ) ) {
+        if ( ! class_exists( 'Bcgov\\Emergency_Info\\Plugin' ) ) {
             require_once $local_composer;
         }
     }
@@ -43,15 +43,15 @@ if ( ! class_exists( 'Bcgov\\Plugin_Name\\Plugin' ) ) {
 /**
  * The code that runs during plugin activation.
  */
-function activate_plugin_name() {}
+function activate_emergency_info() {}
 
 /**
  * The code that runs during plugin deactivation.
  */
-function deactivate_plugin_name() {}
+function deactivate_emergency_info() {}
 
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
+register_activation_hook( __FILE__, 'activate_emergency_info' );
+register_deactivation_hook( __FILE__, 'deactivate_emergency_info' );
 
 
 /**
@@ -59,9 +59,9 @@ register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
  *
  * @since    1.0.0
  */
-function run_plugin_name() {
-	if ( class_exists( 'Bcgov\Plugin_Name\Plugin' ) ) {
-		new Bcgov\Plugin_Name\Plugin();
+function run_emergency_info() {
+	if ( class_exists( 'Bcgov\Emergency_Info\Plugin' ) ) {
+		new Bcgov\Emergency_Info\Plugin();
 	}
 }
 
@@ -69,6 +69,6 @@ function run_plugin_name() {
 add_action(
     'plugins_loaded',
     function() {
-		run_plugin_name();
+		run_emergency_info();
 	}
 );

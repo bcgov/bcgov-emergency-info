@@ -1,5 +1,5 @@
 <?php
-namespace Bcgov\Plugin_Name;
+namespace Bcgov\Emergency_Info;
 
 use Exception;
 use Bcgov\Common\Loader;
@@ -17,8 +17,8 @@ use Bcgov\Common\i18n;
  *
  * @link       http://example.com
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/Plugin
+ * @package    Emergency_Info
+ * @subpackage Emergency_Info/Plugin
  * @author     GovWordPress <govwordpress@gov.bc.ca>
  */
 class Plugin {
@@ -30,7 +30,7 @@ class Plugin {
 	 * @access   protected
 	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
-	public static $plugin_name = 'plugin-name';
+	public static $plugin_name = 'emergency-info';
 
 
 	/**
@@ -87,7 +87,7 @@ class Plugin {
 	/**
 	 * Get asset information including path to dist folder, asset dependencies and version.
 	 *
-	 * @since   1.3.0
+	 * @since   1.0.0
 	 * @param   string $name Name of the asset (usually 'admin' or 'public').
 	 * @return  array
 	 */

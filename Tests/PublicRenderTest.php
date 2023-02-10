@@ -1,8 +1,8 @@
 <?php
-namespace Bcgov\Plugin_Name;
+namespace Bcgov\Emergency_Info;
 
 use Bcgov\Common\Tests\CommonTestCase;
-use Bcgov\Plugin_Name\PublicRender;
+use Bcgov\Emergency_Info\PublicRender;
 
 /**
  * PublicRender Test class.
@@ -12,7 +12,7 @@ class PublicRenderTest extends CommonTestCase {
     /**
      * PublicRender instance.
      *
-     * @var Bcgov\Plugin_Name\PublicRender
+     * @var Bcgov\Emergency_Info\PublicRender
      */
     protected $public;
 

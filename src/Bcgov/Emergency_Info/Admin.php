@@ -1,19 +1,19 @@
 <?php
-namespace Bcgov\Plugin_Name;
+namespace Bcgov\Emergency_Info;
 
-use \Bcgov\Plugin_Name\Plugin;
+use \Bcgov\Emergency_Info\Plugin;
 
 /**
- * The public-facing functionality of Plugin_Name.
+ * The admin-specific functionality of Emergency_Info.
  *
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/public
+ * @package    Emergency_Info
+ * @subpackage Emergency_Info/admin
  * @author     GovWordPress <govwordpress@gov.bc.ca>
  */
-class PublicRender {
+class Admin {
 
     /**
 	 * Initialize the class and set its properties.
@@ -23,23 +23,23 @@ class PublicRender {
 	public function __construct() { }
 
 	/**
-	 * Register the stylesheets for the public-facing side of the site.
-     *
+	 * Register the stylesheets for the admin area.
+	 *
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-        $name       = 'public';
+        $name       = 'admin';
         $asset_info = Plugin::get_asset_information( $name );
         wp_enqueue_style( $asset_info['handle'], $asset_info['dist_url'] . $name . '.css', [], $asset_info['version'] );
 	}
 
 	/**
-	 * Register the JavaScript for the public-facing side of the site.
+	 * Register the JavaScript for the admin area.
      *
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-        $name       = 'public';
+        $name       = 'admin';
         $asset_info = Plugin::get_asset_information( $name );
         wp_enqueue_script( $asset_info['handle'], $asset_info['dist_url'] . $name . '.js', $asset_info['dependencies'], $asset_info['version'], false );
 	}
