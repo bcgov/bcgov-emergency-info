@@ -1,0 +1,4 @@
+{
+  "editorScripts": "file:admin.js",
+  "script": "file:public.js"
+}
