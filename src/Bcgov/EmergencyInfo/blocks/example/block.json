@@ -2,9 +2,9 @@
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 2,
 	"title": "Example: Basic",
-	"name": "bcgov/example-01-basic",
+	"name": "core/example",
 	"icon": "universal-access-alt",
-    "category": "core",
+  "category": "text",
 	"textdomain": "gutenberg-examples",
 	"example": {},
 	"editorScript": "file:./block.js"
