@@ -1,7 +1,8 @@
 <?php
 namespace Bcgov\EmergencyInfo;
 
-use \Bcgov\EmergencyInfo\Plugin;
+use Bcgov\EmergencyInfo\Plugin;
+use Bcgov\Common\Loader;
 
 /**
  * The public-facing functionality of EmergencyInfo.
@@ -20,7 +21,24 @@ class PublicRender {
 	 *
 	 * @since 1.0.0
      */
-	public function __construct() { }
+	public function __construct() { 
+        $this->init();
+    }
+
+    /**
+     * Sets up hooks for public-facing side of the site.
+     *
+     * @codeCoverageIgnore
+     * @return void
+     */
+    public function init() {
+        if ( ! is_admin() ) {
+            $loader = new Loader();
+            $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_styles', 20 );
+            $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_scripts', 20 );
+            $loader->run();
+        }
+    }
 
 	/**
 	 * Register the stylesheets for the public-facing side of the site.
