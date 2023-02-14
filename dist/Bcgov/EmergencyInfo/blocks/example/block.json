@@ -7,5 +7,5 @@
   "category": "emergency-info",
   "textdomain": "gutenberg-examples",
   "example": {},
-  "editorScript": "file:./block.js"
+  "editorScript": "file:./index.js"
 }
