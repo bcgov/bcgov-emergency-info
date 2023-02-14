@@ -11,6 +11,5 @@ tests/_output
 .phpdocs
 .audit
 coverage
-dist/scripts/*.php
 .phpunit.result.cache
 composer.lock
