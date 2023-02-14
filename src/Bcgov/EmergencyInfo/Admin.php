@@ -1,7 +1,8 @@
 <?php
 namespace Bcgov\EmergencyInfo;
 
-use \Bcgov\EmergencyInfo\Plugin;
+use Bcgov\EmergencyInfo\Plugin;
+use Bcgov\Common\Loader;
 
 /**
  * The admin-specific functionality of EmergencyInfo.
@@ -20,7 +21,25 @@ class Admin {
 	 *
 	 * @since 1.0.0
      */
-	public function __construct() { }
+	public function __construct() {
+        $this->init();
+    }
+
+    /**
+     * Sets up hooks for admin area.
+     *
+     * @codeCoverageIgnore
+     * @return void
+     */
+    public function init() {
+        $loader = new Loader();
+        $loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_styles' );
+        $loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_scripts' );
+
+        // Options Hooks.
+		// See [Bcgov/Common/Options/Options](https://apps.itsm.gov.bc.ca/bitbucket/projects/WP/repos/bcgov-wordpress-common/browse/src/Options) for details required.
+        $loader->run();
+    }
 
 	/**
 	 * Register the stylesheets for the admin area.

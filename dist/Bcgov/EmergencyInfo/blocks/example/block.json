@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "title": "Example: Basic",
+  "name": "emergency-info/example",
+  "icon": "universal-access-alt",
+  "category": "emergency-info",
+  "textdomain": "gutenberg-examples",
+  "example": {},
+  "editorScript": "file:./index.js"
+}
