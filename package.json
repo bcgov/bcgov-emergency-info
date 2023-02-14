@@ -11,12 +11,12 @@
 	},
 	"licenses": "MIT",
 	"scripts": {
-		"build": "wp-scripts build src/scripts/admin src/scripts/public src/blocks --output-path=dist",
+		"build": "wp-scripts build --output-path=dist",
 		"format": "wp-scripts format ./src",
 		"lint:css": "wp-scripts lint-style ./src/styles",
 		"lint:js": "wp-scripts lint-js ./src/scripts",
 		"packages-update": "wp-scripts packages-update",
-		"start": "wp-scripts start  --output-path=dist",
+		"start": "wp-scripts start --output-path=dist",
 		"test:e2e": "wp-scripts test-e2e",
 		"test": "wp-scripts test-unit-js"
 	},

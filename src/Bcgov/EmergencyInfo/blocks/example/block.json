@@ -2,9 +2,9 @@
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 2,
 	"title": "Example: Basic",
-	"name": "core/example",
+	"name": "emergency-info/example",
 	"icon": "universal-access-alt",
-  "category": "text",
+	"category": "emergency-info",
 	"textdomain": "gutenberg-examples",
 	"example": {},
 	"editorScript": "file:./block.js"

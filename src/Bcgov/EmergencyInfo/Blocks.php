@@ -9,9 +9,6 @@
 namespace Bcgov\EmergencyInfo;
 
 use Bcgov\Common\Loader;
-use Bcgov\Common\Hooks\SageHook;
-use Bcgov\Common\Utils;
-use WP_Block_Type;
 
 /**
  * Blocks class setups dynamic blocks.
@@ -36,7 +33,6 @@ class Blocks {
     public function init() {
         $loader = new Loader();
         $loader->add_action( 'init', $this, 'register_blocks' );
-        // $loader->add_action( 'enqueue_block_assets', $this, 'enqueue_block_assets' );
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
         $loader->run();
     }
@@ -48,20 +44,8 @@ class Blocks {
      * @return void
      */
     public function register_blocks() :void {
-
-        register_block_type(plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks/example');
-
-        logger(plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks/example');
-        // register_block_type(
-		// 	'emergency-info/all',
-		// 	[ 'editor_script' => $asset_info['handle'] ]
-        // );
-    }
-
-    public function enqueue_block_assets() {
-        $name       = 'blocks';
-        $asset_info = Plugin::get_asset_information( $name );
-        wp_enqueue_script( $asset_info['handle'], $asset_info['dist_url'] . $name . '.js', $asset_info['dependencies'], $asset_info['version'], false );
+        $blocks_dist_path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks/';
+        register_block_type( $blocks_dist_path . '/example' );
     }
 
     /**

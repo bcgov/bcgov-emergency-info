@@ -1,8 +1,1 @@
-/******/ (function() { // webpackBootstrap
-var __webpack_exports__ = {};
-/*!*********************************************************!*\
-  !*** ./src/Bcgov/EmergencyInfo/blocks/example/block.js ***!
-  \*********************************************************/
-
-/******/ })()
-;
+!function(){"use strict";var e=window.wp.blocks,a=JSON.parse('{"$schema":"https://json.schemastore.org/block.json","apiVersion":2,"title":"Example: Basic","name":"emergency-info/example","icon":"universal-access-alt","category":"emergency-info","textdomain":"gutenberg-examples","example":{},"editorScript":"file:./block.js"}');(0,e.registerBlockType)(a,{edit:()=>"Admin example",save:()=>"Frontend example"})}();

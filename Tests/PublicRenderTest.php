@@ -3,6 +3,7 @@ namespace Bcgov\EmergencyInfo;
 
 use Bcgov\Common\Tests\CommonTestCase;
 use Bcgov\EmergencyInfo\PublicRender;
+use Brain\Monkey\Functions;
 
 /**
  * PublicRender Test class.
@@ -22,6 +23,7 @@ class PublicRenderTest extends CommonTestCase {
      * @inheritDoc
      */
     public function setUp() :void {
+        Functions\when( 'is_admin' )->justReturn( false );
         parent::setUp();
         $this->public = new PublicRender();
     }

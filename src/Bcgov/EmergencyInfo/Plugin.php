@@ -55,8 +55,8 @@ class Plugin {
 	 * @return  array
 	 */
 	public static function get_asset_information( $name ) :array {
-		$dist_path       = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/';
-        $dist_url        = plugin_dir_url( dirname( __FILE__, 3 ) ) . 'dist/';
+		$dist_path       = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/scripts/';
+        $dist_url        = plugin_dir_url( dirname( __FILE__, 3 ) ) . 'dist/scripts/';
         $asset_file_path = $dist_path . $name . '.asset.php';
         $dependencies    = [];
         $version         = false;
