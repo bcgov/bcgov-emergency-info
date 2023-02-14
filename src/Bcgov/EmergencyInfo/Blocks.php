@@ -32,9 +32,19 @@ class Blocks {
      */
     public function init() {
         $loader = new Loader();
-        $loader->add_action( 'init', $this, 'register_blocks' );
+        $loader->add_action( 'init', $this, 'register_all' );
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
         $loader->run();
+    }
+
+    /**
+     * Registers all blocks and block patterns.
+     *
+     * @return void
+     */
+    public function register_all(): void {
+        $this->register_blocks();
+        $this->register_patterns();
     }
 
     /**
@@ -44,8 +54,38 @@ class Blocks {
      * @return void
      */
     public function register_blocks() :void {
-        $blocks_dist_path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks/';
-        register_block_type( $blocks_dist_path . '/example' );
+        $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks/';
+        register_block_type( $path . '/example' );
+    }
+
+    /**
+     * Registers block patterns.
+     *
+     * @codeCoverageIgnore
+     * @return void
+     */
+    public function register_patterns() {
+        $path = plugin_dir_path( __FILE__ ) . 'patterns/';
+
+        // Register pattern categories.
+        $block_pattern_categories = [
+            'emergency-info-bc-general' => [ 'label' => __( 'Emergency Info BC General' ) ],
+        ];
+        foreach ( $block_pattern_categories as $name => $properties ) {
+            register_block_pattern_category( $name, $properties );
+        }
+
+        // Register all block patterns found in patterns directory.
+        $block_patterns = glob( $path . '*.php' );
+        if ( function_exists( 'register_block_pattern' ) ) {
+            foreach ( $block_patterns as $block_pattern ) {
+                $pattern_name = basename( $block_pattern, '.php' );
+                register_block_pattern(
+                    'emergency-info-bc/' . $pattern_name,
+                    require $block_pattern
+                );
+            }
+        }
     }
 
     /**
