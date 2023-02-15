@@ -32,8 +32,8 @@ class Blocks {
      */
     public function init() {
         $loader = new Loader();
-        $loader->add_action( 'init', $this, 'register_all' );
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
+        $loader->add_action( 'init', $this, 'register_all' );
         $loader->run();
     }
 
@@ -54,7 +54,7 @@ class Blocks {
      * @return void
      */
     public function register_blocks() :void {
-        $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks/';
+        $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
         register_block_type( $path . '/example' );
     }
 
