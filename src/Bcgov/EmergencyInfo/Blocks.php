@@ -53,9 +53,49 @@ class Blocks {
      * @codeCoverageIgnore
      * @return void
      */
-    public function register_blocks() :void {
+    public function register_blocks(): void {
         $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
-        register_block_type( $path . '/example' );
+        register_block_type_from_metadata( $path . '/active-events', [ 'render_callback' => [ $this, 'active_events_block_render' ] ] );
+    }
+
+    /**
+     * Render callback for the Active Events block.
+     *
+     * @return string
+     */
+    public function active_events_block_render(): string {
+        // Get recent active Events.
+        $recent_posts = wp_get_recent_posts(
+            array(
+				'post_type'   => 'event',
+				'post_status' => 'publish',
+				'meta_key'    => 'status',
+				'meta_value'  => 'active',
+            )
+        );
+        if ( count( $recent_posts ) === 0 ) {
+            return '';
+        }
+
+        // Build HTML list of Events from above query.
+        $ret = '<ul class="is-layout-flow is-flex-container columns-3 wp-block-post-template">';
+        foreach ( $recent_posts as $post ) {
+            $excerpt = $post['post_excerpt'];
+            if ( empty( $excerpt ) ) {
+                $excerpt = substr( wp_strip_all_tags( $post['post_content'] ), 0, 100 ) . '...';
+            }
+            $ret .= sprintf(
+                '<li class="wp-block-post event type-event status-publish hentry">
+                <h2 class="wp-block-post-title"><a href="%1$s" target="_self">%2$s</a></h2>
+                <div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">%3$s</p></div>
+                </li>',
+                esc_url( get_permalink( $post['ID'] ) ),
+                esc_html( $post['post_title'] ),
+                $excerpt,
+            );
+        }
+        $ret .= '</ul>';
+        return $ret;
     }
 
     /**
@@ -100,7 +140,7 @@ class Blocks {
             $categories,
             [
 				[
-					'slug'  => 'emergency-info',
+					'slug'  => 'emergencyinfo',
 					'title' => __( 'Emergency Info BC Blocks' ),
                     'icon'  => 'megaphone',
 				],
