@@ -1,4 +1,5 @@
 ### 1.0.0: February 15, 2023
+* Active Events block ([DESCW-922](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-922))
 * Fixed incorrect name in composer.json ([DESCW-877](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-877))
 * Support for block patterns ([DESCW-877](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-877))
 * Support for Gutenberg metadata blocks ([DESCW-877](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-877))
