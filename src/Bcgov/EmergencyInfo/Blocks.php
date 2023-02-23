@@ -69,8 +69,12 @@ class Blocks {
             array(
 				'post_type'   => 'event',
 				'post_status' => 'publish',
-				'meta_key'    => 'status',
-				'meta_value'  => 'active',
+                'meta_query'  => [
+                    'key'   => 'status',
+                    'value' => 'active',
+                ],
+                'orderby'     => 'meta_value',
+                'meta_key'    => 'urgency',
             )
         );
         if ( count( $recent_posts ) === 0 ) {
