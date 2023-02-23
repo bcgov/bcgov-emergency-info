@@ -1,10 +1,10 @@
-Created at 2023-02-22 8:22 am
+Created at 2023-02-23 11:03 am
 
 * [yes] Updated version in composer.json
 * [yes] Updated version in style.css or plugin file
 * [yes] Updated CHANGELOG.md to include jira ticket
-* [no] Updated README.md for new functionality
-* [yes] Built assets for production (npm run build:production)
+* [yes] Updated README.md for new functionality
+* [no] Built assets for production (npm run build:production)
 * [✓] Verified coding standards (phpcs)
 * [✓] Run PHP tests
 * [✓] Lint javascript

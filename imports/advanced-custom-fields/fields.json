@@ -1,0 +1,178 @@
+[
+    {
+        "key": "group_63db3b0481dcc",
+        "title": "Event Metadata",
+        "fields": [
+            {
+                "key": "field_63db3b3150e96",
+                "label": "Status",
+                "name": "status",
+                "type": "button_group",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "aria-label": "",
+                "choices": {
+                    "active": "Active",
+                    "expired": "Expired",
+                    "referred": "Referred"
+                },
+                "allow_null": 1,
+                "default_value": "active",
+                "layout": "horizontal",
+                "return_format": "array"
+            },
+            {
+                "key": "field_63f644feec849",
+                "label": "Urgency",
+                "name": "urgency",
+                "type": "button_group",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": [
+                    "Critical",
+                    "Warning",
+                    "Testing"
+                ],
+                "allow_null": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_63f66bc082361",
+                "label": "Impact Area",
+                "name": "impact_area",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "insert": "append",
+                "library": "all",
+                "min": "",
+                "max": "",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_63f693bfa85b0",
+                "label": "Related Events",
+                "name": "related",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "event"
+                ],
+                "taxonomy": [
+                    "hazard_type:amber-alert",
+                    "hazard_type:earthquake"
+                ],
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "event"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1
+    },
+    {
+        "key": "group_63f64c160b480",
+        "title": "Hazard Image",
+        "fields": [
+            {
+                "key": "field_63f64c1e4780b",
+                "label": "Hazard Image",
+                "name": "hazard_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "hazard_type"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
