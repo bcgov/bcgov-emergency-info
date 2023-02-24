@@ -2,7 +2,7 @@
 namespace Bcgov\EmergencyInfo;
 
 use Bcgov\Common\Loader;
-use Bcgov\Common\i18n;
+use Bcgov\Common\I18n;
 
 /**
  * The core plugin class.
