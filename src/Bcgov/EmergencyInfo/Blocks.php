@@ -56,6 +56,7 @@ class Blocks {
     public function register_blocks(): void {
         $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
         register_block_type_from_metadata( $path . '/active-events', [ 'render_callback' => [ $this, 'active_events_block_render' ] ] );
+        register_block_type_from_metadata( $path . '/resource-list', [ 'render_callback' => [ $this, 'resource_list_block_render' ] ] );
     }
 
     /**
@@ -95,6 +96,53 @@ class Blocks {
                 </li>',
                 esc_url( get_permalink( $post['ID'] ) ),
                 esc_html( $post['post_title'] ),
+                $excerpt,
+            );
+        }
+        $ret .= '</ul>';
+        return $ret;
+    }
+
+    /**
+     * Render callback for the Resource List block.
+     *
+     * @param array $args Block arguments.
+     * @return string
+     */
+    public function resource_list_block_render( $args ): string {
+        // Get Resources per query arguments.
+        $query_args = [
+            'post_type'   => 'resource',
+            'post_status' => 'publish',
+        ];
+        if ( ! empty( $args['hazard_types'] ) ) {
+            $query_args['tax_query'] = [
+                [
+                    'taxonomy' => 'hazard_type',
+                    'field'    => 'slug',
+                    'terms'    => $args['hazard_types'],
+                ],
+            ];
+        }
+        $recent_posts = get_posts( $query_args );
+        if ( count( $recent_posts ) === 0 ) {
+            return '';
+        }
+
+        // Build HTML list of Resources from above query.
+        $ret = '<ul class="is-layout-flow is-flex-container columns-3 wp-block-post-template">';
+        foreach ( $recent_posts as $post ) {
+            $excerpt = $post->post_excerpt;
+            if ( empty( $excerpt ) ) {
+                $excerpt = substr( wp_strip_all_tags( $post->post_content ), 0, 100 ) . '...';
+            }
+            $ret .= sprintf(
+                '<li class="wp-block-post event type-event status-publish hentry">
+                <h2 class="wp-block-post-title"><a href="%1$s" target="_self">%2$s</a></h2>
+                <div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">%3$s</p></div>
+                </li>',
+                esc_url( get_permalink( $post->ID ) ),
+                esc_html( $post->post_title ),
                 $excerpt,
             );
         }
@@ -146,7 +194,6 @@ class Blocks {
 				[
 					'slug'  => 'emergencyinfo',
 					'title' => __( 'Emergency Info BC Blocks' ),
-                    'icon'  => 'megaphone',
 				],
 			]
         );
