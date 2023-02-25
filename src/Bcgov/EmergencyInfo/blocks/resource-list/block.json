@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"title": "Resource List",
+	"name": "emergency-info/resource-list",
+	"category": "emergencyinfo",
+	"icon": "info",
+	"attributes": {
+		"hazard_types": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"editorScript": "file:./index.js"
+}
