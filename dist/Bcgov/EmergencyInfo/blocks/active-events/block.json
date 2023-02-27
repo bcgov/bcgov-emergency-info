@@ -3,7 +3,7 @@
   "apiVersion": 2,
   "title": "Active Events",
   "name": "emergency-info/active-events",
-  "category": "emergencyinfo",
+  "category": "theme",
   "icon": "megaphone",
   "editorScript": "file:./index.js"
 }
