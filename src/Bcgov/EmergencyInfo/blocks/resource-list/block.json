@@ -3,7 +3,7 @@
 	"apiVersion": 2,
 	"title": "Resource List",
 	"name": "emergency-info/resource-list",
-	"category": "emergencyinfo",
+	"category": "theme",
 	"icon": "info",
 	"attributes": {
 		"hazard_types": {
