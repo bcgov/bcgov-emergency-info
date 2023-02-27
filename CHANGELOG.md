@@ -1,5 +1,5 @@
 ### 1.0.0: February 27, 2023
-* Changed block category to "thene" to avoid a bug with emergency-info category only appearing in Editor for CPTs [DESCW-924](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-924))
+* Changed block category to "theme" to avoid a bug with emergency-info category only appearing in Editor for CPTs [DESCW-924](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-924))
 * Resource List block ([DESCW-924](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-924))
 * Resources CPT ([DESCW-923](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-923))
 * Events CPT ([DESCW-881](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-881))
