@@ -15,6 +15,7 @@ use Bcgov\Common\Loader;
  */
 class Blocks {
 
+
     /**
      * Constructor.
      *
@@ -54,9 +55,23 @@ class Blocks {
      * @return void
      */
     public function register_blocks(): void {
-        $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
+        $path        = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
+        $render_path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'src/Bcgov/EmergencyInfo/blocks';
         register_block_type_from_metadata( $path . '/active-events', [ 'render_callback' => [ $this, 'active_events_block_render' ] ] );
         register_block_type_from_metadata( $path . '/resource-list', [ 'render_callback' => [ $this, 'resource_list_block_render' ] ] );
+        register_block_type_from_metadata(
+            $path . '/event-meta',
+            [
+                // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.Found
+				'render_callback' => function ( $attributes ) use ( $render_path ) {
+					ob_start();
+					require_once $render_path . '/event-meta/render.php';
+					$ret = ob_get_contents();
+					ob_end_clean();
+					return $ret;
+				},
+			]
+        );
     }
 
     /**
@@ -68,8 +83,8 @@ class Blocks {
         // Get recent active Events.
         $recent_posts = wp_get_recent_posts(
             array(
-				'post_type'   => 'event',
-				'post_status' => 'publish',
+                'post_type'   => 'event',
+                'post_status' => 'publish',
                 'meta_query'  => [
                     'key'   => 'status',
                     'value' => 'active',
@@ -187,15 +202,15 @@ class Blocks {
      * @param array $categories  The existing categories.
      * @return array
      */
-    public function block_categories( array $categories ) :array {
+    public function block_categories( array $categories ): array {
         return array_merge(
             $categories,
             [
-				[
-					'slug'  => 'emergencyinfo',
-					'title' => __( 'Emergency Info BC Blocks' ),
-				],
-			]
+                [
+                    'slug'  => 'emergency-info',
+                    'title' => __( 'Emergency Info BC Blocks' ),
+                ],
+            ]
         );
     }
 }

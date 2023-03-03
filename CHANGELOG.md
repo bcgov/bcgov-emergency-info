@@ -1,4 +1,5 @@
-### 1.0.0: February 27, 2023
+### 1.0.0: March 3, 2023
+* Event Metadata block ([DESCW-958](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-958))
 * Changed block category to "theme" to avoid a bug with emergency-info category only appearing in Editor for CPTs [DESCW-924](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-924))
 * Resource List block ([DESCW-924](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-924))
 * Resources CPT ([DESCW-923](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-923))
