@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Blocks for Emergency Info BC.
  *
@@ -13,14 +14,16 @@ use Bcgov\Common\Loader;
 /**
  * Blocks class setups dynamic blocks.
  */
-class Blocks {
+class Blocks
+{
 
     /**
      * Constructor.
      *
      * @codeCoverageIgnore
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->init();
     }
 
@@ -30,10 +33,11 @@ class Blocks {
      * @codeCoverageIgnore
      * @return void
      */
-    public function init() {
+    public function init()
+    {
         $loader = new Loader();
-        $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
-        $loader->add_action( 'init', $this, 'register_all' );
+        $loader->add_filter('block_categories_all', $this, 'block_categories');
+        $loader->add_action('init', $this, 'register_all');
         $loader->run();
     }
 
@@ -42,7 +46,8 @@ class Blocks {
      *
      * @return void
      */
-    public function register_all(): void {
+    public function register_all(): void
+    {
         $this->register_blocks();
         $this->register_patterns();
     }
@@ -53,10 +58,19 @@ class Blocks {
      * @codeCoverageIgnore
      * @return void
      */
-    public function register_blocks(): void {
-        $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
-        register_block_type_from_metadata( $path . '/active-events', [ 'render_callback' => [ $this, 'active_events_block_render' ] ] );
-        register_block_type_from_metadata( $path . '/resource-list', [ 'render_callback' => [ $this, 'resource_list_block_render' ] ] );
+    public function register_blocks(): void
+    {
+        $path = plugin_dir_path(dirname(__FILE__, 3)) . 'dist/Bcgov/EmergencyInfo/blocks';
+        $render_path = plugin_dir_path(dirname(__FILE__, 3)) . 'src/Bcgov/EmergencyInfo/blocks';
+        register_block_type_from_metadata($path . '/active-events', ['render_callback' => [$this, 'active_events_block_render']]);
+        register_block_type_from_metadata($path . '/resource-list', ['render_callback' => [$this, 'resource_list_block_render']]);
+        register_block_type_from_metadata($path . '/event-meta',    ['render_callback' => function () use ($render_path) {
+            ob_start();
+            require_once $render_path . '/event-meta/render.php';
+            $ret = ob_get_contents();
+            ob_end_clean();
+            return $ret;
+        }]);
     }
 
     /**
@@ -64,12 +78,13 @@ class Blocks {
      *
      * @return string
      */
-    public function active_events_block_render(): string {
+    public function active_events_block_render(): string
+    {
         // Get recent active Events.
         $recent_posts = wp_get_recent_posts(
             array(
-				'post_type'   => 'event',
-				'post_status' => 'publish',
+                'post_type'   => 'event',
+                'post_status' => 'publish',
                 'meta_query'  => [
                     'key'   => 'status',
                     'value' => 'active',
@@ -78,24 +93,24 @@ class Blocks {
                 'meta_key'    => 'urgency',
             )
         );
-        if ( count( $recent_posts ) === 0 ) {
+        if (count($recent_posts) === 0) {
             return '';
         }
 
         // Build HTML list of Events from above query.
         $ret = '<ul class="is-layout-flow is-flex-container columns-3 wp-block-post-template">';
-        foreach ( $recent_posts as $post ) {
+        foreach ($recent_posts as $post) {
             $excerpt = $post['post_excerpt'];
-            if ( empty( $excerpt ) ) {
-                $excerpt = substr( wp_strip_all_tags( $post['post_content'] ), 0, 100 ) . '...';
+            if (empty($excerpt)) {
+                $excerpt = substr(wp_strip_all_tags($post['post_content']), 0, 100) . '...';
             }
             $ret .= sprintf(
                 '<li class="wp-block-post event type-event status-publish hentry">
                 <h2 class="wp-block-post-title"><a href="%1$s" target="_self">%2$s</a></h2>
                 <div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">%3$s</p></div>
                 </li>',
-                esc_url( get_permalink( $post['ID'] ) ),
-                esc_html( $post['post_title'] ),
+                esc_url(get_permalink($post['ID'])),
+                esc_html($post['post_title']),
                 $excerpt,
             );
         }
@@ -109,13 +124,14 @@ class Blocks {
      * @param array $args Block arguments.
      * @return string
      */
-    public function resource_list_block_render( $args ): string {
+    public function resource_list_block_render($args): string
+    {
         // Get Resources per query arguments.
         $query_args = [
             'post_type'   => 'resource',
             'post_status' => 'publish',
         ];
-        if ( ! empty( $args['hazard_types'] ) ) {
+        if (!empty($args['hazard_types'])) {
             $query_args['tax_query'] = [
                 [
                     'taxonomy' => 'hazard_type',
@@ -124,25 +140,25 @@ class Blocks {
                 ],
             ];
         }
-        $recent_posts = get_posts( $query_args );
-        if ( count( $recent_posts ) === 0 ) {
+        $recent_posts = get_posts($query_args);
+        if (count($recent_posts) === 0) {
             return '';
         }
 
         // Build HTML list of Resources from above query.
         $ret = '<ul class="is-layout-flow is-flex-container columns-3 wp-block-post-template">';
-        foreach ( $recent_posts as $post ) {
+        foreach ($recent_posts as $post) {
             $excerpt = $post->post_excerpt;
-            if ( empty( $excerpt ) ) {
-                $excerpt = substr( wp_strip_all_tags( $post->post_content ), 0, 100 ) . '...';
+            if (empty($excerpt)) {
+                $excerpt = substr(wp_strip_all_tags($post->post_content), 0, 100) . '...';
             }
             $ret .= sprintf(
                 '<li class="wp-block-post event type-event status-publish hentry">
                 <h2 class="wp-block-post-title"><a href="%1$s" target="_self">%2$s</a></h2>
                 <div class="wp-block-post-excerpt"><p class="wp-block-post-excerpt__excerpt">%3$s</p></div>
                 </li>',
-                esc_url( get_permalink( $post->ID ) ),
-                esc_html( $post->post_title ),
+                esc_url(get_permalink($post->ID)),
+                esc_html($post->post_title),
                 $excerpt,
             );
         }
@@ -156,22 +172,23 @@ class Blocks {
      * @codeCoverageIgnore
      * @return void
      */
-    public function register_patterns() {
-        $path = plugin_dir_path( __FILE__ ) . 'patterns/';
+    public function register_patterns()
+    {
+        $path = plugin_dir_path(__FILE__) . 'patterns/';
 
         // Register pattern categories.
         $block_pattern_categories = [
-            'emergency-info-bc-general' => [ 'label' => __( 'Emergency Info BC General' ) ],
+            'emergency-info-bc-general' => ['label' => __('Emergency Info BC General')],
         ];
-        foreach ( $block_pattern_categories as $name => $properties ) {
-            register_block_pattern_category( $name, $properties );
+        foreach ($block_pattern_categories as $name => $properties) {
+            register_block_pattern_category($name, $properties);
         }
 
         // Register all block patterns found in patterns directory.
-        $block_patterns = glob( $path . '*.php' );
-        if ( function_exists( 'register_block_pattern' ) ) {
-            foreach ( $block_patterns as $block_pattern ) {
-                $pattern_name = basename( $block_pattern, '.php' );
+        $block_patterns = glob($path . '*.php');
+        if (function_exists('register_block_pattern')) {
+            foreach ($block_patterns as $block_pattern) {
+                $pattern_name = basename($block_pattern, '.php');
                 register_block_pattern(
                     'emergency-info-bc/' . $pattern_name,
                     require $block_pattern
@@ -187,15 +204,16 @@ class Blocks {
      * @param array $categories  The existing categories.
      * @return array
      */
-    public function block_categories( array $categories ) :array {
+    public function block_categories(array $categories): array
+    {
         return array_merge(
             $categories,
             [
-				[
-					'slug'  => 'emergencyinfo',
-					'title' => __( 'Emergency Info BC Blocks' ),
-				],
-			]
+                [
+                    'slug'  => 'emergency-info',
+                    'title' => __('Emergency Info BC Blocks'),
+                ],
+            ]
         );
     }
 }

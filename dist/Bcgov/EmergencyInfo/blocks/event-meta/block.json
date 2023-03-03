@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/block.json",
   "apiVersion": 2,
-  "title": "Active Events",
-  "name": "emergency-info/active-events",
+  "title": "Event Meta Block",
+  "name": "emergency-info/event-meta",
   "category": "emergency-info",
-  "icon": "megaphone",
+  "icon": "embed-photo",
   "editorScript": "file:./index.js"
 }
