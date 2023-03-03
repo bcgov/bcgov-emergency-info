@@ -9,10 +9,6 @@
 		"hazard_types": {
 			"type": "object",
 			"default": {}
-		},
-		"meta": {
-			"type": "object",
-			"default": {}
 		}
 	},
 	"editorScript": "file:./index.js"

@@ -22,7 +22,7 @@ class Blocks {
      * @codeCoverageIgnore
      */
     public function __construct() {
-         $this->init();
+        $this->init();
     }
 
     /**
@@ -32,7 +32,7 @@ class Blocks {
      * @return void
      */
     public function init() {
-         $loader = new Loader();
+        $loader = new Loader();
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
         $loader->add_action( 'init', $this, 'register_all' );
         $loader->run();
@@ -172,7 +172,7 @@ class Blocks {
      * @return void
      */
     public function register_patterns() {
-         $path = plugin_dir_path( __FILE__ ) . 'patterns/';
+        $path = plugin_dir_path( __FILE__ ) . 'patterns/';
 
         // Register pattern categories.
         $block_pattern_categories = [
