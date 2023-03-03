@@ -4,6 +4,16 @@
 	"title": "Event Meta Block",
 	"name": "emergency-info/event-meta",
 	"category": "emergency-info",
-    "icon": "embed-photo",
+	"icon": "embed-photo",
+	"attributes": {
+		"hazard_types": {
+			"type": "object",
+			"default": {}
+		},
+		"meta": {
+			"type": "object",
+			"default": {}
+		}
+	},
 	"editorScript": "file:./index.js"
 }
