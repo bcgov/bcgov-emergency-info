@@ -14,7 +14,7 @@ if ( ! $event ) {
 // Get ACF meta fields: status and urgency.
 $event_status  = get_field( 'status', $event->ID );
 $urgency_field = get_field_object( 'urgency', $event->ID, false );
-$urgency       = $urgency_field['choices'][ $urgency_field['value'] ];
+$urgency       = $urgency_field['choices'][ $urgency_field['value'] ] ?? '';
 
 // Get Hazard Type taxonomy terms. Uses the hazard_types attribute if it exists.
 if ( ! empty( $attributes['hazard_types'] ) ) {
@@ -44,7 +44,7 @@ if ( $hazard_image_id ) {
                     <h2><span><?php echo esc_html( $hazard_type->name ); ?></span><span><?php echo esc_html( ' | ' . $urgency ); ?></span></h2>
                     <p><?php echo esc_html( $hazard_type->description ); ?></p>
                     <div class="is-layout-flex wp-block-buttons">
-                        <div class="wp-block-button has-size-regular is-style-fill"><a tabindex="0" class="wp-block-button__link has-foreground-color has-pale-cyan-blue-background-color has-text-color has-background wp-element-button" style="border-radius:100px"><?php echo esc_html( $event_status['label'] ); ?></a></div>
+                        <div class="wp-block-button has-size-regular is-style-fill"><a tabindex="0" class="wp-block-button__link has-foreground-color has-pale-cyan-blue-background-color has-text-color has-background wp-element-button" style="border-radius:100px"><?php echo esc_html( $event_status['label'] ?? '' ); ?></a></div>
                     </div>
                 </div>
             </div>

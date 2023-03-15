@@ -1,6 +1,7 @@
 import ServerSideRender from '@wordpress/server-side-render';
 import { useBlockProps } from '@wordpress/block-editor';
 import { useSelect } from '@wordpress/data';
+import { useEffect } from '@wordpress/element';
 
 const edit = (props) => {
 	const blockProps = useBlockProps();
@@ -14,7 +15,9 @@ const edit = (props) => {
 		};
 	});
 
-	props.setAttributes({ hazard_types: hazardTypes });
+    useEffect(() => {
+        props.setAttributes({ hazard_types: hazardTypes });
+    }, [hazardTypes])
 
 	return (
 		<div {...blockProps}>
