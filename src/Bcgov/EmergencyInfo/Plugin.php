@@ -139,14 +139,10 @@ class Plugin {
             mkdir( $cpt_ui_path, 0755 );
         }
 
-        WP_Filesystem();
-
-        global $wp_filesystem;
-
         if ( array_key_exists( 'cpt_custom_post_type', $data ) ) {
             // Fetch all of our post types and encode into JSON.
             $cptui_post_types = get_option( 'cptui_post_types', array() );
-            $content          = wp_json_encode( $cptui_post_types );
+            $content          = wp_json_encode( $cptui_post_types, JSON_PRETTY_PRINT );
             // Save the encoded JSON to a primary file holding all of them.
             file_put_contents( $cpt_ui_path . '/cptui_post_type_data.json', $content );
         }
@@ -154,7 +150,7 @@ class Plugin {
         if ( array_key_exists( 'cpt_custom_tax', $data ) ) {
             // Fetch all of our taxonomies and encode into JSON.
             $cptui_taxonomies = get_option( 'cptui_taxonomies', array() );
-            $content          = wp_json_encode( $cptui_taxonomies );
+            $content          = wp_json_encode( $cptui_taxonomies, JSON_PRETTY_PRINT );
             // Save the encoded JSON to a primary file holding all of them.
             file_put_contents( $cpt_ui_path . '/cptui_taxonomy_data.json', $content );
         }
@@ -214,8 +210,8 @@ class Plugin {
         if ( empty( $file_name ) ) {
             return false;
         }
-        $theme_dir = self::$plugin_dir . self::$cpt_ui_json_directory;
-        $path      = $theme_dir . '/' . $file_name;
+        $cpt_ui_path = self::$plugin_dir . self::$cpt_ui_json_directory;
+        $path        = $cpt_ui_path . '/' . $file_name;
 
         return file_get_contents( $path );
     }
