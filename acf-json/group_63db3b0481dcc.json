@@ -21,10 +21,10 @@
                 "expired": "Expired",
                 "referred": "Referred"
             },
-            "allow_null": 0,
             "default_value": "active",
-            "layout": "horizontal",
-            "return_format": "array"
+            "return_format": "array",
+            "allow_null": 0,
+            "layout": "horizontal"
         },
         {
             "key": "field_63f644feec849",
@@ -97,5 +97,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1678905239
+    "modified": 1678990217
 }

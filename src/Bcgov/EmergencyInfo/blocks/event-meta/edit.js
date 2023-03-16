@@ -15,9 +15,9 @@ const edit = (props) => {
 		};
 	});
 
-    useEffect(() => {
-        props.setAttributes({ hazard_types: hazardTypes });
-    }, [hazardTypes])
+	useEffect(() => {
+		props.setAttributes({ hazard_types: hazardTypes });
+	}, [hazardTypes]);
 
 	return (
 		<div {...blockProps}>

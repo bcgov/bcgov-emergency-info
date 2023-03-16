@@ -1,4 +1,5 @@
 ### 1.0.0: March 3, 2023
+* Save/load ACF and CPT UI settings from JSON ([DESCW-980](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-980))
 * Event Metadata block ([DESCW-958](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-958))
 * Changed block category to "theme" to avoid a bug with emergency-info category only appearing in Editor for CPTs [DESCW-924](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-924))
 * Resource List block ([DESCW-924](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-924))

@@ -40,16 +40,16 @@ class Plugin {
     /**
      * The name of the directory that stores ACF JSON files.
      *
-     * @var string $acf_json_directory The name of the directory that stores ACF JSON files.
+     * @var string $acf_json_dir The name of the directory that stores ACF JSON files.
      */
-    public static $acf_json_directory = 'acf-json';
+    public static $acf_json_dir = 'acf-json';
 
     /**
      * The name of the directory that stores CPT UI JSON files.
      *
-     * @var string $cpt_ui_json_directory The name of the directory that stores CPT UI JSON files.
+     * @var string $cpt_ui_json_dir The name of the directory that stores CPT UI JSON files.
      */
-    public static $cpt_ui_json_directory = 'cpt-ui-json';
+    public static $cpt_ui_json_dir = 'cpt-ui-json';
 
 	/**
 	 * Define the core functionality of the plugin.
@@ -107,11 +107,10 @@ class Plugin {
     /**
      * Defines path to save Advanced Custom Fields' JSON files.
      *
-     * @param string $path
      * @return string
      */
-    public static function acf_json_save_point( $path ) {
-        $acf_path = self::$plugin_dir . self::$acf_json_directory;
+    public static function acf_json_save_point() {
+        $acf_path = self::$plugin_dir . self::$acf_json_dir;
         return $acf_path;
     }
 
@@ -123,7 +122,7 @@ class Plugin {
      */
     public static function acf_json_load_point( $paths ) {
         unset( $paths[0] );
-        $acf_path = self::$plugin_dir . self::$acf_json_directory;
+        $acf_path = self::$plugin_dir . self::$acf_json_dir;
         $paths[]  = $acf_path;
         return $paths;
     }
@@ -134,25 +133,31 @@ class Plugin {
      * @param array $data Array of post type data that was just saved.
      */
     public function pluginize_local_cptui_data( $data = array() ) {
-        $cpt_ui_path = self::$plugin_dir . self::$cpt_ui_json_directory;
+        $cpt_ui_path = self::$plugin_dir . self::$cpt_ui_json_dir;
         if ( ! is_dir( $cpt_ui_path ) ) {
-            mkdir( $cpt_ui_path, 0755 );
+            return;
         }
 
         if ( array_key_exists( 'cpt_custom_post_type', $data ) ) {
             // Fetch all of our post types and encode into JSON.
             $cptui_post_types = get_option( 'cptui_post_types', array() );
             $content          = wp_json_encode( $cptui_post_types, JSON_PRETTY_PRINT );
+            $path             = $cpt_ui_path . '/cptui_post_type_data.json';
+
             // Save the encoded JSON to a primary file holding all of them.
-            file_put_contents( $cpt_ui_path . '/cptui_post_type_data.json', $content );
+            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_read_file_put_contents
+            file_put_contents( $path, $content );
         }
 
         if ( array_key_exists( 'cpt_custom_tax', $data ) ) {
             // Fetch all of our taxonomies and encode into JSON.
             $cptui_taxonomies = get_option( 'cptui_taxonomies', array() );
             $content          = wp_json_encode( $cptui_taxonomies, JSON_PRETTY_PRINT );
+            $path             = $cpt_ui_path . '/cptui_taxonomy_data.json';
+
             // Save the encoded JSON to a primary file holding all of them.
-            file_put_contents( $cpt_ui_path . '/cptui_taxonomy_data.json', $content );
+            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_read_file_put_contents
+            file_put_contents( $path, $content );
         }
     }
 
@@ -210,9 +215,10 @@ class Plugin {
         if ( empty( $file_name ) ) {
             return false;
         }
-        $cpt_ui_path = self::$plugin_dir . self::$cpt_ui_json_directory;
+        $cpt_ui_path = self::$plugin_dir . self::$cpt_ui_json_dir;
         $path        = $cpt_ui_path . '/' . $file_name;
 
+        // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
         return file_get_contents( $path );
     }
 

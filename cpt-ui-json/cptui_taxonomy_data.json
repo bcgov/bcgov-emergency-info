@@ -52,6 +52,7 @@
         "meta_box_cb": "taxonomy_select_meta_box",
         "default_term": "",
         "object_types": [
+            "custom-pattern",
             "event",
             "resource"
         ]
