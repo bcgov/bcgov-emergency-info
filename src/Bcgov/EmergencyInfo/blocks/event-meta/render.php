@@ -7,14 +7,15 @@
  */
 // Get Event.
 $event = get_post();
-if ( ! $event ) {
-	return '';
-}
 
 // Get ACF meta fields: status and urgency.
-$event_status  = get_field( 'status', $event->ID );
-$urgency_field = get_field_object( 'urgency', $event->ID, false );
-$urgency       = $urgency_field['choices'][ $urgency_field['value'] ];
+$event_status  = get_field( 'status', $event->ID ) ?? [ 'label' => 'N/A' ];
+$urgency_field = get_field_object( 'urgency', $event->ID );
+if ( $urgency_field ) {
+    $urgency = $urgency_field['choices'][ $urgency_field['value'] ] ?? 'N/A';
+} else {
+    $urgency = 'N/A';
+}
 
 // Get Hazard Type taxonomy terms. Uses the hazard_types attribute if it exists.
 if ( ! empty( $attributes['hazard_types'] ) ) {
@@ -24,7 +25,7 @@ if ( ! empty( $attributes['hazard_types'] ) ) {
 }
 
 if ( ! $hazard_types || count( $hazard_types ) < 1 ) {
-	return '';
+    return;
 }
 
 // Get Hazard Type image.

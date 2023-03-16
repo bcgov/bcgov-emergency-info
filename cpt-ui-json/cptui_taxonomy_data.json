@@ -3,7 +3,7 @@
         "name": "hazard_type",
         "label": "Hazard Types",
         "singular_label": "Hazard Type",
-        "description": "",
+        "description": "The type of hazard an emergency event belongs to.",
         "public": "true",
         "publicly_queryable": "true",
         "hierarchical": "true",
@@ -49,9 +49,10 @@
             "slug_field_description": "",
             "desc_field_description": ""
         },
-        "meta_box_cb": "",
+        "meta_box_cb": "taxonomy_select_meta_box",
         "default_term": "",
         "object_types": [
+            "custom-pattern",
             "event",
             "resource"
         ]
