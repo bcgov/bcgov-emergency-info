@@ -72,6 +72,7 @@ class Blocks {
 				},
 			]
         );
+        register_block_type_from_metadata( $path . '/post-social-share', [ 'render_callback' => [ $this, 'post_social_share_block_render' ] ] );
     }
 
     /**
@@ -163,6 +164,41 @@ class Blocks {
         }
         $ret .= '</ul>';
         return $ret;
+    }
+
+    // Ignore unused fuction arguments error. We only need to use $block.
+    // phpcs:disable
+
+    /**
+     * Render callback for the Post Social Share block.
+     *
+     * @param array  $attributes
+     * @param string $content
+     * @param object $block
+     * @return string
+     */
+    public function post_social_share_block_render( array $attributes, string $content, object $block ): string {
+        // phpcs:enable
+        if ( ! isset( $block->context['postId'] ) ) {
+            return '';
+        }
+
+        $post = get_post( $block->context['postId'] );
+        $link = get_the_permalink( $post );
+
+        if ( ! $link ) {
+            return '';
+        }
+
+        return sprintf(
+            '<div class="wp-block-post-social-share"> 
+            <ul>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=%1$s">Facebook</a></li>
+                <li><a href="https://twitter.com/intent/tweet?url=%1$s">Twitter</a></li>
+            </ul>
+        </div>',
+            $link
+        );
     }
 
     /**

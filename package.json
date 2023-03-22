@@ -13,8 +13,8 @@
 	"scripts": {
 		"build": "wp-scripts build --output-path=dist",
 		"format": "wp-scripts format ./src",
-		"lint:css": "wp-scripts lint-style ./src/styles",
-		"lint:js": "wp-scripts lint-js ./src/scripts",
+		"lint:css": "wp-scripts lint-style ./src/**/*.scss",
+		"lint:js": "wp-scripts lint-js ./src/**/*.js",
 		"packages-update": "wp-scripts packages-update",
 		"start": "wp-scripts start --output-path=dist",
 		"test:e2e": "wp-scripts test-e2e",
