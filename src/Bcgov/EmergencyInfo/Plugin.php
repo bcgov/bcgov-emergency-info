@@ -83,7 +83,7 @@ class Plugin {
 	 * @param   string $name Name of the asset (usually 'admin' or 'public').
 	 * @return  array
 	 */
-	public static function get_asset_information( $name ) :array {
+	public static function get_asset_information( string $name ): array {
 		$dist_path       = self::$plugin_dir . 'dist/scripts/';
         $dist_url        = plugin_dir_url( dirname( __FILE__, 3 ) ) . 'dist/scripts/';
         $asset_file_path = $dist_path . $name . '.asset.php';
@@ -109,7 +109,7 @@ class Plugin {
      *
      * @return string
      */
-    public static function acf_json_save_point() {
+    public static function acf_json_save_point(): string {
         $acf_path = self::$plugin_dir . self::$acf_json_dir;
         return $acf_path;
     }
@@ -120,7 +120,7 @@ class Plugin {
      * @param array $paths
      * @return array
      */
-    public static function acf_json_load_point( $paths ) {
+    public static function acf_json_load_point( array $paths ): array {
         unset( $paths[0] );
         $acf_path = self::$plugin_dir . self::$acf_json_dir;
         $paths[]  = $acf_path;
@@ -132,7 +132,7 @@ class Plugin {
      *
      * @param array $data Array of post type data that was just saved.
      */
-    public function pluginize_local_cptui_data( $data = array() ) {
+    public function pluginize_local_cptui_data( array $data = array() ) {
         $cpt_ui_path = self::$plugin_dir . self::$cpt_ui_json_dir;
         if ( ! is_dir( $cpt_ui_path ) ) {
             return;
@@ -165,9 +165,9 @@ class Plugin {
      * Load local post type JSON data.
      *
      * @param array $data Existing CPT data.
-     * @return string $value overriding content for CPTUI
+     * @return array $value overriding content for CPTUI
      */
-    public function pluginize_load_local_cptui_post_type_data( $data ) {
+    public function pluginize_load_local_cptui_post_type_data( array $data ): array {
         $loaded = $this->pluginize_load_local_cptui_data( 'cptui_post_type_data.json' );
 
         if ( false === $loaded ) {
@@ -187,9 +187,9 @@ class Plugin {
      * Load local taxonomy JSON data.
      *
      * @param array $data Existing taxonomy data.
-     * @return string $value overriding content for CPTUI
+     * @return array $value overriding content for CPTUI
      */
-    public function pluginize_load_local_cptui_taxonomies_data( $data ) {
+    public function pluginize_load_local_cptui_taxonomies_data( array $data ): array {
         $loaded = $this->pluginize_load_local_cptui_data( 'cptui_taxonomy_data.json' );
 
         if ( false === $loaded ) {
@@ -211,7 +211,7 @@ class Plugin {
      * @param string $file_name Name of the local JSON file.
      * @return false|string
      */
-    private function pluginize_load_local_cptui_data( $file_name = '' ) {
+    private function pluginize_load_local_cptui_data( string $file_name = '' ) {
         if ( empty( $file_name ) ) {
             return false;
         }
