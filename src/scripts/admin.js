@@ -1,4 +1,5 @@
 import '../styles/admin.scss';
+import 'material-symbols/outlined.css';
 
 /**
  * All the scripting for the admin area goes here.

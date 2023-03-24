@@ -5,6 +5,7 @@
 	"name": "emergency-info/event-meta",
 	"category": "emergency-info",
 	"icon": "embed-photo",
+	"textdomain": "emergency-info",
 	"attributes": {
 		"hazard_types": {
 			"type": "object",

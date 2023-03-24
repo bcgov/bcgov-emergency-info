@@ -172,9 +172,9 @@ class Blocks {
     /**
      * Render callback for the Post Social Share block.
      *
-     * @param array  $attributes
-     * @param string $content
-     * @param object $block
+     * @param array  $attributes Block attributes that get passed to the render callback.
+     * @param string $content The content of the block.
+     * @param object $block  Block object containing context data.
      * @return string
      */
     public function post_social_share_block_render( array $attributes, string $content, object $block ): string {
@@ -183,20 +183,22 @@ class Blocks {
             return '';
         }
 
-        $post = get_post( $block->context['postId'] );
-        $link = get_the_permalink( $post );
+        $post               = get_post( $block->context['postId'] );
+        $link               = get_the_permalink( $post );
+        $wrapper_attributes = get_block_wrapper_attributes();
 
         if ( ! $link ) {
             return '';
         }
 
         return sprintf(
-            '<div class="wp-block-post-social-share"> 
-            <ul>
-                <li><a href="https://www.facebook.com/sharer/sharer.php?u=%1$s">Facebook</a></li>
-                <li><a href="https://twitter.com/intent/tweet?url=%1$s">Twitter</a></li>
-            </ul>
-        </div>',
+            '<div %1$s> 
+                <ul>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=%2$s">Facebook</a></li>
+                    <li><a href="https://twitter.com/intent/tweet?url=%2$s">Twitter</a></li>
+                </ul>
+            </div>',
+            $wrapper_attributes,
             $link
         );
     }
