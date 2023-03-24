@@ -5,5 +5,6 @@
 	"name": "emergency-info/active-events",
 	"category": "emergency-info",
 	"icon": "megaphone",
+	"textdomain": "emergency-info",
 	"editorScript": "file:./index.js"
 }

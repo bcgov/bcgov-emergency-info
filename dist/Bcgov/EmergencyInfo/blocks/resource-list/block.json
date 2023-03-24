@@ -5,6 +5,7 @@
   "name": "emergency-info/resource-list",
   "category": "emergency-info",
   "icon": "info",
+  "textdomain": "emergency-info",
   "attributes": {
     "hazard_types": {
       "type": "object",

@@ -1,4 +1,5 @@
 ### 1.0.0: March 22, 2023
+* Added Event Query Loop block pattern ([DESCW-961](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-961))
 * Social Share block ([DESCW-979](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-979))
 * Save/load ACF and CPT UI settings from JSON ([DESCW-980](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-980))
 * Event Metadata block ([DESCW-958](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-958))

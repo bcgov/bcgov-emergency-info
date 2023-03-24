@@ -26,9 +26,12 @@
 	},
 	"devDependencies": {
 		"@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.git",
-		"@wordpress/scripts": "^25.3.0"
+		"@wordpress/scripts": "^26.0.0"
 	},
-    "browser": {
-        "[module-name]": false   
-    }
+	"dependencies": {
+		"material-symbols": "^0.5.1"
+	},
+	"browser": {
+		"[module-name]": false
+	}
 }
