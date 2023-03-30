@@ -35,6 +35,7 @@ class Blocks {
         $loader = new Loader();
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
         $loader->add_action( 'init', $this, 'register_all' );
+        $loader->add_filter( 'bcgov_blocks_theme_block_patterns', $this, 'unregister_block_theme_patterns' );
         $loader->run();
     }
 
@@ -46,7 +47,6 @@ class Blocks {
     public function register_all(): void {
         $this->register_blocks();
         $this->register_patterns();
-        $this->unregister_block_theme_patterns();
     }
 
     /**
@@ -237,23 +237,10 @@ class Blocks {
     /**
      * Unregisters default Block Theme patterns.
      *
-     * @return void
+     * @return array
      */
     public function unregister_block_theme_patterns() {
-        $block_theme_pattern_categories = [
-			'bcgov-blocks-theme-general',
-			'bcgov-blocks-theme-header-footer',
-			'bcgov-blocks-theme-page-layouts',
-			'bcgov-blocks-theme-query',
-		];
-
-        $pattern_registry = \WP_Block_Patterns_Registry::get_instance();
-        $patterns         = $pattern_registry->get_all_registered();
-        foreach ( $patterns as $pattern ) {
-            if ( array_intersect( $block_theme_pattern_categories, $pattern['categories'] ) ) {
-                unregister_block_pattern( $pattern['name'] );
-            }
-        }
+        return [];
     }
 
     /**
