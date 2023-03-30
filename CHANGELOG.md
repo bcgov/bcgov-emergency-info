@@ -1,4 +1,5 @@
 ### 1.0.0: March 22, 2023
+* Unregistered default Block Theme patterns ([DESCW-1003](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1003))
 * Added Event Query Loop block pattern ([DESCW-961](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-961))
 * Social Share block ([DESCW-979](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-979))
 * Save/load ACF and CPT UI settings from JSON ([DESCW-980](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-980))

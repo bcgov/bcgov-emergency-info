@@ -12,4 +12,3 @@ tests/_output
 .audit
 coverage
 .phpunit.result.cache
-composer.lock
