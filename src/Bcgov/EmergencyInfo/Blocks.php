@@ -46,7 +46,7 @@ class Blocks {
     public function register_all(): void {
         $this->register_blocks();
         $this->register_patterns();
-        $this->deregister_block_theme_patterns();
+        $this->unregister_block_theme_patterns();
     }
 
     /**
@@ -239,7 +239,7 @@ class Blocks {
      *
      * @return void
      */
-    public function deregister_block_theme_patterns() {
+    public function unregister_block_theme_patterns() {
         $block_theme_pattern_categories = [
 			'bcgov-blocks-theme-general',
 			'bcgov-blocks-theme-header-footer',
