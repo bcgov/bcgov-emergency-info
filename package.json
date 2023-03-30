@@ -25,7 +25,7 @@
 		"node": ">=16.0.0 <17.0.0"
 	},
 	"devDependencies": {
-		"@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.git",
+		"@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.git#semver:1.x",
 		"@wordpress/scripts": "^26.0.0"
 	},
 	"dependencies": {

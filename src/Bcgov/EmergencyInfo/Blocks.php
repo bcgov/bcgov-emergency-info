@@ -46,6 +46,7 @@ class Blocks {
     public function register_all(): void {
         $this->register_blocks();
         $this->register_patterns();
+        $this->deregister_block_theme_patterns();
     }
 
     /**
@@ -229,6 +230,28 @@ class Blocks {
                     'emergency-info-bc/' . $pattern_name,
                     require $block_pattern
                 );
+            }
+        }
+    }
+
+    /**
+     * Deregisters default Block Theme patterns.
+     *
+     * @return void
+     */
+    public function deregister_block_theme_patterns() {
+        $block_theme_pattern_categories = [
+			'bcgov-blocks-theme-general',
+			'bcgov-blocks-theme-header-footer',
+			'bcgov-blocks-theme-page-layouts',
+			'bcgov-blocks-theme-query',
+		];
+
+        $pattern_registry = \WP_Block_Patterns_Registry::get_instance();
+        $patterns         = $pattern_registry->get_all_registered();
+        foreach ( $patterns as $pattern ) {
+            if ( array_intersect( $block_theme_pattern_categories, $pattern['categories'] ) ) {
+                unregister_block_pattern( $pattern['name'] );
             }
         }
     }
