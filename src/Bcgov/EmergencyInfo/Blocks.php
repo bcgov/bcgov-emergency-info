@@ -235,7 +235,7 @@ class Blocks {
     }
 
     /**
-     * Deregisters default Block Theme patterns.
+     * Unregisters default Block Theme patterns.
      *
      * @return void
      */
