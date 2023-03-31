@@ -35,7 +35,7 @@ class Blocks {
         $loader = new Loader();
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
         $loader->add_action( 'init', $this, 'register_all' );
-        $loader->add_filter( 'bcgov_blocks_theme_block_patterns', $this, 'unregister_block_theme_patterns' );
+        add_filter( 'bcgov_blocks_theme_block_patterns', '__return_empty_array' );
         $loader->run();
     }
 
@@ -232,15 +232,6 @@ class Blocks {
                 );
             }
         }
-    }
-
-    /**
-     * Unregisters default Block Theme patterns.
-     *
-     * @return array
-     */
-    public function unregister_block_theme_patterns() {
-        return [];
     }
 
     /**
