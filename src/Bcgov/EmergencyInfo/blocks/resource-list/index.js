@@ -3,9 +3,9 @@
  */
 import { registerBlockType } from '@wordpress/blocks';
 import metadata from './block.json';
-import edit from './edit';
+import Edit from './edit';
 
 registerBlockType(metadata, {
-	edit: edit,
-	save: () => null,
+    edit: Edit,
+    save: () => null,
 });

@@ -49,7 +49,7 @@
             "slug_field_description": "",
             "desc_field_description": ""
         },
-        "meta_box_cb": "taxonomy_select_meta_box",
+        "meta_box_cb": "",
         "default_term": "",
         "object_types": [
             "custom-pattern",
