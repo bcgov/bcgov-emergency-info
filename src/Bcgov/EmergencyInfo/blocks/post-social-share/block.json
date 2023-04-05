@@ -1,13 +1,13 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "emergency-info/post-social-share",
-	"title": "Post Social Media Share",
-	"category": "emergency-info",
-	"icon": "share",
-	"description": "Displays social media share links for a post.",
-	"textdomain": "emergency-info",
-	"usesContext": ["postId", "postType"],
-	"editorScript": "file:./index.js",
-	"style": "file:./style-index.css"
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "emergency-info/post-social-share",
+    "title": "Post Social Media Share",
+    "category": "emergency-info",
+    "icon": "share",
+    "description": "Displays social media share links for a post.",
+    "textdomain": "emergency-info",
+    "usesContext": ["postId", "postType"],
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css"
 }

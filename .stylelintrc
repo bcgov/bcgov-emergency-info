@@ -1,3 +1,6 @@
 {
-    "extends": "@bcgov/webpack-wordpress/.stylelintrc"
+    "extends": "@bcgov/webpack-wordpress/.stylelintrc",
+    "rules": {
+        "indentation": 4
+    }
 }

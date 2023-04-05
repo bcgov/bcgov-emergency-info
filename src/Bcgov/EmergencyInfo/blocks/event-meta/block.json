@@ -1,16 +1,16 @@
 {
-	"$schema": "https://json.schemastore.org/block.json",
-	"apiVersion": 2,
-	"title": "Event Meta Block",
-	"name": "emergency-info/event-meta",
-	"category": "emergency-info",
-	"icon": "embed-photo",
-	"textdomain": "emergency-info",
-	"attributes": {
-		"hazard_types": {
-			"type": "object",
-			"default": {}
-		}
-	},
-	"editorScript": "file:./index.js"
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "title": "Event Meta Block",
+    "name": "emergency-info/event-meta",
+    "category": "emergency-info",
+    "icon": "embed-photo",
+    "textdomain": "emergency-info",
+    "attributes": {
+        "hazard_types": {
+            "type": "object",
+            "default": {}
+        }
+    },
+    "editorScript": "file:./index.js"
 }

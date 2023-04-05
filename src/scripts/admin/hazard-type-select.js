@@ -5,6 +5,10 @@ import { withSelect, withDispatch } from '@wordpress/data';
 import { addFilter } from '@wordpress/hooks';
 import apiFetch from '@wordpress/api-fetch';
 
+/**
+ * Replaces the default Hazard Type taxonomy input (text or checkboxes) with a select input
+ * in the block editor, allowing only one hazard type per post to be selected.
+ */
 class HazardType extends Component {
     constructor() {
         super(...arguments);
