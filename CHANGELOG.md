@@ -1,4 +1,5 @@
 ### 1.0.0: April 5, 2023
+* Added flood event patterns ([DESCW-960](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-960))
 * Added select input for Hazard Type taxonomy ([DESCW-1005](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1005))
 * Unregistered default Block Theme patterns ([DESCW-1003](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1003))
 * Added Event Query Loop block pattern ([DESCW-961](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-961))
