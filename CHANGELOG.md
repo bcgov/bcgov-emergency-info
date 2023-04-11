@@ -1,4 +1,6 @@
-### 1.0.0: April 5, 2023
+### 1.0.0: April 6, 2023
+* Added amber alert event patterns ([DESCW-1010](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1010))
+* Added earthquake event patterns ([DESCW-1009](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1009))
 * Added flood event patterns ([DESCW-960](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-960))
 * Added select input for Hazard Type taxonomy ([DESCW-1005](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1005))
 * Unregistered default Block Theme patterns ([DESCW-1003](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1003))
