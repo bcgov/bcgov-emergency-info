@@ -73,6 +73,7 @@ class Plugin {
         $loader->add_action( 'cptui_after_update_taxonomy', $this, 'pluginize_local_cptui_data' );
         $loader->add_filter( 'cptui_post_types_override', $this, 'pluginize_load_local_cptui_post_type_data' );
         $loader->add_filter( 'cptui_taxonomies_override', $this, 'pluginize_load_local_cptui_taxonomies_data' );
+        $loader->add_filter( 'query_loop_block_query_vars', $this, 'query_loop_block_query_vars' );
         $loader->run();
 	}
 
@@ -220,6 +221,22 @@ class Plugin {
 
         // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
         return file_get_contents( $path );
+    }
+
+    /**
+     * Changes Query Loop Block's query to filter results on status = active meta field for event post type.
+     *
+     * @param array $query Query used by the Query Loop Block on the frontend.
+     * @return array The query with status = active filtering added.
+     */
+    public function query_loop_block_query_vars( array $query ): array {
+        if ( 'event' !== $query['post_type'] ) {
+            return $query;
+        }
+        $query['meta_key']     = 'status';
+        $query['meta_value']   = 'active';
+        $query['meta_compare'] = '=';
+        return $query;
     }
 
     /**

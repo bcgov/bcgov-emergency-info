@@ -1,4 +1,5 @@
-### 1.0.0: April 6, 2023
+### 1.0.0: April 13, 2023
+* Query Loops targeting Event post type now filter on active Events ([DESCW-1016](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1016))
 * Added amber alert event patterns ([DESCW-1010](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1010))
 * Added earthquake event patterns ([DESCW-1009](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1009))
 * Added flood event patterns ([DESCW-960](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-960))
