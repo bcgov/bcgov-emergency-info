@@ -229,7 +229,7 @@ class Plugin {
      * @param array $query Query used by the Query Loop Block on the frontend.
      * @return array The query with status = active filtering added.
      */
-    public function query_loop_block_query_vars( array $query ) {
+    public function query_loop_block_query_vars( array $query ): array {
         if ( 'event' !== $query['post_type'] ) {
             return $query;
         }
