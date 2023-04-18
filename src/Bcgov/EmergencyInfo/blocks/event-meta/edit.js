@@ -26,7 +26,7 @@ const Edit = (props) => {
             <InspectorControls>
                 <PanelBody title={__('Detailed display')}>
                     <CheckboxControl
-                        label={__("Show details")}
+                        label={__('Show details')}
                         checked={props.attributes.detailed}
                         onChange={(check) => {
                             props.setAttributes({ detailed: check });
