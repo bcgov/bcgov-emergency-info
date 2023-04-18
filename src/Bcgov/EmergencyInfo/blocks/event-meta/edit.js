@@ -1,7 +1,9 @@
 import ServerSideRender from '@wordpress/server-side-render';
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { CheckboxControl, PanelBody } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { useEffect } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const Edit = (props) => {
     const blockProps = useBlockProps();
@@ -21,6 +23,17 @@ const Edit = (props) => {
 
     return (
         <div {...blockProps}>
+            <InspectorControls>
+                <PanelBody title={__('Detailed display')}>
+                    <CheckboxControl
+                        label={__('Show details')}
+                        checked={props.attributes.detailed}
+                        onChange={(check) => {
+                            props.setAttributes({ detailed: check });
+                        }}
+                    />
+                </PanelBody>
+            </InspectorControls>
             <ServerSideRender
                 block="emergency-info/event-meta"
                 attributes={props.attributes}

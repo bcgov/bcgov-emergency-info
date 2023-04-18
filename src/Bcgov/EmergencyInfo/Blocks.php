@@ -56,24 +56,11 @@ class Blocks {
      * @return void
      */
     public function register_blocks(): void {
-        $path        = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
-        $render_path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'src/Bcgov/EmergencyInfo/blocks';
+        $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
         register_block_type_from_metadata( $path . '/active-events', [ 'render_callback' => [ $this, 'active_events_block_render' ] ] );
         register_block_type_from_metadata( $path . '/resource-list', [ 'render_callback' => [ $this, 'resource_list_block_render' ] ] );
-        register_block_type_from_metadata(
-            $path . '/event-meta',
-            [
-                // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.Found
-				'render_callback' => function ( $attributes ) use ( $render_path ) {
-					ob_start();
-					require_once $render_path . '/event-meta/render.php';
-					$ret = ob_get_contents();
-					ob_end_clean();
-					return $ret;
-				},
-			]
-        );
         register_block_type_from_metadata( $path . '/post-social-share', [ 'render_callback' => [ $this, 'post_social_share_block_render' ] ] );
+        include_once __DIR__ . '/blocks/event-meta/index.php';
     }
 
     /**
