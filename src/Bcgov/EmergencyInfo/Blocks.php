@@ -252,7 +252,7 @@ class Blocks {
      * @param array  $block
      * @return string Original block content or empty string if hideBlock is true.
      */
-    public function render_block( $block_content = '', $block = [] ): string {
+    public function render_block( string $block_content = '', array $block = [] ): string {
         $attrs      = $block['attrs'] ?? [];
         $hide_block = $attrs['hideBlock'] ?? false;
         if ( true === $hide_block ) {
