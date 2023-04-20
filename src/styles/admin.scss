@@ -2,3 +2,19 @@
  * All the styles for the admin side will be compiled from this file.
  * Declare all your scss imports here.
  */
+
+.hidden-block {
+    border: 1px dashed var(--bs-blue) !important;
+
+    &::before {
+        background-color: var(--bs-blue) !important;
+        padding: 0 5px;
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        content: "Hidden" !important;
+    }
+}

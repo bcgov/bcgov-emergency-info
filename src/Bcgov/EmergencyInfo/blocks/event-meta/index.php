@@ -36,24 +36,29 @@ function render_block_event_meta(
         $hazard_types = get_the_terms( $event, 'hazard_type' );
     }
 
-    // Get Hazard Type image and colour.
+    // Get Hazard Type image.
     $hazard_type     = $hazard_types[0];
-    $hazard_meta     = get_term_meta( $hazard_type->term_id );
-    $hazard_image_id = $hazard_meta['hazard_image'][0];
+    $hazard_image    = get_field( 'hazard_image', 'hazard_type_' . $hazard_type->term_id );
+    $hazard_image_id = $hazard_image['id'];
     if ( $hazard_image_id ) {
         $hazard_image_srcset = wp_get_attachment_image_srcset( $hazard_image_id );
         $hazard_image_sizes  = wp_get_attachment_image_sizes( $hazard_image_id );
     }
     // Hazard colours.
-    $default_colour = '#919191';
-    $hazard_colour  = $hazard_meta['colour'][0] ?? $default_colour;
-    $primary_colour = ( 'active' === $event_status['value'] ) ? $hazard_colour : $default_colour;
-    // Secondary colour is primary colour with 10% opacity (1a in hex).
-    $secondary_colour = $primary_colour . '1a';
+    $default_colour   = [
+        'red'   => 145,
+        'green' => 145,
+        'blue'  => 145,
+        'alpha' => 1,
+    ];
+    $hazard_colour    = get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
+    $hazard_colour    = ( 'active' === $event_status['value'] ) ? $hazard_colour : $default_colour;
+    $primary_colour   = vsprintf( 'rgba(%d,%d,%d,%d)', $hazard_colour );
+    $secondary_colour = vsprintf( 'rgba(%d,%d,%d,0.1)', $hazard_colour );
 
     // Build header and post title html.
     $header_html     = '';
-    $post_title_html = '<a class="text-decoration-none" href="' . get_post_permalink( $event ) . '">' . $event->post_title . '</a>';
+    $post_title_html = '<a href="' . get_post_permalink( $event ) . '">' . $event->post_title . '</a>';
     if ( $is_detailed ) {
         $header_html     = sprintf(
             '
@@ -72,9 +77,7 @@ function render_block_event_meta(
     if ( isset( $hazard_image_srcset ) ) {
         $hazard_img_html = sprintf(
             '
-            <div class="p-4 p-sm-3 flex-shrink-1">
-                <img class="img-fluid mw-100 hazard-image" loading="lazy" decoding="async" alt="%s" title="" srcset="%s" sizes="%s">
-            </div>
+            <img class="img-fluid hazard-image" loading="lazy" decoding="async" alt="%s" title="" srcset="%s" sizes="%s">
             ',
             $hazard_type->name,
             $hazard_image_srcset,
@@ -90,7 +93,7 @@ function render_block_event_meta(
                 %1$s
                 <div class="p-3 d-flex flex-column flex-sm-row align-items-center" style="background: %2$s">
                     %3$s
-                    <div class="p-2 flex-grow-1">
+                    <div class="p-2 w-75">
                         <h1><strong>%4$s</strong></h1>
                         <h2>%5$s</h2>
                     </div>
