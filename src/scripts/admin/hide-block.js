@@ -3,6 +3,7 @@ import { createHigherOrderComponent } from '@wordpress/compose';
 import { Fragment } from '@wordpress/element';
 import { InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, ToggleControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Add hideBlock attribute to all blocks.
@@ -33,9 +34,9 @@ const addInspectorControl = createHigherOrderComponent((BlockEdit) => {
             <Fragment>
                 <BlockEdit {...props} />
                 <InspectorControls>
-                    <PanelBody title="Visibility">
+                    <PanelBody title={__('Visibility')}>
                         <ToggleControl
-                            label="Hide block"
+                            label={__('Hide block')}
                             checked={hideBlock}
                             onChange={(check) =>
                                 setAttributes({ hideBlock: check })
