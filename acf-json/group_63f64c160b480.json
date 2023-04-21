@@ -43,7 +43,7 @@
             },
             "default_value": "",
             "enable_opacity": 0,
-            "return_format": "string"
+            "return_format": "array"
         }
     ],
     "location": [
@@ -64,5 +64,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679597493
+    "modified": 1681859674
 }

@@ -18,6 +18,10 @@
     "detailed": {
       "type": "boolean",
       "default": true
+    },
+    "hideBlock": {
+      "type": "boolean",
+      "default": false
     }
   },
   "editorScript": "file:./index.js",

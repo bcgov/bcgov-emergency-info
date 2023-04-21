@@ -1,4 +1,6 @@
-### 1.0.0: April 18, 2023
+### 1.0.0: April 20, 2023
+* Improved Event Meta block styling ([DESCW-1015](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1015))
+* Added hide block attribute to all blocks to allow user to keep a block in the editor but not render it on frontend
 * Updated Event Meta block to use hazard colours, improved styling ([DESCW-1017](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1017))
 * Query Loops targeting Event post type now filter on active Events ([DESCW-1016](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1016))
 * Added amber alert event patterns ([DESCW-1010](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1010))

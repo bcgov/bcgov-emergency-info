@@ -16,6 +16,7 @@ use Bcgov\Common\Loader;
 class Blocks {
 
 
+
     /**
      * Constructor.
      *
@@ -32,10 +33,11 @@ class Blocks {
      * @return void
      */
     public function init() {
+        add_filter( 'bcgov_blocks_theme_block_patterns', '__return_empty_array' );
         $loader = new Loader();
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
         $loader->add_action( 'init', $this, 'register_all' );
-        add_filter( 'bcgov_blocks_theme_block_patterns', '__return_empty_array' );
+        $loader->add_filter( 'render_block', $this, 'render_block', 10, 2 );
         $loader->run();
     }
 
@@ -165,7 +167,8 @@ class Blocks {
      * @param object $block  Block object containing context data.
      * @return string
      */
-    public function post_social_share_block_render( array $attributes, string $content, object $block ): string {
+    public function post_social_share_block_render(array $attributes, string $content, object $block): string
+    {
         // phpcs:enable
         if ( ! isset( $block->context['postId'] ) ) {
             return '';
@@ -238,5 +241,23 @@ class Blocks {
                 ],
             ]
         );
+    }
+
+    /**
+     * Prevents rendering of blocks with hideBlock attribute set to true.
+     *
+     * @see src/scripts/admin/hide-block.js
+     *
+     * @param string $block_content
+     * @param array  $block
+     * @return string Original block content or empty string if hideBlock is true.
+     */
+    public function render_block( string $block_content = '', array $block = [] ): string {
+        $attrs      = $block['attrs'] ?? [];
+        $hide_block = $attrs['hideBlock'] ?? false;
+        if ( true === $hide_block ) {
+            $block_content = '';
+        }
+        return $block_content;
     }
 }
