@@ -84,10 +84,25 @@ class HazardType extends Component {
 
 const HazardTypeWrapper = compose([
     withSelect((select) => {
-        return {
+        const ret = {
             hazardType:
                 select('core/editor').getEditedPostAttribute('hazard_type'),
         };
+        // Get currently selected hazard_type slug.
+        const hazard = select('core').getEntityRecord(
+            'taxonomy',
+            'hazard_type',
+            ret.hazardType[0]
+        );
+        // Add the hazard_type's slug to body classes, allows hazard-specific styling.
+        if (hazard) {
+            document.body.className = document.body.className.replace(
+                /(^|\s)hazard_type-\S+/g,
+                ''
+            );
+            document.body.classList.add('hazard_type-' + hazard.slug);
+        }
+        return ret;
     }),
     withDispatch((dispatch) => ({
         onChangeHazardType: (hazardTypeId) => {

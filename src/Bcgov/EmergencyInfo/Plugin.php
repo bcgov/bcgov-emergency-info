@@ -3,6 +3,7 @@ namespace Bcgov\EmergencyInfo;
 
 use Bcgov\Common\Loader;
 use Bcgov\Common\I18n;
+use WP_Theme_JSON_Data;
 
 /**
  * The core plugin class.
@@ -74,6 +75,9 @@ class Plugin {
         $loader->add_filter( 'cptui_post_types_override', $this, 'pluginize_load_local_cptui_post_type_data' );
         $loader->add_filter( 'cptui_taxonomies_override', $this, 'pluginize_load_local_cptui_taxonomies_data' );
         $loader->add_filter( 'query_loop_block_query_vars', $this, 'query_loop_block_query_vars' );
+        $loader->add_filter( 'wp_theme_json_data_theme', $this, 'filter_theme_json_theme' );
+        $loader->add_filter( 'body_class', $this, 'add_hazard_to_single' );
+        $loader->add_filter( 'admin_body_class', $this, 'add_hazard_to_admin' );
         $loader->run();
 	}
 
@@ -237,6 +241,103 @@ class Plugin {
         $query['meta_value']   = 'active';
         $query['meta_compare'] = '=';
         return $query;
+    }
+
+        /**
+         * Adds hazard_type colors to theme's preset colors array.
+         *
+         * @param WP_Theme_JSON_Data $theme_json Object containing theme's JSON configuration.
+         * @return WP_Theme_JSON_Data
+         */
+    public function filter_theme_json_theme( WP_Theme_JSON_Data $theme_json ) {
+        $current_data = $theme_json->get_data();
+        $old_colours  = $current_data['settings']['color']['palette']['theme'];
+
+        // Get all terms from hazard_type taxonomy.
+        $hazard_types = get_terms(
+            [
+				'taxonomy'   => 'hazard_type',
+				'hide_empty' => false,
+			]
+        );
+        $new_colours  = [];
+        // Add primary and secondary colors for each hazard_type.
+        foreach ( $hazard_types as $hazard_type ) {
+            $hazard_colour = get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
+            $hazard_name   = $hazard_type->name;
+            $new_colours[] = [
+                'slug'  => 'hazard-' . $hazard_type->slug,
+                'color' => $hazard_colour,
+                'name'  => $hazard_name . ' primary',
+            ];
+            $new_colours[] = [
+                'slug'  => 'hazard-' . $hazard_type->slug . '-secondary',
+                'color' => $hazard_colour . '1a',
+                'name'  => $hazard_name . ' secondary',
+            ];
+        }
+
+        // Add default hazard colors (when inactive or no hazard selected).
+        $new_colours[] = [
+            'slug'  => 'hazard-default',
+            'color' => 'rgba(179, 179, 179, 1)',
+            'name'  => 'Hazard default primary',
+        ];
+        $new_colours[] = [
+            'slug'  => 'hazard-default-secondary',
+            'color' => 'rgba(179, 179, 179, .1)',
+            'name'  => 'Hazard default secondary',
+        ];
+
+        $current_data['settings']['color']['palette']['theme'] = array_merge( $old_colours, $new_colours );
+
+        return $theme_json->update_with( $current_data );
+    }
+
+    /**
+     * Adds hazard_type class to frontend event pages.
+     *
+     * @param array $classes Array containing body element classes.
+     * @return array
+     */
+    public function add_hazard_to_single( array $classes ) {
+        if ( is_single() ) {
+            global $post;
+            // Add hazard_type class to body if post is of event type.
+            if ( 'event' === $post->post_type ) {
+                $my_terms = get_the_terms( $post->ID, 'hazard_type' );
+                if ( $my_terms && ! is_wp_error( $my_terms ) ) {
+                    foreach ( $my_terms as $term ) {
+                        $classes[] = 'hazard_type-' . $term->slug;
+                    }
+                }
+            }
+        }
+        return $classes;
+    }
+
+    /**
+     * Adds hazard_type class to editor event pages.
+     *
+     * @param string $classes String containing body element classes.
+     * @return string
+     */
+    public function add_hazard_to_admin( string $classes ) {
+        global $pagenow;
+
+        if ( in_array( $pagenow, array( 'post.php', 'post-new.php' ), true ) ) {
+            global $post;
+            // Add hazard_type class to body if post is of event type.
+            if ( 'event' === $post->post_type ) {
+                $my_terms = get_the_terms( $post->ID, 'hazard_type' );
+                if ( $my_terms && ! is_wp_error( $my_terms ) ) {
+                    foreach ( $my_terms as $term ) {
+                        $classes .= ' hazard_type-' . $term->slug;
+                    }
+                }
+            }
+        }
+        return $classes;
     }
 
     /**

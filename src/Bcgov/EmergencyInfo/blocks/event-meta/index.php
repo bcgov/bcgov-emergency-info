@@ -18,10 +18,9 @@ function render_block_event_meta(
         return '';
     }
     // Get Event.
-    $post_id            = $block->context['postId'];
-    $event              = get_post( $post_id );
-    $is_detailed        = $attributes['detailed'];
-    $wrapper_attributes = get_block_wrapper_attributes();
+    $post_id     = $block->context['postId'];
+    $event       = get_post( $post_id );
+    $is_detailed = $attributes['detailed'];
 
     // Get ACF status meta field.
     $event_status = get_field( 'status', $post_id ) ?? [
@@ -30,9 +29,11 @@ function render_block_event_meta(
 	];
 
     // Get Hazard Type taxonomy terms. Uses the hazard_types attribute if it exists.
+    $hazard_types = [];
     if ( ! empty( $attributes['hazard_types'] ) ) {
         $hazard_types = [ get_term( $attributes['hazard_types'][0] ) ];
-    } else {
+    }
+    if ( empty( $hazard_types ) ) {
         $hazard_types = get_the_terms( $event, 'hazard_type' );
     }
 
@@ -44,17 +45,12 @@ function render_block_event_meta(
         $hazard_image_srcset = wp_get_attachment_image_srcset( $hazard_image_id );
         $hazard_image_sizes  = wp_get_attachment_image_sizes( $hazard_image_id );
     }
-    // Hazard colours.
-    $default_colour   = [
-        'red'   => 145,
-        'green' => 145,
-        'blue'  => 145,
-        'alpha' => 1,
-    ];
-    $hazard_colour    = get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
-    $hazard_colour    = ( 'active' === $event_status['value'] ) ? $hazard_colour : $default_colour;
-    $primary_colour   = vsprintf( 'rgba(%d,%d,%d,%d)', $hazard_colour );
-    $secondary_colour = vsprintf( 'rgba(%d,%d,%d,0.1)', $hazard_colour );
+
+    $wrapper_attributes = get_block_wrapper_attributes(
+        [
+			'class' => 'hazard_type-' . $hazard_type->slug,
+		]
+    );
 
     // Build header and post title html.
     $header_html     = '';
@@ -62,11 +58,10 @@ function render_block_event_meta(
     if ( $is_detailed ) {
         $header_html     = sprintf(
             '
-            <div class="text-center mb-2" style="background-color: %1$s">
-                <h3 class="text-white p-2 my-0">%2$s</h3>
+            <div class="text-center mb-2 hazard-background">
+                <h3 class="text-white p-2 my-0">%s</h3>
             </div>
             ',
-            $primary_colour,
             esc_html( $event_status['label'] )
         );
         $post_title_html = $event->post_title;
@@ -77,7 +72,7 @@ function render_block_event_meta(
     if ( isset( $hazard_image_srcset ) ) {
         $hazard_img_html = sprintf(
             '
-            <img class="img-fluid hazard-image" loading="lazy" decoding="async" alt="%s" title="" srcset="%s" sizes="%s">
+            <img class="img-fluid hazard-image" loading="lazy" decoding="async" alt="%s" srcset="%s" sizes="%s">
             ',
             $hazard_type->name,
             $hazard_image_srcset,
@@ -88,21 +83,20 @@ function render_block_event_meta(
     // Build final block html.
     return sprintf(
         '
-        <div %6%s>
+        <div %5%s>
             <div class="p-0 w-100 bg-white">
                 %1$s
-                <div class="p-3 d-flex flex-column flex-sm-row align-items-center" style="background: %2$s">
-                    %3$s
+                <div class="p-3 d-flex flex-column flex-sm-row align-items-center hazard-background-secondary">
+                    %2$s
                     <div class="p-2 w-75">
-                        <h1><strong>%4$s</strong></h1>
-                        <h2>%5$s</h2>
+                        <h1><strong>%3$s</strong></h1>
+                        <h2>%4$s</h2>
                     </div>
                 </div>
             </div>
         </div>
         ',
         $header_html,
-        $secondary_colour,
         $hazard_img_html,
         $is_detailed ? esc_html( $hazard_type->name ) : '',
         $post_title_html,
