@@ -62,6 +62,7 @@ class Blocks {
         register_block_type_from_metadata( $path . '/active-events', [ 'render_callback' => [ $this, 'active_events_block_render' ] ] );
         register_block_type_from_metadata( $path . '/resource-list', [ 'render_callback' => [ $this, 'resource_list_block_render' ] ] );
         register_block_type_from_metadata( $path . '/post-social-share', [ 'render_callback' => [ $this, 'post_social_share_block_render' ] ] );
+        include_once __DIR__ . '/blocks/post-hazard-image/index.php';
         include_once __DIR__ . '/blocks/event-meta/index.php';
     }
 

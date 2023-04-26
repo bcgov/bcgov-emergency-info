@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "title": "Post Hazard Image",
+    "name": "emergency-info/post-hazard-image",
+    "category": "emergency-info",
+    "icon": "embed-photo",
+    "textdomain": "emergency-info",
+    "usesContext": ["postId", "postType"],
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css"
+}
