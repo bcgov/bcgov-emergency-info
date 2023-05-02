@@ -44,6 +44,24 @@
             "default_value": "",
             "enable_opacity": 0,
             "return_format": "string"
+        },
+        {
+            "key": "field_64512f7926090",
+            "label": "Secondary Colour",
+            "name": "secondary_colour",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
         }
     ],
     "location": [
@@ -64,5 +82,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1682376781
+    "modified": 1683042189
 }

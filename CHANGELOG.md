@@ -1,4 +1,5 @@
-### 1.0.0: April 26, 2023
+### 1.0.0: May 2, 2023
+* Improved hidden block display in editor, improved Post Hazard Image block display, added theme colours ([DESCW-1056](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1056))
 * Added homepage patterns, Visibility toggle, Post Hazard Image block, improved hazard color handling ([DESCW-1026](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1026))
 * Improved Event Meta block styling ([DESCW-1015](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1015))
 * Added hide block attribute to all blocks to allow user to keep a block in the editor but not render it on frontend

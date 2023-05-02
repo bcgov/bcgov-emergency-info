@@ -20,6 +20,14 @@
     }
 }
 
+.areoi-icon:not(.no-circle) {
+    line-height: 1;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--wp--preset--color--support-gray-02);
+    background-color: var(--wp--preset--color--support-gray-01);
+}
+
 .soft-shadow {
     box-shadow: 0 6px 8px rgba(200, 200, 222, 0.5);
 }

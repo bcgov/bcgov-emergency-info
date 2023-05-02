@@ -253,6 +253,40 @@ class Plugin {
         $current_data = $theme_json->get_data();
         $old_colours  = $current_data['settings']['color']['palette']['theme'];
 
+        // Add theme colors.
+        $new_colours = [
+            [
+                'slug'  => 'support-gray-00',
+                'color' => '#FAFBFF',
+                'name'  => 'Support Gray 00',
+            ],
+            [
+                'slug'  => 'support-gray-01',
+                'color' => '#F9FAFF',
+                'name'  => 'Support Gray 01',
+            ],
+            [
+                'slug'  => 'support-gray-02',
+                'color' => '#DBDFF0',
+                'name'  => 'Support Gray 02',
+            ],
+            [
+                'slug'  => 'support-green',
+                'color' => '#388A5E',
+                'name'  => 'Support Green',
+            ],
+            [
+                'slug'  => 'support-yellow',
+                'color' => '#F88907',
+                'name'  => 'Support Yellow',
+            ],
+            [
+                'slug'  => 'support-red',
+                'color' => '#D90932',
+                'name'  => 'Support Red',
+            ],
+        ];
+
         // Get all terms from hazard_type taxonomy.
         $hazard_types = get_terms(
             [
@@ -260,19 +294,19 @@ class Plugin {
 				'hide_empty' => false,
 			]
         );
-        $new_colours  = [];
         // Add primary and secondary colors for each hazard_type.
         foreach ( $hazard_types as $hazard_type ) {
-            $hazard_colour = get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
-            $hazard_name   = $hazard_type->name;
-            $new_colours[] = [
+            $hazard_colour           = get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
+            $hazard_secondary_colour = get_field( 'secondary_colour', 'hazard_type_' . $hazard_type->term_id );
+            $hazard_name             = $hazard_type->name;
+            $new_colours[]           = [
                 'slug'  => 'hazard-' . $hazard_type->slug,
                 'color' => $hazard_colour,
                 'name'  => $hazard_name . ' primary',
             ];
-            $new_colours[] = [
+            $new_colours[]           = [
                 'slug'  => 'hazard-' . $hazard_type->slug . '-secondary',
-                'color' => $hazard_colour . '1a',
+                'color' => $hazard_secondary_colour,
                 'name'  => $hazard_name . ' secondary',
             ];
         }
