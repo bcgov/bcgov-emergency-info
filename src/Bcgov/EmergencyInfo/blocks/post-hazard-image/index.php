@@ -15,30 +15,44 @@ function render_block_post_hazard_image(
 ): string {
     // phpcs:enable
     // Get Event.
-    $post_id      = $block->context['postId'];
-    $event        = get_post( $post_id );
-    $hazard_types = get_the_terms( $event, 'hazard_type' );
+    $post_id            = $block->context['postId'];
+    $event              = get_post( $post_id );
+    $hazard_types       = get_the_terms( $event, 'hazard_type' );
+    $wrapper_attributes = get_block_wrapper_attributes(
+        [
+			'class' => 'hazard-image hazard-background p-3',
+		]
+    );
 
-    if ( empty( $hazard_types ) ) {
+    if ( is_wp_error( $hazard_types ) || empty( $hazard_types ) ) {
         return '';
     }
 
     // Get Hazard Type image.
-    $hazard_type     = $hazard_types[0];
-    $hazard_image    = get_field( 'hazard_image', 'hazard_type_' . $hazard_type->term_id );
-    $hazard_image_id = $hazard_image['id'];
+    $hazard_type         = $hazard_types[0];
+    $hazard_image        = get_field( 'hazard_image', 'hazard_type_' . $hazard_type->term_id );
+    $hazard_image_id     = $hazard_image['id'];
+    $hazard_image_srcset = '';
+    $hazard_image_src    = '';
+    $hazard_image_sizes  = '';
     if ( $hazard_image_id ) {
         $hazard_image_srcset = wp_get_attachment_image_srcset( $hazard_image_id );
-        $hazard_image_sizes  = wp_get_attachment_image_sizes( $hazard_image_id );
+        if ( ! $hazard_image_srcset ) {
+            $hazard_image_src = wp_get_attachment_image_url( $hazard_image_id, 'medium' );
+        } else {
+            $hazard_image_sizes = wp_get_attachment_image_sizes( $hazard_image_id );
+        }
     }
 
     // Build final block html.
     return sprintf(
         '
-        <img class="img-fluid hazard-image" loading="lazy" decoding="async" alt="%s" srcset="%s" sizes="%s">
+        <img %s loading="lazy" decoding="async" alt="%s" srcset="%s" src="%s" sizes="%s">
         ',
+        $wrapper_attributes,
         $hazard_type->name,
         $hazard_image_srcset,
+        $hazard_image_src,
         $hazard_image_sizes
     );
 };
