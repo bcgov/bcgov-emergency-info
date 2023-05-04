@@ -6,7 +6,7 @@
  * @param array    $attributes Block attributes.
  * @param string   $content    Block default content.
  * @param WP_Block $block      Block instance.
- * @return string Returns the Event Meta block markup.
+ * @return string Returns the Post Hazard Image block markup.
  */
 function render_block_post_hazard_image(
     array $attributes,

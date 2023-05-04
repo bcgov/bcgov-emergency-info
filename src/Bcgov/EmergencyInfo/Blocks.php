@@ -61,7 +61,7 @@ class Blocks {
         $path = plugin_dir_path( dirname( __FILE__, 3 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
         register_block_type_from_metadata( $path . '/active-events', [ 'render_callback' => [ $this, 'active_events_block_render' ] ] );
         register_block_type_from_metadata( $path . '/resource-list', [ 'render_callback' => [ $this, 'resource_list_block_render' ] ] );
-        register_block_type_from_metadata( $path . '/post-social-share', [ 'render_callback' => [ $this, 'post_social_share_block_render' ] ] );
+        include_once __DIR__ . '/blocks/post-social-share/index.php';
         include_once __DIR__ . '/blocks/post-hazard-image/index.php';
         include_once __DIR__ . '/blocks/event-meta/index.php';
     }
@@ -155,44 +155,6 @@ class Blocks {
         }
         $ret .= '</ul>';
         return $ret;
-    }
-
-    // Ignore unused fuction arguments error. We only need to use $block.
-    // phpcs:disable
-
-    /**
-     * Render callback for the Post Social Share block.
-     *
-     * @param array  $attributes Block attributes that get passed to the render callback.
-     * @param string $content The content of the block.
-     * @param object $block  Block object containing context data.
-     * @return string
-     */
-    public function post_social_share_block_render(array $attributes, string $content, object $block): string
-    {
-        // phpcs:enable
-        if ( ! isset( $block->context['postId'] ) ) {
-            return '';
-        }
-
-        $post               = get_post( $block->context['postId'] );
-        $link               = get_the_permalink( $post );
-        $wrapper_attributes = get_block_wrapper_attributes();
-
-        if ( ! $link ) {
-            return '';
-        }
-
-        return sprintf(
-            '<div %1$s> 
-                <ul>
-                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=%2$s">Facebook</a></li>
-                    <li><a href="https://twitter.com/intent/tweet?url=%2$s">Twitter</a></li>
-                </ul>
-            </div>',
-            $wrapper_attributes,
-            $link
-        );
     }
 
     /**

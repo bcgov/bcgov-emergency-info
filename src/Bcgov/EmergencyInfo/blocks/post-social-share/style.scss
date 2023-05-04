@@ -1,11 +1,10 @@
 .wp-block-emergency-info-post-social-share {
 
-    ul {
+    .btn {
+        border-radius: 50px !important;
+    }
 
-        li {
-            display: inline;
-            list-style: none;
-            margin-right: 5px;
-        }
+    .dropdown-item {
+        padding: 5px;
     }
 }

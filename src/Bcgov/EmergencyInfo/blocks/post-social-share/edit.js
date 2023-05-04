@@ -7,23 +7,44 @@ export const Edit = ({ context: { postType, postId } }) => {
 
     return (
         <div {...blockProps}>
-            <ul>
-                <li>
+            <div className="dropdown">
+                <a
+                    className="btn areoi-has-url position-relative btn-outline-dark dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="true"
+                    aria-expanded="false"
+                    href="##"
+                >
+                    <i
+                        className="bi-send-fill me-3 align-middle"
+                        style={{ 'font-size': '24px' }}
+                    ></i>
+                    Share
+                </a>
+                <div className="dropdown-menu" aria-labelledby="">
                     <a
+                        className="dropdown-item"
+                        href={'#https://twitter.com/intent/tweet?url=' + link}
+                    >
+                        <span className="areoi-icon">
+                            <i className="text-dark bi-twitter"></i>
+                        </span>
+                        Share on Twitter
+                    </a>
+                    <a
+                        className="dropdown-item"
                         href={
                             '#https://www.facebook.com/sharer/sharer.php?u=' +
                             link
                         }
                     >
-                        Facebook
+                        <span className="areoi-icon">
+                            <i className="text-dark bi-facebook"></i>
+                        </span>
+                        Share on Facebook
                     </a>
-                </li>
-                <li>
-                    <a href={'#https://twitter.com/intent/tweet?url=' + link}>
-                        Twitter
-                    </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     );
 };
