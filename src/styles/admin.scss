@@ -27,3 +27,10 @@
         opacity: 50%;
     }
 }
+
+.wp-block-post-excerpt {
+
+    >.wp-block-post-excerpt__more-text {
+        display: none;
+    }
+}

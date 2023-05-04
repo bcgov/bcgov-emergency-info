@@ -1,4 +1,5 @@
 ### 1.0.0: May 2, 2023
+* Improved Post Social Share block display, added Bootstrap dependency and Bootstrap theming overrides, added event meta fields per UX changes ([DESCW-1018](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1018))
 * Improved hidden block display in editor, improved Post Hazard Image block display, added theme colours ([DESCW-1056](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1056))
 * Added homepage patterns, Visibility toggle, Post Hazard Image block, improved hazard color handling ([DESCW-1026](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1026))
 * Improved Event Meta block styling ([DESCW-1015](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1015))
