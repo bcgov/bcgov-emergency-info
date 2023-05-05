@@ -5,6 +5,17 @@
 
 @import "./bootstrap-theming";
 
+:root .editor-styles-wrapper,
+body {
+    --wp--preset--spacing--20: 10px !important;
+    --wp--preset--spacing--30: 20px !important;
+    --wp--preset--spacing--40: 30px !important;
+    --wp--preset--spacing--50: 40px !important;
+    --wp--preset--spacing--60: 50px !important;
+    --wp--preset--spacing--70: 60px !important;
+    --wp--preset--spacing--80: 70px !important;
+}
+
 .iframe-container {
     position: relative;
     overflow: hidden;
