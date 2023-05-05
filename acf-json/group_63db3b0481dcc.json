@@ -87,10 +87,10 @@
         },
         {
             "key": "field_641b86d768408",
-            "label": "Evacuation Ordered?",
+            "label": "Evacuation Status",
             "name": "evacuation",
             "aria-label": "",
-            "type": "true_false",
+            "type": "button_group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -99,11 +99,15 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
+            "choices": {
+                "order": "Order",
+                "alert": "Alert",
+                "rescind": "Rescind"
+            },
+            "default_value": "order",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
         },
         {
             "key": "field_641b873b6840a",
@@ -164,5 +168,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1683216893
+    "modified": 1683309143
 }
