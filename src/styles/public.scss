@@ -6,14 +6,18 @@
 @import "./bootstrap-theming";
 
 :root .editor-styles-wrapper,
-body {
-    --wp--preset--spacing--20: 10px !important;
-    --wp--preset--spacing--30: 20px !important;
-    --wp--preset--spacing--40: 30px !important;
-    --wp--preset--spacing--50: 40px !important;
-    --wp--preset--spacing--60: 50px !important;
-    --wp--preset--spacing--70: 60px !important;
-    --wp--preset--spacing--80: 70px !important;
+body.custom-eibc {
+
+    /*
+	 * theme.json spacing for padding, margin and gap.
+	 */
+    --wp--preset--spacing--20: 1rem;
+    --wp--preset--spacing--30: 2rem;
+    --wp--preset--spacing--40: 3rem;
+    --wp--preset--spacing--50: 4rem;
+    --wp--preset--spacing--60: 5rem;
+    --wp--preset--spacing--70: 6rem;
+    --wp--preset--spacing--80: 7rem;
 }
 
 .iframe-container {
@@ -21,6 +25,10 @@ body {
     overflow: hidden;
     width: 100%;
     padding-top: 70%;
+
+    .twitter-timeline {
+        width: 100% !important;
+    }
 
     iframe {
         position: absolute;
