@@ -1,4 +1,5 @@
-### 1.0.0: May 10, 2023
+### 1.0.0: May 11, 2023
+* Created Earthquake event pattern, created Post Hazard Title block, updated reusable Event Info block ([DESCW-1093](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1093))
 * Added Flood event patterns ([DESCW-1092](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1092))
 * Updated Homepage pattern ([DESCW-1057](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1057))
 * Changed Event meta evacuation field to have 3 options ([DESCW-1055](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1055))

@@ -2,13 +2,9 @@ import { useSelect } from '@wordpress/data';
 import { useBlockProps } from '@wordpress/block-editor';
 import { Spinner } from '@wordpress/components';
 
-const getMediaSourceUrlBySizeSlug = (media, slug) => {
-    return media?.media_details?.sizes?.[slug]?.source_url || media?.source_url;
-};
-
 const Edit = ({ context: { postType, postId } }) => {
     const blockProps = useBlockProps();
-    const image = useSelect((select) => {
+    const title = useSelect((select) => {
         // Get current value of the hazard_type input in page attributes panel.
         const editedHazard =
             select('core/editor').getEditedPostAttribute('hazard_type');
@@ -40,28 +36,20 @@ const Edit = ({ context: { postType, postId } }) => {
             hazardId
         );
 
-        // Get the media attachment data for the hazard's image.
-        let media = null;
+        // Get the hazard's title.
         if (hazard) {
-            media = select('core').getMedia(hazard.acf.hazard_image.value, {
-                context: 'view',
-            });
+            return hazard.name;
         }
-        return media;
+        return null;
     });
 
-    const imageUrl = getMediaSourceUrlBySizeSlug(image, 'medium');
-    const classes = 'hazard-image hazard-background p-3';
+    blockProps.className += ' hazard-text';
 
-    return (
-        <div {...blockProps}>
-            {image ? (
-                <img className={classes} src={imageUrl} alt={image.alt_text} />
-            ) : (
-                <div className={classes}>
-                    <Spinner />
-                </div>
-            )}
+    return title ? (
+        <h1 {...blockProps}>{title}</h1>
+    ) : (
+        <div>
+            <Spinner />
         </div>
     );
 };

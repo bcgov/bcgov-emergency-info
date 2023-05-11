@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "title": "Post Hazard Title",
+    "name": "emergency-info/post-hazard-title",
+    "category": "emergency-info",
+    "icon": "heading",
+    "textdomain": "emergency-info",
+    "usesContext": ["postId", "postType"],
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+    "supports": {
+        "typography": {
+            "fontSize": true
+        }
+    }
+}

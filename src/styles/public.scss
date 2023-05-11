@@ -62,6 +62,10 @@ $hazards: "amber-alert", "avalanche", "earthquake", "emergency-alert", "extreme-
         $primaryColor: var(--wp--preset--color--hazard-#{$hazard});
         $secondaryColor: var(--wp--preset--color--hazard-#{$hazard}-secondary);
 
+        .hazard-text {
+            color: $primaryColor;
+        }
+
         .hazard-border {
             border-color: $primaryColor;
         }
