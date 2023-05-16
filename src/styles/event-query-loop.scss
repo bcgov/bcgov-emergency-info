@@ -1,0 +1,43 @@
+.event-query-loop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--wp--preset--spacing--20);
+
+    >li {
+
+        min-width: max(30%, 300px);
+        flex-basis: 0;
+        flex-grow: 1;
+
+        .hazard-image {
+            max-height: 100px;
+        }
+
+        .wp-block-mfb-meta-field-block {
+
+            i {
+                font-size: var(--wp--preset--font-size--large);
+                padding-right: var(--wp--preset--spacing--20);
+            }
+
+            // Hide MFB message about missing values, takes up too much space in editor.
+            .value > code {
+                display: none;
+            }
+        }
+    }
+
+    // Special case for displaying in 2 columns when there are 4 event cards.
+    :first-child:nth-last-child(4),
+    :first-child:nth-last-child(4) ~ li {
+        min-width: max(45%, 300px);
+    }
+
+    // Fix for small screen sizes where the 300px min-width above is too wide.
+    @include media-breakpoint-down(sm) {
+
+        >li {
+            min-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+// Todo: This is hardcoded so if a new hazard is added we would need to update this list.
+// Make this list draw from the taxonomy terms dynamically.
+$hazards: "amber-alert", "avalanche", "earthquake", "emergency-alert", "extreme-heat", "flood", "tsunami", "wildfire";
+
+@each $hazard in $hazards {
+    .hazard_type-#{$hazard} {
+        $primaryColor: var(--wp--preset--color--hazard-#{$hazard});
+        $secondaryColor: var(--wp--preset--color--hazard-#{$hazard}-secondary);
+
+        .hazard-text {
+            color: $primaryColor;
+        }
+
+        .hazard-border {
+            border-color: $primaryColor;
+        }
+
+        .hazard-background {
+            background-color: $primaryColor;
+        }
+
+        .hazard-background-secondary {
+            background-color: $secondaryColor;
+        }
+    }
+}
+
+$defaultHazardColor: var(--wp--preset--color--hazard-default);
+$defaultHazardSecondaryColor: var(--wp--preset--color--hazard-default-secondary);
+
+.hazard-border {
+    border-color: $defaultHazardColor;
+}
+
+.hazard-background {
+    background-color: $defaultHazardColor;
+}
+
+.hazard-background-secondary {
+    background-color: $defaultHazardSecondaryColor;
+}
