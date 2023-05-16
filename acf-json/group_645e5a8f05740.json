@@ -1,11 +1,11 @@
 {
-    "key": "group_6453d2a3c0b90",
-    "title": "Amber Alert",
+    "key": "group_645e5a8f05740",
+    "title": "Evacuation",
     "fields": [
         {
-            "key": "field_6453d2a6296e6",
-            "label": "Victim Name",
-            "name": "victim_name",
+            "key": "field_645e5a902083d",
+            "label": "Affected Area",
+            "name": "affected_area",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -23,9 +23,9 @@
             "append": ""
         },
         {
-            "key": "field_6453d391296e8",
-            "label": "Suspect Name",
-            "name": "suspect_name",
+            "key": "field_645e5ac52083e",
+            "label": "Issued By",
+            "name": "issued_by",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -53,7 +53,31 @@
             {
                 "param": "post_taxonomy",
                 "operator": "==",
-                "value": "hazard_type:amber-alert"
+                "value": "hazard_type:flood"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:wildfire"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:tsunami"
             }
         ]
     ],
@@ -65,6 +89,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 1,
-    "modified": 1683906856
+    "show_in_rest": 0,
+    "modified": 1683906693
 }

@@ -1,4 +1,5 @@
-### 1.0.0: May 11, 2023
+### 1.0.0: May 16, 2023
+* Updated Event Query Loop built-in pattern, updated ACF fields ([DESCW-1095](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1095))
 * Created Earthquake event pattern, created Post Hazard Title block, updated reusable Event Info block ([DESCW-1093](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1093))
 * Added Flood event patterns ([DESCW-1092](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1092))
 * Updated Homepage pattern ([DESCW-1057](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1057))
