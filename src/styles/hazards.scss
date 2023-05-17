@@ -1,47 +1,65 @@
-// Todo: This is hardcoded so if a new hazard is added we would need to update this list.
-// Make this list draw from the taxonomy terms dynamically.
-$hazards: "amber-alert", "avalanche", "earthquake", "emergency-alert", "extreme-heat", "flood", "tsunami", "wildfire";
+@mixin hazard-styles($primaryColor, $secondaryColor) {
 
-@each $hazard in $hazards {
-    .hazard_type-#{$hazard} {
-        $primaryColor: var(--wp--preset--color--hazard-#{$hazard});
-        $secondaryColor: var(--wp--preset--color--hazard-#{$hazard}-secondary);
+    .hazard-text {
+        color: $primaryColor;
 
-        .hazard-text {
-            color: $primaryColor;
-
-            i {
-                color: $primaryColor !important;
-            }
+        i {
+            color: $primaryColor !important;
         }
+    }
 
-        .hazard-border {
-            border-color: $primaryColor;
-        }
+    .hazard-border {
+        border-color: $primaryColor;
+    }
 
-        .hazard-background {
-            background-color: $primaryColor;
-        }
+    .hazard-background {
+        background-color: $primaryColor;
+    }
 
-        .hazard-background-secondary {
-            background-color: $secondaryColor;
-        }
+    .hazard-background-secondary {
+        background-color: $secondaryColor;
     }
 }
 
+// Create classes with correct colors for each hazard type.
+$hazards: "amber-alert", "avalanche", "earthquake", "emergency-alert", "extreme-heat", "flood", "tsunami", "wildfire";
+
+@each $hazard in $hazards {
+    .hazard_type-#{$hazard}:not(.inactive) {
+        $primaryColor: var(--wp--preset--color--hazard-#{$hazard});
+        $secondaryColor: var(--wp--preset--color--hazard-#{$hazard}-secondary);
+
+        @include hazard-styles($primaryColor, $secondaryColor);
+    }
+}
+
+// Set defaults for when an event has no hazard type selected.
 $defaultHazardColor: var(--wp--preset--color--hazard-default);
 $defaultHazardSecondaryColor: var(--wp--preset--color--hazard-default-secondary);
 
-.hazard-border {
-    border-color: $defaultHazardColor;
+@include hazard-styles($defaultHazardColor, $defaultHazardSecondaryColor);
+
+// Set colors for when an event is no longer active.
+.inactive {
+    $inactiveHazardColor: var(--wp--preset--color--hazard-inactive);
+    $inactiveHazardSecondaryColor: var(--wp--preset--color--hazard-inactive-secondary);
+
+    @include hazard-styles($inactiveHazardColor, $inactiveHazardSecondaryColor);
+
+    // Requires !important for editor to override Bootstrap colors.
+    .status-alert {
+        color: var(--wp--preset--color--primary-brand) !important;
+        background-color: #e0e2e3 !important;
+        border-color: $inactiveHazardSecondaryColor !important;
+    }
 }
 
-.hazard-background {
-    background-color: $defaultHazardColor;
-}
+// Fix awkward spacing between lead in text and MFB status block.
+.status-alert {
 
-.hazard-background-secondary {
-    background-color: $defaultHazardSecondaryColor;
+    .mfb-status {
+        margin-left: -4px !important;
+    }
 }
 
 // Force amber alert images to maintain a square aspect ratio.

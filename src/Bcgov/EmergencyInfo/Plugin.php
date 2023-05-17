@@ -76,8 +76,8 @@ class Plugin {
         $loader->add_filter( 'cptui_taxonomies_override', $this, 'pluginize_load_local_cptui_taxonomies_data' );
         $loader->add_filter( 'query_loop_block_query_vars', $this, 'query_loop_block_query_vars' );
         $loader->add_filter( 'wp_theme_json_data_theme', $this, 'filter_theme_json_theme' );
-        $loader->add_filter( 'body_class', $this, 'add_hazard_to_single' );
-        $loader->add_filter( 'admin_body_class', $this, 'add_hazard_to_admin' );
+        $loader->add_filter( 'body_class', $this, 'add_custom_classes_to_single' );
+        $loader->add_filter( 'admin_body_class', $this, 'add_custom_classes_to_admin' );
         $loader->run();
 	}
 
@@ -311,7 +311,19 @@ class Plugin {
             ];
         }
 
-        // Add default hazard colors (when inactive or no hazard selected).
+        // Add inactive hazard colors.
+        $new_colours[] = [
+            'slug'  => 'hazard-inactive',
+            'color' => '#6B6A85',
+            'name'  => 'Hazard inactive primary',
+        ];
+        $new_colours[] = [
+            'slug'  => 'hazard-inactive-secondary',
+            'color' => '#72727E',
+            'name'  => 'Hazard inactive secondary',
+        ];
+
+        // Add default hazard colors (when no hazard selected).
         $new_colours[] = [
             'slug'  => 'hazard-default',
             'color' => 'rgba(179, 179, 179, 1)',
@@ -329,15 +341,15 @@ class Plugin {
     }
 
     /**
-     * Adds hazard_type class to frontend event pages.
+     * Adds custom hazard type and inactive classes to frontend event pages.
      *
      * @param array $classes Array containing body element classes.
      * @return array
      */
-    public function add_hazard_to_single( array $classes ) {
+    public function add_custom_classes_to_single( array $classes ) {
         if ( is_single() ) {
             global $post;
-            // Add hazard_type class to body if post is of event type.
+            // Add hazard_type and inactive classes to body if post is of event type.
             if ( 'event' === $post->post_type ) {
                 $my_terms = get_the_terms( $post->ID, 'hazard_type' );
                 if ( $my_terms && ! is_wp_error( $my_terms ) ) {
@@ -345,29 +357,39 @@ class Plugin {
                         $classes[] = 'hazard_type-' . $term->slug;
                     }
                 }
+
+                $status = get_field( 'status', $post->ID, false );
+                if ( 'active' !== $status ) {
+                    $classes[] = 'inactive';
+                }
             }
         }
         return $classes;
     }
 
     /**
-     * Adds hazard_type class to editor event pages.
+     * Adds custom hazard type and inactive classes to editor event pages.
      *
      * @param string $classes String containing body element classes.
      * @return string
      */
-    public function add_hazard_to_admin( string $classes ) {
+    public function add_custom_classes_to_admin( string $classes ) {
         global $pagenow;
 
         if ( in_array( $pagenow, array( 'post.php', 'post-new.php' ), true ) ) {
             global $post;
-            // Add hazard_type class to body if post is of event type.
+            // Add hazard_type and inactive classes to body if post is of event type.
             if ( 'event' === $post->post_type ) {
                 $my_terms = get_the_terms( $post->ID, 'hazard_type' );
                 if ( $my_terms && ! is_wp_error( $my_terms ) ) {
                     foreach ( $my_terms as $term ) {
                         $classes .= ' hazard_type-' . $term->slug;
                     }
+                }
+
+                $status = get_field( 'status', $post->ID, false );
+                if ( 'active' !== $status ) {
+                    $classes .= ' inactive';
                 }
             }
         }

@@ -34,3 +34,8 @@
         display: none;
     }
 }
+
+// Remove unnecessary padding added to blocks in editor.
+.block-editor-block-list__layout {
+    padding-bottom: 0 !important;
+}
