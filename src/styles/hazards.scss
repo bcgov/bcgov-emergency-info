@@ -9,6 +9,10 @@ $hazards: "amber-alert", "avalanche", "earthquake", "emergency-alert", "extreme-
 
         .hazard-text {
             color: $primaryColor;
+
+            i {
+                color: $primaryColor !important;
+            }
         }
 
         .hazard-border {
@@ -38,4 +42,9 @@ $defaultHazardSecondaryColor: var(--wp--preset--color--hazard-default-secondary)
 
 .hazard-background-secondary {
     background-color: $defaultHazardSecondaryColor;
+}
+
+// Force amber alert images to maintain a square aspect ratio.
+.amber-alert-image img {
+    aspect-ratio: 1/1 !important;
 }
