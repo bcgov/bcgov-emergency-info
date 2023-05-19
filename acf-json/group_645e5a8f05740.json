@@ -3,7 +3,27 @@
     "title": "Evacuation",
     "fields": [
         {
-            "key": "field_645e5a902083d",
+            "key": "field_64656708e8786",
+            "label": "Aggregated Event",
+            "name": "is_aggregated_event",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "Is this an aggregated event?",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_64656777e8788",
             "label": "Affected Area",
             "name": "affected_area",
             "aria-label": "",
@@ -12,7 +32,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "37.5",
                 "class": "",
                 "id": ""
             },
@@ -23,7 +43,7 @@
             "append": ""
         },
         {
-            "key": "field_645e5ac52083e",
+            "key": "field_6465678be8789",
             "label": "Issued By",
             "name": "issued_by",
             "aria-label": "",
@@ -32,7 +52,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "37.5",
                 "class": "",
                 "id": ""
             },
@@ -44,6 +64,18 @@
         }
     ],
     "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:earthquake"
+            }
+        ],
         [
             {
                 "param": "post_type",
@@ -65,7 +97,7 @@
             {
                 "param": "post_taxonomy",
                 "operator": "==",
-                "value": "hazard_type:wildfire"
+                "value": "hazard_type:tsunami"
             }
         ],
         [
@@ -77,7 +109,7 @@
             {
                 "param": "post_taxonomy",
                 "operator": "==",
-                "value": "hazard_type:tsunami"
+                "value": "hazard_type:wildfire"
             }
         ]
     ],
@@ -90,5 +122,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683906693
+    "modified": 1684521120
 }

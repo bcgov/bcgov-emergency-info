@@ -240,15 +240,31 @@ class Plugin {
         $query['meta_key']     = 'status';
         $query['meta_value']   = 'active';
         $query['meta_compare'] = '=';
+
+        $query['meta_query'] = [
+            'relation'                  => 'AND',
+            'event_updated_date_clause' => [
+                'key'     => 'updated_date',
+                'compare' => 'EXISTS',
+            ],
+            'event_updated_time_clause' => [
+                'key'     => 'updated_time',
+                'compare' => 'EXISTS',
+            ],
+        ];
+        $query['orderby']    = [
+            'event_updated_date_clause' => 'DESC',
+            'event_updated_time_clause' => 'DESC',
+        ];
         return $query;
     }
 
-        /**
-         * Adds hazard_type colors to theme's preset colors array.
-         *
-         * @param WP_Theme_JSON_Data $theme_json Object containing theme's JSON configuration.
-         * @return WP_Theme_JSON_Data
-         */
+    /**
+     * Adds hazard_type colors to theme's preset colors array.
+     *
+     * @param WP_Theme_JSON_Data $theme_json Object containing theme's JSON configuration.
+     * @return WP_Theme_JSON_Data
+     */
     public function filter_theme_json_theme( WP_Theme_JSON_Data $theme_json ) {
         $current_data = $theme_json->get_data();
         $old_colours  = $current_data['settings']['color']['palette']['theme'];

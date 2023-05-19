@@ -51,6 +51,14 @@ body.custom-eibc {
     background-color: var(--wp--preset--color--support-gray-01);
 }
 
+// Used mainly for Recommended Actions sections as there isn't a good set of icons for numbers.
+p.areoi-icon:not(.no-circle) {
+    font-size: 24px !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+}
+
 .soft-shadow {
     box-shadow: 0 6px 8px rgba(200, 200, 222, 0.5);
 }

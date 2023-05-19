@@ -1,4 +1,5 @@
 ### 1.0.0: May 17, 2023
+* Added is_aggregated_event meta field to Evacuation field group, changed Event query loop to order by metadata date/time ([DESCW-1136](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1136))
 * Updated Event CSS and Event Info reusable block for inactive styles ([DESCW-1139](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1139))
 * Created Amber Alert event pattern ([DESCW-1094](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1094))
 * Updated Event Query Loop built-in pattern, updated ACF fields ([DESCW-1095](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1095))
