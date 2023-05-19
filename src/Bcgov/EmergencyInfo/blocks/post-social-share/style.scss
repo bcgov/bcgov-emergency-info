@@ -4,6 +4,11 @@
         border-width: 2px;
         border-radius: 50px !important;
         background-color: var(--wp--preset--color--white);
+
+        // Fix for off-center button label.
+        i {
+            margin-right: 6px !important;
+        }
     }
 
     .dropdown-item {
