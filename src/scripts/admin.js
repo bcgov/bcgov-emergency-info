@@ -1,6 +1,5 @@
 import '../styles/admin.scss';
 import '../styles/public.scss';
-import 'material-symbols/outlined.css';
 import './admin/hazard-type-select';
 import './admin/hide-block';
 

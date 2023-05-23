@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2" created="2023-05-05 15:25" -->
+	<!-- generator="WordPress/6.2" created="2023-05-19 23:45" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Emergency Info British Columbia</title>
 	<link>https://localhost/eibc</link>
 	<description></description>
-	<pubDate>Fri, 05 May 2023 15:25:14 +0000</pubDate>
+	<pubDate>Fri, 19 May 2023 23:45:19 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://localhost/</wp:base_site_url>
@@ -49,8 +49,8 @@
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:template-part {"slug":"global-header-container","theme":"bcgov-wordpress-block-theme"} /-->
 
-<!-- wp:group {"tagName":"section","className":"post-content bcgov-body-content","layout":{"type":"default"}} -->
-<section id="post-content" class="wp-block-group post-content bcgov-body-content"><!-- wp:post-content {"layout":{"type":"default"}} /--></section>
+<!-- wp:group {"tagName":"section","className":"post-content bcgov-body-content m-0","layout":{"type":"default"}} -->
+<section id="post-content" class="wp-block-group post-content bcgov-body-content m-0"><!-- wp:post-content {"layout":{"type":"default"}} /--></section>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"global-footer-container","theme":"bcgov-wordpress-block-theme"} /-->]]></content:encoded>
@@ -58,8 +58,8 @@
 		<wp:post_id>1542</wp:post_id>
 		<wp:post_date><![CDATA[2023-04-26 10:24:22]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-04-26 17:24:22]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-04 18:30:24]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-04 18:30:24]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-08 18:07:33]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-08 18:07:33]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[page-no-title]]></wp:post_name>
@@ -97,8 +97,8 @@
 		<content:encoded><![CDATA[<!-- wp:template-part {"slug":"global-header-container","theme":"bcgov-wordpress-block-theme"} /-->
 
 <!-- wp:group {"className":"bcgov-body-content","layout":{"type":"default"}} -->
-<div class="wp-block-group bcgov-body-content"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:post-content {"align":"wide","layout":{"inherit":false}} /--></div>
+<div class="wp-block-group bcgov-body-content"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:post-content {"align":"wide","layout":{"inherit":false}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
@@ -107,8 +107,8 @@
 		<wp:post_id>2290</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-03 22:19:04]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-03 22:19:04]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-04 18:35:41]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-04 18:35:41]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-19 21:24:21]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-19 21:24:21]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[single-event]]></wp:post_name>
