@@ -1,4 +1,5 @@
-### 1.0.0: May 23, 2023
+### 1.0.0: May 25, 2023
+* Added override for Post Hazard Title block for Generic hazard type ([DESCW-1191](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1191))
 * Cleanup of unused code: med-fi patterns, unused blocks, unused Resource post type, etc. ([DESCW-1178](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1178))
 * Added is_aggregated_event meta field to Evacuation field group, changed Event query loop to order by metadata date/time ([DESCW-1136](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1136))
 * Updated Event CSS and Event Info reusable block for inactive styles ([DESCW-1139](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1139))

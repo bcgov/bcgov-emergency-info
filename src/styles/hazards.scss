@@ -22,7 +22,7 @@
 }
 
 // Create classes with correct colors for each hazard type.
-$hazards: "amber-alert", "avalanche", "earthquake", "emergency-alert", "extreme-heat", "flood", "tsunami", "wildfire";
+$hazards: "amber-alert", "avalanche", "earthquake", "emergency-alert", "extreme-heat", "flood", "generic", "tsunami", "wildfire";
 
 @each $hazard in $hazards {
     .hazard_type-#{$hazard}:not(.inactive) {
