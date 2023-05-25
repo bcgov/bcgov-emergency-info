@@ -15,11 +15,9 @@
 
         .wp-block-mfb-meta-field-block {
 
-            i {
-                font-size: var(--wp--preset--font-size--large);
-                padding-right: var(--wp--preset--spacing--20);
+            .suffix {
+                margin-left: 0 !important;
             }
-
             // Hide MFB message about missing values, takes up too much space in editor.
             .value > code {
                 display: none;

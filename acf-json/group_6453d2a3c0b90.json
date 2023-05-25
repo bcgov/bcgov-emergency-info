@@ -4,12 +4,12 @@
     "fields": [
         {
             "key": "field_6453d2a6296e6",
-            "label": "Victim Name",
-            "name": "victim_name",
+            "label": "Victim(s)",
+            "name": "card_value_1",
             "aria-label": "",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "50",
@@ -24,12 +24,12 @@
         },
         {
             "key": "field_6453d391296e8",
-            "label": "Suspect Name",
-            "name": "suspect_name",
+            "label": "Suspect(s)",
+            "name": "card_value_2",
             "aria-label": "",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "50",
@@ -37,6 +37,86 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646e8d6922f4d",
+            "label": "Card Label 1",
+            "name": "card_label_1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "d-none",
+                "id": ""
+            },
+            "default_value": "Victim(s)",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646e8d7e22f4e",
+            "label": "Card Label 2",
+            "name": "card_label_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "d-none",
+                "id": ""
+            },
+            "default_value": "Suspect(s)",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646f95d4bd9f5",
+            "label": "Card Icon 1",
+            "name": "card_icon_1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "d-none",
+                "id": ""
+            },
+            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-people\" style=\"font-size:24px\"><\/i><\/div>",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646f95efbd9f6",
+            "label": "Card Icon 2",
+            "name": "card_icon_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "d-none",
+                "id": ""
+            },
+            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-people\" style=\"font-size:24px\"><\/i><\/div>",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -66,5 +146,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1683906856
+    "modified": 1685034490
 }

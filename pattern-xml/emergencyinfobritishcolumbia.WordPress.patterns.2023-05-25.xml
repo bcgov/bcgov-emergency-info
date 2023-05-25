@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2" created="2023-05-19 23:43" -->
+	<!-- generator="WordPress/6.2" created="2023-05-25 20:51" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Emergency Info British Columbia</title>
 	<link>https://localhost/eibc</link>
 	<description></description>
-	<pubDate>Fri, 19 May 2023 23:43:58 +0000</pubDate>
+	<pubDate>Thu, 25 May 2023 20:51:51 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://localhost/</wp:base_site_url>
@@ -737,6 +737,44 @@
 <h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--20);margin-right:0;margin-bottom:var(--wp--preset--spacing--50);margin-left:0">Current emergencies</h3>
 <!-- /wp:heading -->
 
+<!-- wp:query {"queryId":1,"query":{"perPage":"9","pages":0,"offset":0,"postType":"event","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"displayLayout":{"type":"list"},"className":"is-style-default"} -->
+<div class="wp-block-query is-style-default"><!-- wp:post-template {"lock":{"move":false,"remove":false},"className":"event-query-loop"} -->
+<!-- wp:group {"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":"10px"}},"backgroundColor":"white","className":"hazard-border soft-shadow h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border soft-shadow h-100 has-white-background-color has-background" style="border-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group has-support-gray-01-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:post-title {"level":1,"isLink":true,"fontSize":"extra-large"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
+<div class="wp-block-group has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_icon_1","hideEmpty":true,"displayLayout":"block"} /-->
+
+<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_label_1","hideEmpty":true,"suffix":":","displayLayout":"inline-block","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} /-->
+
+<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_value_1","hideEmpty":true,"fontSize":"medium"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_icon_2","hideEmpty":true,"displayLayout":"block"} /-->
+
+<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_label_2","hideEmpty":true,"suffix":":","displayLayout":"inline-block","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} /-->
+
+<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_value_2","hideEmpty":true,"fontSize":"medium"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"0","left":"var:preset|spacing|30"}},"border":{"radius":"10px"}},"backgroundColor":"white","className":"soft-shadow","layout":{"type":"default"}} -->
 <div class="wp-block-group soft-shadow has-white-background-color has-background" style="border-radius:10px;padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:0;padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":1637,"sizeSlug":"full","linkDestination":"none","className":"d-none d-sm-block"} -->
@@ -751,7 +789,17 @@
 <div class="wp-block-group text-end"><!-- wp:areoi/button {"block_id":"0320081d-d84e-4aa7-b20b-6cdcba503157","style":"btn-warning","text_wrap":"text-nowrap","text":"Get Notified","include_icon":true,"icon":"bi-bell-fill","icon_position":"prepend","className":"text-primary"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:query-no-results -->
+
+<!-- wp:query-pagination {"paginationArrow":"chevron","className":"pt-2","layout":{"type":"flex","justifyContent":"center"},"fontSize":"small"} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
@@ -1134,8 +1182,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2514</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-05 23:31:30]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-05 23:31:30]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-08 18:44:17]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-08 18:44:17]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-25 20:35:03]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-25 20:35:03]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[homepage]]></wp:post_name>
@@ -3160,8 +3208,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
-		<category domain="pattern-groups" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+										<category domain="pattern-groups" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+		<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[1]]></wp:meta_value>
