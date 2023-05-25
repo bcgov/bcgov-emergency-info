@@ -29,8 +29,13 @@ function render_block_post_hazard_title(
     }
 
     // Get Hazard Type title.
-    $hazard_type  = $hazard_types[0];
-    $hazard_title = $hazard_type->name;
+    $hazard_type = $hazard_types[0];
+    if ( 'generic' === $hazard_type->slug ) {
+        // Generic hazard type should use the hazard_name override meta field value.
+        $hazard_title = get_field( 'hazard_name', $post_id );
+    } else {
+        $hazard_title = $hazard_type->name;
+    }
 
     // Build final block html.
     return sprintf(
