@@ -1,30 +1,70 @@
 {
-    "key": "group_645e5a8f05740",
-    "title": "Evacuation",
+    "key": "group_646f98e444751",
+    "title": "Generic",
     "fields": [
         {
-            "key": "field_64656708e8786",
-            "label": "Aggregated Event",
-            "name": "is_aggregated_event",
+            "key": "field_646f9b5958307",
+            "label": "Hazard Name",
+            "name": "hazard_name",
             "aria-label": "",
-            "type": "true_false",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "message": "Is this an aggregated event?",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_64656777e8788",
-            "label": "Affected Area",
+            "key": "field_646f98e44b1df",
+            "label": "Top Card Icon",
+            "name": "card_icon_1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-info\" style=\"font-size:24px\"><\/i><\/div>",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646f98e44afbc",
+            "label": "Top Card Label",
+            "name": "card_label_1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646f98e44adee",
+            "label": "Top Card Value",
             "name": "card_value_1",
             "aria-label": "",
             "type": "text",
@@ -32,7 +72,7 @@
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "37.5",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -43,8 +83,48 @@
             "append": ""
         },
         {
-            "key": "field_6465678be8789",
-            "label": "Issued By",
+            "key": "field_646f98e44b823",
+            "label": "Bottom Card Icon",
+            "name": "card_icon_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-info\" style=\"font-size:24px\"><\/i><\/div>",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646f98e44b0b5",
+            "label": "Bottom Card Label",
+            "name": "card_label_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_646f98e44aed2",
+            "label": "Bottom Card Value",
             "name": "card_value_2",
             "aria-label": "",
             "type": "text",
@@ -52,91 +132,11 @@
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "37.5",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_646e8b4e4108a",
-            "label": "Card Label 1",
-            "name": "card_label_1",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "d-none",
-                "id": ""
-            },
-            "default_value": "Affected area",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_646e8bb04108b",
-            "label": "Card Label 2",
-            "name": "card_label_2",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "d-none",
-                "id": ""
-            },
-            "default_value": "Issued by",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_646f93ad8e649",
-            "label": "Card Icon 1",
-            "name": "card_icon_1",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "d-none",
-                "id": ""
-            },
-            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-geo-alt\" style=\"font-size:24px\"><\/i><\/div>",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_646f944e4be6a",
-            "label": "Card Icon 2",
-            "name": "card_icon_2",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "d-none",
-                "id": ""
-            },
-            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-building\" style=\"font-size:24px\"><\/i><\/div>",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -153,19 +153,7 @@
             {
                 "param": "post_taxonomy",
                 "operator": "==",
-                "value": "hazard_type:flood"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "event"
-            },
-            {
-                "param": "post_taxonomy",
-                "operator": "==",
-                "value": "hazard_type:wildfire"
+                "value": "hazard_type:generic"
             }
         ]
     ],
@@ -178,5 +166,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1685040382
+    "modified": 1685046367
 }
