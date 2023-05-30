@@ -6,18 +6,13 @@ import { __ } from '@wordpress/i18n';
 
 const Edit = ({ attributes, setAttributes, context: { postType, postId } }) => {
     const blockProps = useBlockProps();
-    const valueNum = attributes.valueNum;
+    const { valueNum } = attributes;
     const [icon, setIcon] = useState('');
     const [label, setLabel] = useState('');
     const [value, setValue] = useState('');
 
     const selectPost = useSelect((select) => {
-        const event = select('core').getEntityRecord(
-            'postType',
-            postType,
-            postId
-        );
-        return event;
+        return select('core').getEntityRecord('postType', postType, postId);
     });
 
     useEffect(() => {
@@ -45,13 +40,13 @@ const Edit = ({ attributes, setAttributes, context: { postType, postId } }) => {
                     </div>
                 </div>
             ) : (
-                <div>No value</div>
+                <div>{__('No value')}</div>
             )}
             <InspectorControls>
                 <PanelBody title={__('Card Value Number')}>
                     <TextControl
                         type="number"
-                        value={attributes.valueNum}
+                        value={valueNum}
                         onChange={(val) => {
                             setAttributes({ valueNum: parseInt(val) });
                         }}
