@@ -96,7 +96,7 @@
                 "class": "d-none",
                 "id": ""
             },
-            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-geo-alt\" style=\"font-size:24px\"><\/i><\/div>",
+            "default_value": "bi-geo-alt",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -116,7 +116,7 @@
                 "class": "d-none",
                 "id": ""
             },
-            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-activity\" style=\"font-size:24px\"><\/i><\/div>",
+            "default_value": "bi-activity",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -158,5 +158,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1685034871
+    "modified": 1685462551
 }

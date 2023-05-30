@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "title": "Post Meta Display",
+    "name": "emergency-info/post-meta-display",
+    "category": "emergency-info",
+    "icon": "edit",
+    "textdomain": "emergency-info",
+    "usesContext": ["postId", "postType"],
+    "attributes": {
+        "valueNum": {
+            "type": "number",
+            "default": 1
+        }
+    },
+    "editorScript": "file:./index.js",
+    "supports": {
+        "typography": {
+            "fontSize": true
+        },
+        "spacing": {
+            "padding": true
+        }
+    }
+}

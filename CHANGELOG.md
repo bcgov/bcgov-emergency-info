@@ -1,4 +1,5 @@
 ### 1.0.0: May 25, 2023
+* Improved Aggregate Event cards metadata display, created Post Meta Display block, updated ACF fields to not require full icon HTML  ([DESCW-1138](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1138))
 * Added Aggregated Event cards pattern ([DESCW-1191](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1191))
 * Updated Event cards meta field display and ACF meta fields for various hazard types ([DESCW-1137](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1137))
 * Added override for Post Hazard Title block for Generic hazard type ([DESCW-1191](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1191))
