@@ -66,3 +66,12 @@ $defaultHazardSecondaryColor: var(--wp--preset--color--hazard-default-secondary)
 .amber-alert-image img {
     aspect-ratio: 1/1 !important;
 }
+
+// Cards that appear on aggregated events.
+.aggregated-card {
+
+    .hazard-image {
+        max-height: 54px;
+        padding: 10px !important;
+    }
+}
