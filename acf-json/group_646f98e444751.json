@@ -28,7 +28,7 @@
             "name": "card_icon_1",
             "aria-label": "",
             "type": "text",
-            "instructions": "",
+            "instructions": "Choose a Bootstrap icon to use, eg bi-geo, bi-building. See https:\/\/icons.getbootstrap.com\/ for options.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -36,7 +36,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-info\" style=\"font-size:24px\"><\/i><\/div>",
+            "default_value": "bi-info",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -48,7 +48,7 @@
             "name": "card_label_1",
             "aria-label": "",
             "type": "text",
-            "instructions": "",
+            "instructions": "<br><br>",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -68,8 +68,8 @@
             "name": "card_value_1",
             "aria-label": "",
             "type": "text",
-            "instructions": "",
-            "required": 1,
+            "instructions": "<br><br>",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "33",
@@ -96,7 +96,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<div class=\"wp-block-areoi-icon areoi-icon\"><i class=\"text-dark bi-info\" style=\"font-size:24px\"><\/i><\/div>",
+            "default_value": "bi-info",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -129,7 +129,7 @@
             "aria-label": "",
             "type": "text",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "33",
@@ -166,5 +166,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1685046367
+    "modified": 1685470422
 }
