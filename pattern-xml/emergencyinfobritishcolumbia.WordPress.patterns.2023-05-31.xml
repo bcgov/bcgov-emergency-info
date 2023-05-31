@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2" created="2023-05-26 17:41" -->
+	<!-- generator="WordPress/6.2" created="2023-05-31 18:15" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Emergency Info British Columbia</title>
 	<link>https://localhost/eibc</link>
 	<description></description>
-	<pubDate>Fri, 26 May 2023 17:41:25 +0000</pubDate>
+	<pubDate>Wed, 31 May 2023 18:15:36 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://localhost/</wp:base_site_url>
@@ -681,8 +681,8 @@
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="wildfire"><![CDATA[Wildfire]]></category>
-		<category domain="pattern-groups" nicename="wildfire"><![CDATA[Wildfire]]></category>
+										<category domain="pattern-groups" nicename="wildfire"><![CDATA[Wildfire]]></category>
+		<category domain="hazard_type" nicename="wildfire"><![CDATA[Wildfire]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[1]]></wp:meta_value>
@@ -731,10 +731,10 @@
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://localhost/eibc/?post_type=custom-pattern&#038;p=2514</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"constrained"}} -->
-<div id="Current-Emergencies" class="wp-block-group has-support-gray-01-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"className":"alignwide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|50","left":"0"}}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--20);margin-right:0;margin-bottom:var(--wp--preset--spacing--50);margin-left:0">Current emergencies</h3>
+		<content:encoded><![CDATA[<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-00","layout":{"type":"constrained"}} -->
+<div id="Current-Emergencies" class="wp-block-group has-support-gray-00-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"alignwide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|30","left":"0"}}}} -->
+<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--20);margin-right:0;margin-bottom:var(--wp--preset--spacing--30);margin-left:0">Current emergencies</h3>
 <!-- /wp:heading -->
 
 <!-- wp:query {"queryId":1,"query":{"perPage":"9","pages":0,"offset":0,"postType":"event","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"displayLayout":{"type":"list"},"className":"is-style-default"} -->
@@ -753,21 +753,9 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_icon_1","hideEmpty":true,"displayLayout":"block"} /-->
+<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-meta-display {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20","top":"var:preset|spacing|20"}}},"fontSize":"medium"} /-->
 
-<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_label_1","hideEmpty":true,"suffix":":","displayLayout":"inline-block","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} /-->
-
-<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_value_1","hideEmpty":true,"fontSize":"medium"} /--></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_icon_2","hideEmpty":true,"displayLayout":"block"} /-->
-
-<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_label_2","hideEmpty":true,"suffix":":","displayLayout":"inline-block","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} /-->
-
-<!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"card_value_2","hideEmpty":true,"fontSize":"medium"} /--></div>
-<!-- /wp:group --></div>
+<!-- wp:emergency-info/post-meta-display {"valueNum":2,"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"fontSize":"medium"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -804,113 +792,171 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
-<div id="Report-Emergency" class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|40"}}},"className":"alignwide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":5} -->
-<h5 class="wp-block-heading"><strong>Report an emergency</strong></h5>
+<div id="Definitions" class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|40"}}},"className":"alignwide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}}} -->
+<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--20);margin-right:0;margin-bottom:var(--wp--preset--spacing--20);margin-left:0">Definitions</h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"0","left":"0"}},"border":{"top":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Flood Warning Levels</strong></h5>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>For police, fire, and medical emergencies call 9-1-1</p>
+<p>Understanding Flood Advisory threat stages</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:areoi/row {"block_id":"87625025-08d4-4d65-8758-be4cc859a90a","row_cols_xs":"row-cols-1","row_cols_md":"row-cols-md-3","className":"gy-3"} -->
-<!-- wp:areoi/column {"block_id":"e2239b6a-8fba-4b94-8e1c-01cfcdeab91d","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"border":{"radius":"10px","top":{"color":"#388a5e","width":"10px"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"soft-shadow h-100 d-flex","layout":{"type":"default"}} -->
-<div class="wp-block-group soft-shadow h-100 d-flex" style="border-radius:10px;border-top-color:#388a5e;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":1557,"width":87,"height":87,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/image.png" alt="" class="wp-image-1557" width="87" height="87" title=""/></figure>
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"87625025-08d4-4d65-8758-be4cc859a90a","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-1","row_cols_md":"row-cols-md-3","className":"three-card gy-2 gx-0"} -->
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|hazard-flood","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--hazard-flood);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3238,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/Icon.png" alt="" class="wp-image-3238" title=""/></figure>
 <!-- /wp:image -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
-<h5 class="wp-block-heading">Report an earthquake</h5>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Flood Warning</strong></h5>
 <!-- /wp:heading -->
 
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
-<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
-<!-- /wp:areoi/icon -->
-
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
-<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="http://EarthquakesCanada.nrcan.gc.ca">Earthquakes Canada</a></p>
+<!-- wp:paragraph -->
+<p>River levels have exceeded bankfull or will exceed bankfull imminently, and that flooding of areas adjacent to the rivers affected will result.</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"23dadb7a-f795-43ca-93ee-823b250ec0c1","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|custom-color-5","width":"10px"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"soft-shadow h-100 d-flex","layout":{"type":"default"}} -->
-<div class="wp-block-group soft-shadow h-100 d-flex" style="border-radius:10px;border-top-color:var(--wp--preset--color--custom-color-5);border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":1557,"width":87,"height":87,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/image.png" alt="" class="wp-image-1557" width="87" height="87" title=""/></figure>
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|vivid-cyan-blue","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-color:var(--wp--preset--color--vivid-cyan-blue);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|white"},"left":{"color":"var:preset|color|white"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3239,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/Icon-1.png" alt="" class="wp-image-3239" title=""/></figure>
 <!-- /wp:image -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
-<h5 class="wp-block-heading">Report a wildfire</h5>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Flood Watch</strong></h5>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><strong>Cell Phone:</strong> *5555</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><strong>Phone:</strong> <a href="tel:18006635555">1-800-663-5555</a></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
-<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
-<!-- /wp:areoi/icon -->
-
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
-<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Report a wildfire</a></p>
+<!-- wp:paragraph -->
+<p>River levels are rising and will approach or may exceed bankfull. Flooding of areas adjacent to affected rivers may occur.</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"ea327acd-f78d-4e8d-bb5a-f6d2a335953f","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|custom-color-6","width":"10px"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"soft-shadow h-100 d-flex","layout":{"type":"default"}} -->
-<div class="wp-block-group soft-shadow h-100 d-flex" style="border-radius:10px;border-top-color:var(--wp--preset--color--custom-color-6);border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":1557,"width":87,"height":87,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/image.png" alt="" class="wp-image-1557" width="87" height="87" title=""/></figure>
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|pale-cyan-blue","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--pale-cyan-blue);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3240,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/Icon-2.png" alt="" class="wp-image-3240" title=""/></figure>
 <!-- /wp:image -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
-<h5 class="wp-block-heading">Report a chemical spill</h5>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>High Streamflow Advisory</strong></h5>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Phone:</strong> <a href="tel:18006633456">1-800-663-3456</a></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
-<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
-<!-- /wp:areoi/icon -->
-
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
-<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/environment/air-land-water/spills-environmental-emergencies/report-a-spill" title="#example">Report a spill</a></p>
+<!-- wp:paragraph -->
+<p>River levels are rising or expected to rise rapidly, but no major flooding is expected. Minor flooding in low-lying areas is possible.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+<!-- /wp:areoi/row -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"default"}} -->
+<div class="wp-block-group text-center" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:areoi/button {"block_id":"5f206ff2-a4b6-42d9-bef0-f4360adb39cd","style":"btn-outline-primary","url":"http://bcrfc.env.gov.bc.ca/warnings/index.htm","text":"Current Flood Advisories"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Evacuation Stages</strong></h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Understanding Flood Advisories</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"87625025-08d4-4d65-8758-be4cc859a90a","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-1","row_cols_md":"row-cols-md-3","className":"three-card gy-2 gx-0"} -->
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|support-red","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--support-red);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3238,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/Icon.png" alt="" class="wp-image-3238" title=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Evacuation Order</strong></h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You are at risk. Leave the area immediately.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|support-yellow","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-color:var(--wp--preset--color--support-yellow);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|white"},"left":{"color":"var:preset|color|white"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3239,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/Icon-1.png" alt="" class="wp-image-3239" title=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Evacuation Alert</strong></h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Be ready to leave on short notice</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|support-green","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--support-green);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3240,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/Icon-2.png" alt="" class="wp-image-3240" title=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Evacuation Rescind</strong></h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>All is currently safe and you can return home.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
 <!-- /wp:areoi/row --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"primary-brand","layout":{"type":"constrained"}} -->
-<div id="Emergency-Map" class="wp-block-group has-primary-brand-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","bottom":"0"}}},"className":"alignwide","layout":{"type":"default"}} -->
+<div id="Emergency-Map" class="wp-block-group has-primary-brand-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","bottom":"0"}}},"className":"alignwide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"b095be9f-2a28-4f03-8117-5a114ba3027f","row_cols_xs":"row-cols-1","row_cols_md":"row-cols-md-2"} -->
 <!-- wp:areoi/column {"block_id":"13558b72-5366-4cc3-aa61-c20316cc344e","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"order_xs":"order-2","order_sm":"order-sm-2","order_md":"order-md-0"} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"iframe-container","layout":{"type":"constrained"}} -->
@@ -930,8 +976,132 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:areoi/button {"block_id":"008d20b5-cf0b-4c94-b163-67b91fb5102a","style":"btn-warning","url":"https://governmentofbc.maps.arcgis.com/apps/webappviewer/index.html?id=950b4eec577a4dc5b298a61adab41c06","text":"Open Emergency Map","include_icon":true,"icon":"bi-arrow-up-right"} /--></div></div>
+<!-- wp:areoi/button {"block_id":"008d20b5-cf0b-4c94-b163-67b91fb5102a","style":"btn-warning","url":"https://governmentofbc.maps.arcgis.com/apps/webappviewer/index.html?id=950b4eec577a4dc5b298a61adab41c06","text":"Open Emergency Map","include_icon":true,"icon":"bi-arrow-up-right","className":"text-primary"} /--></div></div>
 <!-- /wp:cover -->
+<!-- /wp:areoi/column -->
+<!-- /wp:areoi/row --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
+<div id="Report-Emergency" class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|40"}}},"className":"alignwide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading"><strong>Report an emergency</strong></h5>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>For police, fire, and medical emergencies call 9-1-1</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:areoi/row {"block_id":"87625025-08d4-4d65-8758-be4cc859a90a","row_cols_xs":"row-cols-1","row_cols_md":"row-cols-md-1","row_cols_lg":"row-cols-lg-3","className":"gy-3"} -->
+<!-- wp:areoi/column {"block_id":"e2239b6a-8fba-4b94-8e1c-01cfcdeab91d","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":"10px","top":{"color":"#388a5e","width":"10px"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"soft-shadow h-100 d-flex","layout":{"type":"default"}} -->
+<div class="wp-block-group soft-shadow h-100 d-flex" style="border-radius:10px;border-top-color:#388a5e;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"0eae8fd0-68c4-4d25-be11-eb9ece43b3f1","style":"text-dark","size":"60"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-activity " style="font-size:60px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":5,"fontSize":"medium"} -->
+<h5 class="wp-block-heading has-medium-font-size">Report an earthquake</h5>
+<!-- /wp:heading -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Website: </strong><a href="http://EarthquakesCanada.nrcan.gc.ca">Earthquakes Canada</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"23dadb7a-f795-43ca-93ee-823b250ec0c1","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|custom-color-5","width":"10px"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"soft-shadow h-100 d-flex","layout":{"type":"default"}} -->
+<div class="wp-block-group soft-shadow h-100 d-flex" style="border-radius:10px;border-top-color:var(--wp--preset--color--custom-color-5);border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"df45f00c-28b6-4305-b9db-6ab6f5d67d82","style":"text-dark","size":"60","icon":"bi-fire"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-fire " style="font-size:60px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":5,"fontSize":"medium"} -->
+<h5 class="wp-block-heading has-medium-font-size">Report a wildfire</h5>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0.22rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:0.22rem"><!-- wp:areoi/icon {"block_id":"fa8273a3-388c-4d82-bdae-7799e319115d","style":"text-dark","icon":"bi-telephone"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-telephone " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><strong>Cell Phone:</strong> *5555</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0.22rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:0.22rem"><!-- wp:areoi/icon {"block_id":"fa8273a3-388c-4d82-bdae-7799e319115d","style":"text-dark","icon":"bi-telephone"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-telephone " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><strong>Phone:</strong> <a href="tel:18006635555">1-800-663-5555</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Website:</strong> <a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Report a wildfire</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"ea327acd-f78d-4e8d-bb5a-f6d2a335953f","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|custom-color-6","width":"10px"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"soft-shadow h-100 d-flex","layout":{"type":"default"}} -->
+<div class="wp-block-group soft-shadow h-100 d-flex" style="border-radius:10px;border-top-color:var(--wp--preset--color--custom-color-6);border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"101d0a94-dd8a-4362-acee-82e1864f1cbb","style":"text-dark","size":"60","icon":"bi-droplet"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-droplet " style="font-size:60px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":5,"fontSize":"medium"} -->
+<h5 class="wp-block-heading has-medium-font-size">Report a chemical spill</h5>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0.22rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:0.22rem"><!-- wp:areoi/icon {"block_id":"fa8273a3-388c-4d82-bdae-7799e319115d","style":"text-dark","icon":"bi-telephone"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-telephone " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Phone:</strong> <a href="tel:18006633456">1-800-663-3456</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Website:</strong> <a href="https://www2.gov.bc.ca/gov/content/environment/air-land-water/spills-environmental-emergencies/report-a-spill" title="#example">Report a spill</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 <!-- /wp:areoi/column -->
 <!-- /wp:areoi/row --></div>
 <!-- /wp:group --></div>
@@ -949,12 +1119,12 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:areoi/row {"block_id":"0ad5ea09-edad-451d-894c-d080eac1fa8e","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-3","className":"gy-3"} -->
+<!-- wp:areoi/row {"block_id":"0ad5ea09-edad-451d-894c-d080eac1fa8e","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-1","row_cols_md":"row-cols-md-3","className":"three-card gy-3 gx-0"} -->
 <!-- wp:areoi/column {"block_id":"dcdecc53-0e78-433e-8f9c-f0524bfd925e","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":"10px"}},"backgroundColor":"white","className":"soft-shadow h-100","layout":{"type":"default"}} -->
-<div class="wp-block-group soft-shadow h-100 has-white-background-color has-background" style="border-radius:10px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"mx-auto","layout":{"type":"default"}} -->
-<div class="wp-block-group mx-auto" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":1572,"sizeSlug":"full","linkDestination":"none","className":"text-center"} -->
-<figure class="wp-block-image size-full text-center"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/image-1-300x291-1.png" alt="" class="wp-image-1572" title=""/></figure>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"align":"center","id":3205,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
+<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/noun-stop-137987-1.png" alt="" class="wp-image-3205" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -965,24 +1135,26 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:areoi/column -->
 
 <!-- wp:areoi/column {"block_id":"dcdecc53-0e78-433e-8f9c-f0524bfd925e","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":"10px"}},"backgroundColor":"white","className":"soft-shadow h-100","layout":{"type":"default"}} -->
-<div class="wp-block-group soft-shadow h-100 has-white-background-color has-background" style="border-radius:10px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"mx-auto","layout":{"type":"default"}} -->
-<div class="wp-block-group mx-auto" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":1572,"sizeSlug":"full","linkDestination":"none","className":"text-center"} -->
-<figure class="wp-block-image size-full text-center"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/image-1-300x291-1.png" alt="" class="wp-image-1572" title=""/></figure>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"0","bottom":"var:preset|spacing|30","left":"0"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"0","left":"var:preset|spacing|30"}},"border":{"right":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:0;padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"align":"center","id":3210,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
+<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/noun-stop-137987-1-2.png" alt="" class="wp-image-3210" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"small"} -->
-<p class="has-text-align-center has-small-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">Read the alert &amp; see if you are in the affected area</p>
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"},"padding":{"left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-small-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">Read the alert &amp; see if you are in the affected area</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
 
 <!-- wp:areoi/column {"block_id":"dcdecc53-0e78-433e-8f9c-f0524bfd925e","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":"10px"}},"backgroundColor":"white","className":"soft-shadow h-100","layout":{"type":"default"}} -->
-<div class="wp-block-group soft-shadow h-100 has-white-background-color has-background" style="border-radius:10px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"mx-auto","layout":{"type":"default"}} -->
-<div class="wp-block-group mx-auto" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":1572,"sizeSlug":"full","linkDestination":"none","className":"text-center"} -->
-<figure class="wp-block-image size-full text-center"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/image-1-300x291-1.png" alt="" class="wp-image-1572" title=""/></figure>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"topRight":"10px","bottomRight":"10px"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"align":"center","id":3211,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
+<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/05/noun-stop-137987-1-3.png" alt="" class="wp-image-3211" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -993,18 +1165,24 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:areoi/column -->
 <!-- /wp:areoi/row -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|20","bottom":"var:preset|spacing|30","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"constrained"}} -->
-<div class="wp-block-group text-center" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--20)"><!-- wp:areoi/button {"block_id":"008d20b5-cf0b-4c94-b163-67b91fb5102a","size":"Default","url":"https://www2.gov.bc.ca/gov/content/safety/public-safety/emergency-alerts","text":"Learn more about Emergency Alerts in BC","icon":"bi-arrow-up-right"} /--></div>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|20","bottom":"var:preset|spacing|30","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"default"}} -->
+<div class="wp-block-group text-center" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--20)"><!-- wp:areoi/button {"block_id":"008d20b5-cf0b-4c94-b163-67b91fb5102a","size":"Default","url":"https://www2.gov.bc.ca/gov/content/safety/public-safety/emergency-alerts","text":"Learn more about Emergency Alerts in BC","icon":"bi-arrow-up-right"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
 <div id="Get-Prepared" class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"className":"alignwide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|support-gray-02"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"var:preset|spacing|30","left":"0"}}},"className":"text-center","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group text-center" style="border-bottom-color:var(--wp--preset--color--support-gray-02);padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0"><!-- wp:image {"id":1602,"sizeSlug":"full","linkDestination":"custom"} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|support-gray-02"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"var:preset|spacing|30","left":"0"}}},"className":"text-center","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","orientation":"horizontal"}} -->
+<div class="wp-block-group text-center" style="border-bottom-color:var(--wp--preset--color--support-gray-02);padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--20)"><!-- wp:image {"id":1602,"sizeSlug":"full","linkDestination":"custom"} -->
 <figure class="wp-block-image size-full"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/image-7-300x89-1.png" alt="" class="wp-image-1602" title=""/></a></figure>
 <!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"align":"left","fontSize":"small"} -->
+<p class="has-text-align-left has-small-font-size">PreparedBC offers emergency preparedness resources for individuals, communities and organizations.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:heading {"level":5,"style":{"spacing":{"margin":{"top":"var:preset|spacing|50","right":"0","bottom":"var:preset|spacing|50","left":"0"}}}} -->
@@ -1182,8 +1360,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2514</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-05 23:31:30]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-05 23:31:30]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-25 20:35:03]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-25 20:35:03]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-31 18:14:15]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-31 18:14:15]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[homepage]]></wp:post_name>
@@ -2682,8 +2860,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
-		<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
+										<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
+		<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[1]]></wp:meta_value>

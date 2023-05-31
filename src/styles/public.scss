@@ -62,3 +62,47 @@ p.areoi-icon:not(.no-circle) {
 .soft-shadow {
     box-shadow: 0 6px 8px rgba(200, 200, 222, 0.5);
 }
+
+// Three-card connected blocks that stack on mobile.
+.three-card {
+
+    @include media-breakpoint-down(md) {
+
+        .col > div {
+            border-radius: 10px;
+
+            > div {
+                border-left-style: none;
+                border-right-style: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        .col {
+
+            &:nth-child(1) {
+
+                >div {
+                    border-right-style: none;
+                }
+            }
+
+            &:nth-child(2) {
+
+                >div {
+                    border-left-style: none;
+                    border-right-style: none;
+                }
+            }
+
+            &:nth-child(3) {
+
+                >div {
+                    border-left-style: none;
+                }
+            }
+        }
+    }
+}
