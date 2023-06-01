@@ -1,6 +1,7 @@
 import { useSelect } from '@wordpress/data';
 import { useState, useEffect } from '@wordpress/element';
 import { useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
 const Edit = ({ context: { postType, postId } }) => {
     const blockProps = useBlockProps();
@@ -23,7 +24,7 @@ const Edit = ({ context: { postType, postId } }) => {
             {hasEmergencyAlert && (
                 <div className="emergency-alert-pill badge rounded-pill text-dark">
                     <i className="bi bi-broadcast"></i>
-                    <span> BC Emergency Alert Issued</span>
+                    <span> {__('BC Emergency Alert Issued')}</span>
                 </div>
             )}
         </div>
