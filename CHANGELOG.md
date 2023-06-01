@@ -1,4 +1,5 @@
-### 1.0.0: May 25, 2023
+### 1.0.0: June 1, 2023
+* Added Emergency Alert pattern, created Post Emergency Alert block for displaying badge on Event cards ([DESCW-1202](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1202))
 * Updated Homepage pattern ([DESCW-1177](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1177))
 * Improved Aggregate Event cards metadata display, created Post Meta Display block, updated ACF fields to not require full icon HTML  ([DESCW-1138](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1138))
 * Added Aggregated Event cards pattern ([DESCW-1191](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1191))
