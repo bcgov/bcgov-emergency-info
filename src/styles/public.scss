@@ -106,3 +106,18 @@ p.areoi-icon:not(.no-circle) {
         }
     }
 }
+
+.collapse-button {
+    border: none;
+
+    &:hover {
+
+        .btn {
+            background-color: transparent;
+        }
+    }
+
+    i {
+        margin-left: 0 !important;
+    }
+}

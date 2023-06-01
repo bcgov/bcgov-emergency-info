@@ -274,32 +274,42 @@ class Plugin {
             [
                 'slug'  => 'support-gray-00',
                 'color' => '#FAFBFF',
-                'name'  => 'Support Gray 00',
+                'name'  => __( 'Support Gray 00' ),
             ],
             [
                 'slug'  => 'support-gray-01',
                 'color' => '#F9FAFF',
-                'name'  => 'Support Gray 01',
+                'name'  => __( 'Support Gray 01' ),
             ],
             [
                 'slug'  => 'support-gray-02',
                 'color' => '#DBDFF0',
-                'name'  => 'Support Gray 02',
+                'name'  => __( 'Support Gray 02' ),
             ],
             [
                 'slug'  => 'support-green',
                 'color' => '#388A5E',
-                'name'  => 'Support Green',
+                'name'  => __( 'Support Green' ),
             ],
             [
                 'slug'  => 'support-yellow',
                 'color' => '#F88907',
-                'name'  => 'Support Yellow',
+                'name'  => __( 'Support Yellow' ),
             ],
             [
                 'slug'  => 'support-red',
                 'color' => '#D90932',
-                'name'  => 'Support Red',
+                'name'  => __( 'Support Red' ),
+            ],
+            [
+                'slug'  => 'emergency-alert',
+                'color' => '#EAA00B',
+                'name'  => __( 'Emergency Alert' ),
+            ],
+            [
+                'slug'  => 'emergency-alert-secondary',
+                'color' => '#F8CD77',
+                'name'  => __( 'Emergency Alert Secondary' ),
             ],
         ];
 
@@ -331,24 +341,24 @@ class Plugin {
         $new_colours[] = [
             'slug'  => 'hazard-inactive',
             'color' => '#6B6A85',
-            'name'  => 'Hazard inactive primary',
+            'name'  => __( 'Hazard inactive primary' ),
         ];
         $new_colours[] = [
             'slug'  => 'hazard-inactive-secondary',
             'color' => '#72727E',
-            'name'  => 'Hazard inactive secondary',
+            'name'  => __( 'Hazard inactive secondary' ),
         ];
 
         // Add default hazard colors (when no hazard selected).
         $new_colours[] = [
             'slug'  => 'hazard-default',
             'color' => 'rgba(179, 179, 179, 1)',
-            'name'  => 'Hazard default primary',
+            'name'  => __( 'Hazard default primary' ),
         ];
         $new_colours[] = [
             'slug'  => 'hazard-default-secondary',
             'color' => 'rgba(179, 179, 179, .1)',
-            'name'  => 'Hazard default secondary',
+            'name'  => __( 'Hazard default secondary' ),
         ];
 
         $current_data['settings']['color']['palette']['theme'] = array_merge( $old_colours, $new_colours );

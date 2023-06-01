@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "title": "Post Emergency Alert",
+  "name": "emergency-info/post-emergency-alert",
+  "category": "emergency-info",
+  "icon": "bell",
+  "textdomain": "emergency-info",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "supports": {
+    "typography": {
+      "fontSize": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  }
+}
