@@ -1,4 +1,6 @@
-### 1.0.0: June 1, 2023
+### 1.0.0: June 2, 2023
+* Extended ability to override the hazard name in event headers to all hazard types instead of only Generic ([DESCW-1216](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1216))
+* Updated all event patterns with minor fixes ([DESCW-1215](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1215))
 * Added Emergency Alert pattern, created Post Emergency Alert block for displaying badge on Event cards ([DESCW-1202](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1202))
 * Updated Homepage pattern ([DESCW-1177](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1177))
 * Improved Aggregate Event cards metadata display, created Post Meta Display block, updated ACF fields to not require full icon HTML  ([DESCW-1138](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1138))
