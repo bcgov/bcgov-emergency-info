@@ -29,12 +29,15 @@ function render_block_post_hazard_title(
     }
 
     // Get Hazard Type title.
-    $hazard_type = $hazard_types[0];
-    if ( 'generic' === $hazard_type->slug ) {
-        // Generic hazard type should use the hazard_name override meta field value.
-        $hazard_title = get_field( 'hazard_name', $post_id );
-    } else {
-        $hazard_title = $hazard_type->name;
+    $hazard_type  = $hazard_types[0];
+    $hazard_name  = get_field( 'hazard_name', $post_id );
+    $hazard_title = $hazard_type->name;
+    // Use the hazard_name override if it exists.
+    if ( $hazard_name ) {
+        $hazard_title = $hazard_name;
+    } elseif ( 'generic' === $hazard_type->slug ) {
+        // Generic hazards must have an override, display nothing otherwise.
+        return '';
     }
 
     // Build final block html.

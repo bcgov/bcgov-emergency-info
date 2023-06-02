@@ -34,9 +34,12 @@ const Edit = ({ context: { postType, postId } }) => {
 
         // Get the hazard's title.
         if (hazard) {
-            // Generic hazard type should use the hazard_name override meta field value.
-            if ('generic' === hazard.slug) {
+            // Use the hazard_name override if it exists.
+            if (post.acf.hazard_name.value) {
                 return post.acf.hazard_name.value || null;
+            } else if ('generic' === hazard.slug) {
+                // Generic hazards must have an override, display nothing otherwise.
+                return null;
             }
             return hazard.name;
         }
