@@ -1,0 +1,90 @@
+{
+    "key": "group_647e01f789a0c",
+    "title": "Heat",
+    "fields": [
+        {
+            "key": "field_647e01f79301c",
+            "label": "Affected Area",
+            "name": "card_value_1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Multiple areas across the province",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_647e01f793293",
+            "label": "Card Label 1",
+            "name": "card_label_1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "d-none",
+                "id": ""
+            },
+            "default_value": "Affected area",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_647e01f793495",
+            "label": "Card Icon 1",
+            "name": "card_icon_1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "d-none",
+                "id": ""
+            },
+            "default_value": "bi-geo-alt",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:heat"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1685980881
+}

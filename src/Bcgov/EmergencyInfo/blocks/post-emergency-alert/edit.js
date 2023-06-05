@@ -12,7 +12,7 @@ const Edit = ({ context: { postType, postId } }) => {
     });
 
     useEffect(() => {
-        if (selectPost) {
+        if (selectPost && selectPost.acf.has_emergency_alert) {
             setHasEmergencyAlert(
                 selectPost.acf.has_emergency_alert.value_formated
             );
