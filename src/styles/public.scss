@@ -107,6 +107,42 @@ p.areoi-icon:not(.no-circle) {
     }
 }
 
+// Two-card connected blocks that stack on mobile.
+.two-card {
+
+    @include media-breakpoint-down(md) {
+
+        .col > div {
+            border-radius: 10px;
+
+            > div {
+                border-left-style: none;
+                border-right-style: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        .col {
+
+            &:nth-child(1) {
+
+                >div {
+                    border-right-style: none;
+                }
+            }
+
+            &:nth-child(2) {
+
+                >div {
+                    border-left-style: none;
+                }
+            }
+        }
+    }
+}
+
 .collapse-button {
     border: none;
 
@@ -119,5 +155,28 @@ p.areoi-icon:not(.no-circle) {
 
     i {
         margin-left: 0 !important;
+    }
+}
+
+.warning-map {
+
+    @include media-breakpoint-down(md) {
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        .map-title {
+            width: 50%;
+        }
+
+        img {
+            width: inherit !important;
+            left: auto !important;
+            padding-right: 10% !important;
+        }
     }
 }
