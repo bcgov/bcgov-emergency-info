@@ -35,7 +35,7 @@ const Edit = ({ context: { postType, postId } }) => {
         // Get the hazard's title.
         if (hazard) {
             // Use the hazard_name override if it exists.
-            if (post.acf.hazard_name.value) {
+            if (post?.acf?.hazard_name?.value) {
                 return post.acf.hazard_name.value || null;
             } else if ('generic' === hazard.slug) {
                 // Generic hazards must have an override, display nothing otherwise.
@@ -49,7 +49,7 @@ const Edit = ({ context: { postType, postId } }) => {
     blockProps.className += ' hazard-text';
 
     return title ? (
-        <h1 {...blockProps}>{title}</h1>
+        <h2 {...blockProps}>{title}</h2>
     ) : (
         <div>
             <Spinner />

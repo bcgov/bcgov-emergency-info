@@ -12,17 +12,6 @@
         .hazard-image {
             max-height: 100px;
         }
-
-        .wp-block-mfb-meta-field-block {
-
-            .suffix {
-                margin-left: 0 !important;
-            }
-            // Hide MFB message about missing values, takes up too much space in editor.
-            .value > code {
-                display: none;
-            }
-        }
     }
 
     // Special case for displaying in 2 columns when there are 4 event cards.

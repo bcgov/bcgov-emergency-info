@@ -1,4 +1,5 @@
-### 1.0.0: June 5, 2023
+### 1.0.0: June 6, 2023
+* Created Aggregated Flooding event pattern ([DESCW-1221](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1221))
 * Created Heat event pattern, updated Emergency Alert pattern ([DESCW-1175](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1175))
 * Extended ability to override the hazard name in event headers to all hazard types instead of only Generic ([DESCW-1216](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1216))
 * Updated all event patterns with minor fixes ([DESCW-1215](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1215))
