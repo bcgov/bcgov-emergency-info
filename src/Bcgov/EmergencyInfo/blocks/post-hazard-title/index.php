@@ -43,7 +43,7 @@ function render_block_post_hazard_title(
     // Build final block html.
     return sprintf(
         '
-        <h1 %s>%s</h1>
+        <h2 %s>%s</h2>
         ',
         $wrapper_attributes,
         $hazard_title,

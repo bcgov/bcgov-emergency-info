@@ -3,26 +3,6 @@
     "title": "Evacuation",
     "fields": [
         {
-            "key": "field_64656708e8786",
-            "label": "Aggregated Event",
-            "name": "is_aggregated_event",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "message": "Is this an aggregated event?",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
-        },
-        {
             "key": "field_64656777e8788",
             "label": "Affected Area",
             "name": "card_value_1",
@@ -32,7 +12,7 @@
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "37.5",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -52,7 +32,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "37.5",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -178,5 +158,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1685462372
+    "modified": 1686003560
 }
