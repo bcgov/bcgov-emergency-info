@@ -10,7 +10,11 @@
         flex-grow: 1;
 
         .hazard-image {
-            max-height: 100px;
+            padding: 10px;
+
+            img {
+                max-height: 80px !important;
+            }
         }
     }
 

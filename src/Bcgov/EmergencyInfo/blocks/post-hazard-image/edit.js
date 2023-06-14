@@ -51,17 +51,17 @@ const Edit = ({ context: { postType, postId } }) => {
     });
 
     const imageUrl = getMediaSourceUrlBySizeSlug(image, 'medium');
-    const classes = 'hazard-image hazard-background p-3';
+    const classes = 'hazard-image hazard-background';
 
     return (
         <div {...blockProps}>
-            {image ? (
-                <img className={classes} src={imageUrl} alt={image.alt_text} />
-            ) : (
-                <div className={classes}>
+            <div className={classes}>
+                {image ? (
+                    <img src={imageUrl} alt={image.alt_text} />
+                ) : (
                     <Spinner />
-                </div>
-            )}
+                )}
+            </div>
         </div>
     );
 };
