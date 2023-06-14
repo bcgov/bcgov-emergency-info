@@ -1,4 +1,6 @@
-### 1.0.0: June 8, 2023
+### 1.0.0: June 14, 2023
+* Updated patterns for accessibility ([DESCW-1211](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1211))
+* Updated patterns with minor fixes ([DESCW-1229](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1229))
 * Created Tsunami event pattern ([DESCW-1176](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1176))
 * Created Aggregated Flooding event pattern ([DESCW-1221](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1221))
 * Created Heat event pattern, updated Emergency Alert pattern ([DESCW-1175](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1175))

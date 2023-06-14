@@ -20,7 +20,7 @@ function render_block_post_hazard_image(
     $hazard_types       = get_the_terms( $event, 'hazard_type' );
     $wrapper_attributes = get_block_wrapper_attributes(
         [
-			'class' => 'hazard-image hazard-background p-3',
+			'class' => 'hazard-image hazard-background',
 		]
     );
 
@@ -47,7 +47,9 @@ function render_block_post_hazard_image(
     // Build final block html.
     return sprintf(
         '
-        <img %s loading="lazy" decoding="async" alt="%s" srcset="%s" src="%s" sizes="%s">
+        <div %s>
+            <img loading="lazy" decoding="async" alt="%s" srcset="%s" src="%s" sizes="%s">
+        </div>
         ',
         $wrapper_attributes,
         $hazard_type->name,
