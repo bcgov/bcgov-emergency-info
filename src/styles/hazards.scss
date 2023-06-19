@@ -22,7 +22,22 @@
 }
 
 // Create classes with correct colors for each hazard type.
-$hazards: "amber-alert", "avalanche", "earthquake", "heat", "flood", "generic", "tsunami", "wildfire";
+$hazards:
+    "amber-alert",
+    "avalanche",
+    "disease-outbreak",
+    "earthquake",
+    "emergency-alert",
+    "extreme-cold",
+    "flood",
+    "generic",
+    "hazardous-material-spill",
+    "heat",
+    "landslide",
+    "power-outage",
+    "severe-weather",
+    "tsunami",
+    "wildfire";
 
 @each $hazard in $hazards {
     .hazard_type-#{$hazard}:not(.inactive) {
@@ -32,12 +47,6 @@ $hazards: "amber-alert", "avalanche", "earthquake", "heat", "flood", "generic", 
         @include hazard-styles($primaryColor, $secondaryColor);
     }
 }
-
-// Set defaults for when an event has no hazard type selected.
-$defaultHazardColor: var(--wp--preset--color--hazard-default);
-$defaultHazardSecondaryColor: var(--wp--preset--color--hazard-default-secondary);
-
-@include hazard-styles($defaultHazardColor, $defaultHazardSecondaryColor);
 
 // Set colors for when an event is no longer active.
 .inactive {

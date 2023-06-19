@@ -1,4 +1,5 @@
-### 1.0.0: June 14, 2023
+### 1.0.0: June 19, 2023
+* Added support for all current hazard types ([DESCW-1254](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1254))
 * Fixed various accessibility issues ([DESCW-1211](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1211))
 * Updated patterns for accessibility ([DESCW-1211](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1211))
 * Updated patterns with minor fixes ([DESCW-1229](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1229))

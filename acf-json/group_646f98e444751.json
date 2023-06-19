@@ -135,6 +135,102 @@
                 "operator": "==",
                 "value": "hazard_type:generic"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:avalanche"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:disease-outbreak"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:emergency-alert"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:extreme-cold"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:hazardous-material-spill"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:landslide"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:power-outage"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "hazard_type:severe-weather"
+            }
         ]
     ],
     "menu_order": 1,
@@ -146,5 +242,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1686082295
+    "modified": 1687197531
 }
