@@ -18,11 +18,7 @@ function render_block_post_hazard_title(
     $post_id            = $block->context['postId'];
     $event              = get_post( $post_id );
     $hazard_types       = get_the_terms( $event, 'hazard_type' );
-    $wrapper_attributes = get_block_wrapper_attributes(
-        [
-			'class' => 'hazard-text',
-		]
-    );
+    $wrapper_attributes = get_block_wrapper_attributes();
 
     if ( is_wp_error( $hazard_types ) || empty( $hazard_types ) ) {
         return '';
@@ -43,7 +39,7 @@ function render_block_post_hazard_title(
     // Build final block html.
     return sprintf(
         '
-        <h2 %s>%s</h2>
+        <p %s>%s</p>
         ',
         $wrapper_attributes,
         $hazard_title,

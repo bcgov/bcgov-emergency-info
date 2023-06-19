@@ -1,4 +1,5 @@
 ### 1.0.0: June 14, 2023
+* Fixed various accessibility issues ([DESCW-1211](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1211))
 * Updated patterns for accessibility ([DESCW-1211](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1211))
 * Updated patterns with minor fixes ([DESCW-1229](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1229))
 * Created Tsunami event pattern ([DESCW-1176](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1176))

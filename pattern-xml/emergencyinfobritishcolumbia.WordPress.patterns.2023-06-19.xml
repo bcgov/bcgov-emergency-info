@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-06-14 20:32" -->
+	<!-- generator="WordPress/6.2.2" created="2023-06-19 15:47" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Emergency Info BC 2023 </title>
 	<link>https://test.vanity.blog.gov.bc.ca/eibc</link>
 	<description>Government of British Columbia</description>
-	<pubDate>Wed, 14 Jun 2023 20:32:14 +0000</pubDate>
+	<pubDate>Mon, 19 Jun 2023 15:47:05 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://test.vanity.blog.gov.bc.ca/</wp:base_site_url>

@@ -30,10 +30,10 @@ function render_block_post_social_share(
         '
         <div %1$s>
             <div class="dropdown">	
-                <a id="share-menu" class="btn position-relative btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" role="button" aria-expanded="false" aria-label="%3$s">
+                <button id="share-menu" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" aria-label="%3$s">
                     <i class="bi-send-fill me-3 align-middle" style="font-size: 24px;"></i>
                     %3$s
-                </a>
+                </button>
                 <div class="dropdown-menu" role="menu" aria-labelledby="share-menu">
                     <a class="dropdown-item" role="menuitem" href="https://twitter.com/intent/tweet?url=%2$s">		
                         <span class="areoi-icon"><i class="text-dark bi-twitter"></i></span>
