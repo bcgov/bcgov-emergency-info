@@ -8,8 +8,8 @@ export const Edit = ({ context: { postType, postId } }) => {
     return (
         <div {...blockProps}>
             <div className="dropdown">
-                <a
-                    className="btn areoi-has-url position-relative btn-outline-dark dropdown-toggle"
+                <button
+                    className="btn position-relative btn-outline-primary dropdown-toggle"
                     data-bs-toggle="dropdown"
                     data-bs-auto-close="true"
                     aria-expanded="false"
@@ -20,7 +20,7 @@ export const Edit = ({ context: { postType, postId } }) => {
                         style={{ 'font-size': '24px' }}
                     ></i>
                     Share
-                </a>
+                </button>
                 <div className="dropdown-menu" aria-labelledby="">
                     <a
                         className="dropdown-item"

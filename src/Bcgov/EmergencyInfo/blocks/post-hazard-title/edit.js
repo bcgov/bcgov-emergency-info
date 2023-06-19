@@ -46,10 +46,8 @@ const Edit = ({ context: { postType, postId } }) => {
         return null;
     });
 
-    blockProps.className += ' hazard-text';
-
     return title ? (
-        <h2 {...blockProps}>{title}</h2>
+        <p {...blockProps}>{title}</p>
     ) : (
         <div>
             <Spinner />
