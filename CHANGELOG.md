@@ -1,4 +1,5 @@
 ### 1.0.0: June 19, 2023
+* Fixed bug with Hazard Type select input on Event pages only showing the first 10 results ([DESCW-1254](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1254))
 * Added support for all current hazard types ([DESCW-1254](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1254))
 * Fixed various accessibility issues ([DESCW-1211](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1211))
 * Updated patterns for accessibility ([DESCW-1211](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1211))
