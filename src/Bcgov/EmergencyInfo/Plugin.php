@@ -301,16 +301,6 @@ class Plugin {
                 'color' => '#D90932',
                 'name'  => __( 'Support Red' ),
             ],
-            [
-                'slug'  => 'emergency-alert',
-                'color' => '#EAA00B',
-                'name'  => __( 'Emergency Alert' ),
-            ],
-            [
-                'slug'  => 'emergency-alert-secondary',
-                'color' => '#F8CD77',
-                'name'  => __( 'Emergency Alert Secondary' ),
-            ],
         ];
 
         // Get all terms from hazard_type taxonomy.
@@ -345,20 +335,8 @@ class Plugin {
         ];
         $new_colours[] = [
             'slug'  => 'hazard-inactive-secondary',
-            'color' => '#72727E',
+            'color' => '#9393A9',
             'name'  => __( 'Hazard inactive secondary' ),
-        ];
-
-        // Add default hazard colors (when no hazard selected).
-        $new_colours[] = [
-            'slug'  => 'hazard-default',
-            'color' => 'rgba(179, 179, 179, 1)',
-            'name'  => __( 'Hazard default primary' ),
-        ];
-        $new_colours[] = [
-            'slug'  => 'hazard-default-secondary',
-            'color' => 'rgba(179, 179, 179, .1)',
-            'name'  => __( 'Hazard default secondary' ),
         ];
 
         $current_data['settings']['color']['palette']['theme'] = array_merge( $old_colours, $new_colours );
