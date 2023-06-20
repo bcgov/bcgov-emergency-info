@@ -308,6 +308,7 @@ class Plugin {
             [
 				'taxonomy'   => 'hazard_type',
 				'hide_empty' => false,
+                'number'     => 0,
 			]
         );
         // Add primary and secondary colors for each hazard_type.

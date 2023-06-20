@@ -29,7 +29,7 @@ class HazardType extends Component {
             });
         }
 
-        apiFetch({ path: '/wp/v2/hazard_type' }).then(
+        apiFetch({ path: '/wp/v2/hazard_type?per_page=-1' }).then(
             (terms) => {
                 const options = terms.map((term) => {
                     return { label: term.name, value: term.id };
