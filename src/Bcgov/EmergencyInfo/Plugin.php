@@ -301,6 +301,16 @@ class Plugin {
                 'color' => '#D90932',
                 'name'  => __( 'Support Red' ),
             ],
+            [
+                'slug'  => 'emergency-alert',
+                'color' => '#EAA00B',
+                'name'  => __( 'Emergency Alert' ),
+            ],
+            [
+                'slug'  => 'emergency-alert-secondary',
+                'color' => '#F8CD77',
+                'name'  => __( 'Emergency Alert Secondary' ),
+            ],
         ];
 
         // Get all terms from hazard_type taxonomy.
