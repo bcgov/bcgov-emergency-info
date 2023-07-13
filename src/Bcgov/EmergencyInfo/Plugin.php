@@ -52,6 +52,13 @@ class Plugin {
      */
     public static $cpt_ui_json_dir = 'cpt-ui-json';
 
+    /**
+     * Array of event statuses that should display with inactive styling.
+     *
+     * @var array $inactive_statuses Array of event statuses that should display with inactive styling.
+     */
+    public static $inactive_statuses = [ 'expired', 'referred' ];
+
 	/**
 	 * Define the core functionality of the plugin.
 	 *
@@ -374,7 +381,7 @@ class Plugin {
                 }
 
                 $status = get_field( 'status', $post->ID, false );
-                if ( 'active' !== $status ) {
+                if ( in_array( $status, self::$inactive_statuses, true ) ) {
                     $classes[] = 'inactive';
                 }
             }
@@ -403,7 +410,7 @@ class Plugin {
                 }
 
                 $status = get_field( 'status', $post->ID, false );
-                if ( 'active' !== $status ) {
+                if ( in_array( $status, self::$inactive_statuses, true ) ) {
                     $classes .= ' inactive';
                 }
             }
