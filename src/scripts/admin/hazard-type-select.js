@@ -23,12 +23,6 @@ class HazardType extends Component {
     componentDidMount() {
         const { hazardType } = this.props;
 
-        if (hazardType && hazardType[0]) {
-            this.setState({
-                selected: hazardType[0],
-            });
-        }
-
         apiFetch({ path: '/wp/v2/hazard_type?per_page=-1' }).then(
             (terms) => {
                 const options = terms.map((term) => {
@@ -36,6 +30,18 @@ class HazardType extends Component {
                 });
 
                 this.setState({ options, message: '' });
+
+                if (hazardType && hazardType[0]) {
+                    // Set initial selected value to the current hazard type if one exists.
+                    this.setState({
+                        selected: hazardType[0],
+                    });
+                } else {
+                    // Set initial selected value to default (first hazard type option).
+                    const defaultOption = options[0].value;
+                    // Trigger a change so admin_body_class hook is applied (see Plugin.php).
+                    this.onUpdateHazardType({ option: defaultOption });
+                }
             },
             (error) => {
                 this.setState({ message: error.message });

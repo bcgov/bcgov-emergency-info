@@ -1,4 +1,5 @@
 ### 1.0.0: July 13, 2023
+* Updated Hazard Type select input on Event pages to default properly to the first taxonomy term ([DESCW-1361](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1361))
 * Created Catastrophic Earthquake and Tsunami patterns ([DESCW-1209](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1209))
 * Reverted removal of Emergency Alert color, still needed for post-emergency-alert block ([DESCW-1254](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1254))
 * Updated css to use BC Sans font
