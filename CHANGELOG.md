@@ -1,4 +1,5 @@
 ### 1.0.0: July 13, 2023
+* Added Hidden ACF field to allow posts to be hidden from the homepage while still being active ([DESCW-1359](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1359))
 * Updated Hazard Type select input on Event pages to default properly to the first taxonomy term ([DESCW-1361](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1361))
 * Created Catastrophic Earthquake and Tsunami patterns ([DESCW-1209](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1209))
 * Reverted removal of Emergency Alert color, still needed for post-emergency-alert block ([DESCW-1254](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1254))
