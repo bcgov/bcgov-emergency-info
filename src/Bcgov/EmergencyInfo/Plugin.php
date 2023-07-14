@@ -258,6 +258,18 @@ class Plugin {
                 'key'     => 'updated_time',
                 'compare' => 'EXISTS',
             ],
+            'event_hidden_clause'       => [
+                'relation'                => 'OR',
+                'event_hidden_not_exists' => [
+                    'key'     => 'hidden',
+                    'compare' => 'NOT EXISTS',
+                ],
+                'event_not_hidden'        => [
+                    'key'     => 'hidden',
+                    'compare' => '!=',
+                    'value'   => '1',
+                ],
+            ],
         ];
         $query['orderby']    = [
             'event_updated_date_clause' => 'DESC',
