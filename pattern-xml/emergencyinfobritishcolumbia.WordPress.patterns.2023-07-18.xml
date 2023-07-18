@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-13 18:54" -->
+	<!-- generator="WordPress/6.2.2" created="2023-07-18 21:45" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Emergency Info BC 2023 </title>
 	<link>https://test.vanity.blog.gov.bc.ca/eibc</link>
 	<description>Government of British Columbia</description>
-	<pubDate>Thu, 13 Jul 2023 18:54:00 +0000</pubDate>
+	<pubDate>Tue, 18 Jul 2023 21:45:52 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://test.vanity.blog.gov.bc.ca/</wp:base_site_url>
@@ -211,8 +211,8 @@
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
 <p>If you are in the area under Evacuation Order, you are at risk and must leave <strong>immediately</strong>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -223,8 +223,8 @@
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"d-inline"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"className":"d-inline"} -->
 <p class="d-inline"><strong>Evacuate following this route(s): </strong></p>
 <!-- /wp:paragraph -->
 
@@ -243,8 +243,8 @@
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"d-inline"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"className":"d-inline"} -->
 <p class="d-inline"><strong>Register for: </strong></p>
 <!-- /wp:paragraph -->
 
@@ -263,8 +263,8 @@
 <p class="areoi-icon">4</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
 <p><strong>View Evacuation Order</strong> for information specific to your community.</p>
 <!-- /wp:paragraph -->
 
@@ -313,8 +313,8 @@
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
 <p>If you are in the area under Evacuation Alert, be ready to leave on short notice.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -325,8 +325,8 @@
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"d-inline"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"className":"d-inline"} -->
 <p class="d-inline">Review your </p>
 <!-- /wp:paragraph -->
 
@@ -357,8 +357,8 @@
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
 <p>Refer to the Evacuation Order for information specific to your community.</p>
 <!-- /wp:paragraph -->
 
@@ -501,11 +501,7 @@
 <div id="Evacuation-Stages" class="wp-block-group" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontSize":"small"} -->
 <h2 class="wp-block-heading has-small-font-size"><strong>Evacuation Stages</strong></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Understanding Flood Advisories</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
@@ -664,8 +660,8 @@
 		<wp:post_id>2242</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-02 14:26:31]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-02 21:26:31]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-30 14:00:07]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-30 21:00:07]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-17 12:23:44]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-17 19:23:44]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[wildfire]]></wp:post_name>
@@ -1393,7 +1389,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"a009b5a1-c4f6-4d7b-b711-052a474d022d"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px"},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"borderColor":"support-gray-02","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-support-gray-02-border-color" style="border-radius:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":1832,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title="" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title=""/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1483,7 +1479,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3365,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1500,8 +1496,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
 <p>If you are in the area under Evacuation Order, you are at risk and must leave <strong>immediately</strong>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -1512,8 +1508,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"d-inline"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"className":"d-inline"} -->
 <p class="d-inline"><strong>Evacuate following this route(s): </strong></p>
 <!-- /wp:paragraph -->
 
@@ -1532,8 +1528,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"d-inline"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"className":"d-inline"} -->
 <p class="d-inline"><strong>Register for: </strong></p>
 <!-- /wp:paragraph -->
 
@@ -1552,8 +1548,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">4</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
 <p><strong>View Evacuation Order</strong> for information specific to your community.</p>
 <!-- /wp:paragraph -->
 
@@ -1585,7 +1581,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2272,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/OnPaste.20230427-141358.png" alt="" class="wp-image-2272" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/OnPaste.20230427-141358.png" alt="" class="wp-image-2272" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1602,9 +1598,11 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
 <p>If you are in the area under Evacuation Alert, be ready to leave on short notice.</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","right":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"align-items-start","layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -1612,8 +1610,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"d-inline"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"className":"d-inline"} -->
 <p class="d-inline">Review your </p>
 <!-- /wp:paragraph -->
 
@@ -1644,8 +1642,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
 <p>Refer to the Evacuation Order for information specific to your community.</p>
 <!-- /wp:paragraph -->
 
@@ -1677,7 +1675,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1786,7 +1784,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|support-red","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--support-red);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3767,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -1806,7 +1804,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|support-yellow","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-color:var(--wp--preset--color--support-yellow);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|white"},"left":{"color":"var:preset|color|white"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3239,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-1.png" alt="" class="wp-image-3239" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-1.png" alt="" class="wp-image-3239" title=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -1826,7 +1824,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|support-green","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--support-green);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3762,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -1857,7 +1855,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2371,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1939,8 +1937,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2561</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 21:49:48]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 21:49:48]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-30 13:59:01]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-30 20:59:01]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-14 13:51:37]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-14 20:51:37]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[flood-alert]]></wp:post_name>
@@ -2013,7 +2011,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"a009b5a1-c4f6-4d7b-b711-052a474d022d"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px"},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"borderColor":"support-gray-02","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-support-gray-02-border-color" style="border-radius:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":1832,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title="" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title=""/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2101,7 +2099,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3365,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2118,8 +2116,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
 <p>Stay clear of fast-flowing rivers. Riverbanks may be unstable and dangerous.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -2130,8 +2128,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"d-inline"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"className":"d-inline"} -->
 <p class="d-inline">Visit your </p>
 <!-- /wp:paragraph -->
 
@@ -2177,7 +2175,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2247,7 +2245,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2371,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2309,8 +2307,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2594</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 22:36:09]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 22:36:09]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-30 14:02:45]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-30 21:02:45]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-14 13:48:24]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-14 20:48:24]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[flood-watch]]></wp:post_name>
@@ -2389,7 +2387,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2671,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Vector.png" alt="" class="wp-image-2671" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Vector.png" alt="" class="wp-image-2671" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2491,7 +2489,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3365,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2502,8 +2500,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Remain calm</strong></h3>
 <!-- /wp:heading -->
 
@@ -2518,8 +2516,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Check for damage and hazards</strong></h3>
 <!-- /wp:heading -->
 
@@ -2540,8 +2538,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Listen to instructions</strong></h3>
 <!-- /wp:heading -->
 
@@ -2562,8 +2560,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">4</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Report the earthquake</strong></h3>
 <!-- /wp:heading -->
 
@@ -2584,8 +2582,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">5</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Aftershocks could occur:</strong></h3>
 <!-- /wp:heading -->
 
@@ -2617,7 +2615,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2687,7 +2685,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2371,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2781,8 +2779,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2701</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-11 17:44:27]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-11 17:44:27]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-30 14:09:10]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-30 21:09:10]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-14 13:47:38]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-14 20:47:38]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[earthquake]]></wp:post_name>
@@ -2872,7 +2870,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-support-gray-01-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-top-left-radius:5px;border-top-right-radius:5px"><!-- wp:image {"id":1107,"sizeSlug":"full","linkDestination":"media","style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"className":"amber-alert-image m-0"} -->
-<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title="" /></a></figure>
+<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title=""/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -2892,7 +2890,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-support-gray-01-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-top-left-radius:5px;border-top-right-radius:5px"><!-- wp:image {"id":1107,"sizeSlug":"full","linkDestination":"media","style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"className":"amber-alert-image m-0"} -->
-<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title="" /></a></figure>
+<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title=""/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -2982,7 +2980,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-support-gray-01-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-top-left-radius:5px;border-top-right-radius:5px"><!-- wp:image {"id":1107,"sizeSlug":"full","linkDestination":"media","style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"className":"amber-alert-image m-0"} -->
-<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title="" /></a></figure>
+<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title=""/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -3072,7 +3070,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-support-gray-01-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-top-left-radius:5px;border-top-right-radius:5px"><!-- wp:image {"id":1107,"sizeSlug":"full","linkDestination":"media","style":{"border":{"radius":{"topLeft":"5px","topRight":"5px"}}},"className":"amber-alert-image m-0"} -->
-<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title="" /></a></figure>
+<figure class="wp-block-image size-full has-custom-border amber-alert-image m-0"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" target="_blank" rel="noreferrer noopener"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/400.png" alt="" class="wp-image-1107" style="border-top-left-radius:5px;border-top-right-radius:5px" title=""/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -3173,7 +3171,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false},"className":"px-0"} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3365,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -3184,8 +3182,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Be aware</strong></h3>
 <!-- /wp:heading -->
 
@@ -3200,8 +3198,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>DO NOT approach the victim or suspect</strong></h3>
 <!-- /wp:heading -->
 
@@ -3222,8 +3220,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Report any sightings</strong></h3>
 <!-- /wp:heading -->
 
@@ -3261,7 +3259,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title="" /></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -3307,8 +3305,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2908</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-17 20:08:26]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-17 20:08:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-30 14:15:02]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-30 21:15:02]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-14 13:42:55]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-14 20:42:55]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[amber-alert]]></wp:post_name>
@@ -3371,7 +3369,353 @@ https://twitter.com/EmergencyInfoBC
 		<content:encoded><![CDATA[<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
 <div id="Aggregated-Areas" class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|support-gray-02"}},"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--support-gray-02);margin-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-medium-font-size">Evacuation Orders &amp; Alerts</h2>
+<h2 class="wp-block-heading has-medium-font-size">Evacuation Orders &amp; Alerts [OR Municipalities &amp; Regional Districts Evacuation Information]</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:areoi/row {"block_id":"2892f0a3-bf3d-4058-9f57-8dce52bd7255","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-2","row_cols_md":"row-cols-md-2","row_cols_lg":"row-cols-lg-3","className":"g-3"} -->
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+<!-- /wp:areoi/row --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"},"hideBlock":true} -->
+<div id="Aggregated-Areas" class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|support-gray-02"}},"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--support-gray-02);margin-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"fontSize":"medium"} -->
+<h2 class="wp-block-heading has-medium-font-size">First Nation Evacuation Information</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -3717,8 +4061,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>3181</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-26 17:35:15]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-26 17:35:15]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-13 14:57:33]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-13 21:57:33]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-17 13:07:20]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-17 20:07:20]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[aggregated-event-evacuation-orders-alerts]]></wp:post_name>
@@ -3728,7 +4072,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="events"><![CDATA[Events]]></category>
+										<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+		<category domain="pattern-groups" nicename="events"><![CDATA[Events]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -4541,7 +4886,353 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
 <div id="Aggregated-Areas" class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|support-gray-02"}},"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--support-gray-02);margin-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-medium-font-size">Evacuation Orders &amp; Alerts</h2>
+<h2 class="wp-block-heading has-medium-font-size">Evacuation Orders &amp; Alerts [OR Municipalities &amp; Regional Districts Evacuation Information]</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:areoi/row {"block_id":"2892f0a3-bf3d-4058-9f57-8dce52bd7255","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-2","row_cols_md":"row-cols-md-2","row_cols_lg":"row-cols-lg-3","className":"g-3"} -->
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd9939ec-fbc4-4c19-8de0-033b45bfd528","hideBlock":true} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"aggregated-card d-flex flex-column h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group aggregated-card d-flex flex-column h-100" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"top":{"width":"10px"},"radius":{"topLeft":"10px","topRight":"10px"}}},"className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border" style="border-top-left-radius:10px;border-top-right-radius:10px;border-top-width:10px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"0px","bottomRight":"0px"},"top":{"width":"0px","style":"none"},"right":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"bottom":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"},"left":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"0px","bottomRight":"0px"},"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:emergency-info/post-hazard-image /-->
+
+<!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size">Evacuation alert for <strong>Abbotsford</strong></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"backgroundColor":"white","className":"flex-fill","layout":{"type":"default"}} -->
+<div class="wp-block-group flex-fill has-white-background-color has-background" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-link"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-link " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford website</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-twitter"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-twitter " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Twitter</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-facebook"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-facebook " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">City of Abbotsford Facebook</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:areoi/icon {"block_id":"4bc5af99-90a0-4d44-bca4-e940f72de678","style":"text-dark","icon":"bi-filetype-pdf"} -->
+<div class="wp-block-areoi-icon areoi-icon"><i class="text-dark bi-filetype-pdf " style="font-size:24px"></i></div>
+<!-- /wp:areoi/icon -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-break"} -->
+<p class="text-break" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/contact-channels/report-a-wildfire" title="#example">Evacuation Order</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+<!-- /wp:areoi/row --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"},"hideBlock":true} -->
+<div id="Aggregated-Areas" class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|support-gray-02"}},"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--support-gray-02);margin-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"fontSize":"medium"} -->
+<h2 class="wp-block-heading has-medium-font-size">First Nations Evacuation Information </h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -4996,8 +5687,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Stay clear from hazards</strong></h3>
 <!-- /wp:heading -->
 
@@ -5012,8 +5703,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Understand Evacuation stages</strong></h3>
 <!-- /wp:heading -->
 
@@ -5028,8 +5719,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Stay informed, stay safe</strong></h3>
 <!-- /wp:heading -->
 
@@ -5355,8 +6046,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>3573</wp:post_id>
 		<wp:post_date><![CDATA[2023-06-06 20:26:09]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-06-06 20:26:09]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-26 09:40:45]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-26 16:40:45]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-17 13:06:08]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-17 20:06:08]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[aggregated-flooding]]></wp:post_name>
@@ -6502,8 +7193,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">1</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Remain calm</strong></h3>
 <!-- /wp:heading -->
 
@@ -6518,8 +7209,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">2</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Check for damage and hazards</strong></h3>
 <!-- /wp:heading -->
 
@@ -6540,8 +7231,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">3</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Listen to instructions</strong></h3>
 <!-- /wp:heading -->
 
@@ -6562,8 +7253,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">4</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Report the earthquake</strong></h3>
 <!-- /wp:heading -->
 
@@ -6584,8 +7275,8 @@ https://twitter.com/EmergencyInfoBC
 <p class="areoi-icon">5</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"fontSize":"small"} -->
 <h3 class="wp-block-heading has-small-font-size"><strong>Aftershocks could occur:</strong></h3>
 <!-- /wp:heading -->
 
@@ -6985,8 +7676,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>37902</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 14:45:57]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 21:45:57]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:28:04]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 22:28:04]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-14 13:55:11]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-14 20:55:11]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[earthquake-catastrophic]]></wp:post_name>
