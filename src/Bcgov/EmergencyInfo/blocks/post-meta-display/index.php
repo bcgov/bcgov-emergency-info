@@ -43,7 +43,9 @@ function render_block_post_meta_display(
         '
         <div %s>
             %s
-            <p><strong>%s:</strong> %s</p>
+            <div>
+                <strong>%s:</strong> %s
+            </div>
         </div>',
         $wrapper_attributes,
         $icon_html,
