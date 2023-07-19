@@ -14,7 +14,7 @@ body {
 
 // Set outline when tabbing through pages to have better contrast.
 :focus-visible {
-    outline: var(--wp--preset--color--primary-brand) auto 1px;
+    outline: currentcolor auto 1px;
 }
 
 :root .editor-styles-wrapper,
