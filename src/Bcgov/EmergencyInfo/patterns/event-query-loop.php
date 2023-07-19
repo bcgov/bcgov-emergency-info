@@ -45,7 +45,7 @@ return [
         <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"0","left":"var:preset|spacing|30"}},"border":{"radius":"10px"}},"backgroundColor":"white","className":"soft-shadow","layout":{"type":"default"}} -->
         <div class="wp-block-group soft-shadow has-white-background-color has-background" style="border-radius:10px;padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:0;padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":1637,"sizeSlug":"full","linkDestination":"none","className":"d-none d-sm-block"} -->
-        <figure class="wp-block-image size-full d-none d-sm-block"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/Current_Emergencies.png" alt="" class="wp-image-1637" title=""/></figure>
+        <figure class="wp-block-image size-full d-none d-sm-block"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/Current_Emergencies.png" alt="" class="wp-image-1637" title=""/></figure>
         <!-- /wp:image -->
         
         <!-- wp:paragraph -->
