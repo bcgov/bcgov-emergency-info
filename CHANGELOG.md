@@ -1,4 +1,6 @@
-### 1.0.0: July 19, 2023
+### 1.0.0: July 20, 2023
+* Updated Emergency Alert pattern to remove subheading ([DESCW-1363](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1363))
+* Updated Emergency Alert and Emergency Alert pill block CSS to use inactive styles when event is set inactive ([DESCW-1360](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1360))
 * Updated Event Query Loop pattern to include Hazard title ([DESCW-1356](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1356))
 * Improved accessibility and general style issues across patterns ([DESCW-1358](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1358))
 * Added Hidden ACF field to allow posts to be hidden from the homepage while still being active ([DESCW-1359](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1359))
