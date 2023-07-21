@@ -1,7 +1,21 @@
 .wp-block-emergency-info-post-emergency-alert {
 
     .emergency-alert-pill {
+        color: var(--bs-dark);
         background-color: var(--wp--preset--color--emergency-alert-secondary);
         border: 1px solid var(--wp--preset--color--emergency-alert);
+    }
+}
+
+.inactive {
+
+    .wp-block-emergency-info-post-emergency-alert {
+        $bg: var(--wp--preset--color--hazard-inactive);
+
+        .emergency-alert-pill {
+            color: var(--wp--preset--color--white);
+            background-color: $bg;
+            border: 1px solid $bg;
+        }
     }
 }

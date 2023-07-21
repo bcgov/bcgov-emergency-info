@@ -22,7 +22,7 @@ const Edit = ({ context: { postType, postId } }) => {
     return (
         <div {...blockProps}>
             {hasEmergencyAlert && (
-                <div className="emergency-alert-pill badge rounded-pill text-dark">
+                <div className="emergency-alert-pill badge rounded-pill">
                     <i className="bi bi-broadcast"></i>
                     <span> {__('BC Emergency Alert Issued')}</span>
                 </div>

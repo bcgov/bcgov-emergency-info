@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-18 21:45" -->
+	<!-- generator="WordPress/6.2.2" created="2023-07-20 20:38" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Emergency Info BC 2023 </title>
 	<link>https://test.vanity.blog.gov.bc.ca/eibc</link>
 	<description>Government of British Columbia</description>
-	<pubDate>Tue, 18 Jul 2023 21:45:52 +0000</pubDate>
+	<pubDate>Thu, 20 Jul 2023 20:38:23 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://test.vanity.blog.gov.bc.ca/</wp:base_site_url>
@@ -510,8 +510,8 @@
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|support-red","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--support-red);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3767,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title="" /></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36052,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Evac-order-3.png" alt="" class="wp-image-36052" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -530,8 +530,8 @@
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|support-yellow","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-color:var(--wp--preset--color--support-yellow);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|white"},"left":{"color":"var:preset|color|white"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3239,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-1.png" alt="" class="wp-image-3239" title="" /></figure>
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36062,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/EvacAlert_4-1-1.png" alt="" class="wp-image-36062" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -550,8 +550,8 @@
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|support-green","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--support-green);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3762,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title="" /></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36057,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Evac-rescind2-1.png" alt="" class="wp-image-36057" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -660,8 +660,8 @@
 		<wp:post_id>2242</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-02 14:26:31]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-02 21:26:31]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-17 12:23:44]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-17 19:23:44]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 12:29:45]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 19:29:45]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[wildfire]]></wp:post_name>
@@ -671,8 +671,8 @@
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="wildfire"><![CDATA[Wildfire]]></category>
-		<category domain="pattern-groups" nicename="wildfire"><![CDATA[Wildfire]]></category>
+										<category domain="pattern-groups" nicename="wildfire"><![CDATA[Wildfire]]></category>
+		<category domain="hazard_type" nicename="wildfire"><![CDATA[Wildfire]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -756,7 +756,7 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"0","left":"var:preset|spacing|30"}},"border":{"radius":"10px"}},"backgroundColor":"white","className":"soft-shadow","layout":{"type":"default"}} -->
 <div class="wp-block-group soft-shadow has-white-background-color has-background" style="border-radius:10px;padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:0;padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":1637,"sizeSlug":"full","linkDestination":"none","className":"d-none d-sm-block"} -->
-<figure class="wp-block-image size-full d-none d-sm-block"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/Current_Emergencies.png" alt="" class="wp-image-1637" title=""/></figure>
+<figure class="wp-block-image size-full d-none d-sm-block"><img src="https://localhost/eibc/wp-content/uploads/sites/2/2023/04/Current_Emergencies.png" alt="" class="wp-image-1637" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -804,7 +804,7 @@
 <!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"#035ac0","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:#035ac0;border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":35057,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -813,7 +813,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>River levels have exceeded bankfull or will exceed bankfull imminently, and that flooding of areas adjacent to the rivers affected will result.</p>
+<p>River levels have exceeded river banks or will exceed river banks soon. Flooding near rivers will occur.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -824,7 +824,7 @@
 <!-- wp:group {"style":{"border":{"top":{"color":"#348cf3","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-color:#348cf3;border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|white"},"left":{"color":"var:preset|color|white"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":35057,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -833,7 +833,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>River levels are rising and will approach or may exceed bankfull. Flooding of areas adjacent to affected rivers may occur.</p>
+<p>River levels are rising and will approach or may exceed river banks. Flooding near rivers may occur.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -844,7 +844,7 @@
 <!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"#50c0ff","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:#50c0ff;border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":35057,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -853,7 +853,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>River levels are rising or expected to rise rapidly, but no major flooding is expected. Minor flooding in low-lying areas is possible.</p>
+<p>River levels are rising or expected to rise rapidly. Minor flooding in low-lying areas is possible.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -884,7 +884,7 @@
 <!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|support-red","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--support-red);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3767,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -904,7 +904,7 @@
 <!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|support-yellow","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-color:var(--wp--preset--color--support-yellow);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|white"},"left":{"color":"var:preset|color|white"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3239,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-1.png" alt="" class="wp-image-3239" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-1.png" alt="" class="wp-image-3239" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -924,7 +924,7 @@
 <!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|support-green","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--support-green);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3762,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -960,7 +960,7 @@ https://twitter.com/EmergencyInfoBC
 
 <!-- wp:areoi/column {"block_id":"0d0fb620-afdb-4176-82dd-11a334bc9e05","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"order_xs":"order-0","order_sm":"order-sm-0","order_md":"order-md-2"} -->
 <!-- wp:cover {"url":"https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/image-6-1024x1019-1.png","id":1552,"dimRatio":0,"isDark":false,"className":"h-100 d-flex align-items-start","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
-<div class="wp-block-cover is-light h-100 d-flex align-items-start" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-1552" alt="" src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/image-6-1024x1019-1.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"bottom":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light h-100 d-flex align-items-start" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-1552" alt="" src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/image-6-1024x1019-1.png" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"bottom":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":1,"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"extra-large"} -->
 <h1 class="wp-block-heading has-extra-large-font-size" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><strong>Public Safety Conditions across B.C.</strong></h1>
 <!-- /wp:heading --></div>
@@ -1114,7 +1114,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
 <div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"align":"center","id":3205,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-stop-137987-1.png" alt="" class="wp-image-3205" title=""/></figure>
+<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-stop-137987-1.png" alt="" class="wp-image-3205" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -1129,7 +1129,7 @@ https://twitter.com/EmergencyInfoBC
 <div class="wp-block-group h-100 has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|30","bottom":"0","left":"var:preset|spacing|30"}},"border":{"right":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:0;padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
 <div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"align":"center","id":3867,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-stop-137987-1-1.png" alt="" class="wp-image-3867" title=""/></figure>
+<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-stop-137987-1-1.png" alt="" class="wp-image-3867" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -1144,7 +1144,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"topRight":"10px","bottomRight":"10px"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
 <div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"align":"center","id":3211,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-stop-137987-1-3.png" alt="" class="wp-image-3211" title=""/></figure>
+<figure class="wp-block-image aligncenter size-full is-style-default"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-stop-137987-1-3.png" alt="" class="wp-image-3211" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -1165,7 +1165,7 @@ https://twitter.com/EmergencyInfoBC
 <div id="Get-Prepared" class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"className":"alignwide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20"}},"border":{"bottom":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--support-gray-02);padding-right:var(--wp--preset--spacing--20)"><!-- wp:image {"align":"center","id":1602,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image aligncenter size-full"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/image-7-300x89-1.png" alt="Prepared BC Logo" class="wp-image-1602" title=""/></a></figure>
+<figure class="wp-block-image aligncenter size-full"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/04/image-7-300x89-1.png" alt="Prepared BC Logo" class="wp-image-1602" title="" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -1177,7 +1177,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"dcdecc53-0e78-433e-8f9c-f0524bfd925e","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"className":"hazard_type-flood"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"soft-shadow hazard-border","layout":{"type":"constrained"}} -->
 <div class="wp-block-group soft-shadow hazard-border" style="border-radius:10px;border-top-width:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"align":"center","id":3642,"width":113,"height":113,"sizeSlug":"full","linkDestination":"custom","className":"hazard-image hazard-background is-style-default"} -->
-<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/floods"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flooding-1.png" alt="Flooding" class="wp-image-3642" width="113" height="113" title=""/></a></figure>
+<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/floods"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flooding-1.png" alt="Flooding" class="wp-image-3642" width="113" height="113" title="" /></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large"} -->
@@ -1189,7 +1189,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"63b95edb-79ab-4506-82e9-50f46605bde6","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"className":"hazard_type-wildfire"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"soft-shadow hazard-border","layout":{"type":"constrained"}} -->
 <div class="wp-block-group soft-shadow hazard-border" style="border-radius:10px;border-top-width:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"align":"center","id":4052,"width":113,"height":113,"sizeSlug":"full","linkDestination":"custom","className":"hazard-image hazard-background is-style-default"} -->
-<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/wildfires"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Wildfire-new.png" alt="Wildfire" class="wp-image-4052" width="113" height="113" title=""/></a></figure>
+<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/wildfires"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Wildfire-new.png" alt="Wildfire" class="wp-image-4052" width="113" height="113" title="" /></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large"} -->
@@ -1201,7 +1201,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"88378c4c-5f49-41a9-bc94-321af124ff9b","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"className":"hazard_type-tsunami"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"soft-shadow hazard-border","layout":{"type":"constrained"}} -->
 <div class="wp-block-group soft-shadow hazard-border" style="border-radius:10px;border-top-width:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"align":"center","id":4067,"width":113,"height":113,"sizeSlug":"full","linkDestination":"custom","className":"hazard-image hazard-background is-style-default"} -->
-<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/earthquakes-tsunamis/tsunami"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/tsunami.png" alt="Tsunami" class="wp-image-4067" width="113" height="113" title=""/></a></figure>
+<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/earthquakes-tsunamis/tsunami"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/tsunami.png" alt="Tsunami" class="wp-image-4067" width="113" height="113" title="" /></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large"} -->
@@ -1213,7 +1213,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"5da7042b-e3c6-4063-bb7e-5ef8ecb8b337","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"className":"hazard_type-heat"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"soft-shadow hazard-border","layout":{"type":"constrained"}} -->
 <div class="wp-block-group soft-shadow hazard-border" style="border-radius:10px;border-top-width:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"align":"center","id":3652,"width":113,"height":113,"sizeSlug":"full","linkDestination":"custom","className":"hazard-image hazard-background is-style-default"} -->
-<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/severe-weather/extreme-heat"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Heat.png" alt="Heat" class="wp-image-3652" width="113" height="113" title=""/></a></figure>
+<figure class="wp-block-image aligncenter size-full is-resized hazard-image hazard-background is-style-default"><a href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/preparedbc/know-your-hazards/severe-weather/extreme-heat"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Heat.png" alt="Heat" class="wp-image-3652" width="113" height="113" title="" /></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large"} -->
@@ -1308,8 +1308,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2514</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-05 23:31:30]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-05 23:31:30]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-13 15:14:05]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-13 22:14:05]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 10:37:14]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 17:37:14]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[homepage]]></wp:post_name>
@@ -1319,14 +1319,15 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="homepage"><![CDATA[Homepage]]></category>
+										<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+		<category domain="pattern-groups" nicename="homepage"><![CDATA[Homepage]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_oembed_ce6e7d484dc2db75fcac9135848c469a]]></wp:meta_key>
 		<wp:meta_value><![CDATA[<a class="twitter-timeline" data-width="500" data-height="750" data-dnt="true" href="https://twitter.com/EmergencyInfoBC?ref_src=twsrc%5Etfw">Tweets by EmergencyInfoBC</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_oembed_time_ce6e7d484dc2db75fcac9135848c469a]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1686694396]]></wp:meta_value>
+		<wp:meta_value><![CDATA[1689874527]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
@@ -1389,7 +1390,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"a009b5a1-c4f6-4d7b-b711-052a474d022d"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px"},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"borderColor":"support-gray-02","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-support-gray-02-border-color" style="border-radius:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":1832,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title=""/></a></figure>
+<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title="" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1479,7 +1480,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3365,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1581,7 +1582,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2272,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/OnPaste.20230427-141358.png" alt="" class="wp-image-2272" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/OnPaste.20230427-141358.png" alt="" class="wp-image-2272" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1675,7 +1676,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1783,8 +1784,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|support-red","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--support-red);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3767,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title=""/></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36052,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Evac-order-3.png" alt="" class="wp-image-36052" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -1803,8 +1804,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|support-yellow","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-color:var(--wp--preset--color--support-yellow);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|white"},"left":{"color":"var:preset|color|white"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3239,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-1.png" alt="" class="wp-image-3239" title=""/></figure>
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--white);border-left-color:var(--wp--preset--color--white);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36062,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/EvacAlert_4-1-1.png" alt="" class="wp-image-36062" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -1823,8 +1824,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|support-green","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"support-gray-01","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-support-gray-01-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--support-green);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3762,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title=""/></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36057,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Evac-rescind2-1.png" alt="" class="wp-image-36057" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -1855,7 +1856,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2371,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -1937,8 +1938,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2561</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 21:49:48]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 21:49:48]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-14 13:51:37]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-14 20:51:37]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 11:01:16]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 18:01:16]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[flood-alert]]></wp:post_name>
@@ -1948,8 +1949,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
-		<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
+										<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
+		<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -2011,7 +2012,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"a009b5a1-c4f6-4d7b-b711-052a474d022d"} -->
 <!-- wp:group {"style":{"border":{"radius":"10px"},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"borderColor":"support-gray-02","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-support-gray-02-border-color" style="border-radius:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":1832,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title=""/></a></figure>
+<figure class="wp-block-image size-full"><a href="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/okib-evac.png" alt="" class="wp-image-1832" title="" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2099,7 +2100,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3365,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2175,7 +2176,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2245,7 +2246,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2371,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2302,13 +2303,93 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:areoi/row --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":3,"fontSize":"small"} -->
+<h3 class="wp-block-heading has-small-font-size"><strong>Flood Warning Levels</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Understanding Flood Advisory threat stages</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"87625025-08d4-4d65-8758-be4cc859a90a","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-1","row_cols_md":"row-cols-md-3","className":"three-card gy-2 gx-0"} -->
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|hazard-flood","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--hazard-flood);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36037,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flood-warning-1.png" alt="" class="wp-image-36037" title="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":4,"fontSize":"small"} -->
+<h4 class="wp-block-heading has-small-font-size"><strong>Flood Warning</strong></h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>River levels have exceeded the river bank or will exceed the river bank soon. Flooding may occur in areas near affected rivers.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|vivid-cyan-blue","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-color:var(--wp--preset--color--vivid-cyan-blue);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36032,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flood-Watch-1.png" alt="" class="wp-image-36032" title="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":4,"fontSize":"small"} -->
+<h4 class="wp-block-heading has-small-font-size"><strong>Flood Watch</strong></h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>River levels are rising and will approach or may exceed the river bank. Flooding may occur in areas near affected rivers.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+
+<!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"#50c0ff","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:#50c0ff;border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36027,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flood-Advisory-1.png" alt="" class="wp-image-36027" title="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group text-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"level":4,"fontSize":"small"} -->
+<h4 class="wp-block-heading has-small-font-size"><strong>High Streamflow Advisory</strong></h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>River levels are rising or are expected to rise rapidly. Major flooding is not expected. Minor flooding in low-lying areas is possible.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:areoi/column -->
+<!-- /wp:areoi/row -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"default"}} -->
+<div class="wp-block-group text-center" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:areoi/button {"block_id":"5f206ff2-a4b6-42d9-bef0-f4360adb39cd","style":"btn-outline-primary","url":"http://bcrfc.env.gov.bc.ca/warnings/index.htm","text":"Current Flood Advisories"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2594</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 22:36:09]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 22:36:09]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-14 13:48:24]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-14 20:48:24]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 12:40:20]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 19:40:20]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[flood-watch]]></wp:post_name>
@@ -2318,8 +2399,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
-		<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
+										<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
+		<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -2386,8 +2467,8 @@ https://twitter.com/EmergencyInfoBC
 <div class="wp-block-group has-white-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2671,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Vector.png" alt="" class="wp-image-2671" title=""/></figure>
+<div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":35987,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Earthquake.png" alt="" class="wp-image-35987" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2415,7 +2496,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"93c703d8-721f-4108-8a0c-6a16754bd6c9","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Latitude</strong></p>
 <!-- /wp:paragraph -->
@@ -2425,7 +2506,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>UT Date &amp; Time</strong></p>
 <!-- /wp:paragraph -->
@@ -2451,7 +2532,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"6cfcca08-7fbe-4626-a229-17dc146f917b","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Longitude</strong></p>
 <!-- /wp:paragraph -->
@@ -2489,7 +2570,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3365,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/noun-route-sign-4928866-12.png" alt="" class="wp-image-3365" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2615,7 +2696,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group.png" alt="" class="wp-image-2369" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2685,7 +2766,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2371,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title=""/></figure>
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Group-1.png" alt="" class="wp-image-2371" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -2779,8 +2860,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>2701</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-11 17:44:27]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-11 17:44:27]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-14 13:47:38]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-14 20:47:38]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 12:21:42]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 19:21:42]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[earthquake]]></wp:post_name>
@@ -2790,8 +2871,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
-		<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
+										<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
+		<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -3316,8 +3397,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
-		<category domain="pattern-groups" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+										<category domain="pattern-groups" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+		<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -4122,17 +4203,13 @@ https://twitter.com/EmergencyInfoBC
 		<dc:creator><![CDATA[mhaswell]]></dc:creator>
 		<guid isPermaLink="false">https://localhost/eibc/?post_type=custom-pattern&#038;p=3347</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:group {"layout":{"type":"default"}} -->
-<div id="Emergency-Alerts" class="wp-block-group"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"}} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+		<content:encoded><![CDATA[<!-- wp:group {"className":"emergency-alert","layout":{"type":"default"}} -->
+<div id="Emergency-Alerts" class="wp-block-group emergency-alert"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -4147,9 +4224,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title="" /></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -4167,16 +4244,12 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"},"hideBlock":true} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"},"hideBlock":true} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -4191,9 +4264,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title="" /></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -4211,16 +4284,12 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"},"hideBlock":true} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"},"hideBlock":true} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -4235,9 +4304,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title="" /></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -4259,8 +4328,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>3347</wp:post_id>
 		<wp:post_date><![CDATA[2023-06-01 20:51:10]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-06-01 20:51:10]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-30 11:00:20]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-30 18:00:20]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 13:35:03]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 20:35:03]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[emergency-alert]]></wp:post_name>
@@ -4270,7 +4339,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="events"><![CDATA[Events]]></category>
+										<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+		<category domain="pattern-groups" nicename="events"><![CDATA[Events]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -4337,8 +4407,8 @@ https://twitter.com/EmergencyInfoBC
 <div class="wp-block-group has-white-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3456,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Group-2.png" alt="" class="wp-image-3456" title="" /></figure>
+<div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3652,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Heat.png" alt="Heat" class="wp-image-3652" title="" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -4763,8 +4833,8 @@ https://twitter.com/EmergencyInfoBC
 <div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"87625025-08d4-4d65-8758-be4cc859a90a","row_cols_xs":"row-cols-1","row_cols_sm":"row-cols-sm-1","row_cols_md":"row-cols-md-2","className":"two-card gy-2 gx-0"} -->
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|hazard-heat","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
-<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--hazard-heat);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|30","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"right":{"color":"var:preset|color|support-gray-02","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"#cf7889","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:#cf7889;border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|30","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"right":{"color":"var:preset|color|support-gray-02","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":3762,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title="" /></figure>
 <!-- /wp:image -->
@@ -4783,8 +4853,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:areoi/column -->
 
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
-<!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"#cf7889","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
-<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:#cf7889;border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|30"}},"border":{"left":{"color":"var:preset|color|support-gray-02","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|hazard-heat","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
+<div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--hazard-heat);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|30"}},"border":{"left":{"color":"var:preset|color|support-gray-02","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--30)"><!-- wp:image {"id":3767,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title="" /></figure>
 <!-- /wp:image -->
@@ -4814,8 +4884,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>3523</wp:post_id>
 		<wp:post_date><![CDATA[2023-06-05 18:48:08]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-06-05 18:48:08]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-26 10:52:16]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-26 17:52:16]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 12:25:08]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 19:25:08]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[heat]]></wp:post_name>
@@ -4825,8 +4895,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="heat"><![CDATA[Heat]]></category>
-		<category domain="pattern-groups" nicename="heat-events"><![CDATA[Heat]]></category>
+										<category domain="pattern-groups" nicename="heat-events"><![CDATA[Heat]]></category>
+		<category domain="hazard_type" nicename="heat"><![CDATA[Heat]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -5607,7 +5677,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Connecting with our neighbours before a disaster strikes can help us prepare for emergencies together, share resources, and support each other in times of need.</p>
+<p>jglkfdgj;dlkfgjd;lkgfjds;lfkgjds;lf</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -5623,7 +5693,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Connecting with our neighbours before a disaster strikes can help us prepare for emergencies together, share resources, and support each other in times of need.</p>
+<p>fdjdkfjghkfdljhgldkjfghldsf</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -5639,7 +5709,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Connecting with our neighbours before a disaster strikes can help us prepare for emergencies together, share resources, and support each other in times of need.</p>
+<p>djfhdlkfjghdlkfjghldskfg</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -5655,7 +5725,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"lock":{"move":false,"remove":false}} -->
-<p>Updates on current Flood Advisories in BC.</p>
+<p>dflkjs;lfkjsd;lfkasjdf;lakds</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -5725,7 +5795,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Refer to the Evacuation Alert for information specific to your community.</p>
+<p>Refer to your local government for information specific to your community.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -5901,8 +5971,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|support-red","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--support-red);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3767,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon.png" alt="" class="wp-image-3767" title="" /></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36052,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Evac-order-3.png" alt="" class="wp-image-36052" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -5921,8 +5991,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|support-yellow","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-color:var(--wp--preset--color--support-yellow);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3239,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-1.png" alt="" class="wp-image-3239" title="" /></figure>
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36062,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/EvacAlert_4-1-1.png" alt="" class="wp-image-36062" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -5941,8 +6011,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"var:preset|color|support-green","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:var(--wp--preset--color--support-green);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":3762,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Icon-2.png" alt="" class="wp-image-3762" title="" /></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36057,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Evac-rescind2-1.png" alt="" class="wp-image-36057" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -5977,8 +6047,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topLeft":"10px","bottomLeft":"10px"},"top":{"color":"var:preset|color|hazard-flood","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-left-radius:10px;border-bottom-left-radius:10px;border-top-color:var(--wp--preset--color--hazard-flood);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":35057,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title="" /></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36037,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flood-warning-1.png" alt="" class="wp-image-36037" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -5997,8 +6067,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|vivid-cyan-blue","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-color:var(--wp--preset--color--vivid-cyan-blue);border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}},"border":{"right":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":35057,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title="" /></figure>
+<div class="wp-block-group" style="border-right-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36032,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flood-Watch-1.png" alt="" class="wp-image-36032" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|20","bottom":"0","left":"var:preset|spacing|20"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -6017,8 +6087,8 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:areoi/column {"block_id":"fd99a4e4-f44d-4f25-9d9e-5a3110eb9cf5","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}}} -->
 <!-- wp:group {"style":{"border":{"radius":{"topRight":"10px","bottomRight":"10px"},"top":{"color":"#50c0ff","width":"10px"},"right":{"color":"var:preset|color|support-gray-02","width":"1px"},"bottom":{"color":"var:preset|color|support-gray-02","width":"1px"},"left":{"color":"var:preset|color|support-gray-02","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"backgroundColor":"white","className":"h-100","layout":{"type":"default"}} -->
 <div class="wp-block-group h-100 has-white-background-color has-background" style="border-top-right-radius:10px;border-bottom-right-radius:10px;border-top-color:#50c0ff;border-top-width:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-right-width:1px;border-bottom-color:var(--wp--preset--color--support-gray-02);border-bottom-width:1px;border-left-color:var(--wp--preset--color--support-gray-02);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"var:preset|spacing|20","left":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":35057,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Icon-3.png" alt="" class="wp-image-35057" title="" /></figure>
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:image {"id":36027,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Flood-Advisory-1.png" alt="" class="wp-image-36027" title="" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"text-center","layout":{"type":"constrained"}} -->
@@ -6046,8 +6116,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>3573</wp:post_id>
 		<wp:post_date><![CDATA[2023-06-06 20:26:09]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-06-06 20:26:09]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-17 13:06:08]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-17 20:06:08]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 11:00:20]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 18:00:20]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[aggregated-flooding]]></wp:post_name>
@@ -6057,8 +6127,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
-		<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
+										<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
+		<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -6867,8 +6937,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
-		<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
+										<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
+		<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -6935,17 +7005,13 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div id="Emergency-Alerts" class="wp-block-group"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"}} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"className":"emergency-alert","layout":{"type":"default"}} -->
+<div id="Emergency-Alerts" class="wp-block-group emergency-alert"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -6960,9 +7026,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title=""/></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -6980,16 +7046,12 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"},"hideBlock":true} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"},"hideBlock":true} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -7004,9 +7066,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title=""/></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -7024,16 +7086,12 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"},"hideBlock":true} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"},"hideBlock":true} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -7048,9 +7106,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title=""/></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -7079,8 +7137,8 @@ https://twitter.com/EmergencyInfoBC
 <div class="wp-block-group has-white-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"className":"hazard-background-secondary h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":2671,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Vector.png" alt="" class="wp-image-2671" title=""/></figure>
+<div class="wp-block-group hazard-background-secondary h-100 d-flex align-items-center" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:image {"id":35987,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Earthquake.png" alt="" class="wp-image-35987" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -7108,7 +7166,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"1224c5cb-dc82-4c6d-8b70-e8724d7fef13","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Latitude</strong></p>
 <!-- /wp:paragraph -->
@@ -7118,7 +7176,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"533d0170-047f-494e-a61f-fc31dc8ab72b"} -->
+<!-- wp:areoi/column {"block_id":"533d0170-047f-494e-a61f-fc31dc8ab72b","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>UT Date &amp; Time</strong></p>
 <!-- /wp:paragraph -->
@@ -7144,7 +7202,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"18ccc7ab-69c5-4b29-a136-2518693d9e36","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Longitude</strong></p>
 <!-- /wp:paragraph -->
@@ -7676,8 +7734,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>37902</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 14:45:57]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 21:45:57]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-14 13:55:11]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-14 20:55:11]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 13:37:55]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 20:37:55]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[earthquake-catastrophic]]></wp:post_name>
@@ -7687,8 +7745,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
-		<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
+										<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
+		<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
 						</item>
 					<item>
 		<title><![CDATA[Tsunami - Catastrophic]]></title>
@@ -7715,17 +7773,13 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div id="Emergency-Alerts" class="wp-block-group"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"}} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"className":"emergency-alert","layout":{"type":"default"}} -->
+<div id="Emergency-Alerts" class="wp-block-group emergency-alert"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"}} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -7740,9 +7794,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title=""/></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -7760,16 +7814,12 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"},"hideBlock":true} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"},"hideBlock":true} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -7784,9 +7834,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title=""/></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -7804,16 +7854,12 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"color":"var:preset|color|emergency-alert","width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","layout":{"type":"default"},"hideBlock":true} -->
-<div class="wp-block-group has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-color:var(--wp--preset--color--emergency-alert);border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"border":{"radius":"10px","top":{"width":"10px"}},"spacing":{"margin":{"bottom":"var:preset|spacing|30","top":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"support-gray-01","className":"hazard-border","layout":{"type":"default"},"hideBlock":true} -->
+<div class="wp-block-group hazard-border has-support-gray-01-background-color has-background" style="border-radius:10px;border-top-width:10px;margin-top:0;margin-bottom:var(--wp--preset--spacing--30);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":{"bottomLeft":"10px","bottomRight":"10px"},"right":{"color":"var:preset|color|support-gray-02"},"bottom":{"color":"var:preset|color|support-gray-02"},"left":{"color":"var:preset|color|support-gray-02"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-right-color:var(--wp--preset--color--support-gray-02);border-bottom-color:var(--wp--preset--color--support-gray-02);border-left-color:var(--wp--preset--color--support-gray-02);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:heading {"lock":{"move":false,"remove":false}} -->
 <h2 class="wp-block-heading">BC Emergency Alert Message</h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":3,"fontSize":"small","hideBlock":true} -->
-<h3 class="wp-block-heading has-small-font-size"><strong>Evacuation Order issued by the Peace River Regional District</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -7828,9 +7874,9 @@ https://twitter.com/EmergencyInfoBC
 <!-- wp:group {"templateLock":false,"lock":{"move":false,"remove":false},"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"var:preset|spacing|20"}}},"backgroundColor":"white","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--20);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:areoi/row {"block_id":"cb78bd99-b822-493a-94ac-3b4751cd9822","lock":{"move":false,"remove":false}} -->
 <!-- wp:areoi/column {"block_id":"8f4bee85-d381-4259-a762-bbd0605e5d20","background_color":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"background_overlay":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"vertical_align_md":"Default","vertical_align_lg":"Default","hide_xs":true,"hide_sm":true,"col_md":"col-md-3","col_lg":"col-lg-2","lock":{"move":false,"remove":false}} -->
-<!-- wp:group {"backgroundColor":"emergency-alert","className":"h-100 d-flex align-items-center","layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group h-100 d-flex align-items-center has-emergency-alert-background-color has-background"><!-- wp:image {"id":3777,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/06/Vector-1.png" alt="" class="wp-image-3777" title=""/></figure>
+<!-- wp:group {"className":"h-100 d-flex align-items-center hazard-background","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group h-100 d-flex align-items-center hazard-background"><!-- wp:image {"id":35837,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://test.vanity.blog.gov.bc.ca/app/uploads/sites/1187/2023/05/Emergency-Alert.png" alt="" class="wp-image-35837" title=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <!-- /wp:areoi/column -->
@@ -7901,7 +7947,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"f06e43e4-8eb5-48ac-89b4-c777e78c66dd","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Latitude</strong></p>
 <!-- /wp:paragraph -->
@@ -7911,7 +7957,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>UT Date &amp; Time</strong></p>
 <!-- /wp:paragraph -->
@@ -7937,7 +7983,7 @@ https://twitter.com/EmergencyInfoBC
 <!-- /wp:paragraph -->
 <!-- /wp:areoi/column -->
 
-<!-- wp:areoi/column {"block_id":"d42f76d1-4da3-4313-8592-45ec3a938546"} -->
+<!-- wp:areoi/column {"block_id":"4c9d99b3-61b0-4565-96c5-f4a27e47f3b5","hideBlock":true} -->
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><strong>Longitude</strong></p>
 <!-- /wp:paragraph -->
@@ -8784,8 +8830,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_id>37982</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 15:29:46]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 22:29:46]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-13 11:53:12]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-13 18:53:12]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-20 13:37:28]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-20 20:37:28]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[tsunami-catastrophic]]></wp:post_name>
@@ -8795,8 +8841,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
-		<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
+										<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
+		<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
 						</item>
 				</channel>
 </rss>

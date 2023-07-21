@@ -1,7 +1,7 @@
-@mixin hazard-styles($primaryColor, $secondaryColor) {
+@mixin hazard-styles($primaryColor, $secondaryColor, $important: "") {
 
     .hazard-text {
-        color: $primaryColor;
+        color: $primaryColor #{$important};
 
         i {
             color: $primaryColor !important;
@@ -9,15 +9,15 @@
     }
 
     .hazard-border {
-        border-color: $primaryColor;
+        border-color: $primaryColor #{$important};
     }
 
     .hazard-background {
-        background-color: $primaryColor;
+        background-color: $primaryColor #{$important};
     }
 
     .hazard-background-secondary {
-        background-color: $secondaryColor;
+        background-color: $secondaryColor #{$important};
     }
 }
 
@@ -48,6 +48,15 @@ $hazards:
     }
 }
 
+// Set colors for Emergency Alert blocks.
+.emergency-alert {
+    $primaryColor: var(--wp--preset--color--hazard-emergency-alert);
+    $secondaryColor: var(--wp--preset--color--hazard-emergency-alert-secondary);
+
+    // Requires !important to override the main hazard style for the event.
+    @include hazard-styles($primaryColor, $secondaryColor, !important);
+}
+
 // Set colors for when an event is no longer active.
 .inactive {
     $inactiveHazardColor: var(--wp--preset--color--hazard-inactive);
@@ -60,6 +69,15 @@ $hazards:
         color: var(--wp--preset--color--primary-brand) !important;
         background-color: #e0e2e3 !important;
         border-color: $inactiveHazardSecondaryColor !important;
+    }
+
+    // Set colors for inactive Emergency Alert blocks.
+    .emergency-alert {
+        $primaryColor: var(--wp--preset--color--hazard-inactive);
+        $secondaryColor: var(--wp--preset--color--hazard-inactive-secondary);
+
+        // Requires !important to override the main hazard style for the event.
+        @include hazard-styles($primaryColor, $secondaryColor, !important);
     }
 }
 
