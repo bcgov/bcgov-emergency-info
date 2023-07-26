@@ -6,3 +6,14 @@ $link-color: $dark;
 $body-color: $dark;
 
 @import "bootstrap/scss/bootstrap";
+
+// Set default styles for Bootstrap Accordions to match site theming.
+.accordion-button {
+    font-size: inherit;
+    background-color: var(--wp--preset--color--support-gray-00);
+
+    &:not(.collapsed) {
+        background-color: var(--wp--preset--color--support-gray-01);
+        color: $dark;
+    }
+}

@@ -1,4 +1,5 @@
-### 1.0.0: July 20, 2023
+### 1.0.0: July 26, 2023
+* Added styling for Bootstrap Accordions to match site theming ([DESCW-1377](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1377))
 * Updated Emergency Alert pattern to remove subheading ([DESCW-1363](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1363))
 * Updated Emergency Alert and Emergency Alert pill block CSS to use inactive styles when event is set inactive ([DESCW-1360](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1360))
 * Updated Event Query Loop pattern to include Hazard title ([DESCW-1356](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1356))
