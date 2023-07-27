@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-20 20:38" -->
+	<!-- generator="WordPress/6.2.2" created="2023-07-27 20:16" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Emergency Info BC 2023 </title>
 	<link>https://test.vanity.blog.gov.bc.ca/eibc</link>
 	<description>Government of British Columbia</description>
-	<pubDate>Thu, 20 Jul 2023 20:38:23 +0000</pubDate>
+	<pubDate>Thu, 27 Jul 2023 20:16:55 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://test.vanity.blog.gov.bc.ca/</wp:base_site_url>
@@ -671,8 +671,8 @@
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="wildfire"><![CDATA[Wildfire]]></category>
-		<category domain="hazard_type" nicename="wildfire"><![CDATA[Wildfire]]></category>
+										<category domain="hazard_type" nicename="wildfire"><![CDATA[Wildfire]]></category>
+		<category domain="pattern-groups" nicename="wildfire"><![CDATA[Wildfire]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -1949,8 +1949,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
-		<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
+										<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
+		<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -2399,8 +2399,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
-		<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
+										<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
+		<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -2871,8 +2871,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
-		<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
+										<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
+		<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -3397,8 +3397,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
-		<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+										<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+		<category domain="pattern-groups" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -4895,8 +4895,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="heat-events"><![CDATA[Heat]]></category>
-		<category domain="hazard_type" nicename="heat"><![CDATA[Heat]]></category>
+										<category domain="hazard_type" nicename="heat"><![CDATA[Heat]]></category>
+		<category domain="pattern-groups" nicename="heat-events"><![CDATA[Heat]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -6127,8 +6127,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
-		<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
+										<category domain="hazard_type" nicename="flood"><![CDATA[Flood]]></category>
+		<category domain="pattern-groups" nicename="flood"><![CDATA[Flood]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -6937,8 +6937,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
-		<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
+										<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
+		<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2613]]></wp:meta_value>
@@ -7745,8 +7745,8 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
-		<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
+										<category domain="hazard_type" nicename="earthquake"><![CDATA[Earthquake]]></category>
+		<category domain="pattern-groups" nicename="earthquake"><![CDATA[Earthquake]]></category>
 						</item>
 					<item>
 		<title><![CDATA[Tsunami - Catastrophic]]></title>
@@ -8841,8 +8841,40 @@ https://twitter.com/EmergencyInfoBC
 		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
-		<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
+										<category domain="hazard_type" nicename="tsunami"><![CDATA[Tsunami]]></category>
+		<category domain="pattern-groups" nicename="tsunami-events"><![CDATA[Tsunami]]></category>
+						</item>
+					<item>
+		<title><![CDATA[General block]]></title>
+		<link>https://test.vanity.blog.gov.bc.ca/eibc/custom-pattern/general-block/</link>
+		<pubDate>Wed, 26 Jul 2023 23:18:37 +0000</pubDate>
+		<dc:creator><![CDATA[mhaswell]]></dc:creator>
+		<guid isPermaLink="false">https://test.vanity.blog.gov.bc.ca/eibc/?post_type=custom-pattern&#038;p=42977</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"alignwide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>42977</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-26 16:18:37]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-26 23:18:37]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-26 16:27:36]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-26 23:27:36]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[general-block]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[custom-pattern]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="hazard_type" nicename="amber-alert"><![CDATA[Amber Alert]]></category>
+		<category domain="pattern-groups" nicename="homepage"><![CDATA[Homepage]]></category>
 						</item>
 				</channel>
 </rss>
