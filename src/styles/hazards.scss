@@ -99,9 +99,7 @@ $hazards:
 // Fix awkward spacing between lead in text and MFB status block.
 .status-alert {
     // Hide status alert banner by default, only show when event is inactive.
-    .status-alert {
-        display: none;
-    }
+    display: none;
 
     .mfb-status {
         margin-left: -4px !important;
