@@ -64,11 +64,12 @@ $hazards:
 
     @include hazard-styles($inactiveHazardColor, $inactiveHazardSecondaryColor);
 
-    // Requires !important for editor to override Bootstrap colors.
+    // Show status alert banner when event is inactive..
     .status-alert {
-        color: var(--wp--preset--color--primary-brand) !important;
-        background-color: #e0e2e3 !important;
-        border-color: $inactiveHazardSecondaryColor !important;
+        display: block;
+        color: var(--wp--preset--color--primary-brand);
+        background-color: #e0e2e3;
+        border-color: $inactiveHazardSecondaryColor;
     }
 
     // Set colors for inactive Emergency Alert blocks.
@@ -97,6 +98,10 @@ $hazards:
 
 // Fix awkward spacing between lead in text and MFB status block.
 .status-alert {
+    // Hide status alert banner by default, only show when event is inactive.
+    .status-alert {
+        display: none;
+    }
 
     .mfb-status {
         margin-left: -4px !important;
