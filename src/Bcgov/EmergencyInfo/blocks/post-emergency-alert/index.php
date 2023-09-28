@@ -1,5 +1,8 @@
 <?php
 // phpcs:disable Generic.CodeAnalysis.UnusedFunctionParameter.FoundBeforeLastUsed
+
+use Bcgov\EmergencyInfo\Plugin;
+
 /**
  * Renders the `emergency-info/post-emergency-alert` block on the server.
  *
@@ -17,7 +20,7 @@ function render_block_post_emergency_alert(
     // Get Event.
     $post_id             = $block->context['postId'];
     $wrapper_attributes  = get_block_wrapper_attributes();
-    $has_emergency_alert = get_field( 'has_emergency_alert', $post_id );
+    $has_emergency_alert = Plugin::get_field( 'has_emergency_alert', $post_id );
 
     // Don't show block when there's no value.
     if ( ! $has_emergency_alert ) {

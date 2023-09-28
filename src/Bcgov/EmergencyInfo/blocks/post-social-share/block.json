@@ -9,5 +9,6 @@
     "textdomain": "emergency-info",
     "usesContext": ["postId", "postType"],
     "editorScript": "file:./index.js",
+    "viewScript": "file:./view.js",
     "style": "file:./style-index.css"
 }

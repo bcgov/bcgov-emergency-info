@@ -88,6 +88,27 @@ class Plugin {
         $loader->run();
 	}
 
+    /**
+     * Gets a meta field value by key and post id.
+     * Prevents fatal errors when Advanced Custom Fields plugin is not enabled.
+     *
+     * @param string $selector
+     * @param mixed  $post_id
+     * @param bool   $format_value
+     * @return mixed
+     * @see https://www.advancedcustomfields.com/resources/get_field/
+     */
+    public static function get_field( $selector, $post_id = false, $format_value = true ) {
+        if ( ! function_exists( 'get_field' ) ) {
+            $result = get_post_meta( $post_id, $selector, true );
+            // Leaving error_log() here to indicate the problem in server logs.
+            // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
+            error_log( 'Emergency Info Plugin: ACF required but not enabled.' );
+            return $result;
+        }
+        return get_field( $selector, $post_id, $format_value );
+    }
+
 	/**
 	 * Get asset information including path to dist folder, asset dependencies and version.
 	 *
@@ -342,8 +363,8 @@ class Plugin {
         );
         // Add primary and secondary colors for each hazard_type.
         foreach ( $hazard_types as $hazard_type ) {
-            $hazard_colour           = get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
-            $hazard_secondary_colour = get_field( 'secondary_colour', 'hazard_type_' . $hazard_type->term_id );
+            $hazard_colour           = self::get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
+            $hazard_secondary_colour = self::get_field( 'secondary_colour', 'hazard_type_' . $hazard_type->term_id );
             $hazard_name             = $hazard_type->name;
             $new_colours[]           = [
                 'slug'  => 'hazard-' . $hazard_type->slug,
@@ -392,7 +413,7 @@ class Plugin {
                     }
                 }
 
-                $status = get_field( 'status', $post->ID, false );
+                $status = self::get_field( 'status', $post->ID, false );
                 if ( in_array( $status, self::$inactive_statuses, true ) ) {
                     $classes[] = 'inactive';
                 }
@@ -421,7 +442,7 @@ class Plugin {
                     }
                 }
 
-                $status = get_field( 'status', $post->ID, false );
+                $status = self::get_field( 'status', $post->ID, false );
                 if ( in_array( $status, self::$inactive_statuses, true ) ) {
                     $classes .= ' inactive';
                 }

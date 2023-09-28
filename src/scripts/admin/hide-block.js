@@ -10,15 +10,15 @@ import { __ } from '@wordpress/i18n';
  *
  * @param {Object} settings Original block settings
  *
- * @return {Object} Filtered block settings
+ * @returns {Object} Filtered block settings
  */
-function addAttributes(settings) {
+const addAttributes = (settings) => {
     settings.attributes.hideBlock = {
         type: 'boolean',
         default: false,
     };
     return settings;
-}
+};
 
 addFilter('blocks.registerBlockType', 'emergency-info', addAttributes);
 
@@ -26,7 +26,7 @@ addFilter('blocks.registerBlockType', 'emergency-info', addAttributes);
  * Add hide block control to all blocks.
  */
 const addInspectorControl = createHigherOrderComponent((BlockEdit) => {
-    return (props) => {
+    const component = (props) => {
         const { hideBlock } = props.attributes;
         const { setAttributes } = props;
 
@@ -47,6 +47,8 @@ const addInspectorControl = createHigherOrderComponent((BlockEdit) => {
             </Fragment>
         );
     };
+    component.displayName = 'withInspectorControl';
+    return component;
 }, 'withInspectorControl');
 
 addFilter('editor.BlockEdit', 'emergency-info', addInspectorControl);
@@ -56,13 +58,15 @@ addFilter('editor.BlockEdit', 'emergency-info', addInspectorControl);
  */
 const withCustomAttributeClass = createHigherOrderComponent(
     (BlockListBlock) => {
-        return (props) => {
+        const component = (props) => {
             const { attributes } = props;
             const { hideBlock } = attributes;
             const className = hideBlock ? 'hidden-block' : '';
 
             return <BlockListBlock {...props} className={className} />;
         };
+        component.displayName = 'withCustomAttributeClass';
+        return component;
     },
     'withCustomAttributeClass'
 );

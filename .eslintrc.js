@@ -1,6 +1,8 @@
 module.exports = {
     root: true,
-    extends: ['./node_modules/@wordpress/scripts/config/.eslintrc'],
+    extends: [
+        "./node_modules/@bcgov/webpack-wordpress/.eslint.js",
+    ],
     env: {
         jest: true,
     },
