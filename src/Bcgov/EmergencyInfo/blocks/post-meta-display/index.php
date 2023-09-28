@@ -1,5 +1,8 @@
 <?php
 // phpcs:disable Generic.CodeAnalysis.UnusedFunctionParameter.FoundBeforeLastUsed
+
+use Bcgov\EmergencyInfo\Plugin;
+
 /**
  * Renders the `emergency-info/post-meta-display` block on the server.
  *
@@ -23,9 +26,9 @@ function render_block_post_meta_display(
 		]
     );
 
-    $icon  = get_field( 'card_icon_' . $value_num, $post_id );
-    $label = get_field( 'card_label_' . $value_num, $post_id );
-    $value = get_field( 'card_value_' . $value_num, $post_id );
+    $icon  = Plugin::get_field( 'card_icon_' . $value_num, $post_id );
+    $label = Plugin::get_field( 'card_label_' . $value_num, $post_id );
+    $value = Plugin::get_field( 'card_value_' . $value_num, $post_id );
 
     // Don't show block when there's no value.
     if ( ! $value ) {

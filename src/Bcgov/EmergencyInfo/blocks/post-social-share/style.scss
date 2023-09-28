@@ -12,6 +12,13 @@
     }
 
     .dropdown-item {
-        padding: 5px;
+        padding: 0 10px 0 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+
+        span {
+            display: inline-block;
+        }
     }
 }

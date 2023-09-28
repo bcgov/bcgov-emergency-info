@@ -30,7 +30,7 @@ function render_block_post_social_share(
         '
         <div %1$s>
             <div class="dropdown">	
-                <button id="share-menu" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" aria-label="%3$s">
+                <button id="share-menu" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-label="%3$s">
                     <i class="bi-send-fill me-3 align-middle" style="font-size: 24px;"></i>
                     %3$s
                 </button>
@@ -43,6 +43,10 @@ function render_block_post_social_share(
                         <span class="areoi-icon"><i class="text-dark bi-facebook"></i></span>	
                         %5$s
                     </a>
+                    <a class="dropdown-item copy-link" role="menuitem" data-url="%2$s">
+                        <span class="areoi-icon"><i class="text-dark bi-clipboard-plus-fill link-copied-status"></i></span>
+                        %6$s
+                    </a>
                 </div>
             </div>
         </div>
@@ -50,8 +54,9 @@ function render_block_post_social_share(
         $wrapper_attributes,
         $link,
         __( 'Share' ),
-        __( 'Share on Twitter' ),
+        __( 'Share on X (Twitter)' ),
         __( 'Share on Facebook' ),
+        __( 'Copy link' ),
     );
 };
 

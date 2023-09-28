@@ -1,5 +1,8 @@
 <?php
 // phpcs:disable Generic.CodeAnalysis.UnusedFunctionParameter.FoundBeforeLastUsed
+
+use Bcgov\EmergencyInfo\Plugin;
+
 /**
  * Renders the `emergency-info/post-hazard-title` block on the server.
  *
@@ -26,7 +29,7 @@ function render_block_post_hazard_title(
 
     // Get Hazard Type title.
     $hazard_type  = $hazard_types[0];
-    $hazard_name  = get_field( 'hazard_name', $post_id );
+    $hazard_name  = Plugin::get_field( 'hazard_name', $post_id );
     $hazard_title = $hazard_type->name;
     // Use the hazard_name override if it exists.
     if ( $hazard_name ) {

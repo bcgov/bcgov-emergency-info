@@ -29,7 +29,7 @@ export const Edit = ({ context: { postType, postId } }) => {
                         <span className="areoi-icon">
                             <i className="text-dark bi-twitter"></i>
                         </span>
-                        Share on Twitter
+                        Share on X (Twitter)
                     </a>
                     <a
                         className="dropdown-item"
@@ -42,6 +42,12 @@ export const Edit = ({ context: { postType, postId } }) => {
                             <i className="text-dark bi-facebook"></i>
                         </span>
                         Share on Facebook
+                    </a>
+                    <a className="dropdown-item">
+                        <span className="areoi-icon">
+                            <i className="text-dark bi-clipboard-plus-fill"></i>
+                        </span>
+                        Copy link
                     </a>
                 </div>
             </div>

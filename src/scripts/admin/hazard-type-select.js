@@ -118,7 +118,7 @@ const HazardTypeWrapper = compose([
 ])(HazardType);
 
 const hazardTypeFilter = (OriginalComponent) => {
-    return (props) => {
+    const component = (props) => {
         const { slug } = props;
 
         if ('hazard_type' === slug) {
@@ -127,6 +127,8 @@ const hazardTypeFilter = (OriginalComponent) => {
 
         return <OriginalComponent {...props} />;
     };
+    component.displayName = 'hazardTypeFilter';
+    return component;
 };
 
 addFilter('editor.PostTaxonomyType', 'emergency-info', hazardTypeFilter);

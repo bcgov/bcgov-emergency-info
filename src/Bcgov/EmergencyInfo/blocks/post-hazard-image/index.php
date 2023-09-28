@@ -1,5 +1,8 @@
 <?php
 // phpcs:disable Generic.CodeAnalysis.UnusedFunctionParameter.FoundBeforeLastUsed
+
+use Bcgov\EmergencyInfo\Plugin;
+
 /**
  * Renders the `emergency-info/post-hazard-image` block on the server.
  *
@@ -30,7 +33,7 @@ function render_block_post_hazard_image(
 
     // Get Hazard Type image.
     $hazard_type         = $hazard_types[0];
-    $hazard_image        = get_field( 'hazard_image', 'hazard_type_' . $hazard_type->term_id );
+    $hazard_image        = Plugin::get_field( 'hazard_image', 'hazard_type_' . $hazard_type->term_id );
     $hazard_image_id     = $hazard_image['id'];
     $hazard_image_srcset = '';
     $hazard_image_src    = '';
