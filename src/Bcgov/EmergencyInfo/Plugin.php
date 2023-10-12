@@ -210,7 +210,7 @@ class Plugin {
         $data_new = json_decode( $loaded, true );
 
         if ( $data_new ) {
-            return $data_new;
+            return array_merge( $data, $data_new );
         }
 
         return $data;
