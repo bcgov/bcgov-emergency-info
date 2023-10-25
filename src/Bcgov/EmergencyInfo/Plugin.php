@@ -85,6 +85,8 @@ class Plugin {
         $loader->add_filter( 'wp_theme_json_data_theme', $this, 'filter_theme_json_theme' );
         $loader->add_filter( 'body_class', $this, 'add_custom_classes_to_single' );
         $loader->add_filter( 'admin_body_class', $this, 'add_custom_classes_to_admin' );
+        $loader->add_action( 'wp_head', $this, 'build_hazard_styles' );
+        $loader->add_action( 'admin_head', $this, 'build_hazard_styles' );
         $loader->run();
 	}
 
@@ -393,6 +395,45 @@ class Plugin {
         $current_data['settings']['color']['palette']['theme'] = array_merge( $old_colours, $new_colours );
 
         return $theme_json->update_with( $current_data );
+    }
+
+    /**
+     * Builds styles for each hazard type term.
+     */
+    public function build_hazard_styles() {
+        $hazard_types = get_terms(
+            [
+				'taxonomy'   => 'hazard_type',
+				'hide_empty' => false,
+			]
+        );
+        $styles       = [];
+        foreach ( $hazard_types as $hazard_type ) {
+            $styles[] = sprintf(
+                '
+                    .hazard_type-%1$s:not(.inactive) .hazard-text {
+                        color:var(--wp--preset--color--hazard-%1$s)
+                    }
+                    .hazard_type-%1$s:not(.inactive) .hazard-text i {
+                        color:var(--wp--preset--color--hazard-%1$s)!important
+                    }
+                    .hazard_type-%1$s:not(.inactive) .hazard-border {
+                        border-color:var(--wp--preset--color--hazard-%1$s)
+                    }
+                    .hazard_type-%1$s:not(.inactive) .hazard-background {
+                        background-color:var(--wp--preset--color--hazard-%1$s)
+                    }
+                    .hazard_type-%1$s:not(.inactive) .hazard-background-secondary {
+                        background-color:var(--wp--preset--color--hazard-%1$s-secondary)
+                    }
+                ',
+                $hazard_type->slug
+            );
+        }
+        if ( count( $styles ) > 0 ) {
+            $css = sprintf( '<style id="hazard-styles">%s</style>', implode( '', $styles ) );
+            echo wp_kses( $css, [ 'style' => [ 'id' ] ] );
+        }
     }
 
     /**

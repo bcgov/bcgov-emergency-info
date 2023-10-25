@@ -21,33 +21,6 @@
     }
 }
 
-// Create classes with correct colors for each hazard type.
-$hazards:
-    "amber-alert",
-    "avalanche",
-    "disease-outbreak",
-    "earthquake",
-    "emergency-alert",
-    "extreme-cold",
-    "flood",
-    "generic",
-    "hazardous-material-spill",
-    "heat",
-    "landslide",
-    "power-outage",
-    "severe-weather",
-    "tsunami",
-    "wildfire";
-
-@each $hazard in $hazards {
-    .hazard_type-#{$hazard}:not(.inactive) {
-        $primaryColor: var(--wp--preset--color--hazard-#{$hazard});
-        $secondaryColor: var(--wp--preset--color--hazard-#{$hazard}-secondary);
-
-        @include hazard-styles($primaryColor, $secondaryColor);
-    }
-}
-
 // Set colors for Emergency Alert blocks.
 .emergency-alert {
     $primaryColor: var(--wp--preset--color--hazard-emergency-alert);

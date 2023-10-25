@@ -1,4 +1,5 @@
 ### 1.0.0: October 25, 2023
+* Updated hazard type styles so that adding a new hazard type no longer requires changes to code ([DESCW-1632](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1632))
 * Updated PHP coding standards to latest WP ruleset ([DESCW-1583](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1583))
 * Added copy link feature to Social Share block ([DESCW-1425](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1425))
 * Updated emergency-map reusable block to include new Twitter block design ([DESCW-1362](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1362))
