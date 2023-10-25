@@ -1,4 +1,5 @@
-### 1.0.0: September 28, 2023
+### 1.0.0: October 25, 2023
+* Updated PHP coding standards to latest WP ruleset ([DESCW-1583](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1583))
 * Added copy link feature to Social Share block ([DESCW-1425](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1425))
 * Updated emergency-map reusable block to include new Twitter block design ([DESCW-1362](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1362))
 * Updated event status alert css to only appear when event is inactive ([DESCW-1369](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1369))

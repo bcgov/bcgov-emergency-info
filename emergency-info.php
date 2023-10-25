@@ -68,7 +68,7 @@ function run_emergency_info() {
 /** This is to ensure that the common-plugin gets loaded before this plugin, otherwise admin functions will not work. */
 add_action(
     'plugins_loaded',
-    function() {
+    function () {
 		run_emergency_info();
 	}
 );

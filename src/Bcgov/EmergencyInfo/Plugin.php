@@ -118,7 +118,7 @@ class Plugin {
 	 */
 	public static function get_asset_information( string $name ): array {
 		$dist_path       = self::$plugin_dir . 'dist/scripts/';
-        $dist_url        = plugin_dir_url( dirname( __FILE__, 3 ) ) . 'dist/scripts/';
+        $dist_url        = plugin_dir_url( dirname( __DIR__, 2 ) ) . 'dist/scripts/';
         $asset_file_path = $dist_path . $name . '.asset.php';
         $dependencies    = [];
         $version         = false;
@@ -178,7 +178,7 @@ class Plugin {
             $path             = $cpt_ui_path . '/cptui_post_type_data.json';
 
             // Save the encoded JSON to a primary file holding all of them.
-            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_read_file_put_contents
+            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
             file_put_contents( $path, $content );
         }
 
@@ -189,7 +189,7 @@ class Plugin {
             $path             = $cpt_ui_path . '/cptui_taxonomy_data.json';
 
             // Save the encoded JSON to a primary file holding all of them.
-            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_read_file_put_contents
+            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
             file_put_contents( $path, $content );
         }
     }
@@ -458,7 +458,7 @@ class Plugin {
      * @since     1.0.0
      * @return    string    The name of the plugin.
      */
-    public static function get_plugin_name() :string {
+    public static function get_plugin_name(): string {
         return self::$plugin_name;
 	}
 
@@ -467,7 +467,7 @@ class Plugin {
      *
      * @return string
      */
-    public static function get_option_name() :string {
+    public static function get_option_name(): string {
         return str_replace( '-', '_', self::get_plugin_name() );
     }
 }

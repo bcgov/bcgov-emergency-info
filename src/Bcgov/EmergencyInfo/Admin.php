@@ -62,5 +62,4 @@ class Admin {
         $asset_info = Plugin::get_asset_information( $name );
         wp_enqueue_script( $asset_info['handle'], $asset_info['dist_url'] . $name . '.js', $asset_info['dependencies'], $asset_info['version'], false );
 	}
-
 }

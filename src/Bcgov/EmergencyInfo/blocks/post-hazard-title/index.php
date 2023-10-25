@@ -47,7 +47,7 @@ function render_block_post_hazard_title(
         $wrapper_attributes,
         $hazard_title,
     );
-};
+}
 
 /**
  * Registers the `emergency-info/post-hazard-title` block on the server.
