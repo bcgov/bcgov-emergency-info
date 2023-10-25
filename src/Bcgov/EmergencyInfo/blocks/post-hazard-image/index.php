@@ -60,7 +60,7 @@ function render_block_post_hazard_image(
         $hazard_image_src,
         $hazard_image_sizes
     );
-};
+}
 
 /**
  * Registers the `emergency-info/post-hazard-image` block on the server.

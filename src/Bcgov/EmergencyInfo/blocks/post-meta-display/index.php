@@ -55,7 +55,7 @@ function render_block_post_meta_display(
         $label,
         $value
     );
-};
+}
 
 /**
  * Registers the `emergency-info/post-meta-display` block on the server.

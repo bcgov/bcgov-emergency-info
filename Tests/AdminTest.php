@@ -21,7 +21,7 @@ class AdminTest extends CommonTestCase {
      *
      * @inheritDoc
      */
-    public function setUp() :void {
+    public function setUp(): void {
         parent::setUp();
         $this->admin = new Admin();
     }

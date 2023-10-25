@@ -58,7 +58,7 @@ function render_block_post_social_share(
         __( 'Share on Facebook' ),
         __( 'Copy link' ),
     );
-};
+}
 
 /**
  * Registers the `emergency-info/post-social-share` block on the server.

@@ -39,7 +39,7 @@ function render_block_post_emergency_alert(
         ',
         $wrapper_attributes,
     );
-};
+}
 
 /**
  * Registers the `emergency-info/post-emergency-alert` block on the server.

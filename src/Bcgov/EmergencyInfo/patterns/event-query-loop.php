@@ -2,9 +2,6 @@
 
 namespace Bcgov\Theme\FoodDirectory;
 
-/**
- * A comfortably padded section in which to place elements.
- */
 return [
 	'title'      => __( 'Event (Query Loop)', 'emergency-info' ),
 	'categories' => [ 'emergency-info-bc-general' ],

@@ -22,7 +22,7 @@ class PublicRenderTest extends CommonTestCase {
      *
      * @inheritDoc
      */
-    public function setUp() :void {
+    public function setUp(): void {
         Functions\when( 'is_admin' )->justReturn( false );
         parent::setUp();
         $this->public = new PublicRender();
