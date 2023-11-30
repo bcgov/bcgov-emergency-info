@@ -33,7 +33,7 @@ function render_block_post_emergency_alert(
         <div %s>
             <div class="emergency-alert-pill badge rounded-pill">
                 <i class="bi bi-broadcast"></i>
-                <span> BC Emergency Alert<span class="d-none d-sm-inline-block">&nbsp;Issued</span></span>
+                <span role="alert"> BC Emergency Alert<span class="d-none d-sm-inline-block">&nbsp;Issued</span></span>
             </div>
         </div>
         ',

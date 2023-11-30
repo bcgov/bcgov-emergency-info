@@ -269,17 +269,17 @@
         },
         {
             "name": "bcgov/wordpress-common",
-            "version": "2.9.0",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-wordpress-common.git",
-                "reference": "a52c719c94f2621fd35b6f28bc845d9947645857"
+                "reference": "c6cb79b9b981b51bcd870aab09aea2c2e3871dac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://apps.itsm.gov.bc.ca/satis/dist/bcgov/wordpress-common/bcgov-wordpress-common-2.9.0-17a81d.zip",
-                "reference": "a52c719c94f2621fd35b6f28bc845d9947645857",
-                "shasum": "25b6465a190d93d6168bd32250a7f45fc1fb1699"
+                "url": "https://apps.itsm.gov.bc.ca/satis/dist/bcgov/wordpress-common/bcgov-wordpress-common-2.10.0-06b694.zip",
+                "reference": "c6cb79b9b981b51bcd870aab09aea2c2e3871dac",
+                "shasum": "9c609a853107154562dc5045fee8c868081a8963"
             },
             "require": {
                 "bcgov/sage-lib": "~9.0.0",
@@ -328,21 +328,21 @@
                     "Bcgov\\Common\\Scripts::postProductionChecksForCommon"
                 ]
             },
-            "time": "2023-07-19T18:34:06+00:00"
+            "time": "2023-11-20T19:28:02+00:00"
         },
         {
             "name": "bcgov/wordpress-scripts",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/wordpress-scripts.git",
-                "reference": "fbbff11d03db7efac41a65b1e06b6feed7acef61"
+                "reference": "ae98c0b6fb4c093baaef795825b6d0aa9c2085f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://apps.itsm.gov.bc.ca/satis/dist/bcgov/wordpress-scripts/bcgov-wordpress-scripts-2.0.0-4f7066.zip",
-                "reference": "fbbff11d03db7efac41a65b1e06b6feed7acef61",
-                "shasum": "6664e1c2022a0d3b72357555c61b98a94661a8a2"
+                "url": "https://apps.itsm.gov.bc.ca/satis/dist/bcgov/wordpress-scripts/bcgov-wordpress-scripts-2.0.1-a72854.zip",
+                "reference": "ae98c0b6fb4c093baaef795825b6d0aa9c2085f6",
+                "shasum": "0f813bfd7eb31dc966520824897fecbbfbe3ba4b"
             },
             "require": {
                 "brain/monkey": "^2.6",
@@ -378,7 +378,7 @@
                     "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
                 ]
             },
-            "time": "2023-10-13T15:05:13+00:00"
+            "time": "2023-10-25T20:16:24+00:00"
         },
         {
             "name": "brain/monkey",
@@ -3768,16 +3768,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v5.4.24",
+            "version": "v5.4.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "de237e59c5833422342be67402d487fbf50334ff"
+                "reference": "ba72f72fceddf36f00bd495966b5873f2d17ad8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/de237e59c5833422342be67402d487fbf50334ff",
-                "reference": "de237e59c5833422342be67402d487fbf50334ff",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/ba72f72fceddf36f00bd495966b5873f2d17ad8f",
+                "reference": "ba72f72fceddf36f00bd495966b5873f2d17ad8f",
                 "shasum": ""
             },
             "require": {
@@ -3845,7 +3845,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v5.4.24"
+                "source": "https://github.com/symfony/translation/tree/v5.4.31"
             },
             "funding": [
                 {
@@ -3861,7 +3861,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-19T12:34:17+00:00"
+            "time": "2023-11-03T16:16:43+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -3943,16 +3943,16 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e"
+                "reference": "b2ad5003ca10d4ee50a12da31de12a5774ba6b96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/34a41e998c2183e22995f158c581e7b5e755ab9e",
-                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/b2ad5003ca10d4ee50a12da31de12a5774ba6b96",
+                "reference": "b2ad5003ca10d4ee50a12da31de12a5774ba6b96",
                 "shasum": ""
             },
             "require": {
@@ -3981,7 +3981,7 @@
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "support": {
                 "issues": "https://github.com/theseer/tokenizer/issues",
-                "source": "https://github.com/theseer/tokenizer/tree/1.2.1"
+                "source": "https://github.com/theseer/tokenizer/tree/1.2.2"
             },
             "funding": [
                 {
@@ -3989,7 +3989,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-28T10:34:58+00:00"
+            "time": "2023-11-20T00:12:19+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -4141,5 +4141,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

@@ -1,5 +1,6 @@
-### 1.0.1: October 25, 2023
+### 1.0.1: November 29, 2023
 * Updated hazard type styles so that adding a new hazard type no longer requires changes to code ([DESCW-1632](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1632))
+* Fixed minor accessibility issues in blocks ([DESCW-1756](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1756))
 
 ### 1.0.0: October 25, 2023
 * Updated PHP coding standards to latest WP ruleset ([DESCW-1583](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1583))

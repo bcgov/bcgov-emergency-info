@@ -51,11 +51,10 @@ function render_block_post_hazard_image(
     return sprintf(
         '
         <div %s>
-            <img loading="lazy" decoding="async" alt="%s" srcset="%s" src="%s" sizes="%s">
+            <img loading="lazy" decoding="async" srcset="%s" src="%s" sizes="%s">
         </div>
         ',
         $wrapper_attributes,
-        $hazard_type->name,
         $hazard_image_srcset,
         $hazard_image_src,
         $hazard_image_sizes

@@ -43,7 +43,7 @@ function render_block_post_social_share(
                         <span class="areoi-icon"><i class="text-dark bi-facebook"></i></span>	
                         %5$s
                     </a>
-                    <a class="dropdown-item copy-link" role="menuitem" data-url="%2$s">
+                    <a class="dropdown-item copy-link" role="menuitem" href="#" data-url="%2$s">
                         <span class="areoi-icon"><i class="text-dark bi-clipboard-plus-fill link-copied-status"></i></span>
                         %6$s
                     </a>
