@@ -1,3 +1,6 @@
+### 1.0.2: December 21, 2023
+* Removed Comments item from admin menu ([DESCW-1795](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1795))
+
 ### 1.0.1: November 29, 2023
 * Updated hazard type styles so that adding a new hazard type no longer requires changes to code ([DESCW-1632](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1632))
 * Fixed minor accessibility issues in blocks ([DESCW-1756](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1756))
