@@ -81,6 +81,8 @@ class Plugin {
         $loader->add_action( 'cptui_after_update_taxonomy', $this, 'pluginize_local_cptui_data' );
         $loader->add_filter( 'cptui_post_types_override', $this, 'pluginize_load_local_cptui_post_type_data' );
         $loader->add_filter( 'cptui_taxonomies_override', $this, 'pluginize_load_local_cptui_taxonomies_data' );
+        $loader->add_filter( 'aioseo_limit_modified_date_post_types', $this, 'disable_limit_modified_date' );
+
         $loader->add_filter( 'query_loop_block_query_vars', $this, 'query_loop_block_query_vars' );
         $loader->add_filter( 'wp_theme_json_data_theme', $this, 'filter_theme_json_theme' );
         $loader->add_filter( 'body_class', $this, 'add_custom_classes_to_single' );
@@ -89,7 +91,7 @@ class Plugin {
         $loader->add_action( 'admin_head', $this, 'build_hazard_styles' );
         $loader->add_action( 'admin_init', $this, 'remove_menu_items' );
         $loader->run();
-	}
+    }
 
     /**
      * Gets a meta field value by key and post id.
@@ -256,6 +258,17 @@ class Plugin {
 
         // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
         return file_get_contents( $path );
+    }
+
+    /**
+     * Removes the "Don't update the modified date" checkbox from the Event settings panel in the editor.
+     * This feature comes from the All In One SEO plugin.
+     *
+     * @param array $post_types
+     * @return array
+     */
+    public function disable_limit_modified_date( array $post_types ): array {
+        return array_diff( $post_types, [ 'event' ] );
     }
 
     /**

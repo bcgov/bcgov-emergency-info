@@ -1,4 +1,5 @@
 ### 1.0.2: December 21, 2023
+* Removed AIOSEO "Don't update the modified date" checkbox from editor for Events ([DESCW-1796](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1796))
 * Removed Comments item from admin menu ([DESCW-1795](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1795))
 
 ### 1.0.1: November 29, 2023
