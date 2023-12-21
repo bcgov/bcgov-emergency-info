@@ -39,3 +39,9 @@
 .block-editor-block-list__layout {
     padding-bottom: 0 !important;
 }
+
+// Styles for displaying a hazard image in the wp-admin Hazard Types table.
+.hazard-image-column {
+    border-radius: 10px;
+    max-width: 100%;
+}

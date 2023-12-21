@@ -1,5 +1,5 @@
 ### 1.0.2: December 21, 2023
-* Added requirements to the Hazard Type Image ACF field ([DESCW-1797](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1797))
+* Added requirements to the Hazard Type Image ACF field, added image preview and image column to table ([DESCW-1797](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1797))
 * Removed AIOSEO "Don't update the modified date" checkbox from editor for Events ([DESCW-1796](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1796))
 * Removed Comments item from admin menu ([DESCW-1795](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1795))
 
