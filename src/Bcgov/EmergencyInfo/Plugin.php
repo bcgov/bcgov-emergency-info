@@ -90,6 +90,9 @@ class Plugin {
         $loader->add_action( 'wp_head', $this, 'build_hazard_styles' );
         $loader->add_action( 'admin_head', $this, 'build_hazard_styles' );
         $loader->add_action( 'admin_init', $this, 'remove_menu_items' );
+        $loader->add_filter( 'manage_edit-hazard_type_columns', $this, 'add_hazard_type_column', 10, 1 );
+        $loader->add_filter( 'manage_hazard_type_custom_column', $this, 'render_hazard_type_column', 10, 3 );
+
         $loader->run();
     }
 
@@ -513,6 +516,58 @@ class Plugin {
             }
         }
         return $classes;
+    }
+
+    /**
+     * Adds an image column to the Hazard Type admin table.
+     *
+     * @param array $columns
+     * @return array
+     */
+    public function add_hazard_type_column( array $columns ): array {
+        $columns['image'] = 'Image';
+        return $columns;
+    }
+
+    /**
+     * Renders the image column for the Hazard Type admin table.
+     *
+     * @param string $output
+     * @param string $column
+     * @param int    $term_id
+     * @return string
+     */
+    public function render_hazard_type_column( string $output, string $column, int $term_id ): string {
+        if ( 'image' === $column ) {
+            $hazard_image = self::get_field( 'hazard_image', 'hazard_type_' . $term_id );
+            if ( empty( $hazard_image ) ) {
+                return 'No image';
+            }
+            $hazard_image_id     = $hazard_image['id'];
+            $hazard_image_srcset = '';
+            $hazard_image_src    = '';
+            $hazard_image_sizes  = '';
+            if ( $hazard_image_id ) {
+                $hazard_image_srcset = wp_get_attachment_image_srcset( $hazard_image_id );
+                if ( ! $hazard_image_srcset ) {
+                    $hazard_image_src = wp_get_attachment_image_url( $hazard_image_id, 'medium' );
+                } else {
+                    $hazard_image_sizes = wp_get_attachment_image_sizes( $hazard_image_id );
+                }
+            }
+            $hazard_color = self::get_field( 'colour', 'hazard_type_' . $term_id );
+            if ( ! $hazard_color ) {
+                $hazard_color = 'black';
+            }
+            return sprintf(
+                '<img class="hazard-image-column" style="background-color: %s;" loading="lazy" decoding="async" srcset="%s" src="%s" sizes="%s">',
+                $hazard_color,
+                $hazard_image_srcset,
+                $hazard_image_src,
+                $hazard_image_sizes
+            );
+        }
+        return $output;
     }
 
     /**
