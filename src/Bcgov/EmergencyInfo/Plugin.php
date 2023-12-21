@@ -87,6 +87,7 @@ class Plugin {
         $loader->add_filter( 'admin_body_class', $this, 'add_custom_classes_to_admin' );
         $loader->add_action( 'wp_head', $this, 'build_hazard_styles' );
         $loader->add_action( 'admin_head', $this, 'build_hazard_styles' );
+        $loader->add_action( 'admin_init', $this, 'remove_menu_items' );
         $loader->run();
 	}
 
@@ -434,6 +435,15 @@ class Plugin {
             $css = sprintf( '<style id="hazard-styles">%s</style>', implode( '', $styles ) );
             echo wp_kses( $css, [ 'style' => [ 'id' ] ] );
         }
+    }
+
+    /**
+     * Removes admin pages from appearing in the wp-admin menu.
+     *
+     * @return void
+     */
+    public function remove_menu_items() {
+        remove_menu_page( 'edit-comments.php' );
     }
 
     /**
