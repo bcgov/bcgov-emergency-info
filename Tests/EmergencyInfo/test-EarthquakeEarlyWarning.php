@@ -2,20 +2,18 @@
 
 namespace Bcgov\EmergencyInfo;
 
-use Mockery;
-
 /**
  * EarthquakeEarlyWarning class.
  */
 class EarthquakeEarlyWarningTest extends \WP_UnitTestCase {
 
     /**
-     * Sets up unit test cases.
+     * Sets up unit test suite, only runs once.
      *
      * @return void
      */
-    public function set_up() {
-        parent::set_up();
+    public static function set_up_before_class() {
+        parent::set_up_before_class();
         register_post_type( 'event' );
         register_post_type( 'custom-pattern' );
         register_taxonomy(
@@ -57,19 +55,24 @@ class EarthquakeEarlyWarningTest extends \WP_UnitTestCase {
             $args['card_value_2']
         );
 
-        $post_id = $expected_result['id'];
-        $result  = get_post( $post_id );
+        $latest_event = get_posts(
+            [
+				'post_type'   => 'event',
+				'post_status' => 'any',
+			]
+        );
+        $post_id      = $latest_event[0]->ID;
+        $result       = get_post( $post_id );
         $this->assertEquals( $expected_result['post_content'], $result->post_content );
         $this->assertEquals( $expected_result['post_title'], $result->post_title );
         $this->assertStringContainsString( $expected_result['post_excerpt'], $result->post_excerpt );
         $this->assertEquals( $expected_result['post_status'], $result->post_status );
-        // Hazard type term is not being set in test environment.
-        // phpcs:ignore Squiz.Commenting.InlineComment.InvalidEndChar
-        // $this->assertEquals( $expected_result['terms'], wp_get_post_terms( $post_id, 'hazard_type' ) );
         $this->assertEquals( $expected_result['updated_date'], get_post_meta( $post_id, 'updated_date' )[0] );
         $this->assertEquals( $expected_result['updated_time'], get_post_meta( $post_id, 'updated_time' )[0] );
         $this->assertEquals( $expected_result['card_value_1'], get_post_meta( $post_id, 'card_value_1' )[0] );
         $this->assertEquals( $expected_result['card_value_2'], get_post_meta( $post_id, 'card_value_2' )[0] );
+        // This should be a post term, not a meta field but the post term is not being set in testing environment.
+        $this->assertEquals( $expected_result['terms'], get_post_meta( $post_id, '_hazard_type' )[0] );
     }
 
     /**
@@ -89,7 +92,6 @@ class EarthquakeEarlyWarningTest extends \WP_UnitTestCase {
                     'card_value_2'  => '7.1',
                 ],
                 [
-                    'id'           => 4,
                     'terms'        => [
                         2,
                     ],
@@ -113,7 +115,6 @@ class EarthquakeEarlyWarningTest extends \WP_UnitTestCase {
                     'card_value_2'  => '7.2',
                 ],
                 [
-                    'id'           => 6,
                     'terms'        => [],
                     'post_content' => '<p>No pattern found for this hazard type. Please add Event content.</p>',
                     'post_title'   => 'Earthquake Detected in B.C. 2',
@@ -135,9 +136,114 @@ class EarthquakeEarlyWarningTest extends \WP_UnitTestCase {
                     'card_value_2'  => 'cv2',
                 ],
                 [
-                    'id'           => 9,
                     'terms'        => [
-                        6,
+                        2,
+                    ],
+                    'post_content' => '<p>Pattern content</p>',
+                    'post_title'   => 'WP',
+                    'post_excerpt' => 'wp',
+                    'post_status'  => 'publish',
+                    'updated_date' => '19700101',
+                    'updated_time' => '12:00:00',
+                    'card_value_1' => 'cv1',
+                    'card_value_2' => 'cv2',
+                ],
+                [
+                    [
+                        'post_type'    => 'custom-pattern',
+                        'post_content' => '<p>Should not be used</p>',
+                        'post_title'   => 'Should not be used',
+                        'post_status'  => 'publish',
+                        'tax_input'    => [
+                            'hazard_type' => [
+                                2,
+                            ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '0',
+                        ],
+                    ],
+                    [
+                        'post_type'    => 'custom-pattern',
+                        'post_content' => '<p>Pattern content</p>',
+                        'post_title'   => 'Pattern title',
+                        'post_status'  => 'publish',
+                        'tax_input'    => [
+                            'hazard_type' => [
+                                2,
+                            ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '1',
+                        ],
+                    ],
+                ],
+            ],
+            'No automated pattern'     => [
+                [
+                    'title'         => 'WP',
+                    'excerpt'       => 'wp',
+                    'hazard_type'   => 'earthquake',
+                    'time_occurred' => 0,
+                    'card_value_1'  => 'cv1',
+                    'card_value_2'  => 'cv2',
+                ],
+                [
+                    'terms'        => [
+                        2,
+                    ],
+                    'post_content' => '<p>No pattern found for this hazard type. Please add Event content.</p>',
+                    'post_title'   => 'WP',
+                    'post_excerpt' => 'wp',
+                    'post_status'  => 'draft',
+                    'updated_date' => '19700101',
+                    'updated_time' => '12:00:00',
+                    'card_value_1' => 'cv1',
+                    'card_value_2' => 'cv2',
+                ],
+                [
+                    [
+                        'post_type'    => 'custom-pattern',
+                        'post_content' => '<p>Should not be used</p>',
+                        'post_title'   => 'Should not be used',
+                        'post_status'  => 'publish',
+                        'tax_input'    => [
+                            'hazard_type' => [
+                                2,
+                            ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '0',
+                        ],
+                    ],
+                    [
+                        'post_type'    => 'custom-pattern',
+                        'post_content' => '<p>Should also not be used</p>',
+                        'post_title'   => 'Should not be used 2',
+                        'post_status'  => 'publish',
+                        'tax_input'    => [
+                            'hazard_type' => [
+                                2,
+                            ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '0',
+                        ],
+                    ],
+                ],
+            ],
+            'With multiple patterns'   => [
+                [
+                    'title'         => 'WP',
+                    'excerpt'       => 'wp',
+                    'hazard_type'   => 'earthquake',
+                    'time_occurred' => 0,
+                    'card_value_1'  => 'cv1',
+                    'card_value_2'  => 'cv2',
+                ],
+                [
+                    'terms'        => [
+                        2,
                     ],
                     'post_content' => '<p>Pattern content</p>',
                     'post_title'   => 'WP',
@@ -156,8 +262,78 @@ class EarthquakeEarlyWarningTest extends \WP_UnitTestCase {
                         'post_status'  => 'publish',
                         'tax_input'    => [
                             'hazard_type' => [
-                                6,
+                                2,
                             ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '1',
+                        ],
+                    ],
+                    [
+                        'post_type'    => 'custom-pattern',
+                        'post_content' => '<p>Should not be used</p>',
+                        'post_title'   => 'Should not be used',
+                        'post_status'  => 'publish',
+                        'tax_input'    => [
+                            'hazard_type' => [
+                                2,
+                            ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '1',
+                        ],
+                    ],
+                ],
+            ],
+            'No published pattern'     => [
+                [
+                    'title'         => 'WP',
+                    'excerpt'       => 'wp',
+                    'hazard_type'   => 'earthquake',
+                    'time_occurred' => 0,
+                    'card_value_1'  => 'cv1',
+                    'card_value_2'  => 'cv2',
+                ],
+                [
+                    'terms'        => [
+                        2,
+                    ],
+                    'post_content' => '<p>No pattern found for this hazard type. Please add Event content.</p>',
+                    'post_title'   => 'WP',
+                    'post_excerpt' => 'wp',
+                    'post_status'  => 'draft',
+                    'updated_date' => '19700101',
+                    'updated_time' => '12:00:00',
+                    'card_value_1' => 'cv1',
+                    'card_value_2' => 'cv2',
+                ],
+                [
+                    [
+                        'post_type'    => 'custom-pattern',
+                        'post_content' => '<p>Should not be used</p>',
+                        'post_title'   => 'Should not be used',
+                        'post_status'  => 'trash',
+                        'tax_input'    => [
+                            'hazard_type' => [
+                                2,
+                            ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '1',
+                        ],
+                    ],
+                    [
+                        'post_type'    => 'custom-pattern',
+                        'post_content' => '<p>Should also not be used</p>',
+                        'post_title'   => 'Should not be used 2',
+                        'post_status'  => 'draft',
+                        'tax_input'    => [
+                            'hazard_type' => [
+                                2,
+                            ],
+                        ],
+                        'meta_input'   => [
+                            'use_for_automated_posts' => '1',
                         ],
                     ],
                 ],

@@ -1,0 +1,45 @@
+{
+    "key": "group_6596f9fd3b893",
+    "title": "Automation",
+    "fields": [
+        {
+            "key": "field_6596f9fd8eb89",
+            "label": "Use for automated posts?",
+            "name": "use_for_automated_posts",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Whether this pattern should be used when automated events are created (Earthquake Early Warning System).",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "custom-pattern"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704393448
+}

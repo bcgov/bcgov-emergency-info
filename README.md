@@ -25,3 +25,9 @@ Provides custom functionality for the Emergency Info BC site.
         '7.1' # Card value 2, for earthquakes this is the magnitude. Optional
     );
     ```
+
+## Unit Tests
+Requirements: MySQL server, PHP 7.4, SVN
+1. From project root, run the command `composer run setup-tests` (see: https://make.wordpress.org/cli/handbook/misc/plugin-unit-tests/#3-initialize-the-testing-environment-locally). This only needs to be run the first time to set up the WP test environment.
+1. Run `composer run test-wp` to execute tests
+	- If a "could not establish connection to database" error occurs, make sure the MySQL server is running (`mysqld` command in terminal)

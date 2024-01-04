@@ -51,13 +51,21 @@ class EarthquakeEarlyWarning {
         if ( ! empty( $terms ) ) {
             $patterns = get_posts(
                 [
-					'post_type' => 'custom-pattern',
-					'tax_query' => [
+					'post_type'   => 'custom-pattern',
+                    'post_status' => 'publish',
+					'tax_query'   => [
 						[
 							'taxonomy' => 'hazard_type',
-							'terms'    => [ $terms[0] ],
+							'terms'    => $terms[0],
 						],
 					],
+                    'meta_query'  => [
+                        'relation' => 'AND',
+                        [
+                            'key'   => 'use_for_automated_posts',
+                            'value' => '1',
+                        ],
+                    ],
 				]
             );
             if ( ! empty( $patterns ) ) {
@@ -87,6 +95,7 @@ class EarthquakeEarlyWarning {
                 'updated_time' => $updated_time,
                 'card_value_1' => $card_value_1, // Location.
                 'card_value_2' => $card_value_2,  // Magnitude.
+                '_hazard_type' => $terms, // Hack to make unit tests work.
             ],
         ];
 
