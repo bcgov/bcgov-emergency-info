@@ -1,3 +1,7 @@
+### 1.1.0: January 4, 2024
+* Added eibc_create_event action to allow Earthquake Early Warning System to create events automatically ([DESCW-1776](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1776))
+* Changed PHP unit testing to use WordPress testing environment
+
 ### 1.0.2: December 21, 2023
 * Added requirements to the Hazard Type Image ACF field, added image preview and image column to table ([DESCW-1797](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1797))
 * Removed AIOSEO "Don't update the modified date" checkbox from editor for Events ([DESCW-1796](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1796))

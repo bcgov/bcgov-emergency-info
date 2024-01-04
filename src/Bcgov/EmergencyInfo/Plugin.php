@@ -73,6 +73,7 @@ class Plugin {
 		new Admin();
 		new PublicRender();
         new Blocks();
+        new EarthquakeEarlyWarning();
 
         $loader = new Loader();
         $loader->add_filter( 'acf/settings/save_json', $this, 'acf_json_save_point' );
