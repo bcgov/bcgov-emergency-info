@@ -14,7 +14,9 @@
 	],
 	"require-dev": {
 		"bcgov/wordpress-common": "@dev",
-        "bcgov/wordpress-scripts": "2.*"
+        "bcgov/wordpress-scripts": "2.*",
+        "phpunit/phpunit": "^9.6",
+		"yoast/phpunit-polyfills": "^2.0"
 	},
 	"autoload": {
 		"psr-4": {
@@ -48,8 +50,14 @@
         "phpcbf": [
             "Bcgov\\Script\\Standards::phpcbf"
         ],
+        "setup-tests": [
+			"bin/install-wp-tests.sh wordpress_test root '' localhost latest"
+		],
         "test": [
             "Bcgov\\Script\\Tests::phpunit"
+        ],
+        "test-wp": [
+            "vendor/bin/phpunit --configuration phpunit.xml.dist"
         ],
         "coverage": [
             "./vendor/bin/phpunit --coverage-html ./coverage/php/"

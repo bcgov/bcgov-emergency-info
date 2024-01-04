@@ -12,4 +12,16 @@ Provides custom functionality for the Emergency Info BC site.
 ## Shortcodes
 
 ## Hooks
-
+### Actions
+1. `eibc_create_event`: Programmatically creates an Event post with the given parameters. Intended to be used by the Earthquake Early Warning System.
+    ```php
+    do_action(
+        'eibc_create_event',
+        'Earthquake Detected in B.C.', # Event title
+        'An earthquake of magnitude 7.1 has been detected in Northern B.C.', # Event excerpt
+        'earthquake', # Hazard type slug
+        1704311951, # Unix time when event occurred or alert was sent
+        'Northern B.C.', # Card value 1, for earthquakes this is the location. Optional
+        '7.1' # Card value 2, for earthquakes this is the magnitude. Optional
+    );
+    ```
