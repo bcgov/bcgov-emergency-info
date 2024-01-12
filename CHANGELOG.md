@@ -1,5 +1,6 @@
 ### 1.0.3: January 11, 2024
 * Updated ACF fields for hazard type card metadata ([DESCW-1893](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1893))
+* Fixed error caused by calling remove_menu_page() in wrong hook (admin_init -> admin_menu)
 
 ### 1.0.2: December 21, 2023
 * Added requirements to the Hazard Type Image ACF field, added image preview and image column to table ([DESCW-1797](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1797))
