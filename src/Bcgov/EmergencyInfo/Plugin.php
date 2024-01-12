@@ -89,7 +89,7 @@ class Plugin {
         $loader->add_filter( 'admin_body_class', $this, 'add_custom_classes_to_admin' );
         $loader->add_action( 'wp_head', $this, 'build_hazard_styles' );
         $loader->add_action( 'admin_head', $this, 'build_hazard_styles' );
-        $loader->add_action( 'admin_init', $this, 'remove_menu_items' );
+        $loader->add_action( 'admin_menu', $this, 'remove_menu_items' );
         $loader->add_filter( 'manage_edit-hazard_type_columns', $this, 'add_hazard_type_column', 10, 1 );
         $loader->add_filter( 'manage_hazard_type_custom_column', $this, 'render_hazard_type_column', 10, 3 );
 
