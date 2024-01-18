@@ -2,6 +2,7 @@
 namespace Bcgov\EmergencyInfo;
 
 use WP_REST_Request;
+use WP_REST_Response;
 
 /**
  * EarthquakeEarlyWarning class handles automatic event creation caused by NAAD alerts.
@@ -130,7 +131,7 @@ class EarthquakeEarlyWarning {
      * @return WP_Error|WP_REST_Response
      */
     public function handle_alert( WP_REST_Request $request ) {
-        return $request;
+        return new WP_REST_Response( $request->get_body() );
     }
 
     /**

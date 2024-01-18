@@ -16,8 +16,8 @@ To allow the plugin to accept requests from the NAAD connector some additional c
 3. Under Application Passwords section, set `New Application Password Name` to "NAAD".
 4. Click `Add New Application Password` button.
 5. Copy the generated password and provide it to the NAAD Connector instance along with the username from step 1.
-6. To test the authentication, run the following curl command replacing the values as needed: `curl https://localhost/{site slug}/wp-json/naad/v1/alert -X POST -k --user "{username}:{application password}"`.
-   * If you receive a 200 response, the authentication is working correctly.
+6. To test the authentication, run the following curl command replacing the values as needed: `curl https://localhost/{site slug}/wp-json/naad/v1/alert -d '{"message":"Connection successful"}' -k --user '{username}:{application password}'`.
+   * If the authentication was successful, you should receive a 200 response with the curl command's "Connection successful" message payload repeated back to you.
    * A 401 response indicates that the username and/or password are incorrect.
 
 ## Shortcodes
