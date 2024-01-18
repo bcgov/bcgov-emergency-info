@@ -12,10 +12,13 @@ Provides custom functionality for the Emergency Info BC site.
 ### NAAD Requests
 To allow the plugin to accept requests from the NAAD connector some additional configuration is required:
 1. Choose a user (or create a new one) that has the `manage_options` capability (Administrator role and up).
-2. Navigate to this user's settings page (Users > [user from step 1] > Edit).
+2. Navigate to this user's settings page (Users > {user from step 1} > Edit).
 3. Under Application Passwords section, set `New Application Password Name` to "NAAD".
 4. Click `Add New Application Password` button.
 5. Copy the generated password and provide it to the NAAD Connector instance along with the username from step 1.
+6. To test the authentication, run the following curl command replacing the values as needed: `curl https://localhost/{site slug}/wp-json/naad/v1/alert -X POST -k --user "{username}:{application password}"`.
+   * If you receive a 200 response, the authentication is working correctly.
+   * A 401 response indicates that the username and/or password are incorrect.
 
 ## Shortcodes
 
