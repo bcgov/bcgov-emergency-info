@@ -1,6 +1,9 @@
 <?php
 namespace Bcgov\EmergencyInfo;
 
+use WP_REST_Request;
+use WP_REST_Response;
+
 /**
  * EarthquakeEarlyWarning class handles automatic event creation caused by NAAD alerts.
  */
@@ -11,6 +14,7 @@ class EarthquakeEarlyWarning {
      */
     public function __construct() {
         add_action( 'eibc_create_event', [ $this, 'create_event' ], 10, 6 );
+        add_action( 'rest_api_init', [ $this, 'register_naad_alert_routes' ], 20 );
     }
 
     /**
@@ -101,5 +105,42 @@ class EarthquakeEarlyWarning {
 
         // Create post.
         wp_insert_post( $post_args );
+    }
+
+    /**
+     * Register REST routes used by the NAAD connector.
+     *
+     * @return void
+     */
+    public function register_naad_alert_routes() {
+        register_rest_route(
+            'naad/v1',
+            '/alert',
+            [
+                'methods'             => 'POST',
+                'callback'            => [ $this, 'handle_alert' ],
+                'permission_callback' => [ $this, 'authenticate_alert' ],
+            ]
+        );
+    }
+
+    /**
+     * Handles an alert request from the NAAD connector.
+     *
+     * @param WP_REST_Request $request
+     * @return WP_Error|WP_REST_Response
+     */
+    public function handle_alert( WP_REST_Request $request ) {
+        return new WP_REST_Response( $request->get_body() );
+    }
+
+    /**
+     * Authenticates an alert request, enforcing that the user has manage_options capability.
+     * Note that the request must also include a user and valid application password.
+     *
+     * @return bool
+     */
+    public function authenticate_alert() {
+        return current_user_can( 'manage_options' );
     }
 }
