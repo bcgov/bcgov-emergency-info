@@ -15,8 +15,6 @@ use Bcgov\Common\Loader;
  */
 class Blocks {
 
-
-
     /**
      * Constructor.
      *
@@ -38,6 +36,7 @@ class Blocks {
         $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
         $loader->add_action( 'init', $this, 'register_all' );
         $loader->add_filter( 'render_block', $this, 'render_block', 10, 2 );
+        $loader->add_filter( 'allowed_block_types_all', $this, 'disallow_blocks', 20, 2 );
         $loader->run();
     }
 
@@ -64,6 +63,7 @@ class Blocks {
         include_once __DIR__ . '/blocks/post-hazard-title/index.php';
         include_once __DIR__ . '/blocks/post-meta-display/index.php';
         include_once __DIR__ . '/blocks/post-social-share/index.php';
+        include_once __DIR__ . '/blocks/subscribe-form/index.php';
     }
 
     /**
@@ -94,6 +94,35 @@ class Blocks {
                 );
             }
         }
+    }
+
+    /**
+     * Disallow blocks from appearing as options in the editor.
+     *
+     * @param int|array $allowed_block_types
+     * @return array
+     */
+    public function disallow_blocks( $allowed_block_types ): array {
+        // Disallow subscribe-form block as we replace it with an emergency-info specific form.
+        $disallowed_blocks = [
+            'notify-client/subscribe-form',
+        ];
+
+        // Get all registered blocks if $allowed_block_types is not already set.
+        if ( ! is_array( $allowed_block_types ) || empty( $allowed_block_types ) ) {
+            $registered_blocks   = \WP_Block_Type_Registry::get_instance()->get_all_registered();
+            $allowed_block_types = array_keys( $registered_blocks );
+        }
+
+        $filtered_blocks = [];
+
+        foreach ( $allowed_block_types as $block ) {
+            if ( ! in_array( $block, $disallowed_blocks, true ) ) {
+                $filtered_blocks[] = $block;
+            }
+        }
+
+        return $filtered_blocks;
     }
 
     /**

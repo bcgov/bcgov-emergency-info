@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "emergency-info/subscribe-form",
+  "title": "Emergency Info BC Notify Subscribe Form",
+  "category": "emergency-info",
+  "icon": "forms",
+  "description": "Displays a form to allow users to subscribe to notifications for events.",
+  "textdomain": "emergency-info",
+  "attributes": {
+    "excludedTerms": {
+      "type": "array"
+    },
+    "hideBlock": {
+      "type": "boolean"
+    }
+  },
+  "viewScript": "file:./view.js",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}
