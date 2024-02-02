@@ -1,10 +1,10 @@
-Created at 2024-01-11 4:17 pm
+Created at 2024-02-01 4:19 pm
 
 * [yes] Updated version in composer.json
 * [yes] Updated version in style.css or plugin file
 * [yes] Updated CHANGELOG.md to include jira ticket
 * [no] Updated README.md for new functionality
-* [no] Built assets for production (npm run build:production)
+* [yes] Built assets for production (npm run build:production)
 * [N/A] Updated the documentation (N/A, Updated, or a ticket ID)
 * [✓] Verified coding standards (phpcs)
 * [✓] Run PHP tests

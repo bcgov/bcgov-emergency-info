@@ -1,3 +1,7 @@
+### 1.1.0: February 1, 2024
+* Created EIBC Subscribe Form block ([DESCW-1974](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1974))
+* Added Region taxonomy to Events
+
 ### 1.0.3: January 11, 2024
 * Updated ACF fields for hazard type card metadata ([DESCW-1893](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1893))
 * Fixed error caused by calling remove_menu_page() in wrong hook (admin_init -> admin_menu)
