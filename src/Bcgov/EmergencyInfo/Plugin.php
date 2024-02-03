@@ -92,6 +92,7 @@ class Plugin {
         $loader->add_action( 'admin_menu', $this, 'remove_menu_items' );
         $loader->add_filter( 'manage_edit-hazard_type_columns', $this, 'add_hazard_type_column', 10, 1 );
         $loader->add_filter( 'manage_hazard_type_custom_column', $this, 'render_hazard_type_column', 10, 3 );
+        $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_jquery_ui' );
 
         $loader->run();
     }
@@ -568,6 +569,15 @@ class Plugin {
             );
         }
         return $output;
+    }
+
+    /**
+     * Enqueues jQueryUI scripts used by blocks.
+     *
+     * @return void
+     */
+    public function enqueue_jquery_ui() {
+        wp_enqueue_script( 'jquery-ui-autocomplete' );
     }
 
     /**
