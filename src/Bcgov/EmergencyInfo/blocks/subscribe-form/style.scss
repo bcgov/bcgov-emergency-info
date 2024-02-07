@@ -6,6 +6,8 @@ $white: #fff;
 .ui-autocomplete {
     background-color: $white;
     max-width: 300px;
+    max-height: 400px;
+    overflow: scroll;
     border: solid $grey 1px;
 }
 

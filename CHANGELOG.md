@@ -1,4 +1,5 @@
-### 1.1.0: February 2, 2024
+### 1.1.0: February 7, 2024
+* Added region data json, minor changes to Subscribe Form block to accommodate large number of autocomplete options ([DESCW-1952](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1952))
 * Added autocomplete functionality to Subscribe Form block for selecting regions ([DESCW-1975](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1975))
 * Created EIBC Subscribe Form block ([DESCW-1974](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1974))
 * Added Region taxonomy to Events
