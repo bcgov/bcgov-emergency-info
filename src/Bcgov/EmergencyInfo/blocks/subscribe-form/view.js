@@ -73,7 +73,7 @@ $(() => {
             }
         })
         .autocomplete({
-            minLength: 1,
+            minLength: 3,
             source: availableTerms,
             focus: () => {
                 // Prevent value inserted on focus.
