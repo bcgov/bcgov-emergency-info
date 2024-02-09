@@ -10,9 +10,20 @@ function render_block_emergency_info_subscribe_form(
 ): string {
     $wrapper_attributes = get_block_wrapper_attributes();
 
-    // Build post information html.
+    // Get subscription criteria field names and extract values from GET params.
+    $filter_params = apply_filters( 'notify_subscription_fields', [] ) ?? [];
     // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-    $post_id = sanitize_key( $_GET['post_id'] ?? null );
+    $get_params           = $_GET;
+    $preselected_term_ids = [];
+    foreach ( $filter_params as $param ) {
+        if ( array_key_exists( $param, $get_params ) ) {
+            $value = $get_params[ $param ];
+            // Values come as comma-separated strings, split them into an array.
+            $value_array          = explode( ',', $value );
+            $value_int_array      = array_map( 'intval', $value_array );
+            $preselected_term_ids = array_merge( $preselected_term_ids, $value_int_array );
+        }
+    }
 
     // Extract term ids from term strings.
     $excluded_terms    = $attributes['excludedTerms'] ?? [];
@@ -25,18 +36,12 @@ function render_block_emergency_info_subscribe_form(
     );
 
     $taxonomy_slug = 'region';
-    // Get terms for the linked post so we can set them to selected by default.
-    $post_terms    = get_the_terms( $post_id, $taxonomy_slug );
-    $post_term_ids = [];
-    if ( ! empty( $post_terms ) ) {
-        $post_term_ids = array_column( $post_terms, 'term_id' );
-    }
-
-    // Get all terms belonging to the taxonomy.
+    // Get all leaf terms belonging to the taxonomy.
     $terms = get_terms(
         [
             'taxonomy'   => $taxonomy_slug,
             'hide_empty' => false,
+            'childless'  => true,
         ]
     );
 
@@ -51,7 +56,7 @@ function render_block_emergency_info_subscribe_form(
             'label' => $term->name,
             'value' => $term->term_id,
         ];
-        $is_selected    = in_array( $term->term_id, $post_term_ids, true );
+        $is_selected    = in_array( $term->term_id, $preselected_term_ids, true );
         $term_options  .= sprintf( '<option value="%d" %s>%s</option>', $term->term_id, $is_selected ? 'selected' : '', $term->name );
     }
 
