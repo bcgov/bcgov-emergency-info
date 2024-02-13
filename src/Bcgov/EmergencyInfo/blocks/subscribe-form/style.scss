@@ -1,12 +1,17 @@
 $primary-blue: #036;
 $light-blue: #3b99fc;
 $grey: #606060;
-$white: #fff;
 $autocomplete-max-width: 684px;
 
-// BCDS variables
+// BC Design Tokens variables
+$white: #fff;
 $surface-color-primary-activeBorder: #2e5dd7;
 $layout-margin-small: 4px;
+
+@mixin focus-outline {
+    outline: 4px solid $light-blue;
+    outline-offset: 1px;
+}
 
 // jQueryUI autocomplete dropdown menu.
 .ui-autocomplete {
@@ -45,27 +50,32 @@ $layout-margin-small: 4px;
 
     .region-autocomplete {
         border: 2px solid $grey;
-        border-radius: $layout-margin-small;
+        height: 61px;
+        overflow: hidden;
+        border-radius: 20px;
         margin-top: 1rem;
         margin-bottom: 1rem;
         max-width: $autocomplete-max-width;
+        background-color: var(--wp--preset--color--support-gray-00);
 
         >* {
             border: none;
         }
 
-        #region-autocomplete-input {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
         &:focus-within {
-            outline: 4px solid $light-blue;
-            outline-offset: 1px;
+
+            @include focus-outline();
+            background-color: $white;
 
             .geo-icon {
                 color: $light-blue;
             }
+        }
+
+        #region-autocomplete-input {
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .form-control:focus {
@@ -73,10 +83,10 @@ $layout-margin-small: 4px;
         }
 
         .input-group-text {
-            background-color: $white;
+            background-color: transparent;
 
             &:last-child {
-                padding: 0;
+                padding: 0 10px 0 0;
             }
         }
     }
@@ -84,6 +94,7 @@ $layout-margin-small: 4px;
     .region-list {
         list-style: none;
         padding: 0;
+        // Offset margins on pills.
         margin-left: -0.5rem;
         margin-right: -0.5rem;
 
@@ -166,8 +177,8 @@ $layout-margin-small: 4px;
     }
 
     :focus {
-        outline: 4px solid $light-blue;
-        outline-offset: 1px;
+
+        @include focus-outline();
     }
 
     .BC-Gov-PrimaryButton:active {

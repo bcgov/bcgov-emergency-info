@@ -80,7 +80,7 @@ function render_block_emergency_info_subscribe_form(
                 <div class="region-autocomplete input-group">
                     <span class="input-group-text"><i class="geo-icon bi bi-geo-alt-fill"></i>
                     </span>
-                    <input id="region-autocomplete-input" class="form-control" placeholder="Enter a location" />
+                    <input id="region-autocomplete-input" class="form-control" placeholder="Type location(s)" />
                     <span class="input-group-text">
                         <button type="button" class="clear-input btn btn-link">
                             <i class="bi bi-x"></i>

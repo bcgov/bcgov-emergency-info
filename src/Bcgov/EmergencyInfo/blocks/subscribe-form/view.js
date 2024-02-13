@@ -58,10 +58,10 @@ $(() => {
         if (!termList) {
             // If no terms selected, show message about using the autocomplete.
             $('.region-autocomplete-label').html(
-                'Search for a location in British Columbia'
+                'Choose location(s) in B.C. for updates:'
             );
         } else {
-            $('.region-autocomplete-label').html('Your selection(s)');
+            $('.region-autocomplete-label').html('Your location(s):');
         }
         $('.region-list').html(termList);
 
@@ -84,7 +84,7 @@ $(() => {
             }
         })
         .autocomplete({
-            minLength: 3,
+            minLength: 0,
             source: availableTerms,
             position: {
                 of: '.region-autocomplete',
