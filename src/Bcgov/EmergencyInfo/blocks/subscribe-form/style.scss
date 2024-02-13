@@ -1,27 +1,133 @@
 $primary-blue: #036;
 $light-blue: #3b99fc;
 $grey: #606060;
-$white: #fff;
+$autocomplete-max-width: 684px;
 
-.ui-autocomplete {
-    background-color: $white;
-    max-width: 300px;
-    max-height: 400px;
-    overflow: scroll;
-    border: solid $grey 1px;
+// BC Design Tokens variables
+$white: #fff;
+$surface-color-primary-activeBorder: #2e5dd7;
+$layout-margin-small: 4px;
+
+@mixin focus-outline {
+    outline: 4px solid $light-blue;
+    outline-offset: 1px;
 }
 
+// jQueryUI autocomplete dropdown menu.
+.ui-autocomplete {
+    background-color: $white;
+    max-height: 250px;
+    max-width: $autocomplete-max-width;
+    overflow: auto;
+    border: solid $grey 1px;
+    list-style-type: none;
+    padding-left: 0;
+    border-radius: $layout-margin-small;
+
+    li {
+        cursor: pointer;
+
+        .ui-state-active {
+            background-color: $surface-color-primary-activeBorder;
+            color: $white;
+        }
+
+        >div {
+            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        }
+    }
+}
+
+// jQueryUI debug helper intended to be hidden.
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+// Block styles.
 .wp-block-emergency-info-subscribe-form {
 
     font-family: BCSans, "Noto Sans", Verdana, Arial, sans-serif;
 
+    .region-autocomplete {
+        border: 2px solid $grey;
+        height: 61px;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: $autocomplete-max-width;
+        background-color: var(--wp--preset--color--support-gray-00);
+
+        >* {
+            border: none;
+        }
+
+        &:focus-within {
+
+            @include focus-outline();
+            background-color: $white;
+
+            .geo-icon {
+                color: $light-blue;
+            }
+        }
+
+        #region-autocomplete-input {
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+        }
+
+        .input-group-text {
+            background-color: transparent;
+
+            &:last-child {
+                padding: 0 10px 0 0;
+            }
+        }
+    }
+
     .region-list {
         list-style: none;
         padding: 0;
+        // Offset margins on pills.
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
 
-        li {
-            display: inline-block;
-            margin: 5px;
+        >li {
+            display: inline-flex;
+            margin: 0.5rem;
+
+            >.region-pill {
+                max-width: 100%;
+                border-radius: $layout-margin-small;
+                background: $surface-color-primary-activeBorder;
+                color: $white;
+                padding: 5px 10px 5px 10px;
+                font-weight: bold;
+
+                >span {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                >button {
+                    padding: 5px;
+                    display: inline-flex;
+                    color: $white;
+                    background-color: $surface-color-primary-activeBorder;
+                    border: none;
+
+                    &:hover,
+                    &:focus {
+                        background-color: $primary-blue;
+                    }
+                }
+            }
         }
     }
 
@@ -71,8 +177,8 @@ $white: #fff;
     }
 
     :focus {
-        outline: 4px solid $light-blue;
-        outline-offset: 1px;
+
+        @include focus-outline();
     }
 
     .BC-Gov-PrimaryButton:active {
