@@ -6,7 +6,7 @@ $(() => {
     regionSelect.hide();
 
     // The input for entering autocomplete search.
-    const regionAutocomplete = $('#region-autocomplete');
+    const regionAutocomplete = $('#region-autocomplete-input');
 
     // The list of available terms to autocomplete from. Passed in from PHP.
     // eslint-disable-next-line no-undef
@@ -46,12 +46,23 @@ $(() => {
             });
             // Create a li with a badge and a remove button.
             termList += `<li>
-                <span class="badge rounded-pill bg-primary">
-                    ${term.label}
-                    <button type="button" class="btn btn-link" data-id="${term.value}"><i class="text-light bi-x"></i></button>
+                <span class="region-pill">
+                    <span>
+                        ${term.label}
+                    </span>
+                    <button class="btn btn-secondary" data-id="${term.value}" tabindex="0"><i class="bi-x-circle-fill"></i></button>
                 </span>
             </li>`;
         });
+
+        if (!termList) {
+            // If no terms selected, show message about using the autocomplete.
+            $('.region-autocomplete-label').html(
+                'Search for a location in British Columbia'
+            );
+        } else {
+            $('.region-autocomplete-label').html('Your selection(s)');
+        }
         $('.region-list').html(termList);
 
         // Add listener for clicks of the remove button on each term.
@@ -75,6 +86,10 @@ $(() => {
         .autocomplete({
             minLength: 3,
             source: availableTerms,
+            position: {
+                of: '.region-autocomplete',
+            },
+            classes: { 'ui-autocomplete': 'soft-shadow' },
             focus: () => {
                 // Prevent value inserted on focus.
                 return false;
@@ -90,7 +105,18 @@ $(() => {
                 regionAutocomplete.val('');
                 return false;
             },
+            response: (event, ui) => {
+                // Show no results message if the search returned no hits.
+                if (0 === ui.content.length) {
+                    ui.content.push({ value: '', label: 'No results found.' });
+                }
+            },
         });
+
+    // Clear search input value.
+    $('.clear-input').on('click', () => {
+        regionAutocomplete.val('');
+    });
 
     // Initialize terms display in case terms were passed to the page.
     renderTerms();

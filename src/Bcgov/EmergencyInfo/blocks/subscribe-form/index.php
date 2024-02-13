@@ -75,11 +75,18 @@ function render_block_emergency_info_subscribe_form(
             <form action="%2$s" method="post">
                 %3$s
                 
-                <div class="text_label">
-                    <label for="region-autocomplete">Regions</label>
-                </div>
+                <label class="region-autocomplete-label" for="region-autocomplete-input"></label>
                 <ul class="region-list"></ul>
-                <input id="region-autocomplete" class="text_input" />
+                <div class="region-autocomplete input-group">
+                    <span class="input-group-text"><i class="geo-icon bi bi-geo-alt-fill"></i>
+                    </span>
+                    <input id="region-autocomplete-input" class="form-control" placeholder="Enter a location" />
+                    <span class="input-group-text">
+                        <button type="button" class="clear-input btn btn-link">
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </span>
+                </div>
                 <select id="region-select" name="tax_region[]" multiple>
                     %6$s
                 </select>
@@ -90,14 +97,15 @@ function render_block_emergency_info_subscribe_form(
                 </div>
                 <input id="email-input" class="text_input" type="email" name="email" required><br>
                 <button class="BC-Gov-PrimaryButton" type="submit">%5$s</button>
+                <div>* Required field</div>
             </form>
         </div>
         ',
         $wrapper_attributes,
         esc_url( admin_url( 'admin-post.php' ) ),
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
-        __( 'Email Address' ),
-        __( 'Submit' ),
+        __( 'Enter your email address*' ),
+        __( 'Subscribe' ),
         $term_options
     );
 }
