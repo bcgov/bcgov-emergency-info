@@ -36,7 +36,7 @@ function render_block_emergency_info_subscribe_form(
     );
 
     $taxonomy_slug = 'region';
-    // Get all leaf terms belonging to the taxonomy.
+    // Get all childless terms belonging to the taxonomy.
     $terms = get_terms(
         [
             'taxonomy'   => $taxonomy_slug,
