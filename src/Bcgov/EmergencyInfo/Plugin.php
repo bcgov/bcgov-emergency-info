@@ -93,6 +93,7 @@ class Plugin {
         $loader->add_filter( 'manage_edit-hazard_type_columns', $this, 'add_hazard_type_column', 10, 1 );
         $loader->add_filter( 'manage_hazard_type_custom_column', $this, 'render_hazard_type_column', 10, 3 );
         $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_jquery_ui' );
+        $loader->add_filter( 'notify_subscription_fields', $this, 'set_notify_subscription_fields', 11, 1 );
 
         $loader->run();
     }
@@ -578,6 +579,18 @@ class Plugin {
      */
     public function enqueue_jquery_ui() {
         wp_enqueue_script( 'jquery-ui-autocomplete' );
+    }
+
+    /**
+     * Sets notify subscription fields. Used in subscribe form block to set subscription
+     * data from query params.
+     *
+     * @param array $data Array of subscription fields.
+     * @return array
+     */
+    public function set_notify_subscription_fields( array $data ): array {
+        array_push( $data, 'tax_region' );
+        return $data;
     }
 
     /**
