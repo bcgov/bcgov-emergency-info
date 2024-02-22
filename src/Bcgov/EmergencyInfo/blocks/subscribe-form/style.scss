@@ -13,31 +13,6 @@ $layout-margin-small: 4px;
     outline-offset: 1px;
 }
 
-// jQueryUI autocomplete dropdown menu.
-.ui-autocomplete {
-    background-color: $white;
-    max-height: 250px;
-    max-width: $autocomplete-max-width;
-    overflow: auto;
-    border: solid $grey 1px;
-    list-style-type: none;
-    padding-left: 0;
-    border-radius: $layout-margin-small;
-
-    li {
-        cursor: pointer;
-
-        .ui-state-active {
-            background-color: $surface-color-primary-activeBorder;
-            color: $white;
-        }
-
-        >div {
-            padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-        }
-    }
-}
-
 // jQueryUI debug helper intended to be hidden.
 .ui-helper-hidden-accessible {
     display: none;
@@ -87,6 +62,31 @@ $layout-margin-small: 4px;
 
             &:last-child {
                 padding: 0 10px 0 0;
+            }
+        }
+    }
+
+    // jQueryUI autocomplete dropdown menu.
+    #listbox-wrapper > ul {
+        background-color: $white;
+        max-height: 250px;
+        max-width: $autocomplete-max-width;
+        overflow: auto;
+        border: solid $grey 1px;
+        list-style-type: none;
+        padding-left: 0;
+        border-radius: $layout-margin-small;
+
+        li {
+            cursor: pointer;
+
+            .ui-state-active {
+                background-color: $surface-color-primary-activeBorder;
+                color: $white;
+            }
+
+            >div {
+                padding: 0.25rem 0.5rem 0.25rem 0.5rem;
             }
         }
     }

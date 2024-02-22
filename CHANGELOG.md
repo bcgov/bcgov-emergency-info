@@ -1,5 +1,5 @@
-### 1.1.0: February 13, 2024
-* Updated Subscribe Form structure and styling per designs ([DESCW-1976](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1976))
+### 1.1.0: February 21, 2024
+* Updated Subscribe Form accessibility, now navigable via keyboard and screen reader ([DESCW-1996](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1996))
 * Updated Subscribe Form to set region selections based on query params to allow users to update their subscriptions ([DESCW-1951](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1951))
 * Updated region data to be hierarchical
 * Added region data json, minor changes to Subscribe Form block to accommodate large number of autocomplete options ([DESCW-1952](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1952))

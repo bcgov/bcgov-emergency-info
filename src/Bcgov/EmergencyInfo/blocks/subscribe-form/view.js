@@ -45,12 +45,12 @@ $(() => {
                 return t.value === +termId;
             });
             // Create a li with a badge and a remove button.
-            termList += `<li>
+            termList += `<li aria-label="${term.label}" tabindex="0">
                 <span class="region-pill">
                     <span>
                         ${term.label}
                     </span>
-                    <button class="btn btn-secondary" data-id="${term.value}" tabindex="0"><i class="bi-x-circle-fill"></i></button>
+                    <button class="btn btn-secondary" aria-label="Remove ${term.label}" data-id="${term.value}" tabindex="0"><i class="bi-x-circle-fill"></i></button>
                 </span>
             </li>`;
         });
@@ -89,9 +89,19 @@ $(() => {
             position: {
                 of: '.region-autocomplete',
             },
+            appendTo: '#listbox-wrapper',
             classes: { 'ui-autocomplete': 'soft-shadow' },
             focus: () => {
-                // Prevent value inserted on focus.
+                // Update aria attributes when focusing on an item.
+                const id = $('#listbox-wrapper')
+                    .find('.ui-state-active')
+                    .attr('id');
+                regionAutocomplete.attr('aria-activedescendant', id);
+                $('.ui-autocomplete div').attr('aria-selected', 'false');
+                $('.ui-autocomplete div.ui-state-active').attr(
+                    'aria-selected',
+                    'true'
+                );
                 return false;
             },
             select: (event, ui) => {
@@ -113,10 +123,22 @@ $(() => {
             },
         });
 
-    // Clear search input value.
-    $('.clear-input').on('click', () => {
-        regionAutocomplete.val('');
-    });
+    // Override jQueryUI Autocomplete renderItem() to add aria role.
+    $.ui.autocomplete.prototype._renderItem = (ul, item) => {
+        return $('<li></li>')
+            .append('<div role="option">' + item.label + '</div>')
+            .appendTo(ul);
+    };
+
+    // Override jQueryUI Autocomplete renderMenu() to add aria role.
+    // eslint-disable-line prefer-arrow/prefer-arrow-functions
+    $.ui.autocomplete.prototype._renderMenu = function (ul, items) {
+        const $this = this;
+        $.each(items, (index, item) => {
+            $this._renderItemData(ul, item);
+        });
+        $(ul).attr('role', 'listbox');
+    };
 
     // Initialize terms display in case terms were passed to the page.
     renderTerms();

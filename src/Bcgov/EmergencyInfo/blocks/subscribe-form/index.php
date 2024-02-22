@@ -76,17 +76,27 @@ function render_block_emergency_info_subscribe_form(
                 %3$s
                 
                 <label class="region-autocomplete-label" for="region-autocomplete-input"></label>
-                <ul class="region-list"></ul>
+                <ul class="region-list" aria-role="presentation"></ul>
                 <div class="region-autocomplete input-group">
                     <span class="input-group-text"><i class="geo-icon bi bi-geo-alt-fill"></i>
                     </span>
-                    <input id="region-autocomplete-input" class="form-control" placeholder="Type location(s)" />
+                    <input id="region-autocomplete-input"
+                           class="form-control"
+                           type="search"
+                           placeholder="Type location(s)"
+                           role="searchbox"
+                           aria-description="Search results will appear below"
+                           aria-controls="ui-id-1"
+                           aria-autocomplete="list"
+                           aria-activedescendant=""
+                           />
                     <span class="input-group-text">
-                        <button type="button" class="clear-input btn btn-link">
+                        <button type="button" aria-label="Clear search" class="clear-input btn btn-link">
                             <i class="bi bi-x"></i>
                         </button>
                     </span>
                 </div>
+                <div id="listbox-wrapper"></div>
                 <select id="region-select" name="tax_region[]" multiple>
                     %6$s
                 </select>
