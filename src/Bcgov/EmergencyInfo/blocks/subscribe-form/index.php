@@ -61,12 +61,17 @@ function render_block_emergency_info_subscribe_form(
     }
 
     // Pass the array of region terms to JS.
-    wp_register_script( 'subscribe_form_script', '', [], true, true );
-    wp_enqueue_script( 'subscribe_form_script' );
-    wp_add_inline_script(
-        'subscribe_form_script',
-        'const terms = ' . wp_json_encode( $parsed_terms ),
-        'before'
+    add_action(
+        'wp_enqueue_scripts',
+        function () use ( $parsed_terms ) {
+			wp_register_script( 'subscribe_form_script', '', [], true, true );
+			wp_enqueue_script( 'subscribe_form_script' );
+			wp_add_inline_script(
+                'subscribe_form_script',
+                'const terms = ' . wp_json_encode( $parsed_terms ),
+                'before'
+			);
+		}
     );
 
     return sprintf(
