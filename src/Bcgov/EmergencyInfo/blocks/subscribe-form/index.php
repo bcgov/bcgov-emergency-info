@@ -95,11 +95,7 @@ function render_block_emergency_info_subscribe_form(
                            aria-autocomplete="list"
                            aria-activedescendant=""
                            />
-                    <span class="input-group-text">
-                        <button type="button" aria-label="Clear search" class="clear-input btn btn-link">
-                            <i class="bi bi-x"></i>
-                        </button>
-                    </span>
+                    <span class="input-group-text"></span>
                 </div>
                 <div id="listbox-wrapper"></div>
                 <select id="region-select" name="tax_region[]" multiple>
@@ -117,7 +113,7 @@ function render_block_emergency_info_subscribe_form(
         </div>
         ',
         $wrapper_attributes,
-        esc_url( admin_url( 'admin-post.php' ) ),
+        esc_url( admin_url( 'admin-ajax.php' ) ),
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
         __( 'Enter your email address*' ),
         __( 'Subscribe' ),
