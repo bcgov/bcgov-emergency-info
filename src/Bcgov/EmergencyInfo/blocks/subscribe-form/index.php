@@ -10,6 +10,11 @@ function render_block_emergency_info_subscribe_form(
 ): string {
     $wrapper_attributes = get_block_wrapper_attributes();
 
+    $is_in_maintenance_mode = get_option( 'des_notify_maintenance_mode' );
+    if ( $is_in_maintenance_mode ) {
+        return '<p>Sorry! Our subscription service is currently undergoing maintenance.</p>';
+    }
+
     // Get subscription criteria field names and extract values from GET params.
     $filter_params = apply_filters( 'notify_subscription_fields', [] ) ?? [];
     // phpcs:ignore WordPress.Security.NonceVerification.Recommended

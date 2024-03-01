@@ -1,4 +1,5 @@
-### 1.1.0: February 23, 2024
+### 1.1.0: March 1, 2024
+* Updated Subscribe Form block to make use of Notify plugin's maintenance mode option ([DESCW-2022](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2022))
 * Replaced requests to admin-post to admin-ajax in order to fix bugs on test/production servers caused by access restrictions to wp-admin/ routes
 * Updated Subscribe Form accessibility, now navigable via keyboard and screen reader ([DESCW-1996](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1996))
 * Updated Subscribe Form to set region selections based on query params to allow users to update their subscriptions ([DESCW-1951](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1951))
