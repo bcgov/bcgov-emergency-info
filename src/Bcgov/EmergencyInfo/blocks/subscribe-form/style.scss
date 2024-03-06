@@ -155,6 +155,68 @@ $layout-margin-small: 4px;
         display: flex;
     }
 
+    /* Checkbox styles */
+
+    /* Customize the label (the container) */
+    .checkbox {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
+        margin-left: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        outline: 2px solid $grey;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .checkbox input:checked ~ .checkmark {
+        background-color: $grey;
+    }
+
+    /* Custom checkbox has blue outline when in focus */
+    .checkbox input:focus ~ .checkmark {
+        outline: 4px solid $light-blue;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark::after {
+        content: "\2713";
+        color: $white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .checkbox input:checked ~ .checkmark::after {
+        display: block;
+    }
+
     /* Primary button */
     .BC-Gov-PrimaryButton {
         background-color: $primary-blue;
