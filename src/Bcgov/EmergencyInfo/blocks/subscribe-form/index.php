@@ -112,6 +112,11 @@ function render_block_emergency_info_subscribe_form(
                     <label for="email-input">%4$s</label>
                 </div>
                 <input id="email-input" class="text_input" type="email" name="email" required><br>
+                <label class="checkbox" for="consent">
+                    <input type="checkbox" id="consent" name="consent" value="1" required>
+                    <span class="checkmark"></span>
+                    I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use*
+                </label>
                 <button class="BC-Gov-PrimaryButton" type="submit">%5$s</button>
                 <div>* Required field</div>
             </form>
