@@ -75,12 +75,20 @@ class Plugin {
         new Blocks();
 
         $loader = new Loader();
-        $loader->add_filter( 'acf/settings/save_json', $this, 'acf_json_save_point' );
-        $loader->add_filter( 'acf/settings/load_json', $this, 'acf_json_load_point' );
-        $loader->add_action( 'cptui_after_update_post_type', $this, 'pluginize_local_cptui_data' );
-        $loader->add_action( 'cptui_after_update_taxonomy', $this, 'pluginize_local_cptui_data' );
-        $loader->add_filter( 'cptui_post_types_override', $this, 'pluginize_load_local_cptui_post_type_data' );
-        $loader->add_filter( 'cptui_taxonomies_override', $this, 'pluginize_load_local_cptui_taxonomies_data' );
+        // ACF local json saving/loading. See https://www.advancedcustomfields.com/resources/local-json/#saving-explained.
+        $loader->add_filter( 'acf/settings/save_json/key=group_63db3b0481dcc', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_63f64c160b480', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_645e5a8f05740', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_646f96fae68e8', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_646f98e444751', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_647e01f789a0c', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_6453d2a3c0b90', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/load_json', $this, 'acf_json_load_point', 20 );
+
+        $loader->add_action( 'cptui_after_update_post_type', $this, 'pluginize_local_cptui_data', 20 );
+        $loader->add_action( 'cptui_after_update_taxonomy', $this, 'pluginize_local_cptui_data', 20 );
+        $loader->add_filter( 'cptui_post_types_override', $this, 'pluginize_load_local_cptui_post_type_data', 20 );
+        $loader->add_filter( 'cptui_taxonomies_override', $this, 'pluginize_load_local_cptui_taxonomies_data', 20 );
         $loader->add_filter( 'aioseo_limit_modified_date_post_types', $this, 'disable_limit_modified_date' );
 
         $loader->add_filter( 'query_loop_block_query_vars', $this, 'query_loop_block_query_vars' );
@@ -181,7 +189,10 @@ class Plugin {
             return;
         }
 
-        if ( array_key_exists( 'cpt_custom_post_type', $data ) ) {
+        $allowed_post_types = [ 'event' ];
+        $allowed_taxonomies = [ 'hazard_type', 'region' ];
+
+        if ( array_key_exists( 'cpt_custom_post_type', $data ) && in_array( $data['cpt_custom_post_type']['name'], $allowed_post_types, true ) ) {
             // Fetch all of our post types and encode into JSON.
             $cptui_post_types = get_option( 'cptui_post_types', array() );
             $content          = wp_json_encode( $cptui_post_types, JSON_PRETTY_PRINT );
@@ -192,7 +203,7 @@ class Plugin {
             file_put_contents( $path, $content );
         }
 
-        if ( array_key_exists( 'cpt_custom_tax', $data ) ) {
+        if ( array_key_exists( 'cpt_custom_tax', $data ) && in_array( $data['cpt_custom_tax']['name'], $allowed_taxonomies, true ) ) {
             // Fetch all of our taxonomies and encode into JSON.
             $cptui_taxonomies = get_option( 'cptui_taxonomies', array() );
             $content          = wp_json_encode( $cptui_taxonomies, JSON_PRETTY_PRINT );
@@ -242,7 +253,7 @@ class Plugin {
         $data_new = json_decode( $loaded, true );
 
         if ( $data_new ) {
-            return $data_new;
+            return array_merge( $data, $data_new );
         }
 
         return $data;
