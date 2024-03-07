@@ -1,4 +1,5 @@
-### 1.1.0: March 1, 2024
+### 1.1.0: March 7, 2024
+* Fixed bug with ACF/CPTUI local json saving/loading hooks sometimes saving json files to wrong repo when the emergencyinfo and des-notify-client plugin are both activated ([DESCW-2071](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2071))
 * Added required "I agree..." checkbox to Subscribe Form block ([DESCW-2024](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2024))
 * Updated Subscribe Form block to make use of Notify plugin's maintenance mode option ([DESCW-2022](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2022))
 * Replaced requests to admin-post to admin-ajax in order to fix bugs on test/production servers caused by access restrictions to wp-admin/ routes
