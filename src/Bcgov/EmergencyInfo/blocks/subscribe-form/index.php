@@ -85,7 +85,11 @@ function render_block_emergency_info_subscribe_form(
             <form action="%2$s" method="post">
                 %3$s
                 
-                <label class="region-autocomplete-label" for="region-autocomplete-input"></label>
+                <strong>
+                    <label class="region-autocomplete-label" for="region-autocomplete-input">
+                        Choose location(s) you\'d like updates for:
+                    </label>
+                </strong>
                 <ul class="region-list" aria-role="presentation"></ul>
                 <div class="region-autocomplete input-group">
                     <span class="input-group-text"><i class="geo-icon bi bi-geo-alt-fill"></i>
@@ -103,22 +107,25 @@ function render_block_emergency_info_subscribe_form(
                     <span class="input-group-text"></span>
                 </div>
                 <div id="listbox-wrapper"></div>
-                <select id="region-select" name="tax_region[]" multiple>
+                <select id="region-select" name="tax_region[]" style="display: none" multiple>
                     %6$s
                 </select>
                 <input id="post-type" type="hidden" name="post_type[]" value="event" />
                 <input type="hidden" name="action" value="notify_create_subscription" />
+                <hr>
                 <div class="text_label">
-                    <label for="email-input">%4$s</label>
+                    <strong>
+                        <label for="email-input">%4$s</label>
+                    </strong>
                 </div>
-                <input id="email-input" class="text_input" type="email" name="email" required><br>
+                <input id="email-input" class="text_input form-control-lg" type="email" name="email" required><br>
                 <label class="checkbox" for="consent">
                     <input type="checkbox" id="consent" name="consent" value="1" required>
                     <span class="checkmark"></span>
                     I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use*
                 </label>
                 <button class="BC-Gov-PrimaryButton" type="submit">%5$s</button>
-                <div>* Required field</div>
+                <div class="required">*Required field</div>
             </form>
         </div>
         ',

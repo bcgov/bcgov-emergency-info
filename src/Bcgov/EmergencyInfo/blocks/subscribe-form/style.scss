@@ -131,12 +131,23 @@ $layout-margin-small: 4px;
         }
     }
 
+    .required {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+    }
+
     /* Form and input styles */
     form {
         font-size: 18px;
+
+        hr {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
     }
 
     .text_input {
+        min-width: 50%;
         font-size: 18px;
         height: 34px;
         border: 2px solid $grey;

@@ -3,7 +3,6 @@ import $ from 'jquery';
 $(() => {
     // The hidden multiselect input containing selected regions.
     const regionSelect = $('#region-select');
-    regionSelect.hide();
 
     // The input for entering autocomplete search.
     const regionAutocomplete = $('#region-autocomplete-input');
@@ -58,10 +57,10 @@ $(() => {
         if (!termList) {
             // If no terms selected, show message about using the autocomplete.
             $('.region-autocomplete-label').html(
-                'Choose location(s) in B.C. for updates:'
+                "Choose location(s) you'd like updates for:"
             );
         } else {
-            $('.region-autocomplete-label').html('Your location(s):');
+            $('.region-autocomplete-label').html('Your locations:');
         }
         $('.region-list').html(termList);
 
