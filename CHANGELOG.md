@@ -1,4 +1,6 @@
-### 1.1.0: March 7, 2024
+### 1.1.0: March 8, 2024
+* Improved Subscribe Form block frontend styling and content to better reflect wireframes ([DESCW-2000](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2000))
+* Improved Subscribe Form block editor styling and content to match frontend ([DESCW-1997](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1997))
 * Fixed bug with ACF/CPTUI local json saving/loading hooks sometimes saving json files to wrong repo when the emergencyinfo and des-notify-client plugin are both activated ([DESCW-2071](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2071))
 * Added required "I agree..." checkbox to Subscribe Form block ([DESCW-2024](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2024))
 * Updated Subscribe Form block to make use of Notify plugin's maintenance mode option ([DESCW-2022](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2022))

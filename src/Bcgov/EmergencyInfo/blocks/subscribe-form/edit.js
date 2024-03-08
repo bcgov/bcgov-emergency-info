@@ -14,7 +14,6 @@ export const Edit = ({ attributes: { excludedTerms }, setAttributes }) => {
         wp.apiFetch({
             path: 'wp/v2/region',
         }).then((data) => {
-            console.log(data);
             const terms = data.map((term) => `${term.name} (ID:${term.id})`);
             setTerms(terms);
         });
