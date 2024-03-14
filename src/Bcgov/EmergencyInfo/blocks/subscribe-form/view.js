@@ -11,6 +11,24 @@ $(() => {
     // eslint-disable-next-line no-undef
     const availableTerms = terms;
 
+    // When the all regions radio value is changed, toggle the region section.
+    const selectAllRegions = $('input[name="tax_region_all"]');
+    selectAllRegions.on('change', (event) => {
+        const value = event.target.value;
+        if ('1' === value) {
+            // Hide all region inputs, disable the underlying select input.
+            $('.region-section').hide();
+            $('.all-region-section').show();
+            regionSelect.prop('disabled', true);
+        } else {
+            // Show all region inputs, enable the underlying select input.
+            $('.region-section').show();
+            $('.all-region-section').hide();
+            regionSelect.prop('disabled', false);
+        }
+    });
+    $('input[name="tax_region_all"]:checked').trigger('change');
+
     /**
      * Adds a term to the currently selected terms.
      * @param {string} id The term id.
@@ -55,10 +73,8 @@ $(() => {
         });
 
         if (!termList) {
-            // If no terms selected, show message about using the autocomplete.
-            $('.region-autocomplete-label').html(
-                "Choose location(s) you'd like updates for:"
-            );
+            // If no terms selected, remove message.
+            $('.region-autocomplete-label').html('');
         } else {
             $('.region-autocomplete-label').html('Your locations:');
         }

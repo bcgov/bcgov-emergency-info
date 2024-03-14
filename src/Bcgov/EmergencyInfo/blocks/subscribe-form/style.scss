@@ -228,6 +228,72 @@ $layout-margin-small: 4px;
         display: block;
     }
 
+    /* Radio button styles */
+
+    /* Customize the label (the container) */
+    .radio {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 18px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    /* Hide the browser's default radio button */
+    .radio input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom radio button */
+    .dot {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        border: 2px solid $grey;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .radio input:checked ~ .dot {
+        background-color: $white;
+    }
+
+    /* Custom checkbox has blue outline when in focus */
+    .radio input:focus ~ .dot {
+        outline: 4px solid $light-blue;
+        outline-offset: 1px;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .dot::after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $grey;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .radio input:checked ~ .dot::after {
+        display: block;
+    }
+
     /* Primary button */
     .BC-Gov-PrimaryButton {
         background-color: $primary-blue;

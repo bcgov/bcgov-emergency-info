@@ -16,11 +16,12 @@ function render_block_emergency_info_subscribe_form(
     }
 
     // Get subscription criteria field names and extract values from GET params.
-    $filter_params = apply_filters( 'notify_subscription_fields', [] ) ?? [];
+    $filter_fields     = apply_filters( 'notify_subscription_fields', [] ) ?? [];
+    $filter_field_keys = array_keys( $filter_fields );
     // phpcs:ignore WordPress.Security.NonceVerification.Recommended
     $get_params           = $_GET;
     $preselected_term_ids = [];
-    foreach ( $filter_params as $param ) {
+    foreach ( $filter_field_keys as $param ) {
         if ( array_key_exists( $param, $get_params ) ) {
             $value = $get_params[ $param ];
             // Values come as comma-separated strings, split them into an array.
@@ -28,6 +29,10 @@ function render_block_emergency_info_subscribe_form(
             $value_int_array      = array_map( 'intval', $value_array );
             $preselected_term_ids = array_merge( $preselected_term_ids, $value_int_array );
         }
+    }
+    $select_all_regions = 0;
+    if ( array_key_exists( 'tax_region_all', $get_params ) ) {
+        $select_all_regions = $get_params['tax_region_all'];
     }
 
     // Extract term ids from term strings.
@@ -84,32 +89,40 @@ function render_block_emergency_info_subscribe_form(
         <div %1$s>
             <form action="%2$s" method="post">
                 %3$s
-                
-                <strong>
-                    <label class="region-autocomplete-label" for="region-autocomplete-input">
-                        Choose location(s) you\'d like updates for:
-                    </label>
-                </strong>
-                <ul class="region-list" aria-role="presentation"></ul>
-                <div class="region-autocomplete input-group">
-                    <span class="input-group-text"><i class="geo-icon bi bi-geo-alt-fill"></i>
-                    </span>
-                    <input id="region-autocomplete-input"
-                           class="form-control"
-                           type="search"
-                           placeholder="Type location(s)"
-                           role="searchbox"
-                           aria-description="Search results will appear below"
-                           aria-controls="ui-id-1"
-                           aria-autocomplete="list"
-                           aria-activedescendant=""
-                           />
-                    <span class="input-group-text"></span>
+                <label class="radio" for="tax-region-all-1">
+                    <input id="tax-region-all-1" type="radio" name="tax_region_all" value="1" %7$s><strong>Get updates for all locations in B.C.</strong></input>
+                    <span class="dot"></span>
+                </label>
+                <div class="all-region-section">
+                    <p>You will get email updates about Evacuation Orders and Alerts for %9$s municipalities, unincorporated communities and First Nations.</p>
                 </div>
-                <div id="listbox-wrapper"></div>
-                <select id="region-select" name="tax_region[]" style="display: none" multiple>
-                    %6$s
-                </select>
+                <label class="radio" for="tax-region-all-0">
+                    <input id="tax-region-all-0" type="radio" name="tax_region_all" value="0" %8$s><strong>Choose location(s) you\'d like updates for:</strong></input>
+                    <span class="dot"></span>
+                </label>
+                <div class="region-section">
+                    <div class="region-autocomplete-label"></div>
+                    <ul class="region-list" aria-role="presentation"></ul>
+                    <div class="region-autocomplete input-group">
+                        <span class="input-group-text"><i class="geo-icon bi bi-geo-alt-fill"></i>
+                        </span>
+                        <input id="region-autocomplete-input"
+                            class="form-control"
+                            type="search"
+                            placeholder="Type location(s)"
+                            role="searchbox"
+                            aria-description="Search results will appear below"
+                            aria-controls="ui-id-1"
+                            aria-autocomplete="list"
+                            aria-activedescendant=""
+                            />
+                        <span class="input-group-text"></span>
+                    </div>
+                    <div id="listbox-wrapper"></div>
+                    <select id="region-select" name="tax_region[]" style="display: none" multiple required>
+                        %6$s
+                    </select>
+                </div>
                 <input id="post-type" type="hidden" name="post_type[]" value="event" />
                 <input type="hidden" name="action" value="notify_create_subscription" />
                 <hr>
@@ -134,7 +147,10 @@ function render_block_emergency_info_subscribe_form(
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
         __( 'Enter your email address*' ),
         __( 'Subscribe' ),
-        $term_options
+        $term_options,
+        '1' === $select_all_regions ? 'checked' : '',
+        '1' !== $select_all_regions ? 'checked' : '',
+        count( $parsed_terms )
     );
 }
 

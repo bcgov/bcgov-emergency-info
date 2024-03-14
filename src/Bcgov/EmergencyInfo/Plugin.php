@@ -600,7 +600,7 @@ class Plugin {
      * @return array
      */
     public function set_notify_subscription_fields( array $data ): array {
-        array_push( $data, 'tax_region' );
+        $data = array_merge( $data, [ 'tax_region' => [] ] );
         return $data;
     }
 
