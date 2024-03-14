@@ -1,4 +1,5 @@
-### 1.1.0: March 8, 2024
+### 1.1.0: March 14, 2024
+* Added "Select all regions" feature to Subscribe Form block ([DESCW-2124](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2124))
 * Improved Subscribe Form block frontend styling and content to better reflect wireframes ([DESCW-2000](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2000))
 * Improved Subscribe Form block editor styling and content to match frontend ([DESCW-1997](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1997))
 * Fixed bug with ACF/CPTUI local json saving/loading hooks sometimes saving json files to wrong repo when the emergencyinfo and des-notify-client plugin are both activated ([DESCW-2071](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2071))
