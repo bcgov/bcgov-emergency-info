@@ -147,7 +147,7 @@ class CustomPostTypes {
                 return implode( ', ', $terms );
             }
 
-            return '';
+            return '—';
         }
         return $output;
     }

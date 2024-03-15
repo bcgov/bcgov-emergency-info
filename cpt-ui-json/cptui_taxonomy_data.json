@@ -106,7 +106,7 @@
             "slug_field_description": "",
             "desc_field_description": ""
         },
-        "meta_box_cb": "false",
+        "meta_box_cb": "",
         "default_term": "",
         "object_types": [
             "event"
