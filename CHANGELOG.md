@@ -1,4 +1,5 @@
-### 1.1.0: March 14, 2024
+### 1.1.0: March 15, 2024
+* Created Region Group Options taxonomy and Region Group ACF field to allow Region terms to be grouped ([DESCW-2129](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2129))
 * Added "Select all regions" feature to Subscribe Form block ([DESCW-2124](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2124))
 * Improved Subscribe Form block frontend styling and content to better reflect wireframes ([DESCW-2000](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2000))
 * Improved Subscribe Form block editor styling and content to match frontend ([DESCW-1997](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1997))
