@@ -67,7 +67,8 @@ class CustomPostTypes {
     /**
      * Adds an image column to the Hazard Type admin table.
      *
-     * @param array $columns
+     * @see https://developer.wordpress.org/reference/hooks/manage_screen-id_columns/
+     * @param array $columns The column header labels for the Hazard Type admin index table keyed by column ID.
      * @return array
      */
     public function add_hazard_type_column( array $columns ): array {
@@ -78,9 +79,10 @@ class CustomPostTypes {
     /**
      * Renders the image column for the Hazard Type admin table.
      *
-     * @param string $output
-     * @param string $column
-     * @param int    $term_id
+     * @see https://developer.wordpress.org/reference/hooks/manage_this-screen-taxonomy_custom_column/
+     * @param string $output  Custom column output. Default empty.
+     * @param string $column  Name of the column.
+     * @param int    $term_id Term ID.
      * @return string
      */
     public function render_hazard_type_column( string $output, string $column, int $term_id ): string {
@@ -119,7 +121,8 @@ class CustomPostTypes {
     /**
      * Adds the Region Groups column to the Regions admin table.
      *
-     * @param array $columns
+     * @see https://developer.wordpress.org/reference/hooks/manage_screen-id_columns/
+     * @param array $columns The column header labels for the Regions admin index table keyed by column ID.
      * @return array
      */
     public function add_region_column( array $columns ): array {
@@ -130,9 +133,10 @@ class CustomPostTypes {
     /**
      * Renders the Region Groups column for the Regions admin table.
      *
-     * @param string $output
-     * @param string $column
-     * @param int    $term_id
+     * @see https://developer.wordpress.org/reference/hooks/manage_this-screen-taxonomy_custom_column/
+     * @param string $output  Custom column output. Default empty.
+     * @param string $column  Name of the column.
+     * @param int    $term_id Term ID.
      * @return string
      */
     public function render_region_group_column( string $output, string $column, int $term_id ): string {
@@ -165,7 +169,7 @@ class CustomPostTypes {
     /**
      * Defines paths to load Advanced Custom Fields' JSON files.
      *
-     * @param array $paths
+     * @param array $paths Array of paths to save ACF JSON files to.
      * @return array
      */
     public static function acf_json_load_point( array $paths ): array {
@@ -216,7 +220,7 @@ class CustomPostTypes {
      * Load local post type JSON data.
      *
      * @param array $data Existing CPT data.
-     * @return array $value overriding content for CPTUI
+     * @return array $value Overriding content for CPTUI.
      */
     public function pluginize_load_local_cptui_post_type_data( array $data ): array {
         $loaded = $this->pluginize_load_local_cptui_data( 'cptui_post_type_data.json' );
@@ -238,7 +242,7 @@ class CustomPostTypes {
      * Load local taxonomy JSON data.
      *
      * @param array $data Existing taxonomy data.
-     * @return array $value overriding content for CPTUI
+     * @return array $value Overriding content for CPTUI.
      */
     public function pluginize_load_local_cptui_taxonomies_data( array $data ): array {
         $loaded = $this->pluginize_load_local_cptui_data( 'cptui_taxonomy_data.json' );
