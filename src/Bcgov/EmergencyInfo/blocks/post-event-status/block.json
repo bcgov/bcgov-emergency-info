@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "title": "Post Event Status",
+    "name": "emergency-info/post-event-status",
+    "category": "emergency-info",
+    "icon": "post-status",
+    "textdomain": "emergency-info",
+    "usesContext": ["postId"],
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css"
+}
