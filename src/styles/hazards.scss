@@ -51,14 +51,6 @@
 
     @include hazard-styles($inactiveHazardColor, $inactiveHazardSecondaryColor);
 
-    // Show status alert banner when event is inactive..
-    .status-alert {
-        display: block;
-        color: var(--wp--preset--color--primary-brand);
-        background-color: #e0e2e3;
-        border-color: $inactiveHazardSecondaryColor;
-    }
-
     // Set colors for inactive Emergency Alert blocks.
     .emergency-alert {
         $primaryColor: var(--wp--preset--color--hazard-inactive);
@@ -80,16 +72,6 @@
 
         @include hazard-image();
         background-color: #000 !important;
-    }
-}
-
-// Fix awkward spacing between lead in text and MFB status block.
-.status-alert {
-    // Hide status alert banner by default, only show when event is inactive.
-    display: none;
-
-    .mfb-status {
-        margin-left: -4px !important;
     }
 }
 

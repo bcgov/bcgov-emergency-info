@@ -1,4 +1,5 @@
-### 1.1.0: March 15, 2024
+### 1.1.0: March 20, 2024
+* Created Event Status block to display event status messages at the top of Event pages ([DESCW-2128](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2128))
 * Created Region Group Options taxonomy and Region Group ACF field to allow Region terms to be grouped ([DESCW-2129](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2129))
 * Added "Select all regions" feature to Subscribe Form block ([DESCW-2124](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2124))
 * Improved Subscribe Form block frontend styling and content to better reflect wireframes ([DESCW-2000](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2000))

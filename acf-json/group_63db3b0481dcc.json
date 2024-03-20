@@ -27,6 +27,39 @@
             "layout": "horizontal"
         },
         {
+            "key": "field_65f4b1d56ad95",
+            "label": "Referred Link",
+            "name": "referred_link",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "Another event page that this event should get referred to.\r\nIf left blank, no link to another event will be shown.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63db3b3150e96",
+                        "operator": "==",
+                        "value": "referred"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "event"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
             "key": "field_64b16966d2ab3",
             "label": "Hide this event?",
             "name": "hidden",
@@ -140,5 +173,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1689349907
+    "modified": 1710535304
 }
