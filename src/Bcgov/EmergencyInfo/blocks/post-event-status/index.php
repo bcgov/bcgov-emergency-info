@@ -47,8 +47,8 @@ function render_block_post_event_status(
     return sprintf(
         '
         <div %s>
-            <div class="alert alert-primary status-alert" style="text-align:center;">
-                <p class="d-inline"><strong>%s</strong></p>
+            <div class="alert alert-primary status-alert">
+                <p><strong>%s</strong></p>
             </div>
         </div>
         ',
