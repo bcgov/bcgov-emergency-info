@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_65f377d3043dd",
-            "label": "Region Groups",
-            "name": "region_groups",
+            "label": "Included Regions",
+            "name": "included_regions",
             "aria-label": "",
             "type": "taxonomy",
             "instructions": "",
@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "region_group_options",
+            "taxonomy": "region",
             "add_term": 1,
             "save_terms": 0,
             "load_terms": 0,
@@ -26,6 +26,33 @@
             "multiple": 0,
             "allow_null": 0,
             "bidirectional_target": []
+        },
+        {
+            "key": "field_65fcbe61577d1",
+            "label": "Type",
+            "name": "group_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "regional_district": "Regional District",
+                "tsunami_zone": "Tsunami Zone",
+                "other": "Other"
+            },
+            "default_value": "other",
+            "return_format": "array",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -33,7 +60,7 @@
             {
                 "param": "taxonomy",
                 "operator": "==",
-                "value": "region"
+                "value": "region_groups"
             }
         ]
     ],
@@ -46,5 +73,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710518735
+    "modified": 1711133995
 }

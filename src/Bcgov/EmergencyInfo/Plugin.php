@@ -4,6 +4,7 @@ namespace Bcgov\EmergencyInfo;
 use Bcgov\Common\Loader;
 use Bcgov\Common\I18n;
 use WP_Theme_JSON_Data;
+use WP_REST_Response;
 
 /**
  * The core plugin class.
@@ -74,6 +75,7 @@ class Plugin {
         $loader->add_action( 'admin_menu', $this, 'remove_menu_items' );
         $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_jquery_ui' );
         $loader->add_filter( 'notify_subscription_fields', $this, 'set_notify_subscription_fields', 11, 1 );
+        $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
 
         $loader->run();
     }
@@ -401,6 +403,59 @@ class Plugin {
     public function set_notify_subscription_fields( array $data ): array {
         $data = array_merge( $data, [ 'tax_region' => [] ] );
         return $data;
+    }
+
+    /**
+     * Registers new routes for the WordPress REST API.
+     */
+    public function register_rest_routes() {
+        $version   = '2';
+        $namespace = 'wp/v' . $version;
+        $base      = 'region-group';
+        register_rest_route(
+            $namespace,
+            '/' . $base,
+            [
+                'methods'             => 'GET',
+                'callback'            => [ $this, 'get_region_groups' ],
+                'permission_callback' => '__return_true',
+            ]
+        );
+    }
+
+    /**
+     * Gets terms belonging to the region_groups taxonomy.
+     *
+     * @return WP_REST_Response
+     */
+    public function get_region_groups() {
+        // Get terms for region_groups taxonomy.
+        $terms = get_terms(
+            [
+                'taxonomy'   => 'region_groups',
+                'hide_empty' => false,
+            ]
+        );
+
+        if ( is_wp_error( $terms ) || ! is_array( $terms ) ) {
+            return new WP_REST_Response( $terms, 500 );
+        }
+
+        // Add the included_regions and group_type meta fields to terms.
+        $response = [];
+        foreach ( $terms as $term ) {
+            $processed_term                   = (object) $term;
+            $included_regions                 = self::get_field( 'included_regions', 'region_groups_' . $term->term_id, false ) ?? [];
+            $type                             = self::get_field( 'group_type', 'region_groups_' . $term->term_id ) ?? [
+				'value' => 'other',
+				'label' => 'Other',
+			];
+            $processed_term->included_regions = $included_regions;
+            $processed_term->group_type       = $type;
+            $response[]                       = $processed_term;
+        }
+
+        return new WP_REST_Response( array_values( $response ) );
     }
 
     /**

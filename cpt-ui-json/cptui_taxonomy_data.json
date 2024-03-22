@@ -63,7 +63,7 @@
         "description": "",
         "public": "true",
         "publicly_queryable": "true",
-        "hierarchical": "true",
+        "hierarchical": "false",
         "show_ui": "true",
         "show_in_menu": "true",
         "show_in_nav_menus": "true",
@@ -112,11 +112,11 @@
             "event"
         ]
     },
-    "region_group_options": {
-        "name": "region_group_options",
-        "label": "Region Group Options",
-        "singular_label": "Region Group Option",
-        "description": "Options used to organize regions into various groups, eg. tsunami zones.",
+    "region_groups": {
+        "name": "region_groups",
+        "label": "Region Groups",
+        "singular_label": "Region Groups",
+        "description": "Groups used to organize regions into various buckets, eg. regional districts, tsunami zones.",
         "public": "true",
         "publicly_queryable": "false",
         "hierarchical": "false",
@@ -129,7 +129,7 @@
         "rewrite_slug": "",
         "rewrite_withfront": "1",
         "rewrite_hierarchical": "0",
-        "show_admin_column": "false",
+        "show_admin_column": "true",
         "show_in_rest": "true",
         "show_tagcloud": "false",
         "sort": "true",
