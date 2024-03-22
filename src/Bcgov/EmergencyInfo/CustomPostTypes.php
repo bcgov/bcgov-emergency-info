@@ -59,8 +59,8 @@ class CustomPostTypes {
         $loader->add_filter( 'manage_hazard_type_custom_column', $this, 'render_hazard_type_column', 10, 3 );
 
         // Add columns to Region index pages.
-        $loader->add_filter( 'manage_edit-region_columns', $this, 'add_region_column', 10, 1 );
-        $loader->add_filter( 'manage_region_custom_column', $this, 'render_region_group_column', 10, 3 );
+        $loader->add_filter( 'manage_edit-region_groups_columns', $this, 'set_region_groups_columns', 10, 1 );
+        $loader->add_filter( 'manage_region_groups_custom_column', $this, 'render_region_groups_columns', 10, 3 );
         $loader->run();
     }
 
@@ -119,19 +119,22 @@ class CustomPostTypes {
     }
 
     /**
-     * Adds the Region Groups column to the Regions admin table.
+     * Sets custom columns for the Region Groups admin table.
      *
      * @see https://developer.wordpress.org/reference/hooks/manage_screen-id_columns/
      * @param array $columns The column header labels for the Regions admin index table keyed by column ID.
      * @return array
      */
-    public function add_region_column( array $columns ): array {
-        $columns['region_groups'] = 'Region Groups';
+    public function set_region_groups_columns( array $columns ): array {
+        $columns['included_regions'] = 'Included Regions';
+        $columns['group_type']       = 'Group Type';
+        // Remove Count column, not useful in this case.
+        unset( $columns['posts'] );
         return $columns;
     }
 
     /**
-     * Renders the Region Groups column for the Regions admin table.
+     * Renders custom columns for the Region Groups admin table.
      *
      * @see https://developer.wordpress.org/reference/hooks/manage_this-screen-taxonomy_custom_column/
      * @param string $output  Custom column output. Default empty.
@@ -139,19 +142,22 @@ class CustomPostTypes {
      * @param int    $term_id Term ID.
      * @return string
      */
-    public function render_region_group_column( string $output, string $column, int $term_id ): string {
-        if ( 'region_groups' === $column ) {
-            $region_groups = Plugin::get_field( 'region_groups', 'region_' . $term_id, false );
-            $terms         = [];
-            if ( is_array( $region_groups ) ) {
-                foreach ( $region_groups as $region_group_id ) {
-                    $term    = get_term( $region_group_id );
+    public function render_region_groups_columns( string $output, string $column, int $term_id ): string {
+        if ( 'included_regions' === $column ) {
+            $included_regions = Plugin::get_field( 'included_regions', 'region_groups_' . $term_id, false );
+            $terms            = [];
+            if ( is_array( $included_regions ) ) {
+                foreach ( $included_regions as $region_id ) {
+                    $term    = get_term( $region_id );
                     $terms[] = $term->name;
                 }
-                return implode( ', ', $terms );
+                return implode( '<br>', $terms );
             }
 
             return '—';
+        } elseif ( 'group_type' === $column ) {
+            $type = Plugin::get_field( 'group_type', 'region_groups_' . $term_id )['label'] ?? 'Other';
+            return $type;
         }
         return $output;
     }

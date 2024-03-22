@@ -45,3 +45,11 @@
     border-radius: 10px;
     max-width: 100%;
 }
+
+.region-group-checkbox-control {
+    display: flex;
+
+    >div {
+        display: flex;
+    }
+}

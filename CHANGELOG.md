@@ -1,4 +1,6 @@
-### 1.1.0: March 20, 2024
+### 1.1.0: March 22, 2024
+* Added Region Group control in editor to allow admins to select regions via the Region Group controls ([DESCW-2130](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2130))
+* Flattened and reorganized municipalities and first nations json ([DESCW-2127](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2127))
 * Created Event Status block to display event status messages at the top of Event pages ([DESCW-2128](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2128))
 * Created Region Group Options taxonomy and Region Group ACF field to allow Region terms to be grouped ([DESCW-2129](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2129))
 * Added "Select all regions" feature to Subscribe Form block ([DESCW-2124](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2124))
