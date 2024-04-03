@@ -21,7 +21,7 @@ $do_regions_exist = count( $regions ) > 0;
 
 <?php if ( $do_regions_exist ) : ?>
         <div class="notice-warning notice">
-            <p>Regions already exist. This tool can only be used with an empty set of Region terms.</p>
+            <p>Regions already exist. This tool can only be used with an empty set of Region and Region Group terms.</p>
         </div>
     <?php endif ?>
 <h2>Region Loader</h2>

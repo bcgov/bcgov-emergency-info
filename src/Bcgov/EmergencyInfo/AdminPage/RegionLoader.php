@@ -65,7 +65,7 @@ class RegionLoader {
 					]
                 )
             ) > 0 ) {
-                wp_die( 'Region terms already exist, cannot add from json.', [ 'status' => 400 ] );
+                wp_die( 'Region terms already exist, cannot add from JSON.', [ 'status' => 400 ] );
             }
 
             $regions = json_decode( stripslashes( $_REQUEST['region_json'] ), false, 512, JSON_THROW_ON_ERROR );
