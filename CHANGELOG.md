@@ -1,4 +1,5 @@
-### 1.1.0: March 22, 2024
+### 1.1.0: April 3, 2024
+* Added Region Loader feature to allow Region and Region Group taxonomy terms to be inserted via JSON in an admin page ([DESCW-2248](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2248))
 * Added Region Group control in editor to allow admins to select regions via the Region Group controls ([DESCW-2130](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2130))
 * Flattened and reorganized municipalities and first nations json ([DESCW-2127](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2127))
 * Created Event Status block to display event status messages at the top of Event pages ([DESCW-2128](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2128))

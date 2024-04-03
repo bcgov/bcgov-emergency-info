@@ -3,6 +3,7 @@ namespace Bcgov\EmergencyInfo;
 
 use Bcgov\EmergencyInfo\Plugin;
 use Bcgov\Common\Loader;
+use Bcgov\EmergencyInfo\AdminPage\RegionLoader;
 
 /**
  * The admin-specific functionality of EmergencyInfo.
@@ -32,7 +33,9 @@ class Admin {
      * @return void
      */
     public function init() {
-        $loader = new Loader();
+        $loader        = new Loader();
+        $region_loader = new RegionLoader();
+        $region_loader->init();
         $loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_styles' );
         $loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_scripts' );
 
