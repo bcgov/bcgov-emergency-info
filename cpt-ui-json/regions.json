@@ -1,393 +1,2043 @@
-{
-    "East Kootenay / Rocky Mountain": [
-        "Canal Flats (Village)",
-        "Cranbrook (City)",
-        "Creston (Town)",
-        "Elkford (District)",
-        "Fernie (City)",
-        "Invermere (District)",
-        "Kimberley (City)",
-        "Radium Hot Springs (Village)",
-        "Sparwood (District)",
-        "?aq'am (Ktunaxa Nation)",
-        "Akisq'nuk First Nation (Columbia Lake Indian Band)",
-        "Lower Kootenay Indian Band ( Yaqan Nukiy)",
-        "Shuswap Indian Band (Kenpesq't)",
-        "Tobacco Plains Indian Band (Yaq?it ?a·knuq?i ‘it First Nation)"
-    ],
-    "Lower Mainland": [
-        "Abbotsford (City)",
-        "Anmore (Village)",
-        "Belcarra (Village)",
-        "Bowen Island (Island Municipality)",
-        "Burnaby (City)",
-        "Chilliwack (City)",
-        "Coquitlam (City)",
-        "Delta (City)",
-        "Harrison Hot Springs (Village)",
-        "Hope (District)",
-        "Kent (District)",
-        "Langley (Township)",
-        "Langley (City)",
-        "Lions Bay (Village)",
-        "Maple Ridge (City)",
-        "Mission (City)",
-        "New Westminster (City)",
-        "North Vancouver (City)",
-        "North Vancouver (District)",
-        "Pemberton (Village)",
-        "Pitt Meadows (City)",
-        "Port Coquitlam (City)",
-        "Port Moody (City)",
-        "Richmond (City)",
-        "Squamish (District)",
-        "Surrey (City)",
-        "Vancouver (City)",
-        "West Vancouver (District)",
-        "Whistler (Resort Municipality)",
-        "White Rock (City)",
-        "Aitchelitz First Nation (Ahtsalitz)",
-        "Boothroyd Band (Boothroyd)",
-        "Boston Bar First Nation (Boston Bar First Nation)",
-        "Burrard Nation (Tsleil-Waututh )",
-        "Chawathil First Nation (Lexw Siyo:les, Hope)",
-        "Cheam First Nation (Xwchíyò:m)",
-        "Douglas First Nation (Xa'xtsa First Nation)",
-        "Katzie First Nation (Katyie First Nation)",
-        "Kwantlen First Nation (q??a:n????n?)",
-        "Kwaw-kwaw-Apilt First Nation (Kwaw-Kwaw-A-Pilt, Quoquapol)",
-        "Kwikwetlem First Nation (k?ik?????m)",
-        "Leq’ á:mel First Nation (Lakahahmen)",
-        "Lil'wat Nation (Mount Currie Indian Band)",
-        "Matsqui First Nation (Màthexwi)",
-        "Musqueam Indian Band (X'Muzk'I'Um)",
-        "N'Quatqua First Nation (Anderson Lake Indian Band)",
-        "Naut'sa mawt Tribal Council",
-        "Peters First Nation",
-        "Popkum Indian Band (Pópkw’em)",
-        "Qayqayt First Nation (New Westminster)",
-        "Samahquam First Nation (Semahquam First Nation)",
-        "Scowlitz First Nation (Sq'éwlets First Nation)",
-        "Seabird Island First Nation (Skowakul)",
-        "Semiahmoo First Nation (SEMYOME)",
-        "shíshálh Nation (Sechelt Nation)",
-        "Shxw'ow'hamel First Nation",
-        "Shxwh'a:y Village (Skway, Shxwhá:y)",
-        "Skatin Nations (Skookumchuck)",
-        "Skawahlook First Nation (Sq'ewa:lxw)",
-        "Skowkale First Nation (Sq’ewqeyl)",
-        "Skwah First Nation (Skwash)",
-        "Soowahlie First Nation",
-        "Spuzzum First Nation (Spô’zêm)",
-        "Squamish First Nation (Squamish)",
-        "Squiala First Nation (Sxwoyehà:là)",
-        "Sts'ailes Nation (Chehalis Indian Band)",
-        "Sumas First Nation (Semà:th)",
-        "Tsal’alh (Seton Lake)",
-        "Tsawwassen First Nation",
-        "Tsleil Waututh Nation (Burrard Band)",
-        "Tzeachten First Nation (Ch’iyàqtel)",
-        "Union Bar First Nation",
-        "Yakweakwioose Band (Yeqwyeqwí:ws)",
-        "Yale First Nation"
-    ],
-    "North and Central Vancouver Island / Sunshine Coast": [
-        "Alert Bay (Village)",
-        "Campbell River (City)",
-        "Comox (Town)",
-        "Courtenay (City)",
-        "Cumberland (Village)",
-        "Gibsons (Town)",
-        "Gold River (Village)",
-        "Lantzville (District)",
-        "Nanaimo (City)",
-        "Parksville (City)",
-        "Port Alberni (City)",
-        "Port Alice (Village)",
-        "Port Hardy (District)",
-        "Port McNeill (Town)",
-        "Powell River (City)",
-        "Qualicum Beach (Town)",
-        "Sayward (Village)",
-        "Sechelt (District)",
-        "shíshálh Nation Government District ",
-        "Tahsis (Village)",
-        "Tofino (District)",
-        "Ucluelet (District)",
-        "Zeballos (Village)",
-        "Ahousaht First Nation (Ahousaht)",
-        "Cape Mudge Band (We Wai Kai Nation)",
-        "Da'naxda'xw First Nation (Tsatsisnukwomi)",
-        "Ditidaht First Nation (da7uu7aa7tx)",
-        "Dzawada' enuxw First Nation (Tsawataineuk Indian Band)",
-        "Ehattesaht First Nation (Ehattesaht Chinehkint)",
-        "Gwa'sala-Nakwaxda'xw Band (Gwa'sala, Nakwaxda'xw)",
-        "Gwawaenuk Tribe (Hopetown)",
-        "Hesquiaht First Nation (heish-heish-a)",
-        "Homalco Indian Band (Xwémalhkwu)",
-        "Hupacasath First Nation (Opetchesaht)",
-        "Huu-ay-aht First Nations",
-        "K'omoks First Nation (K'omoks First Nation)",
-        "Klahoose First Nation (?o?os)",
-        "Kwakiutl Band Council (Kwakwa?ka??wakw)",
-        "Kwiakah First Nation (Kwe-Ahkah)",
-        "Kwicksutaineuk-ah-kwaw-ah-mish (Ahkwawahmish)",
-        "Kyuquot First Nation (Ka:'yu:'k't'h'/Che:k'tles7et'h')",
-        "Mamalilikulla-Qwe'Qwa'Sot'Em (Mimkwa?mlis)",
-        "Mowachaht/Muchalaht First Nation (Yuquot)",
-        "Namgis First Nation (Nimpkish)",
-        "Nanoose First Nation (Snaw-Naw-As First Nation)",
-        "Nuchatlaht First Nation",
-        "Nuu-chah-nulth Tribal Council",
-        "Qualicum First Nation",
-        "Quatsino First Nation (G?usgimukw)",
-        "Snuneymuxw First Nation (Nanaimo Indian Band)",
-        "Tla'amin Nation",
-        "Tla-o-qui-aht First Nations (Clayoquot)",
-        "Tlatlasikwala Nation",
-        "Tlowitsis Tribe (?awit'si)",
-        "Toquaht Nation (Nuu-chah-nulth)",
-        "Tseshaht First Nation (c?išaa?at?)",
-        "Uchucklesaht Tribe Government (Uchucklesaht First Nation)",
-        "Ucluelet First Nation (Yuu?u?i??at? Government)",
-        "Wei Wai Kum First Nation (Campbell River Indian Band)",
-        "Wuikinuxv Nation (Oweekeno)"
-    ],
-    "North Central / Cariboo": [
-        "100 Mile House (District)",
-        "Mackenzie (District)",
-        "McBride (Village)",
-        "Prince George (City)",
-        "Quesnel (City)",
-        "Valemount (Village)",
-        "Wells (District)",
-        "Williams Lake (City)",
-        "?Esdilagh First Nation (Alexandria Indian Band)",
-        "Alexis Creek First Nation (Tsideldel First Nation)",
-        "Binche Whut'en First Nation (Pinchie)",
-        "Burns Lake Band (Ts'il Kaz Koh)",
-        "Cheslatta Carrier Nation (Cheslatta T'En)",
-        "Daylu Dena Council (Lower Post)",
-        "Esketemc First Nation (Esk'etemc)",
-        "Lake Babine Nation (Nataotin, Nat'oot'en Nation)",
-        "Lheidli T'enneh First Nation (Fort George Indian Band)",
-        "Lhoosk'uz Dene Government (Kluskus Indian Band)",
-        "Lhtako Dene Nation (Red Bluff)",
-        "McLeod Lake Indian Band (Tse'Khene)",
-        "Nadleh Whut'en First Nation (Fraser Lake )",
-        "Nak'azdli Whut'en' (Nak'azdli)",
-        "Nazko First Nation (Ndazkoh )",
-        "Nee-Tahi-Buhn (Francois Lake)",
-        "Saik'uz First Nation (Stoney Creek)",
-        "Skin Tyee First Nation (Skin'S Tyee)",
-        "Soda Creek Indian Band (Xat??ll First Nation)",
-        "Stellat'en First Nation",
-        "Stswecem'c Xgat'tem First Nation (Canoe Creek Band)",
-        "Tahltan Nation",
-        "Takla First Nation",
-        "Tl'azt'en Nation",
-        "Tl'etinqox Government (Anaham)",
-        "Toosey First Nation (Tl'esqox)",
-        "Tsay Keh Dene First Nation",
-        "Tsilhqot'in National Government (Chilcotin First Nation)",
-        "Tsq?éscen? First Nation (Canim Lake Band)",
-        "Ulkatcho First Nation (Ulhk'acho)",
-        "Wet'suwet'en First Nation",
-        "Williams Lake First Nation (T'exelc)",
-        "Xeni Gwet'in First Nations Government (Nemiah)",
-        "Yekooche First Nation (Yekoochet'en)",
-        "Yunesit’in Government (Stone, Stoney)"
-    ],
-    "North Coast / Nechako": [
-        "Burns Lake (Village)",
-        "Daajing Giids (Village)",
-        "Fort St. James (District)",
-        "Fraser Lake (Village)",
-        "Granisle (Village)",
-        "Hazelton (Village)",
-        "Houston (District)",
-        "Kitimat (District)",
-        "Masset (Village)",
-        "New Hazelton (District)",
-        "Port Clements (Village)",
-        "Port Edward (District)",
-        "Prince Rupert (City)",
-        "Smithers (Town)",
-        "Stewart (District)",
-        "Telkwa (Village)",
-        "Terrace (City)",
-        "Vanderhoof (District)",
-        "Dease River First Nation (Dease River Nation)",
-        "Gitanmaax Band (Getamax, Getanmas, Getanmax, Kitanman)",
-        "Gitanyow Band (Kitwancool)",
-        "Gitga'at Nation (Hartley Bay)",
-        "Gitsegukla Indian Band (Kitsegugkla)",
-        "Gitwangak Band Council (Kitwanga)",
-        "Gitxaala Nation (Kitkatla)",
-        "Glen Vowell Indian Band (Sik-e-dakh)",
-        "Hagwilget Village Council (Tse-kya)",
-        "Haisla Nation (Kitamaat Village Council)",
-        "Heiltsuk Nation (Bella Bella Indian Band)",
-        "Iskut Band Council (Iskut First Nation)",
-        "Kispiox Band (Anspayaxw )",
-        "Kitasoo Nation (Xai’xais, Klemtu Band)",
-        "Kitselas First Nation (Gitselasu)",
-        "Kitsumkalum First Nation (Gitsmgeelm)",
-        "Lax-kw'alaams Band (Lax?gu'alaams)",
-        "Metlakatla First Nation (Tsimpsean)",
-        "Nisga'a Village of Gingolx (Kincolith)",
-        "Nisga'a Village of Gitlaxt'aamiks (New Aiyansh)",
-        "Nisga'a Village of Gitwinksihlkw (Kitwintshilth, Kitwilluchsilt, Kitangataa Bands)",
-        "Nisga'a Village of Laxgalts'ap (Lachkalzap, Lachkaltzap, Laichkwiltach)",
-        "North Coast-Skeena First Nations Stewardship Society (NCSFNSS)",
-        "Nuxalk Nation (Bella Coola Band)",
-        "Office of the Wet'suwet'en",
-        "Old Massett Village Council (G?aw in X?aad kíl)",
-        "Skidegate Band Council",
-        "Taku River Tlingit First Nation (Atlin First Nation)",
-        "Witset First Nation (Moricetown)"
-    ],
-    "Okanagan Valley / Similkameen": [
-        "Armstrong (City)",
-        "Coldstream (District)",
-        "Enderby (City)",
-        "Kelowna (City)",
-        "Keremeos (Village)",
-        "Lake Country (District)",
-        "Lumby (Village)",
-        "Oliver (Town)",
-        "Osoyoos (Town)",
-        "Peachland (District)",
-        "Penticton (City)",
-        "Princeton (Town)",
-        "Spallumcheen (Township)",
-        "Summerland (District)",
-        "Vernon (City)",
-        "West Kelowna (City)",
-        "Lower Similkameen Indian Band (Skichistan)",
-        "Okanagan Indian Band (Syilx Okanagan)",
-        "Osoyoos Indian Band",
-        "Penticton Indian Band (SnPink’tn)",
-        "Splatsin First Nation (Spallumcheen)",
-        "Upper Similkameen Indian Band (Upper Smelqmix)",
-        "Westbank First Nation"
-    ],
-    "Peace River": [
-        "Chetwynd (District)",
-        "Dawson Creek (City)",
-        "Fort St. John (City)",
-        "Hudson's Hope (District)",
-        "Northern Rockies (Regional Municipality)",
-        "Pouce Coupe (Village)",
-        "Taylor (District)",
-        "Tumbler Ridge (District)",
-        "Blueberry River First Nations (Blueberry River First Nations)",
-        "Doig River First Nation (Doig River Nation)",
-        "Fort Nelson First Nation (Fort Nelson Nation)",
-        "Halfway River First Nation",
-        "Kwadacha Nation (Fort Ware)",
-        "Prophet River First Nation (Denetsaa Tse K'Nai)",
-        "Saulteau First Nations (Anishinaabe First Nation)",
-        "West Moberly First Nations"
-    ],
-    "South Vancouver Island": [
-        "Central Saanich (District)",
-        "Colwood (City)",
-        "Duncan (City)",
-        "Esquimalt (Township)",
-        "Highlands (District)",
-        "Ladysmith (Town)",
-        "Lake Cowichan (Town)",
-        "Langford (City)",
-        "Metchosin (District)",
-        "North Cowichan (District)",
-        "North Saanich (District)",
-        "Oak Bay (District)",
-        "Saanich (District)",
-        "Sidney (Town)",
-        "Sooke (District)",
-        "Victoria (City)",
-        "View Royal (Town)",
-        "Beecher Bay First Nation (Sc'ianew Cheanuh)",
-        "Cowichan Tribes (Quw’utsun)",
-        "Esquimalt Nation (Is-Whoy-Malth)",
-        "Halalt First Nation (Hallalt, Hellelt)",
-        "Lake Cowichan First Nation (Kaatza, Ts'uubaa-asatx)",
-        "Lyackson First Nation (Ly-Ach-Sum)",
-        "Malahat First Nation (MÁLEXEL)",
-        "Pacheedaht First Nation",
-        "Pauquachin First Nation (BO?E?EN)",
-        "Penelakut Tribe (Spune’luxutth)",
-        "Songhees First Nation (Songhish)",
-        "Stz'uminus First Nation (Chemainus First Nation)",
-        "T'Sou-ke First Nation (Sooke )",
-        "Temexw Treaty Association",
-        "Tsartlip First Nation (W?JO?E?P )",
-        "Tsawout First Nation (S?ÁUTW?)",
-        "Tseycum First Nation (W?S??EM)"
-    ],
-    "Thompson / Shuswap / Columbia": [
-        "Ashcroft (Village)",
-        "Barriere (District)",
-        "Cache Creek (Village)",
-        "Chase (Village)",
-        "Clearwater (District)",
-        "Clinton (Village)",
-        "Golden (Town)",
-        "Kamloops (City)",
-        "Lillooet (District)",
-        "Logan Lake (District)",
-        "Lytton (Village)",
-        "Merritt (City)",
-        "Revelstoke (City)",
-        "Salmon Arm (City)",
-        "Sicamous (District)",
-        "Sun Peaks (Mountain Resort Municipality)",
-        "Adams Lake Indian Band (Sexqeltqin)",
-        "Ashcroft Indian Band (Nlaka’pamux)",
-        "Bonaparte Indian Band (St'uxwtews)",
-        "Bridge River Indian Band (Nxwisten)",
-        "Cayoose Creek Band (Sekw'el'was)",
-        "Coldwater Indian Band (C’eletkwmx)",
-        "Cook's Ferry Indian Band (Cook's Ferry Indian Band)",
-        "High Bar First Nation (Llenlleney'ten)",
-        "Kanaka Bar Band (T'eqt''aqtn'mux)",
-        "Little Shuswap Lake Band (Skwlax)",
-        "Lower Nicola Indian Band",
-        "Lytton First Nation (Tl'kemtsin)",
-        "Neskonlith Indian Band (Neskainlith)",
-        "Nicomen Indian Band (Nicoamen, Nicomeen, Nikaomin)",
-        "Nooaitch Indian Band",
-        "Oregon Jack Creek Band",
-        "Shackan Indian Band",
-        "Shuswap Nation Tribal Council",
-        "Simpcw First Nation (North Thompson River)",
-        "Siska Indian Band",
-        "Skeetchestn Indian Band (Deadman's Creek)",
-        "Skuppah Indian Band",
-        "T'it'q'et First Nation (Lillooet Indian Band)",
-        "Tk’emlúps te Secwépemc (Kamloops Indian Band)",
-        "Ts'kw'aylaxw First Nation (Ts'kw'aylaxw First Nation)",
-        "Upper Nicola Band (Nicoamen)",
-        "Whispering Pines/Clinton First Nation (Pelltiq't)",
-        "Xaxli'p First Nation (Fountain Indian Band)"
-    ],
-    "West Kootenay / Boundary": [
-        "Castlegar (City)",
-        "Fruitvale (Village)",
-        "Grand Forks (City)",
-        "Greenwood (City)",
-        "Kaslo (Village)",
-        "Midway (Village)",
-        "Montrose (Village)",
-        "Nakusp (Village)",
-        "Nelson (City)",
-        "New Denver (Village)",
-        "Rossland (City)",
-        "Salmo (Village)",
-        "Silverton (Village)",
-        "Slocan (Village)",
-        "Trail (City)",
-        "Warfield (Village)"
-    ]
-}
+[
+    {
+        "label": "Alberni-Clayoquot (Regional District)",
+        "regionGroups": [
+            "Alberni-Clayoquot Regional District"
+        ]
+    },
+    {
+        "label": "Port Alberni (City)",
+        "regionGroups": [
+            "Alberni-Clayoquot Regional District"
+        ]
+    },
+    {
+        "label": "Tofino (District)",
+        "regionGroups": [
+            "Alberni-Clayoquot Regional District"
+        ]
+    },
+    {
+        "label": "Ucluelet (District)",
+        "regionGroups": [
+            "Alberni-Clayoquot Regional District"
+        ]
+    },
+    {
+        "label": "Bulkley-Nechako (Regional District)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Burns Lake (Village)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Fort St. James (District)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Fraser Lake (Village)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Granisle (Village)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Houston (District)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Smithers (Town)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Telkwa (Village)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Vanderhoof (District)",
+        "regionGroups": [
+            "Bulkley-Nechako Regional District"
+        ]
+    },
+    {
+        "label": "Capital (Regional District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Central Saanich (District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Colwood (City)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Esquimalt (Township)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Highlands (District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Langford (City)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Metchosin (District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "North Saanich (District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Oak Bay (District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Saanich (District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Sidney (Town)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Sooke (District)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Victoria (City)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "View Royal (Town)",
+        "regionGroups": [
+            "Capital Regional District"
+        ]
+    },
+    {
+        "label": "Cariboo (Regional District)",
+        "regionGroups": [
+            "Cariboo Regional District"
+        ]
+    },
+    {
+        "label": "100 Mile House (District)",
+        "regionGroups": [
+            "Cariboo Regional District"
+        ]
+    },
+    {
+        "label": "Quesnel (City)",
+        "regionGroups": [
+            "Cariboo Regional District"
+        ]
+    },
+    {
+        "label": "Wells (District)",
+        "regionGroups": [
+            "Cariboo Regional District"
+        ]
+    },
+    {
+        "label": "Williams Lake (City)",
+        "regionGroups": [
+            "Cariboo Regional District"
+        ]
+    },
+    {
+        "label": "Central Kootenay (Regional District)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Castlegar (City)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Creston (Town)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Kaslo (Village)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Nakusp (Village)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Nelson (City)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "New Denver (Village)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Salmo (Village)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Silverton (Village)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Slocan (Village)",
+        "regionGroups": [
+            "Central Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Central Okanagan (Regional District)",
+        "regionGroups": [
+            "Central Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Kelowna (City)",
+        "regionGroups": [
+            "Central Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Lake Country (District)",
+        "regionGroups": [
+            "Central Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Peachland (District)",
+        "regionGroups": [
+            "Central Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "West Kelowna (City)",
+        "regionGroups": [
+            "Central Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Columbia-Shuswap (Regional District)",
+        "regionGroups": [
+            "Columbia-Shuswap Regional District"
+        ]
+    },
+    {
+        "label": "Golden (Town)",
+        "regionGroups": [
+            "Columbia-Shuswap Regional District"
+        ]
+    },
+    {
+        "label": "Revelstoke (City)",
+        "regionGroups": [
+            "Columbia-Shuswap Regional District"
+        ]
+    },
+    {
+        "label": "Salmon Arm (City)",
+        "regionGroups": [
+            "Columbia-Shuswap Regional District"
+        ]
+    },
+    {
+        "label": "Sicamous (District)",
+        "regionGroups": [
+            "Columbia-Shuswap Regional District"
+        ]
+    },
+    {
+        "label": "Comox Valley (Regional District)",
+        "regionGroups": [
+            "Comox Valley Regional District"
+        ]
+    },
+    {
+        "label": "Comox (Town)",
+        "regionGroups": [
+            "Comox Valley Regional District"
+        ]
+    },
+    {
+        "label": "Courtenay (City)",
+        "regionGroups": [
+            "Comox Valley Regional District"
+        ]
+    },
+    {
+        "label": "Cumberland (Village)",
+        "regionGroups": [
+            "Comox Valley Regional District"
+        ]
+    },
+    {
+        "label": "Cowichan Valley (Regional District)",
+        "regionGroups": [
+            "Cowichan Valley Regional District"
+        ]
+    },
+    {
+        "label": "Duncan (City)",
+        "regionGroups": [
+            "Cowichan Valley Regional District"
+        ]
+    },
+    {
+        "label": "Ladysmith (Town)",
+        "regionGroups": [
+            "Cowichan Valley Regional District"
+        ]
+    },
+    {
+        "label": "Lake Cowichan (Town)",
+        "regionGroups": [
+            "Cowichan Valley Regional District"
+        ]
+    },
+    {
+        "label": "North Cowichan (District)",
+        "regionGroups": [
+            "Cowichan Valley Regional District"
+        ]
+    },
+    {
+        "label": "East Kootenay (Regional District)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Canal Flats (Village)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Cranbrook (City)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Elkford (District)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Fernie (City)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Invermere (District)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Kimberley (City)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Radium Hot Springs (Village)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Sparwood (District)",
+        "regionGroups": [
+            "East Kootenay Regional District"
+        ]
+    },
+    {
+        "label": "Fraser Valley (Regional District)",
+        "regionGroups": [
+            "Fraser Valley Regional District"
+        ]
+    },
+    {
+        "label": "Abbotsford (City)",
+        "regionGroups": [
+            "Fraser Valley Regional District"
+        ]
+    },
+    {
+        "label": "Chilliwack (City)",
+        "regionGroups": [
+            "Fraser Valley Regional District"
+        ]
+    },
+    {
+        "label": "Harrison Hot Springs (Village)",
+        "regionGroups": [
+            "Fraser Valley Regional District"
+        ]
+    },
+    {
+        "label": "Hope (District)",
+        "regionGroups": [
+            "Fraser Valley Regional District"
+        ]
+    },
+    {
+        "label": "Kent (District)",
+        "regionGroups": [
+            "Fraser Valley Regional District"
+        ]
+    },
+    {
+        "label": "Mission (City)",
+        "regionGroups": [
+            "Fraser Valley Regional District"
+        ]
+    },
+    {
+        "label": "Fraser-Fort George (Regional District)",
+        "regionGroups": [
+            "Fraser-Fort George Regional District"
+        ]
+    },
+    {
+        "label": "Mackenzie (District)",
+        "regionGroups": [
+            "Fraser-Fort George Regional District"
+        ]
+    },
+    {
+        "label": "McBride (Village)",
+        "regionGroups": [
+            "Fraser-Fort George Regional District"
+        ]
+    },
+    {
+        "label": "Prince George (City)",
+        "regionGroups": [
+            "Fraser-Fort George Regional District"
+        ]
+    },
+    {
+        "label": "Valemount (Village)",
+        "regionGroups": [
+            "Fraser-Fort George Regional District"
+        ]
+    },
+    {
+        "label": "Kitimat-Stikine (Regional District)",
+        "regionGroups": [
+            "Kitimat-Stikine Regional District"
+        ]
+    },
+    {
+        "label": "Hazelton (Village)",
+        "regionGroups": [
+            "Kitimat-Stikine Regional District"
+        ]
+    },
+    {
+        "label": "Kitimat (District)",
+        "regionGroups": [
+            "Kitimat-Stikine Regional District"
+        ]
+    },
+    {
+        "label": "New Hazelton (District)",
+        "regionGroups": [
+            "Kitimat-Stikine Regional District"
+        ]
+    },
+    {
+        "label": "Stewart (District)",
+        "regionGroups": [
+            "Kitimat-Stikine Regional District"
+        ]
+    },
+    {
+        "label": "Terrace (City)",
+        "regionGroups": [
+            "Kitimat-Stikine Regional District"
+        ]
+    },
+    {
+        "label": "Kootenay Boundary (Regional District)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Fruitvale (Village)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Grand Forks (City)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Greenwood (City)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Midway (Village)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Montrose (Village)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Rossland (City)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Trail (City)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Warfield (Village)",
+        "regionGroups": [
+            "Kootenay Boundary Regional District"
+        ]
+    },
+    {
+        "label": "Metro Vancouver (Regional District)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Anmore (Village)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Belcarra (Village)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Bowen Island (Island Municipality)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Burnaby (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Coquitlam (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Delta (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Langley (Township)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Langley (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Lions Bay (Village)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Maple Ridge (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "New Westminster (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "North Vancouver (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "North Vancouver (District)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Pitt Meadows (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Port Coquitlam (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Port Moody (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Richmond (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Surrey (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Vancouver (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "West Vancouver (District)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "White Rock (City)",
+        "regionGroups": [
+            "Metro Vancouver Regional District"
+        ]
+    },
+    {
+        "label": "Mount Waddington (Regional District)",
+        "regionGroups": [
+            "Mount Waddington Regional District"
+        ]
+    },
+    {
+        "label": "Alert Bay (Village)",
+        "regionGroups": [
+            "Mount Waddington Regional District"
+        ]
+    },
+    {
+        "label": "Port Alice (Village)",
+        "regionGroups": [
+            "Mount Waddington Regional District"
+        ]
+    },
+    {
+        "label": "Port Hardy (District)",
+        "regionGroups": [
+            "Mount Waddington Regional District"
+        ]
+    },
+    {
+        "label": "Port McNeill (Town)",
+        "regionGroups": [
+            "Mount Waddington Regional District"
+        ]
+    },
+    {
+        "label": "Nanaimo (Regional District)",
+        "regionGroups": [
+            "Nanaimo Regional District"
+        ]
+    },
+    {
+        "label": "Lantzville (District)",
+        "regionGroups": [
+            "Nanaimo Regional District"
+        ]
+    },
+    {
+        "label": "Nanaimo (City)",
+        "regionGroups": [
+            "Nanaimo Regional District"
+        ]
+    },
+    {
+        "label": "Parksville (City)",
+        "regionGroups": [
+            "Nanaimo Regional District"
+        ]
+    },
+    {
+        "label": "Qualicum Beach (Town)",
+        "regionGroups": [
+            "Nanaimo Regional District"
+        ]
+    },
+    {
+        "label": "North Coast (Regional District)",
+        "regionGroups": [
+            "North Coast Regional District"
+        ]
+    },
+    {
+        "label": "Daajing Giids (Village)",
+        "regionGroups": [
+            "North Coast Regional District"
+        ]
+    },
+    {
+        "label": "Masset (Village)",
+        "regionGroups": [
+            "North Coast Regional District"
+        ]
+    },
+    {
+        "label": "Port Clements (Village)",
+        "regionGroups": [
+            "North Coast Regional District"
+        ]
+    },
+    {
+        "label": "Port Edward (District)",
+        "regionGroups": [
+            "North Coast Regional District"
+        ]
+    },
+    {
+        "label": "Prince Rupert (City)",
+        "regionGroups": [
+            "North Coast Regional District"
+        ]
+    },
+    {
+        "label": "North Okanagan (Regional District)",
+        "regionGroups": [
+            "North Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Armstrong (City)",
+        "regionGroups": [
+            "North Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Coldstream (District)",
+        "regionGroups": [
+            "North Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Enderby (City)",
+        "regionGroups": [
+            "North Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Lumby (Village)",
+        "regionGroups": [
+            "North Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Spallumcheen (Township)",
+        "regionGroups": [
+            "North Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Vernon (City)",
+        "regionGroups": [
+            "North Okanagan Regional District"
+        ]
+    },
+    {
+        "label": "Okanagan-Similkameen (Regional District)",
+        "regionGroups": [
+            "Okanagan-Similkameen Regional District"
+        ]
+    },
+    {
+        "label": "Keremeos (Village)",
+        "regionGroups": [
+            "Okanagan-Similkameen Regional District"
+        ]
+    },
+    {
+        "label": "Oliver (Town)",
+        "regionGroups": [
+            "Okanagan-Similkameen Regional District"
+        ]
+    },
+    {
+        "label": "Osoyoos (Town)",
+        "regionGroups": [
+            "Okanagan-Similkameen Regional District"
+        ]
+    },
+    {
+        "label": "Penticton (City)",
+        "regionGroups": [
+            "Okanagan-Similkameen Regional District"
+        ]
+    },
+    {
+        "label": "Princeton (Town)",
+        "regionGroups": [
+            "Okanagan-Similkameen Regional District"
+        ]
+    },
+    {
+        "label": "Summerland (District)",
+        "regionGroups": [
+            "Okanagan-Similkameen Regional District"
+        ]
+    },
+    {
+        "label": "Peace River (Regional District)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Chetwynd (District)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Dawson Creek (City)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Fort St. John (City)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Hudson's Hope (District)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Pouce Coupe (Village)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Taylor (District)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Tumbler Ridge (District)",
+        "regionGroups": [
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Powell River (Regional District)",
+        "regionGroups": [
+            "Powell River Regional District"
+        ]
+    },
+    {
+        "label": "Powell River (City)",
+        "regionGroups": [
+            "Powell River Regional District"
+        ]
+    },
+    {
+        "label": "Squamish-Lillooet (Regional District)",
+        "regionGroups": [
+            "Squamish-Lillooet Regional District"
+        ]
+    },
+    {
+        "label": "Lillooet (District)",
+        "regionGroups": [
+            "Squamish-Lillooet Regional District"
+        ]
+    },
+    {
+        "label": "Pemberton (Village)",
+        "regionGroups": [
+            "Squamish-Lillooet Regional District"
+        ]
+    },
+    {
+        "label": "Squamish (District)",
+        "regionGroups": [
+            "Squamish-Lillooet Regional District"
+        ]
+    },
+    {
+        "label": "Whistler (Resort Municipality)",
+        "regionGroups": [
+            "Squamish-Lillooet Regional District"
+        ]
+    },
+    {
+        "label": "Strathcona (Regional District)",
+        "regionGroups": [
+            "Strathcona Regional District"
+        ]
+    },
+    {
+        "label": "Campbell River (City)",
+        "regionGroups": [
+            "Strathcona Regional District"
+        ]
+    },
+    {
+        "label": "Gold River (Village)",
+        "regionGroups": [
+            "Strathcona Regional District"
+        ]
+    },
+    {
+        "label": "Sayward (Village)",
+        "regionGroups": [
+            "Strathcona Regional District"
+        ]
+    },
+    {
+        "label": "Tahsis (Village)",
+        "regionGroups": [
+            "Strathcona Regional District"
+        ]
+    },
+    {
+        "label": "Zeballos (Village)",
+        "regionGroups": [
+            "Strathcona Regional District"
+        ]
+    },
+    {
+        "label": "Sunshine Coast (Regional District)",
+        "regionGroups": [
+            "Sunshine Coast Regional District"
+        ]
+    },
+    {
+        "label": "Gibsons (Town)",
+        "regionGroups": [
+            "Sunshine Coast Regional District"
+        ]
+    },
+    {
+        "label": "Sechelt (District)",
+        "regionGroups": [
+            "Sunshine Coast Regional District"
+        ]
+    },
+    {
+        "label": "shíshálh Nation Government District ",
+        "regionGroups": [
+            "Sunshine Coast Regional District"
+        ]
+    },
+    {
+        "label": "Thompson-Nicola (Regional District)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Ashcroft (Village)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Barriere (District)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Cache Creek (Village)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Chase (Village)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Clearwater (District)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Clinton (Village)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Kamloops (City)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Logan Lake (District)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Lytton (Village)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Merritt (City)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Sun Peaks (Mountain Resort Municipality)",
+        "regionGroups": [
+            "Thompson-Nicola Regional District"
+        ]
+    },
+    {
+        "label": "Northern Rockies (Regional Municipality)",
+        "regionGroups": [
+            "Northern Rockies Regional Municipality",
+            "Peace River Regional District"
+        ]
+    },
+    {
+        "label": "Fort Nelson (Town)",
+        "regionGroups": [
+            "Northern Rockies Regional Municipality"
+        ]
+    },
+    {
+        "label": "Stikine Region (Unincorporated)",
+        "regionGroups": [
+            "Stikine Region (Unincorporated)"
+        ]
+    },
+    {
+        "label": "Atlin (Town)",
+        "regionGroups": [
+            "Stikine Region (Unincorporated)"
+        ]
+    },
+    {
+        "label": "?aq'am (Ktunaxa Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "?Esdilagh First Nation (Alexandria Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Acho Dene Koe (ADK Holdings)",
+        "regionGroups": []
+    },
+    {
+        "label": "Adams Lake Indian Band (Sexqeltqin)",
+        "regionGroups": []
+    },
+    {
+        "label": "Ahousaht First Nation (Ahousaht)",
+        "regionGroups": []
+    },
+    {
+        "label": "Aitchelitz First Nation (Ahtsalitz)",
+        "regionGroups": []
+    },
+    {
+        "label": "Akisq'nuk First Nation (Columbia Lake Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Alexis Creek First Nation (Tsideldel First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Ashcroft Indian Band (Nlaka’pamux)",
+        "regionGroups": []
+    },
+    {
+        "label": "Beecher Bay First Nation (Sc'ianew Cheanuh)",
+        "regionGroups": []
+    },
+    {
+        "label": "Binche Whut'en First Nation (Pinchie)",
+        "regionGroups": []
+    },
+    {
+        "label": "Blueberry River First Nations (Blueberry River First Nations)",
+        "regionGroups": []
+    },
+    {
+        "label": "Bonaparte Indian Band (St'uxwtews)",
+        "regionGroups": []
+    },
+    {
+        "label": "Boothroyd Band (Boothroyd)",
+        "regionGroups": []
+    },
+    {
+        "label": "Boston Bar First Nation (Boston Bar First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Bridge River Indian Band (Nxwisten)",
+        "regionGroups": []
+    },
+    {
+        "label": "Burns Lake Band (Ts'il Kaz Koh)",
+        "regionGroups": []
+    },
+    {
+        "label": "Burrard Nation (Tsleil-Waututh )",
+        "regionGroups": []
+    },
+    {
+        "label": "Cape Mudge Band (We Wai Kai Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Cayoose Creek Band (Sekw'el'was)",
+        "regionGroups": []
+    },
+    {
+        "label": "Chawathil First Nation (Lexw Siyo:les, Hope)",
+        "regionGroups": []
+    },
+    {
+        "label": "Cheam First Nation (Xwchíyò:m)",
+        "regionGroups": []
+    },
+    {
+        "label": "Cheslatta Carrier Nation (Cheslatta T'En)",
+        "regionGroups": []
+    },
+    {
+        "label": "Coldwater Indian Band (C’eletkwmx)",
+        "regionGroups": []
+    },
+    {
+        "label": "Cook's Ferry Indian Band (Cook's Ferry Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Cowichan Tribes (Quw’utsun)",
+        "regionGroups": []
+    },
+    {
+        "label": "Da'naxda'xw First Nation (Tsatsisnukwomi)",
+        "regionGroups": []
+    },
+    {
+        "label": "Daylu Dena Council (Lower Post)",
+        "regionGroups": []
+    },
+    {
+        "label": "Dease River First Nation (Dease River Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Dehcho First Nations ",
+        "regionGroups": []
+    },
+    {
+        "label": "Dene Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Ditidaht First Nation (da7uu7aa7tx)",
+        "regionGroups": []
+    },
+    {
+        "label": "Doig River First Nation (Doig River Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Douglas First Nation (Xa'xtsa First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Dzawada' enuxw First Nation (Tsawataineuk Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Ehattesaht First Nation (Ehattesaht Chinehkint)",
+        "regionGroups": []
+    },
+    {
+        "label": "Esketemc First Nation (Esk'etemc)",
+        "regionGroups": []
+    },
+    {
+        "label": "Esquimalt Nation (Is-Whoy-Malth)",
+        "regionGroups": []
+    },
+    {
+        "label": "Fort Nelson First Nation (Fort Nelson Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gitanmaax Band (Getamax, Getanmas, Getanmax, Kitanman)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gitanyow Band (Kitwancool)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gitga'at Nation (Hartley Bay)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gitsegukla Indian Band (Kitsegugkla)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gitwangak Band Council (Kitwanga)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gitxaala Nation (Kitkatla)",
+        "regionGroups": []
+    },
+    {
+        "label": "Glen Vowell Indian Band (Sik-e-dakh)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gwa'sala-Nakwaxda'xw Band (Gwa'sala, Nakwaxda'xw)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gwawaenuk Tribe (Hopetown)",
+        "regionGroups": []
+    },
+    {
+        "label": "Gwich'in Tribal Council",
+        "regionGroups": []
+    },
+    {
+        "label": "Hagwilget Village Council (Tse-kya)",
+        "regionGroups": []
+    },
+    {
+        "label": "Haisla Nation (Kitamaat Village Council)",
+        "regionGroups": []
+    },
+    {
+        "label": "Halalt First Nation (Hallalt, Hellelt)",
+        "regionGroups": []
+    },
+    {
+        "label": "Halfway River First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Heiltsuk Nation (Bella Bella Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Hesquiaht First Nation (heish-heish-a)",
+        "regionGroups": []
+    },
+    {
+        "label": "High Bar First Nation (Llenlleney'ten)",
+        "regionGroups": []
+    },
+    {
+        "label": "Homalco Indian Band (Xwémalhkwu)",
+        "regionGroups": []
+    },
+    {
+        "label": "Hupacasath First Nation (Opetchesaht)",
+        "regionGroups": []
+    },
+    {
+        "label": "Huu-ay-aht First Nations",
+        "regionGroups": []
+    },
+    {
+        "label": "Inuvik Native Band",
+        "regionGroups": []
+    },
+    {
+        "label": "Iskut Band Council (Iskut First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "K'omoks First Nation (K'omoks First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kanaka Bar Band (T'eqt''aqtn'mux)",
+        "regionGroups": []
+    },
+    {
+        "label": "Katlodeeche",
+        "regionGroups": []
+    },
+    {
+        "label": "Katzie First Nation (Katyie First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kispiox Band (Anspayaxw )",
+        "regionGroups": []
+    },
+    {
+        "label": "Kitasoo Nation (Xai’xais, Klemtu Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kitselas First Nation (Gitselasu)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kitsumkalum First Nation (Gitsmgeelm)",
+        "regionGroups": []
+    },
+    {
+        "label": "Klahoose First Nation (?o?os)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwadacha Nation (Fort Ware)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwakiutl Band Council (Kwakwa?ka??wakw)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwanlin Dün First Nation ",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwantlen First Nation (q??a:n????n?)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwaw-kwaw-Apilt First Nation (Kwaw-Kwaw-A-Pilt, Quoquapol)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwiakah First Nation (Kwe-Ahkah)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwicksutaineuk-ah-kwaw-ah-mish (Ahkwawahmish)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kwikwetlem First Nation (k?ik?????m)",
+        "regionGroups": []
+    },
+    {
+        "label": "Kyuquot First Nation (Ka:'yu:'k't'h'/Che:k'tles7et'h')",
+        "regionGroups": []
+    },
+    {
+        "label": "Lac La Ronge Indian Band",
+        "regionGroups": []
+    },
+    {
+        "label": "Lake Babine Nation (Nataotin, Nat'oot'en Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lake Cowichan First Nation (Kaatza, Ts'uubaa-asatx)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lax-kw'alaams Band (Lax?gu'alaams)",
+        "regionGroups": []
+    },
+    {
+        "label": "Leq’ á:mel First Nation (Lakahahmen)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lheidli T'enneh First Nation (Fort George Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lhoosk'uz Dene Government (Kluskus Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lhtako Dene Nation (Red Bluff)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lil'wat Nation (Mount Currie Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Little Shuswap Lake Band (Skwlax te Secwepemculecw)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lower Kootenay Indian Band ( Yaqan Nukiy)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lower Nicola Indian Band",
+        "regionGroups": []
+    },
+    {
+        "label": "Lower Similkameen Indian Band (Skichistan)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lutsel K’e Dene First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Lyackson First Nation (Ly-Ach-Sum)",
+        "regionGroups": []
+    },
+    {
+        "label": "Lytton First Nation (Tl'kemtsin)",
+        "regionGroups": []
+    },
+    {
+        "label": "Malahat First Nation (MÁLEXEL)",
+        "regionGroups": []
+    },
+    {
+        "label": "Mamalilikulla-Qwe'Qwa'Sot'Em (Mimkwa?mlis)",
+        "regionGroups": []
+    },
+    {
+        "label": "Matsqui First Nation (Màthexwi)",
+        "regionGroups": []
+    },
+    {
+        "label": "McLeod Lake Indian Band (Tse'Khene)",
+        "regionGroups": []
+    },
+    {
+        "label": "Metlakatla First Nation (Tsimpsean)",
+        "regionGroups": []
+    },
+    {
+        "label": "Mississauga First Nation (Mississauga First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Mississaugas of Scugog Island First Nation ",
+        "regionGroups": []
+    },
+    {
+        "label": "Mowachaht/Muchalaht First Nation (Yuquot)",
+        "regionGroups": []
+    },
+    {
+        "label": "Musqueam Indian Band (X'Muzk'I'Um)",
+        "regionGroups": []
+    },
+    {
+        "label": "N'Quatqua First Nation (Anderson Lake Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nadleh Whut'en First Nation (Fraser Lake )",
+        "regionGroups": []
+    },
+    {
+        "label": "Nak'azdli Whut'en' (Nak'azdli)",
+        "regionGroups": []
+    },
+    {
+        "label": "Namgis First Nation (Nimpkish)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nanoose First Nation (Snaw-Naw-As First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Naut'sa mawt Tribal Council",
+        "regionGroups": []
+    },
+    {
+        "label": "Nazko First Nation (Ndazkoh )",
+        "regionGroups": []
+    },
+    {
+        "label": "Nee-Tahi-Buhn (Francois Lake)",
+        "regionGroups": []
+    },
+    {
+        "label": "Neskonlith Indian Band (Neskainlith)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nicomen Indian Band (Nicoamen, Nicomeen, Nikaomin)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nisga'a Village of Gingolx (Kincolith)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nisga'a Village of Gitlaxt'aamiks (New Aiyansh)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nisga'a Village of Gitwinksihlkw (Kitwintshilth, Kitwilluchsilt, Kitangataa Bands)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nisga'a Village of Laxgalts'ap (Lachkalzap, Lachkaltzap, Laichkwiltach)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nooaitch Indian Band",
+        "regionGroups": []
+    },
+    {
+        "label": "North Coast-Skeena First Nations Stewardship Society (NCSFNSS)",
+        "regionGroups": []
+    },
+    {
+        "label": "Nuchatlaht First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Nuu-chah-nulth Tribal Council",
+        "regionGroups": []
+    },
+    {
+        "label": "Nuxalk Nation (Bella Coola Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Office of the Wet'suwet'en",
+        "regionGroups": []
+    },
+    {
+        "label": "Okanagan Indian Band (Syilx Okanagan)",
+        "regionGroups": []
+    },
+    {
+        "label": "Old Massett Village Council (G?aw in X?aad kíl)",
+        "regionGroups": []
+    },
+    {
+        "label": "Oregon Jack Creek Band",
+        "regionGroups": []
+    },
+    {
+        "label": "Osoyoos Indian Band",
+        "regionGroups": []
+    },
+    {
+        "label": "Pacheedaht First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Pauquachin First Nation (BO?E?EN)",
+        "regionGroups": []
+    },
+    {
+        "label": "Pehdzeh Ki First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Penelakut Tribe (Spune’luxutth)",
+        "regionGroups": []
+    },
+    {
+        "label": "Penticton Indian Band (SnPink’tn)",
+        "regionGroups": []
+    },
+    {
+        "label": "Peters First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Popkum Indian Band (Pópkw’em)",
+        "regionGroups": []
+    },
+    {
+        "label": "Prophet River First Nation (Denetsaa Tse K'Nai)",
+        "regionGroups": []
+    },
+    {
+        "label": "Qayqayt First Nation (New Westminster)",
+        "regionGroups": []
+    },
+    {
+        "label": "Qualicum First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Quatsino First Nation (G?usgimukw)",
+        "regionGroups": []
+    },
+    {
+        "label": "Saik'uz First Nation (Stoney Creek)",
+        "regionGroups": []
+    },
+    {
+        "label": "Samahquam First Nation (Semahquam First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Saulteau First Nations (Anishinaabe First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Scowlitz First Nation (Sq'éwlets First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Seabird Island First Nation (Skowakul)",
+        "regionGroups": []
+    },
+    {
+        "label": "Semiahmoo First Nation (SEMYOME)",
+        "regionGroups": []
+    },
+    {
+        "label": "Shackan Indian Band",
+        "regionGroups": []
+    },
+    {
+        "label": "shíshálh Nation (Sechelt Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Shuswap Indian Band (Kenpesq't)",
+        "regionGroups": []
+    },
+    {
+        "label": "Shuswap Nation Tribal Council",
+        "regionGroups": []
+    },
+    {
+        "label": "Shxw'ow'hamel First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Shxwh'a:y Village (Skway, Shxwhá:y)",
+        "regionGroups": []
+    },
+    {
+        "label": "Simpcw First Nation (North Thompson River)",
+        "regionGroups": []
+    },
+    {
+        "label": "Siska Indian Band",
+        "regionGroups": []
+    },
+    {
+        "label": "Skatin Nations (Skookumchuck)",
+        "regionGroups": []
+    },
+    {
+        "label": "Skawahlook First Nation (Sq'ewa:lxw)",
+        "regionGroups": []
+    },
+    {
+        "label": "Skeetchestn Indian Band (Deadman's Creek)",
+        "regionGroups": []
+    },
+    {
+        "label": "Skidegate Band Council",
+        "regionGroups": []
+    },
+    {
+        "label": "Skin Tyee First Nation (Skin'S Tyee)",
+        "regionGroups": []
+    },
+    {
+        "label": "Skowkale First Nation (Sq’ewqeyl)",
+        "regionGroups": []
+    },
+    {
+        "label": "Skuppah Indian Band",
+        "regionGroups": []
+    },
+    {
+        "label": "Skwah First Nation (Skwash)",
+        "regionGroups": []
+    },
+    {
+        "label": "Snuneymuxw First Nation (Nanaimo Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Soda Creek Indian Band (Xat??ll First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Songhees First Nation (Songhish)",
+        "regionGroups": []
+    },
+    {
+        "label": "Soowahlie First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Splatsin First Nation (Spallumcheen)",
+        "regionGroups": []
+    },
+    {
+        "label": "Spuzzum First Nation (Spô’zêm)",
+        "regionGroups": []
+    },
+    {
+        "label": "Squamish First Nation (Squamish)",
+        "regionGroups": []
+    },
+    {
+        "label": "Squiala First Nation (Sxwoyehà:là)",
+        "regionGroups": []
+    },
+    {
+        "label": "Stellat'en First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Stoney-Nakoda First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Sts'ailes Nation (Chehalis Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Stswecem'c Xgat'tem First Nation (Canoe Creek Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Stz'uminus First Nation (Chemainus First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Sumas First Nation (Semà:th)",
+        "regionGroups": []
+    },
+    {
+        "label": "T'it'q'et First Nation (Lillooet Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "T'Sou-ke First Nation (Sooke )",
+        "regionGroups": []
+    },
+    {
+        "label": "Tahltan Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Takla First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Taku River Tlingit First Nation (Atlin First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Temexw Treaty Association",
+        "regionGroups": []
+    },
+    {
+        "label": "Tk’emlúps te Secwépemc (Kamloops Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tl'azt'en Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Tl'etinqox Government (Anaham)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tla'amin Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Tla-o-qui-aht First Nations (Clayoquot)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tlatlasikwala Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Tlowitsis Tribe (?awit'si)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tobacco Plains Indian Band (Yaq?it ?a·knuq?i ‘it First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Toosey First Nation (Tl'esqox)",
+        "regionGroups": []
+    },
+    {
+        "label": "Toquaht Nation (Nuu-chah-nulth)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tr’ondek Hwech’in ",
+        "regionGroups": []
+    },
+    {
+        "label": "Ts'kw'aylaxw First Nation (Ts'kw'aylaxw First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsal’alh (Seton Lake)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsartlip First Nation (W?JO?E?P )",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsawout First Nation (S?ÁUTW?)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsawwassen First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsay Keh Dene First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Tseshaht First Nation (c?išaa?at?)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tseycum First Nation (W?S??EM)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsilhqot'in National Government (Chilcotin First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsleil Waututh Nation (Burrard Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tsq?éscen? First Nation (Canim Lake Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Tzeachten First Nation (Ch’iyàqtel)",
+        "regionGroups": []
+    },
+    {
+        "label": "Uchucklesaht Tribe Government (Uchucklesaht First Nation)",
+        "regionGroups": []
+    },
+    {
+        "label": "Ucluelet First Nation (Yuu?u?i??at? Government)",
+        "regionGroups": []
+    },
+    {
+        "label": "Ulkatcho First Nation (Ulhk'acho)",
+        "regionGroups": []
+    },
+    {
+        "label": "Union Bar First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Upper Nicola Band (Nicoamen)",
+        "regionGroups": []
+    },
+    {
+        "label": "Upper Similkameen Indian Band (Upper Smelqmix)",
+        "regionGroups": []
+    },
+    {
+        "label": "Wei Wai Kum First Nation (Campbell River Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "West Moberly First Nations",
+        "regionGroups": []
+    },
+    {
+        "label": "Westbank First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Wet'suwet'en First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Whispering Pines/Clinton First Nation (Pelltiq't)",
+        "regionGroups": []
+    },
+    {
+        "label": "Williams Lake First Nation (T'exelc)",
+        "regionGroups": []
+    },
+    {
+        "label": "Witset First Nation (Moricetown)",
+        "regionGroups": []
+    },
+    {
+        "label": "Wuikinuxv Nation (Oweekeno)",
+        "regionGroups": []
+    },
+    {
+        "label": "Xaxli'p First Nation (Fountain Indian Band)",
+        "regionGroups": []
+    },
+    {
+        "label": "Xeni Gwet'in First Nations Government (Nemiah)",
+        "regionGroups": []
+    },
+    {
+        "label": "Yakweakwioose Band (Yeqwyeqwí:ws)",
+        "regionGroups": []
+    },
+    {
+        "label": "Yale First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Yekooche First Nation (Yekoochet'en)",
+        "regionGroups": []
+    },
+    {
+        "label": "Yellowknives Dene First Nation",
+        "regionGroups": []
+    },
+    {
+        "label": "Yunesit’in Government (Stone, Stoney)",
+        "regionGroups": []
+    }
+]
