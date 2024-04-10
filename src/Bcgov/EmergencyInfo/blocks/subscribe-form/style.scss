@@ -147,7 +147,8 @@ $layout-margin-small: 4px;
     }
 
     .text_input {
-        min-width: 50%;
+        width: 400px;
+        max-width: 100%;
         font-size: 18px;
         height: 34px;
         border: 2px solid $grey;
@@ -186,10 +187,11 @@ $layout-margin-small: 4px;
     /* Hide the browser's default checkbox */
     .checkbox input {
         position: absolute;
-        opacity: 0;
+        left: 3px;
+        height: 25px;
+        opacity: 0.01;
         cursor: pointer;
-        height: 0;
-        width: 0;
+        outline: none;
     }
 
     /* Create a custom checkbox */

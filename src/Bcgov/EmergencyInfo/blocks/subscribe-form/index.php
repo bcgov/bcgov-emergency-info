@@ -87,7 +87,7 @@ function render_block_emergency_info_subscribe_form(
     return sprintf(
         '
         <div %1$s>
-            <form action="%2$s" method="post">
+            <form action="%2$s" method="post" class="needs-validation">
                 %3$s
                 <label class="radio" for="tax-region-all-1">
                     <input id="tax-region-all-1" type="radio" name="tax_region_all" value="1" %7$s><strong>Get updates for all locations in B.C.</strong></input>
@@ -119,7 +119,7 @@ function render_block_emergency_info_subscribe_form(
                         <span class="input-group-text"></span>
                     </div>
                     <div id="listbox-wrapper"></div>
-                    <select id="region-select" name="tax_region[]" style="display: none" multiple required>
+                    <select id="region-select" name="tax_region[]" style="display: none" multiple>
                         %6$s
                     </select>
                 </div>
@@ -135,17 +135,16 @@ function render_block_emergency_info_subscribe_form(
                 <label class="checkbox" for="consent">
                     <input type="checkbox" id="consent" name="consent" value="1" required>
                     <span class="checkmark"></span>
-                    I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use*
+                    I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use
                 </label>
                 <button class="BC-Gov-PrimaryButton" type="submit">%5$s</button>
-                <div class="required">*Required field</div>
             </form>
         </div>
         ',
         $wrapper_attributes,
         esc_url( admin_url( 'admin-ajax.php' ) ),
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
-        __( 'Enter your email address*' ),
+        __( 'Enter your email address' ),
         __( 'Subscribe' ),
         $term_options,
         '1' === $select_all_regions ? 'checked' : '',

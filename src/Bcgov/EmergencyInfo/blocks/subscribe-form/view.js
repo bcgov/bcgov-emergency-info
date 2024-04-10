@@ -11,6 +11,18 @@ $(() => {
     // eslint-disable-next-line no-undef
     const availableTerms = terms;
 
+    /**
+     * Updates region select input validity.
+     * Necessary because if the form is made invalid due to this input its validity won't be updated
+     * because it isn't directly changed by the user.
+     */
+    const updateRegionSelectValidity = () => {
+        const autocomplete = document.getElementById(
+            'region-autocomplete-input'
+        );
+        autocomplete.setCustomValidity('');
+    };
+
     // When the all regions radio value is changed, toggle the region section.
     const selectAllRegions = $('input[name="tax_region_all"]');
     selectAllRegions.on('change', (event) => {
@@ -26,6 +38,7 @@ $(() => {
             $('.all-region-section').hide();
             regionSelect.prop('disabled', false);
         }
+        updateRegionSelectValidity();
     });
     $('input[name="tax_region_all"]:checked').trigger('change');
 
@@ -37,6 +50,7 @@ $(() => {
         const selectedTerms = regionSelect.val();
         selectedTerms.push(id);
         regionSelect.val(selectedTerms);
+        updateRegionSelectValidity();
     };
 
     /**
@@ -50,6 +64,7 @@ $(() => {
             selectedTerms.splice(index, 1);
             regionSelect.val(selectedTerms);
         }
+        updateRegionSelectValidity();
     };
 
     /**
@@ -157,4 +172,38 @@ $(() => {
 
     // Initialize terms display in case terms were passed to the page.
     renderTerms();
+
+    // Validate region select input on submit.
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach((form) => {
+        form.addEventListener(
+            'submit',
+            (event) => {
+                const regionSelect = document.getElementById('region-select');
+                const autocomplete = document.getElementById(
+                    'region-autocomplete-input'
+                );
+
+                // If the autocomplete input is hidden, don't attempt to validate.
+                if (autocomplete.checkVisibility()) {
+                    // Region select input must not be empty.
+                    if (regionSelect.value.length < 1) {
+                        autocomplete.setCustomValidity(
+                            'You must select at least one location.'
+                        );
+                    } else {
+                        autocomplete.setCustomValidity('');
+                    }
+                    autocomplete.reportValidity();
+                }
+
+                // If the form is not valid, prevent submission.
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+            },
+            false
+        );
+    });
 });
