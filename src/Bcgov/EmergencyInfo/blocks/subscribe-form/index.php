@@ -135,7 +135,7 @@ function render_block_emergency_info_subscribe_form(
                 <label class="checkbox" for="consent">
                     <input type="checkbox" id="consent" name="consent" value="1" required>
                     <span class="checkmark"></span>
-                    I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use
+                    %10$s
                 </label>
                 <button class="BC-Gov-PrimaryButton" type="submit">%5$s</button>
             </form>
@@ -149,7 +149,8 @@ function render_block_emergency_info_subscribe_form(
         $term_options,
         '1' === $select_all_regions ? 'checked' : '',
         '1' !== $select_all_regions ? 'checked' : '',
-        count( $parsed_terms )
+        count( $parsed_terms ),
+        __( 'I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use' )
     );
 }
 
