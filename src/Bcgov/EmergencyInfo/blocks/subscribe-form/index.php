@@ -84,6 +84,20 @@ function render_block_emergency_info_subscribe_form(
 		}
     );
 
+    // Check to see if there is a valid email address in the URL parameters.
+    // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+    $email         = sanitize_email( $_GET['email'] ?? '' );
+    $email_display = '';
+    $button_text   = __( 'Subscribe' );
+    $email_input   = 'type="email"';
+
+    // If there is a valid email, modify the form to reflect updating instead of subscribing.
+    if ( $email ) {
+        $email_input   = 'type="hidden" value="' . $email . '"';
+        $email_display = '<span>' . $email . '</span><br>';
+        $button_text   = __( 'Update my subscription' );
+    }
+
     return sprintf(
         '
         <div %1$s>
@@ -131,7 +145,8 @@ function render_block_emergency_info_subscribe_form(
                         <label for="email-input">%4$s</label>
                     </strong>
                 </div>
-                <input id="email-input" class="text_input form-control-lg" type="email" name="email" required><br>
+                %10$s
+                <input id="email-input" class="text_input form-control-lg" %11$s name="email" required><br>
                 <label class="checkbox" for="consent">
                     <input type="checkbox" id="consent" name="consent" value="1" required>
                     <span class="checkmark"></span>
@@ -145,12 +160,14 @@ function render_block_emergency_info_subscribe_form(
         esc_url( admin_url( 'admin-ajax.php' ) ),
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
         __( 'Enter your email address' ),
-        __( 'Subscribe' ),
+        $button_text,
         $term_options,
         '1' === $select_all_regions ? 'checked' : '',
         '1' !== $select_all_regions ? 'checked' : '',
         count( $parsed_terms ),
-        __( 'I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use' )
+        __( 'I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use' ),
+        $email_display,
+        $email_input
     );
 }
 
