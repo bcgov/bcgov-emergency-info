@@ -84,6 +84,15 @@ function render_block_emergency_info_subscribe_form(
 		}
     );
 
+    // Check to see if there is a valid email address in the URL parameters.
+    $email       = sanitize_email( $get_params['email'] ?? '' );
+    $button_text = __( 'Notify me' );
+
+    // If there is a valid email, modify the form to reflect updating instead of subscribing.
+    if ( $email ) {
+        $button_text = __( 'Update locations' );
+    }
+
     return sprintf(
         '
         <div %1$s>
@@ -131,7 +140,7 @@ function render_block_emergency_info_subscribe_form(
                         <label for="email-input">%4$s</label>
                     </strong>
                 </div>
-                <input id="email-input" class="text_input form-control-lg" type="email" name="email" required><br>
+                <input id="email-input" class="text_input form-control-lg" type="email" name="email" value="%11$s" required><br>
                 <label class="checkbox" for="consent">
                     <input type="checkbox" id="consent" name="consent" value="1" required>
                     <span class="checkmark"></span>
@@ -145,12 +154,13 @@ function render_block_emergency_info_subscribe_form(
         esc_url( admin_url( 'admin-ajax.php' ) ),
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
         __( 'Enter your email address' ),
-        __( 'Subscribe' ),
+        $button_text,
         $term_options,
         '1' === $select_all_regions ? 'checked' : '',
         '1' !== $select_all_regions ? 'checked' : '',
         count( $parsed_terms ),
-        __( 'I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use' )
+        __( 'I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use' ),
+        $email
     );
 }
 
