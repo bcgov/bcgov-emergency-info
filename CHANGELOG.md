@@ -1,4 +1,5 @@
-### 1.1.0: April 10, 2024
+### 1.1.0: April 11, 2024
+* Updated Subscribe Form to be able to get email address when updating an existing subscription ([DESCW-2175](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2175))
 * Improved Subscribe Form validation ([DESCW-2176](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2176))
 * Added Region Loader feature to allow Region and Region Group taxonomy terms to be inserted via JSON in an admin page ([DESCW-2248](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2248))
 * Added Region Group control in editor to allow admins to select regions via the Region Group controls ([DESCW-2130](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2130))
