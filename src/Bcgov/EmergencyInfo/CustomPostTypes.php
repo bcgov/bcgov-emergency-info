@@ -46,6 +46,7 @@ class CustomPostTypes {
         $loader->add_filter( 'acf/settings/save_json/key=group_647e01f789a0c', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/save_json/key=group_6453d2a3c0b90', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/save_json/key=group_65f377d3803bc', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_6619996f06ce4', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/load_json', $this, 'acf_json_load_point', 20 );
 
         // Set up CPT UI saving and loading.
