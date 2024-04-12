@@ -19,7 +19,18 @@ function render_block_emergency_info_subscribe_form(
     $filter_fields     = apply_filters( 'notify_subscription_fields', [] ) ?? [];
     $filter_field_keys = array_keys( $filter_fields );
     // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-    $get_params           = $_GET;
+    $get_params = $_GET;
+
+    // Check to see if there is a valid email address in the URL parameters.
+    $email     = sanitize_email( $get_params['email'] ?? '' );
+    $is_update = false;
+
+    // If there is a valid email, modify the form to reflect updating instead of subscribing.
+    if ( $email ) {
+        $is_update = true;
+    }
+
+    // Check to see if there are terms in the URL parameters.
     $preselected_term_ids = [];
     foreach ( $filter_field_keys as $param ) {
         if ( array_key_exists( $param, $get_params ) ) {
@@ -45,80 +56,116 @@ function render_block_emergency_info_subscribe_form(
         $excluded_terms
     );
 
-    $taxonomy_slug = 'region';
-    // Get all childless terms belonging to the taxonomy.
-    $terms = get_terms(
+    // Get all terms belonging to the region group taxonomy.
+    $region_groups        = get_terms(
         [
-            'taxonomy'   => $taxonomy_slug,
+            'taxonomy'   => 'region_groups',
+            'hide_empty' => false,
+        ]
+    );
+    $parsed_region_groups = [];
+    foreach ( $region_groups as $region_group ) {
+        $parsed_region_groups[] = (object) [
+            'term'             => $region_group,
+            'included_regions' => Bcgov\EmergencyInfo\Plugin::get_field( 'included_regions', 'region_groups_' . $region_group->term_id, false ),
+        ];
+    }
+
+    // Get all childless terms belonging to the region taxonomy.
+    $regions = get_terms(
+        [
+            'taxonomy'   => 'region',
             'hide_empty' => false,
             'childless'  => true,
         ]
     );
 
-    $term_options = '';
-    $parsed_terms = [];
-    foreach ( $terms as $term ) {
+    $term_options   = '';
+    $parsed_regions = [];
+    foreach ( $regions as $region ) {
         // Use the excludedTerms attribute to skip over those terms.
-        if ( in_array( $term->term_id, $excluded_term_ids, true ) ) {
+        if ( in_array( $region->term_id, $excluded_term_ids, true ) ) {
             continue;
         }
-        $parsed_terms[] = [
-            'label' => $term->name,
-            'value' => $term->term_id,
+
+        $is_region_group_term = Bcgov\EmergencyInfo\Plugin::get_field( 'is_region_group_term', 'region_' . $region->term_id, false );
+        $is_region_group_term = '1' === $is_region_group_term;
+
+        // Add the region's region groups.
+        $rg = [];
+        foreach ( $parsed_region_groups as $region_group ) {
+            if ( in_array( $region->term_id, $region_group->included_regions, true ) ) {
+                $rg[] = $region_group->term->name;
+            }
+        }
+
+        $parsed_regions[] = [
+            'label'             => $region->name,
+            'value'             => $region->term_id,
+            'regionGroups'      => $rg,
+            'isRegionGroupTerm' => $is_region_group_term,
         ];
-        $is_selected    = in_array( $term->term_id, $preselected_term_ids, true );
-        $term_options  .= sprintf( '<option value="%d" %s>%s</option>', $term->term_id, $is_selected ? 'selected' : '', $term->name );
+
+        $is_selected   = in_array( $region->term_id, $preselected_term_ids, true );
+        $term_options .= sprintf( '<option value="%d" %s>%s</option>', $region->term_id, $is_selected ? 'selected' : '', $region->name );
     }
 
     // Pass the array of region terms to JS.
     add_action(
         'wp_enqueue_scripts',
-        function () use ( $parsed_terms ) {
+        function () use ( $parsed_regions, $is_update ) {
 			wp_register_script( 'subscribe_form_script', '', [], true, true );
 			wp_enqueue_script( 'subscribe_form_script' );
 			wp_add_inline_script(
                 'subscribe_form_script',
-                'const terms = ' . wp_json_encode( $parsed_terms ),
+                sprintf(
+                    '
+                        const regions = %s;
+                        const update = %s;
+                    ',
+                    wp_json_encode( $parsed_regions ),
+                    $is_update ? 'true' : 'false'
+                ),
                 'before'
 			);
 		}
     );
 
-    // Check to see if there is a valid email address in the URL parameters.
-    $email       = sanitize_email( $get_params['email'] ?? '' );
-    $button_text = __( 'Notify me' );
-
-    // If there is a valid email, modify the form to reflect updating instead of subscribing.
-    if ( $email ) {
-        $button_text = __( 'Update locations' );
-    }
-
     return sprintf(
         '
         <div %1$s>
-            <form action="%2$s" method="post" class="needs-validation">
+            <form id="subscribe-form" action="%2$s" method="post" class="needs-validation">
                 %3$s
+                <input id="post-type" type="hidden" name="post_type[]" value="event" />
+                <input type="hidden" name="action" value="notify_create_subscription" />
+                <div class="get-updates">
+                    <strong>Get email updates for:</strong>
+                </div>
                 <label class="radio" for="tax-region-all-1">
-                    <input id="tax-region-all-1" type="radio" name="tax_region_all" value="1" %7$s><strong>Get updates for all locations in B.C.</strong></input>
+                    <input id="tax-region-all-1" type="radio" name="tax_region_all" value="1" %7$s>All locations in B.C.</input>
                     <span class="dot"></span>
                 </label>
                 <div class="all-region-section">
-                    <p>You will get email updates about Evacuation Orders and Alerts for %9$s municipalities, unincorporated communities and First Nations.</p>
+                    You will get email updates about Evacuation Orders and Alerts for %9$s municipalities, regional districts and First Nations.
                 </div>
                 <label class="radio" for="tax-region-all-0">
-                    <input id="tax-region-all-0" type="radio" name="tax_region_all" value="0" %8$s><strong>Choose location(s) you\'d like updates for:</strong></input>
+                    <input id="tax-region-all-0" type="radio" name="tax_region_all" value="0" %8$s>Select location(s)</input>
                     <span class="dot"></span>
                 </label>
                 <div class="region-section">
-                    <div class="region-autocomplete-label"></div>
+                    <strong>
+                        <div class="region-autocomplete-label"></div>
+                    </strong>
                     <ul class="region-list" aria-role="presentation"></ul>
+                    <div class="region-group-autocomplete-label"></div>
+                    <ul class="region-group-list" aria-role="presentation"></ul>
                     <div class="region-autocomplete input-group">
                         <span class="input-group-text"><i class="geo-icon bi bi-geo-alt-fill"></i>
                         </span>
                         <input id="region-autocomplete-input"
                             class="form-control"
                             type="search"
-                            placeholder="Type location(s)"
+                            placeholder="Search for municipalities, regional districts and First Nations"
                             role="searchbox"
                             aria-description="Search results will appear below"
                             aria-controls="ui-id-1"
@@ -132,20 +179,21 @@ function render_block_emergency_info_subscribe_form(
                         %6$s
                     </select>
                 </div>
-                <input id="post-type" type="hidden" name="post_type[]" value="event" />
-                <input type="hidden" name="action" value="notify_create_subscription" />
-                <hr>
-                <div class="text_label">
-                    <strong>
-                        <label for="email-input">%4$s</label>
-                    </strong>
+                <div class="email-section">
+                    <div class="text_label">
+                        <strong>
+                            <label for="email-input">%4$s</label>
+                        </strong>
+                    </div>
+                    <input id="email-input" class="text_input" type="email" name="email" value="%11$s" placeholder="Type your email address" required><br>
                 </div>
-                <input id="email-input" class="text_input form-control-lg" type="email" name="email" value="%11$s" required><br>
-                <label class="checkbox" for="consent">
-                    <input type="checkbox" id="consent" name="consent" value="1" required>
-                    <span class="checkmark"></span>
-                    %10$s
-                </label>
+                <div class="consent-section">
+                    <label class="checkbox" for="consent">
+                        <input type="checkbox" id="consent" name="consent" value="1" required>
+                        <span class="checkmark"></span>
+                        %10$s
+                    </label>
+                </div>
                 <button class="BC-Gov-PrimaryButton" type="submit">%5$s</button>
             </form>
         </div>
@@ -153,12 +201,12 @@ function render_block_emergency_info_subscribe_form(
         $wrapper_attributes,
         esc_url( admin_url( 'admin-ajax.php' ) ),
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
-        __( 'Enter your email address' ),
-        $button_text,
+        __( 'Your email address:' ),
+        $is_update ? __( 'Update locations' ) : __( 'Notify me' ),
         $term_options,
         '1' === $select_all_regions ? 'checked' : '',
         '1' !== $select_all_regions ? 'checked' : '',
-        count( $parsed_terms ),
+        count( $parsed_regions ),
         __( 'I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use' ),
         $email
     );

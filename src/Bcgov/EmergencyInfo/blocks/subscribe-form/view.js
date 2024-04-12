@@ -9,7 +9,10 @@ $(() => {
 
     // The list of available terms to autocomplete from. Passed in from PHP.
     // eslint-disable-next-line no-undef
-    const availableTerms = terms;
+    const availableTerms = regions;
+    // Whether the form is an update or a new subscription. Passed in from PHP.
+    // eslint-disable-next-line no-undef
+    const isUpdate = update;
 
     /**
      * Updates region select input validity.
@@ -71,29 +74,66 @@ $(() => {
      * Renders the currently selected terms.
      */
     const renderTerms = () => {
-        let termList = '';
+        let regionList = '';
+        let regionGroupList = '';
+        let regionGroups = new Set();
+        let excludeRegionGroups = [];
         regionSelect.val().forEach((termId) => {
             const term = availableTerms.findLast((t) => {
                 return t.value === +termId;
             });
-            // Create a li with a badge and a remove button.
-            termList += `<li aria-label="${term.label}" tabindex="0">
-                <span class="region-pill">
+            // Build region pill with remove button.
+            regionList += `<li aria-label="${term.label}" tabindex="0">
+                <span class="term-pill region">
                     <span>
                         ${term.label}
                     </span>
                     <button class="btn btn-secondary" aria-label="Remove ${term.label}" data-id="${term.value}" tabindex="0"><i class="bi-x-circle-fill"></i></button>
                 </span>
             </li>`;
+
+            // If the region is also a region group (eg. Capital (Regional District)), don't show its region group.
+            if (term.isRegionGroupTerm) {
+                excludeRegionGroups = excludeRegionGroups.concat(
+                    term.regionGroups
+                );
+            }
+            regionGroups = regionGroups.union(term.regionGroups);
         });
 
-        if (!termList) {
+        // Remove redundant region groups.
+        regionGroups = regionGroups.difference(excludeRegionGroups);
+
+        // Build region group pill.
+        regionGroups.forEach((groupName) => {
+            regionGroupList += `<li aria-label="${groupName}" tabindex="0">
+                <span class="term-pill region-group">
+                    <span>
+                        ${groupName}
+                    </span>
+                </span>
+            </li>`;
+        });
+
+        // Add region pills to HTML.
+        if (!regionList) {
             // If no terms selected, remove message.
             $('.region-autocomplete-label').html('');
         } else {
             $('.region-autocomplete-label').html('Your locations:');
         }
-        $('.region-list').html(termList);
+        $('.region-list').html(regionList);
+
+        // Add region group pills to HTML.
+        if (!regionGroupList) {
+            // If no terms selected, remove message.
+            $('.region-group-autocomplete-label').html('');
+        } else {
+            $('.region-group-autocomplete-label').html(
+                'You will also get email updates for:'
+            );
+        }
+        $('.region-group-list').html(regionGroupList);
 
         // Add listener for clicks of the remove button on each term.
         $('.region-list button').on('click', (event) => {
@@ -115,7 +155,63 @@ $(() => {
         })
         .autocomplete({
             minLength: 0,
-            source: availableTerms,
+            source: (request, response) => {
+                // If no search term given, return early.
+                if ('' === request.term) {
+                    response(availableTerms);
+                    return;
+                }
+
+                const selectedValues = regionSelect.val();
+
+                // Create regex string of the search term, escaping any special characters.
+                const term = new RegExp(
+                    `(${request.term.replace(
+                        /[/\-\\^$*+?.()|[\]{}]/g,
+                        '\\$&'
+                    )})`,
+                    'gi'
+                );
+
+                let results = [];
+                for (const option of availableTerms) {
+                    // Skip terms that have already been selected.
+                    if (selectedValues.includes(option.value.toString())) {
+                        continue;
+                    }
+
+                    // Get number of matches in the label.
+                    const labelMatches = option.label.match(term);
+                    const labelRelevancy = labelMatches
+                        ? labelMatches.length
+                        : 0;
+
+                    // Get number of matches in the region groups.
+                    const regionGroupsRelevancy = option.regionGroups.reduce(
+                        (accumulator, currentValue) => {
+                            const matches = currentValue.match(term);
+                            const count = matches ? matches.length : 0;
+                            return count + accumulator;
+                        },
+                        0
+                    );
+
+                    // Set weighted search result relevancy.
+                    option.relevancy =
+                        labelRelevancy * 5 + regionGroupsRelevancy;
+
+                    // Only add to the results if non-zero relevancy.
+                    if (option.relevancy > 0) {
+                        results.push(option);
+                    }
+                }
+
+                // Sort by descending relevancy.
+                results.sort((a, b) => b.relevancy - a.relevancy);
+
+                // Return results in response.
+                response(results);
+            },
             position: {
                 of: '.region-autocomplete',
             },
@@ -155,9 +251,17 @@ $(() => {
 
     // Override jQueryUI Autocomplete renderItem() to add aria role.
     $.ui.autocomplete.prototype._renderItem = (ul, item) => {
-        return $('<li></li>')
-            .append('<div role="option">' + item.label + '</div>')
-            .appendTo(ul);
+        const renderedItem = $('<li></li>');
+        renderedItem.append('<div role="option">' + item.label + '</div>');
+        // Display region groups if the item has any.
+        if (!item.isRegionGroupTerm && item.regionGroups) {
+            renderedItem.append(
+                '<div class="region-groups">' +
+                    item.regionGroups.join(', ') +
+                    '</div>'
+            );
+        }
+        return renderedItem.appendTo(ul);
     };
 
     // Override jQueryUI Autocomplete renderMenu() to add aria role.
@@ -206,4 +310,10 @@ $(() => {
             false
         );
     });
+
+    // If the user is updating their preferences, scroll to the form.
+    if (isUpdate) {
+        const element = document.getElementById('subscribe-form');
+        element.scrollIntoView({ behavior: 'instant' });
+    }
 });

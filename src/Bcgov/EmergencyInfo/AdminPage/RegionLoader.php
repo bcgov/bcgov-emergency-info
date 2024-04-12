@@ -83,6 +83,7 @@ class RegionLoader {
                 foreach ( $groups as $group ) {
                     $regional_districts[ $group ][] = $region_term['term_id'];
                 }
+                update_field( 'is_region_group_term', $region->isRegionGroupTerm ?? false, 'region_' . $region_term['term_id'] );
             }
 
             // Insert Region Group terms from json.
