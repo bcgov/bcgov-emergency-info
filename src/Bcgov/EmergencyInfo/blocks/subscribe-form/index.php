@@ -1,4 +1,6 @@
 <?php
+use Bcgov\EmergencyInfo\Plugin;
+
 /**
  * Renders the `notify-client/subscribe-form` block on the server.
  *
@@ -63,13 +65,15 @@ function render_block_emergency_info_subscribe_form(
             'hide_empty' => false,
         ]
     );
-    $parsed_region_groups = [];
-    foreach ( $region_groups as $region_group ) {
-        $parsed_region_groups[] = (object) [
-            'term'             => $region_group,
-            'included_regions' => Bcgov\EmergencyInfo\Plugin::get_field( 'included_regions', 'region_groups_' . $region_group->term_id, false ),
-        ];
-    }
+    $parsed_region_groups = array_map(
+        function ( $region_group ) {
+			return (object) [
+				'term'             => $region_group,
+				'included_regions' => Plugin::get_field( 'included_regions', 'region_groups_' . $region_group->term_id, false ),
+			];
+		},
+        $region_groups
+    );
 
     // Get all childless terms belonging to the region taxonomy.
     $regions = get_terms(
@@ -88,21 +92,21 @@ function render_block_emergency_info_subscribe_form(
             continue;
         }
 
-        $is_region_group_term = Bcgov\EmergencyInfo\Plugin::get_field( 'is_region_group_term', 'region_' . $region->term_id, false );
+        $is_region_group_term = Plugin::get_field( 'is_region_group_term', 'region_' . $region->term_id, false );
         $is_region_group_term = '1' === $is_region_group_term;
 
         // Add the region's region groups.
-        $rg = [];
+        $region_region_groups = [];
         foreach ( $parsed_region_groups as $region_group ) {
             if ( in_array( $region->term_id, $region_group->included_regions, true ) ) {
-                $rg[] = $region_group->term->name;
+                $region_region_groups[] = $region_group->term->name;
             }
         }
 
         $parsed_regions[] = [
             'label'             => $region->name,
             'value'             => $region->term_id,
-            'regionGroups'      => $rg,
+            'regionGroups'      => $region_region_groups,
             'isRegionGroupTerm' => $is_region_group_term,
         ];
 
