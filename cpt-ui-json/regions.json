@@ -3,7 +3,8 @@
         "label": "Alberni-Clayoquot (Regional District)",
         "regionGroups": [
             "Alberni-Clayoquot Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Port Alberni (City)",
@@ -27,7 +28,8 @@
         "label": "Bulkley-Nechako (Regional District)",
         "regionGroups": [
             "Bulkley-Nechako Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Burns Lake (Village)",
@@ -81,7 +83,8 @@
         "label": "Capital (Regional District)",
         "regionGroups": [
             "Capital Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Central Saanich (District)",
@@ -165,7 +168,8 @@
         "label": "Cariboo (Regional District)",
         "regionGroups": [
             "Cariboo Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "100 Mile House (District)",
@@ -195,7 +199,8 @@
         "label": "Central Kootenay (Regional District)",
         "regionGroups": [
             "Central Kootenay Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Castlegar (City)",
@@ -255,7 +260,8 @@
         "label": "Central Okanagan (Regional District)",
         "regionGroups": [
             "Central Okanagan Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Kelowna (City)",
@@ -285,7 +291,8 @@
         "label": "Columbia-Shuswap (Regional District)",
         "regionGroups": [
             "Columbia-Shuswap Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Golden (Town)",
@@ -315,7 +322,8 @@
         "label": "Comox Valley (Regional District)",
         "regionGroups": [
             "Comox Valley Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Comox (Town)",
@@ -339,7 +347,8 @@
         "label": "Cowichan Valley (Regional District)",
         "regionGroups": [
             "Cowichan Valley Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Duncan (City)",
@@ -369,7 +378,8 @@
         "label": "East Kootenay (Regional District)",
         "regionGroups": [
             "East Kootenay Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Canal Flats (Village)",
@@ -423,7 +433,8 @@
         "label": "Fraser Valley (Regional District)",
         "regionGroups": [
             "Fraser Valley Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Abbotsford (City)",
@@ -465,7 +476,8 @@
         "label": "Fraser-Fort George (Regional District)",
         "regionGroups": [
             "Fraser-Fort George Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Mackenzie (District)",
@@ -495,7 +507,8 @@
         "label": "Kitimat-Stikine (Regional District)",
         "regionGroups": [
             "Kitimat-Stikine Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Hazelton (Village)",
@@ -531,7 +544,8 @@
         "label": "Kootenay Boundary (Regional District)",
         "regionGroups": [
             "Kootenay Boundary Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Fruitvale (Village)",
@@ -585,7 +599,8 @@
         "label": "Metro Vancouver (Regional District)",
         "regionGroups": [
             "Metro Vancouver Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Anmore (Village)",
@@ -717,7 +732,8 @@
         "label": "Mount Waddington (Regional District)",
         "regionGroups": [
             "Mount Waddington Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Alert Bay (Village)",
@@ -747,7 +763,8 @@
         "label": "Nanaimo (Regional District)",
         "regionGroups": [
             "Nanaimo Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Lantzville (District)",
@@ -777,7 +794,8 @@
         "label": "North Coast (Regional District)",
         "regionGroups": [
             "North Coast Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Daajing Giids (Village)",
@@ -813,7 +831,8 @@
         "label": "North Okanagan (Regional District)",
         "regionGroups": [
             "North Okanagan Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Armstrong (City)",
@@ -855,7 +874,8 @@
         "label": "Okanagan-Similkameen (Regional District)",
         "regionGroups": [
             "Okanagan-Similkameen Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Keremeos (Village)",
@@ -897,7 +917,8 @@
         "label": "Peace River (Regional District)",
         "regionGroups": [
             "Peace River Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Chetwynd (District)",
@@ -945,7 +966,8 @@
         "label": "Powell River (Regional District)",
         "regionGroups": [
             "Powell River Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Powell River (City)",
@@ -957,7 +979,8 @@
         "label": "Squamish-Lillooet (Regional District)",
         "regionGroups": [
             "Squamish-Lillooet Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Lillooet (District)",
@@ -987,7 +1010,8 @@
         "label": "Strathcona (Regional District)",
         "regionGroups": [
             "Strathcona Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Campbell River (City)",
@@ -1023,7 +1047,8 @@
         "label": "Sunshine Coast (Regional District)",
         "regionGroups": [
             "Sunshine Coast Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Gibsons (Town)",
@@ -1047,7 +1072,8 @@
         "label": "Thompson-Nicola (Regional District)",
         "regionGroups": [
             "Thompson-Nicola Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Ashcroft (Village)",
@@ -1120,7 +1146,8 @@
         "regionGroups": [
             "Northern Rockies Regional Municipality",
             "Peace River Regional District"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Fort Nelson (Town)",
@@ -1132,7 +1159,8 @@
         "label": "Stikine Region (Unincorporated)",
         "regionGroups": [
             "Stikine Region (Unincorporated)"
-        ]
+        ],
+        "isRegionGroupTerm": true
     },
     {
         "label": "Atlin (Town)",

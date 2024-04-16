@@ -2,6 +2,9 @@ $primary-blue: #036;
 $light-blue: #3b99fc;
 $grey: #606060;
 $autocomplete-max-width: 684px;
+$region-group-pill-color: #56566c;
+$input-height: 45px;
+$section-margin: 21px;
 
 // BC Design Tokens variables
 $white: #fff;
@@ -23,11 +26,19 @@ $layout-margin-small: 4px;
 
     font-family: BCSans, "Noto Sans", Verdana, Arial, sans-serif;
 
+    .get-updates {
+        margin-bottom: 12px;
+    }
+
+    .all-region-section {
+        margin-bottom: 12px;
+    }
+
     .region-autocomplete {
         border: 2px solid $grey;
-        height: 61px;
+        height: $input-height;
         overflow: hidden;
-        border-radius: 20px;
+        border-radius: 4px;
         margin-top: 1rem;
         margin-bottom: 1rem;
         max-width: $autocomplete-max-width;
@@ -53,8 +64,12 @@ $layout-margin-small: 4px;
             padding-right: 0;
         }
 
-        .form-control:focus {
-            box-shadow: none;
+        .form-control {
+            font-size: inherit;
+
+            &:focus {
+                box-shadow: none;
+            }
         }
 
         .input-group-text {
@@ -79,10 +94,20 @@ $layout-margin-small: 4px;
 
         li {
             cursor: pointer;
+            border-bottom: solid 1px var(--wp--preset--color--support-gray-02);
 
             .ui-state-active {
                 background-color: $surface-color-primary-activeBorder;
                 color: $white;
+            }
+
+            .region-groups {
+                padding-top: 0;
+                font-size: smaller;
+            }
+
+            &:nth-child(odd) {
+                background-color: var(--wp--preset--color--support-gray-01);
             }
 
             >div {
@@ -91,49 +116,71 @@ $layout-margin-small: 4px;
         }
     }
 
-    .region-list {
-        list-style: none;
-        padding: 0;
-        // Offset margins on pills.
-        margin-left: -0.5rem;
-        margin-right: -0.5rem;
+    .region-section {
 
-        >li {
-            display: inline-flex;
-            margin: 0.5rem;
+        margin-top: $section-margin;
 
-            >.region-pill {
-                max-width: 100%;
-                border-radius: $layout-margin-small;
+        .region-list,
+        .region-group-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+            // Offset margins on pills.
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
+
+            >li {
+                display: inline-flex;
+                margin: 0.5rem;
+            }
+        }
+
+        .term-pill {
+            display: flex;
+            max-width: 100%;
+            border-radius: $layout-margin-small;
+            color: $white;
+            padding: 5px 10px 5px 10px;
+            font-weight: bold;
+            height: 44px;
+
+            &.region {
                 background: $surface-color-primary-activeBorder;
+            }
+
+            &.region-group {
+                background: $region-group-pill-color;
+            }
+
+            >span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                align-self: center;
+            }
+
+            >button {
+                padding: 5px;
+                display: inline-flex;
                 color: $white;
-                padding: 5px 10px 5px 10px;
-                font-weight: bold;
+                background-color: $surface-color-primary-activeBorder;
+                border: none;
+                margin-left: 3px;
 
-                >span {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
-                >button {
-                    padding: 5px;
-                    display: inline-flex;
-                    color: $white;
-                    background-color: $surface-color-primary-activeBorder;
-                    border: none;
-
-                    &:hover,
-                    &:focus {
-                        background-color: $primary-blue;
-                    }
+                &:hover,
+                &:focus {
+                    background-color: $primary-blue;
                 }
             }
         }
     }
 
-    .required {
-        margin-top: 1rem;
-        font-size: 0.75rem;
+    .email-section {
+        margin-top: $section-margin;
+        margin-bottom: $section-margin;
+    }
+
+    .consent-section {
+        margin-bottom: $section-margin;
     }
 
     /* Form and input styles */
@@ -149,18 +196,19 @@ $layout-margin-small: 4px;
     .text_input {
         width: 400px;
         max-width: 100%;
-        font-size: 18px;
-        height: 34px;
+        height: $input-height;
         border: 2px solid $grey;
         margin-top: 5px;
         margin-bottom: 15px;
         border-radius: 4px;
         padding: 5px 5px 5px 7px;
+        background-color: var(--wp--preset--color--support-gray-00);
     }
 
-    .text_input[type="text"]:focus {
+    .text_input[type="email"]:focus {
         outline: 4px solid $light-blue;
         outline-offset: 1px;
+        background-color: $white;
     }
 
     .text_label {
@@ -177,7 +225,6 @@ $layout-margin-small: 4px;
         margin-bottom: 12px;
         margin-left: 5px;
         cursor: pointer;
-        font-size: 18px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -239,7 +286,6 @@ $layout-margin-small: 4px;
         padding-left: 25px;
         margin-bottom: 12px;
         cursor: pointer;
-        font-size: 18px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
