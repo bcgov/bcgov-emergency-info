@@ -1,3 +1,8 @@
+### 1.1.1: May 3, 2024
+* Created filter to control which posts are able trigger notifications ([DESCW-2249](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2249))
+* Fixed bug with hazard type color styles being added to wrong theme.json property
+* Updated Event CPT to allow export and allow rewrite without front for permanlinks (/post-slug works in addition to /events/post-slug)
+
 ### 1.1.0: April 12, 2024
 * Updated Subscribe Form: ([DESCW-2246](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2246))
   * Now shows associated region groups below selected regions

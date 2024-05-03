@@ -75,6 +75,7 @@ class Plugin {
         $loader->add_action( 'admin_menu', $this, 'remove_menu_items' );
         $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_jquery_ui' );
         $loader->add_filter( 'notify_subscription_fields', $this, 'set_notify_subscription_fields', 11, 1 );
+        $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
         $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
 
         $loader->run();
@@ -192,7 +193,7 @@ class Plugin {
      */
     public function filter_theme_json_theme( WP_Theme_JSON_Data $theme_json ) {
         $current_data = $theme_json->get_data();
-        $old_colours  = $current_data['settings']['color']['palette']['theme'];
+        $old_colours  = $current_data['settings']['color']['palette']['custom'] ?? [];
 
         // Add theme colors.
         $new_colours = [
@@ -275,7 +276,7 @@ class Plugin {
             'name'  => __( 'Hazard inactive secondary' ),
         ];
 
-        $current_data['settings']['color']['palette']['theme'] = array_merge( $old_colours, $new_colours );
+        $current_data['settings']['color']['palette']['custom'] = array_merge( $old_colours, $new_colours );
 
         return $theme_json->update_with( $current_data );
     }
@@ -403,6 +404,48 @@ class Plugin {
     public function set_notify_subscription_fields( array $data ): array {
         $data = array_merge( $data, [ 'tax_region' => [] ] );
         return $data;
+    }
+
+    /**
+     * Determines whether the send notification input should appear in the editor for a given post.
+     * Should only appear if: the post is an Event AND the post is new or the post is a wildfire or flood.
+     *
+     * @param boolean $can_post_be_notified
+     * @return boolean Whether the post should have the ability to trigger notifications.
+     */
+    public function can_post_be_notified( bool $can_post_be_notified ) {
+        // If a previous filter has already determined post can't be notified, return.
+        if ( ! $can_post_be_notified ) {
+            return $can_post_be_notified;
+        }
+
+        global $post;
+
+        // Wildfire and flood are the only allowed hazard types.
+        $allowed_hazard_types = [ 'wildfire', 'flood' ];
+
+        // Post must exist and be an Event.
+        if ( $post && 'event' === $post->post_type ) {
+
+            // New posts have auto-draft status and don't have a hazard type set yet, return true.
+            if ( 'auto-draft' === $post->post_status ) {
+                return true;
+            }
+
+            $terms = get_the_terms( $post, 'hazard_type' );
+            // If no terms or we get an error, return false.
+            if ( ! $terms || is_wp_error( $terms ) ) {
+                return false;
+            }
+
+            $term_slugs = array_column( (array) $terms, 'slug' );
+            // Only allow notifications if event is in the allowed hazard types.
+            if ( array_intersect( $term_slugs, $allowed_hazard_types ) ) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
