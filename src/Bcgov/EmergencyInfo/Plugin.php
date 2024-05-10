@@ -63,6 +63,8 @@ class Plugin {
         $cpt = new CustomPostTypes( self::$plugin_name, self::$plugin_dir );
         $cpt->init();
 
+        remove_filter( 'notify_subscription_fields', [ 'Bcgov\NotifyClient\NotifyController', 'build_subscription_criteria_list' ], 10 );
+
         $loader = new Loader();
         $loader->add_filter( 'aioseo_limit_modified_date_post_types', $this, 'disable_limit_modified_date' );
 
@@ -75,6 +77,7 @@ class Plugin {
         $loader->add_action( 'admin_menu', $this, 'remove_menu_items' );
         $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_jquery_ui' );
         $loader->add_filter( 'notify_subscription_fields', $this, 'set_notify_subscription_fields', 11, 1 );
+        $loader->add_filter( 'notify_subscription_criteria_list', $this, 'set_subscription_criteria_list', 11, 2 );
         $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
         $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
 
@@ -404,6 +407,115 @@ class Plugin {
     public function set_notify_subscription_fields( array $data ): array {
         $data = array_merge( $data, [ 'tax_region' => [] ] );
         return $data;
+    }
+
+    /**
+     * Builds an HTML list based on taxonomies and term ids given in criteria.
+     *
+     * @param string $html
+     * @param array  $criteria Subscription criteria array of taxonomy slug and term ids, ex. ['tax_taxonomy_name' => [1, 2, 3]].
+     * @return string
+     */
+    public function set_subscription_criteria_list( string $html, array $criteria ): string {
+        // Loop through criteria and create an agnostic array for both taxonomy and metadata criteria.
+        $subscription_objects = [];
+        $meta_criteria        = apply_filters( 'notify_subscription_fields', [] ) ?? [];
+
+        foreach ( $criteria as $slug => $term_ids ) {
+
+            // Handle select all criteria.
+            $is_select_all = false;
+            if ( str_ends_with( $slug, '_all' ) ) {
+                $slug          = str_replace( '_all', '', $slug );
+                $is_select_all = true;
+            } elseif ( array_key_exists( $slug . '_all', $criteria ) && '1' === $criteria[ $slug . '_all' ] ) {
+                // If the corresponding _all key exists and is true, continue. This will be handled when the loop gets to that key.
+                continue;
+            }
+
+            // Check if it's a taxonomy or term.
+            if ( str_starts_with( $slug, 'tax_' ) ) {
+                $taxonomy_slug = str_replace( 'tax_', '', $slug );
+                $taxonomy      = get_taxonomy( $taxonomy_slug );
+
+                // Get taxonomy information now that we know it is a taxonomy.
+                $taxonomy = get_taxonomy( $taxonomy_slug );
+                if ( empty( $taxonomy ) ) {
+                    continue;
+                }
+
+                $taxonomy_object = [
+                    'label'  => $taxonomy->label,
+                    'values' => [],
+                ];
+
+                if ( $is_select_all ) {
+                    // If this is a select all, set the values to All.
+                    $taxonomy_object['values'] = [ 'All ' . $taxonomy->label ];
+                } else {
+                    // Build list, printing the labels of the taxonomy and each term.
+                    foreach ( $term_ids as $term_id ) {
+                        $term = get_term( $term_id );
+                        if ( empty( $term ) || is_wp_error( $term ) ) {
+                            continue;
+                        }
+                        $taxonomy_object['values'][ $term_id ] = $term->name;
+                    }
+                }
+
+                $subscription_objects[ $taxonomy_slug ] = $taxonomy_object;
+
+				// Alternatively, check if it is a meta type.
+            } elseif ( str_starts_with( $slug, 'meta_' ) ) {
+                $meta_slug = $slug;
+
+                $meta = $meta_criteria[ $meta_slug ] ?? null;
+                if ( ! isset( $meta ) ) {
+                    continue;
+                }
+
+                $meta_object = [
+                    'label'  => $meta['label'],
+                    'values' => [],
+                ];
+
+                if ( $is_select_all ) {
+                    // If this is a select all, set the values to All.
+                    $meta_object['values'] = [ 'All ' . $meta['label'] ];
+                } else {
+                    foreach ( $term_ids as $term_id ) {
+                        // Find the matching criteria value with the same key.
+                        $term_label = $meta['values'][ $term_id ] ?? null;
+                        if ( ! isset( $term_label ) ) {
+                            continue;
+                        }
+                        $meta_object['values'][ $term_id ] = $term_label;
+                    }
+                }
+
+                $subscription_objects[ $meta_slug ] = $meta_object;
+
+				// Does not handle criteria which are neither taxonomy nor metadata.
+            } else {
+                continue;
+            }
+
+            // Build list, printing the labels of each subscription type and each term.
+            $html = '';
+            foreach ( $subscription_objects as $slug => $subscription_type ) {
+                $terms_html = '';
+                foreach ( $subscription_type['values'] as $term ) {
+                    $terms_html .= sprintf( '<li>%s</li>', $term );
+                }
+
+                // Add to html if there were any terms found.
+                if ( ! empty( $terms_html ) ) {
+                    $html .= sprintf( '<ul>%s</ul>', $terms_html );
+                }
+            }
+        }
+
+        return $html;
     }
 
     /**
