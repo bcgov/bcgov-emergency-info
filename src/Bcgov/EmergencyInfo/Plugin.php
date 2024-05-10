@@ -75,7 +75,7 @@ class Plugin {
         $loader->add_action( 'admin_menu', $this, 'remove_menu_items' );
         $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_jquery_ui' );
         $loader->add_filter( 'notify_subscription_fields', $this, 'set_notify_subscription_fields', 11, 1 );
-        $loader->add_filter( 'notify_subscription_criteria_list', $this, 'set_subscription_criteria_list', 10, 2 );
+        $loader->add_filter( 'notify_subscription_criteria_list', $this, 'set_subscription_criteria_list', 11, 2 );
         $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
         $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
 
@@ -414,7 +414,7 @@ class Plugin {
      * @param array  $criteria Subscription criteria array of taxonomy slug and term ids, ex. ['tax_taxonomy_name' => [1, 2, 3]].
      * @return string
      */
-    public function build_subscription_criteria_list( string $html, array $criteria ): string {
+    public function set_subscription_criteria_list( string $html, array $criteria ): string {
         // Loop through criteria and create an agnostic array for both taxonomy and metadata criteria.
         $subscription_objects = [];
         $meta_criteria        = apply_filters( 'notify_subscription_fields', [] ) ?? [];
