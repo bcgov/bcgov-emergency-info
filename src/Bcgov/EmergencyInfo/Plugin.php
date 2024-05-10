@@ -63,6 +63,8 @@ class Plugin {
         $cpt = new CustomPostTypes( self::$plugin_name, self::$plugin_dir );
         $cpt->init();
 
+        remove_filter( 'notify_subscription_fields', [ 'Bcgov\NotifyClient\NotifyController', 'build_subscription_criteria_list' ], 10 );
+
         $loader = new Loader();
         $loader->add_filter( 'aioseo_limit_modified_date_post_types', $this, 'disable_limit_modified_date' );
 
