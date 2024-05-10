@@ -1,3 +1,6 @@
+### 1.3.0 May 10, 2024
+* Override subscription list filter to remove taxonomy labels ([DESCW-2354](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2354))
+
 ### 1.2.0: May 3, 2024
 * Created filter to control which posts are able trigger notifications ([DESCW-2249](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2249))
 * Fixed bug with hazard type color styles being added to wrong theme.json property
