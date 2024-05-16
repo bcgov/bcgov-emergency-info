@@ -1,5 +1,5 @@
-describe('Emergency Info Site', () => {
-    test('Temporary test', () => {
-        expect(true).toBeTruthy();
-    });
-});
+describe( 'Emergency Info Site', () => {
+    test( 'Temporary test', () => {
+        expect( true ).toBeTruthy();
+    } );
+} );

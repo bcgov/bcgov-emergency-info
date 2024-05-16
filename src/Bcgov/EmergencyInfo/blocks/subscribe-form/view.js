@@ -1,11 +1,11 @@
 import $ from 'jquery';
 
-$(() => {
+$( () => {
     // The hidden multiselect input containing selected regions.
-    const regionSelect = $('#region-select');
+    const regionSelect = $( '#region-select' );
 
     // The input for entering autocomplete search.
-    const regionAutocomplete = $('#region-autocomplete-input');
+    const regionAutocomplete = $( '#region-autocomplete-input' );
 
     // The list of available terms to autocomplete from. Passed in from PHP.
     // eslint-disable-next-line no-undef
@@ -23,36 +23,36 @@ $(() => {
         const autocomplete = document.getElementById(
             'region-autocomplete-input'
         );
-        autocomplete.setCustomValidity('');
+        autocomplete.setCustomValidity( '' );
     };
 
     // When the all regions radio value is changed, toggle the region section.
-    const selectAllRegions = $('input[name="tax_region_all"]');
-    selectAllRegions.on('change', (event) => {
+    const selectAllRegions = $( 'input[name="tax_region_all"]' );
+    selectAllRegions.on( 'change', ( event ) => {
         const value = event.target.value;
-        if ('1' === value) {
+        if ( '1' === value ) {
             // Hide all region inputs, disable the underlying select input.
-            $('.region-section').hide();
-            $('.all-region-section').show();
-            regionSelect.prop('disabled', true);
+            $( '.region-section' ).hide();
+            $( '.all-region-section' ).show();
+            regionSelect.prop( 'disabled', true );
         } else {
             // Show all region inputs, enable the underlying select input.
-            $('.region-section').show();
-            $('.all-region-section').hide();
-            regionSelect.prop('disabled', false);
+            $( '.region-section' ).show();
+            $( '.all-region-section' ).hide();
+            regionSelect.prop( 'disabled', false );
         }
         updateRegionSelectValidity();
-    });
-    $('input[name="tax_region_all"]:checked').trigger('change');
+    } );
+    $( 'input[name="tax_region_all"]:checked' ).trigger( 'change' );
 
     /**
      * Adds a term to the currently selected terms.
      * @param {string} id The term id.
      */
-    const addSelectedTerm = (id) => {
+    const addSelectedTerm = ( id ) => {
         const selectedTerms = regionSelect.val();
-        selectedTerms.push(id);
-        regionSelect.val(selectedTerms);
+        selectedTerms.push( id );
+        regionSelect.val( selectedTerms );
         updateRegionSelectValidity();
     };
 
@@ -60,12 +60,12 @@ $(() => {
      * Removes a term from the currently selected terms.
      * @param {string} id The term id.
      */
-    const removeSelectedTerm = (id) => {
+    const removeSelectedTerm = ( id ) => {
         const selectedTerms = regionSelect.val();
-        const index = selectedTerms.indexOf(id);
-        if (index !== -1) {
-            selectedTerms.splice(index, 1);
-            regionSelect.val(selectedTerms);
+        const index = selectedTerms.indexOf( id );
+        if ( index !== -1 ) {
+            selectedTerms.splice( index, 1 );
+            regionSelect.val( selectedTerms );
         }
         updateRegionSelectValidity();
     };
@@ -76,89 +76,97 @@ $(() => {
     const renderTerms = () => {
         let regionList = '';
         let regionGroupList = '';
-        let regionGroups = new Set();
+        let regionGroups = [];
         let excludeRegionGroups = [];
-        regionSelect.val().forEach((termId) => {
-            const term = availableTerms.findLast((t) => {
+        regionSelect.val().forEach( ( termId ) => {
+            const term = availableTerms.findLast( ( t ) => {
                 return t.value === +termId;
-            });
+            } );
             // Build region pill with remove button.
-            regionList += `<li aria-label="${term.label}" tabindex="0">
+            regionList += `<li aria-label="${ term.label }" tabindex="0">
                 <span class="term-pill region">
                     <span>
-                        ${term.label}
+                        ${ term.label }
                     </span>
-                    <button class="btn btn-secondary" aria-label="Remove ${term.label}" data-id="${term.value}" tabindex="0"><i class="bi-x-circle-fill"></i></button>
+                    <button class="btn btn-secondary" aria-label="Remove ${ term.label }" data-id="${ term.value }" tabindex="0"><i class="bi-x-circle-fill"></i></button>
                 </span>
             </li>`;
 
             // If the region is also a region group (eg. Capital (Regional District)), don't show its region group.
-            if (term.isRegionGroupTerm) {
+            if ( term.isRegionGroupTerm ) {
                 excludeRegionGroups = excludeRegionGroups.concat(
                     term.regionGroups
                 );
             }
-            regionGroups = regionGroups.union(term.regionGroups);
-        });
+            regionGroups = regionGroups.concat( term.regionGroups );
+        } );
 
-        // Remove redundant region groups.
-        regionGroups = regionGroups.difference(excludeRegionGroups);
+        // Remove duplicate and redundant region groups.
+        const seen = {};
+        regionGroups = regionGroups.filter( ( regionGroup ) => {
+            if ( excludeRegionGroups.includes( regionGroup ) ) {
+                return false;
+            }
+            return Object.hasOwn( seen, regionGroup )
+                ? false
+                : ( seen[ regionGroup ] = true );
+        } );
 
         // Build region group pill.
-        regionGroups.forEach((groupName) => {
-            regionGroupList += `<li aria-label="${groupName}" tabindex="0">
+        regionGroups.forEach( ( groupName ) => {
+            regionGroupList += `<li aria-label="${ groupName }" tabindex="0">
                 <span class="term-pill region-group">
                     <span>
-                        ${groupName}
+                        ${ groupName }
                     </span>
                 </span>
             </li>`;
-        });
+        } );
 
         // Add region pills to HTML.
-        if (!regionList) {
+        if ( ! regionList ) {
             // If no terms selected, remove message.
-            $('.region-autocomplete-label').html('');
+            $( '.region-autocomplete-label' ).html( '' );
         } else {
-            $('.region-autocomplete-label').html('Your locations:');
+            $( '.region-autocomplete-label' ).html( 'Your locations:' );
         }
-        $('.region-list').html(regionList);
+        $( '.region-list' ).html( regionList );
 
         // Add region group pills to HTML.
-        if (!regionGroupList) {
+        if ( ! regionGroupList ) {
             // If no terms selected, remove message.
-            $('.region-group-autocomplete-label').html('');
+            $( '.region-group-autocomplete-label' ).html( '' );
         } else {
-            $('.region-group-autocomplete-label').html(
+            $( '.region-group-autocomplete-label' ).html(
                 'You will also get email updates for:'
             );
         }
-        $('.region-group-list').html(regionGroupList);
+        $( '.region-group-list' ).html( regionGroupList );
 
         // Add listener for clicks of the remove button on each term.
-        $('.region-list button').on('click', (event) => {
+        $( '.region-list button' ).on( 'click', ( event ) => {
             const removeId = event.currentTarget.dataset.id;
-            removeSelectedTerm(removeId);
+            removeSelectedTerm( removeId );
             renderTerms();
-        });
+        } );
     };
 
     regionAutocomplete
         // Don't navigate away from the field on tab when selecting an item.
-        .on('keydown', function (event) {
+        .on( 'keydown', function ( event ) {
             if (
                 event.keyCode === $.ui.keyCode.TAB &&
-                $(this).autocomplete('instance').menu.active
+                $( this ).autocomplete( 'instance' ).menu.active
             ) {
                 event.preventDefault();
             }
-        })
-        .autocomplete({
+        } )
+        .autocomplete( {
             minLength: 0,
-            source: (request, response) => {
+            source: ( request, response ) => {
                 // If no search term given, return early.
-                if ('' === request.term) {
-                    response(availableTerms);
+                if ( '' === request.term ) {
+                    response( availableTerms );
                     return;
                 }
 
@@ -166,30 +174,30 @@ $(() => {
 
                 // Create regex string of the search term, escaping any special characters.
                 const term = new RegExp(
-                    `(${request.term.replace(
+                    `(${ request.term.replace(
                         /[/\-\\^$*+?.()|[\]{}]/g,
                         '\\$&'
-                    )})`,
+                    ) })`,
                     'gi'
                 );
 
                 let results = [];
-                for (const option of availableTerms) {
+                for ( const option of availableTerms ) {
                     // Skip terms that have already been selected.
-                    if (selectedValues.includes(option.value.toString())) {
+                    if ( selectedValues.includes( option.value.toString() ) ) {
                         continue;
                     }
 
                     // Get number of matches in the label.
-                    const labelMatches = option.label.match(term);
+                    const labelMatches = option.label.match( term );
                     const labelRelevancy = labelMatches
                         ? labelMatches.length
                         : 0;
 
                     // Get number of matches in the region groups.
                     const regionGroupsRelevancy = option.regionGroups.reduce(
-                        (accumulator, currentValue) => {
-                            const matches = currentValue.match(term);
+                        ( accumulator, currentValue ) => {
+                            const matches = currentValue.match( term );
                             const count = matches ? matches.length : 0;
                             return count + accumulator;
                         },
@@ -201,16 +209,16 @@ $(() => {
                         labelRelevancy * 5 + regionGroupsRelevancy;
 
                     // Only add to the results if non-zero relevancy.
-                    if (option.relevancy > 0) {
-                        results.push(option);
+                    if ( option.relevancy > 0 ) {
+                        results.push( option );
                     }
                 }
 
                 // Sort by descending relevancy.
-                results.sort((a, b) => b.relevancy - a.relevancy);
+                results.sort( ( a, b ) => b.relevancy - a.relevancy );
 
                 // Return results in response.
-                response(results);
+                response( results );
             },
             position: {
                 of: '.region-autocomplete',
@@ -219,101 +227,104 @@ $(() => {
             classes: { 'ui-autocomplete': 'soft-shadow' },
             focus: () => {
                 // Update aria attributes when focusing on an item.
-                const id = $('#listbox-wrapper')
-                    .find('.ui-state-active')
-                    .attr('id');
-                regionAutocomplete.attr('aria-activedescendant', id);
-                $('.ui-autocomplete div').attr('aria-selected', 'false');
-                $('.ui-autocomplete div.ui-state-active').attr(
+                const id = $( '#listbox-wrapper' )
+                    .find( '.ui-state-active' )
+                    .attr( 'id' );
+                regionAutocomplete.attr( 'aria-activedescendant', id );
+                $( '.ui-autocomplete div' ).attr( 'aria-selected', 'false' );
+                $( '.ui-autocomplete div.ui-state-active' ).attr(
                     'aria-selected',
                     'true'
                 );
                 return false;
             },
-            select: (event, ui) => {
+            select: ( event, ui ) => {
                 const termId = ui.item.value;
                 // If the term isn't already selected, select it.
-                if (!regionSelect.val().includes(termId)) {
-                    addSelectedTerm(termId);
+                if ( ! regionSelect.val().includes( termId ) ) {
+                    addSelectedTerm( termId );
                     renderTerms();
                 }
 
-                regionAutocomplete.val('');
+                regionAutocomplete.val( '' );
                 return false;
             },
-            response: (event, ui) => {
+            response: ( event, ui ) => {
                 // Show no results message if the search returned no hits.
-                if (0 === ui.content.length) {
-                    ui.content.push({ value: '', label: 'No results found.' });
+                if ( 0 === ui.content.length ) {
+                    ui.content.push( {
+                        value: '',
+                        label: 'No results found.',
+                    } );
                 }
             },
-        });
+        } );
 
     // Override jQueryUI Autocomplete renderItem() to add aria role.
-    $.ui.autocomplete.prototype._renderItem = (ul, item) => {
-        const renderedItem = $('<li></li>');
-        renderedItem.append('<div role="option">' + item.label + '</div>');
+    $.ui.autocomplete.prototype._renderItem = ( ul, item ) => {
+        const renderedItem = $( '<li></li>' );
+        renderedItem.append( '<div role="option">' + item.label + '</div>' );
         // Display region groups if the item has any.
-        if (!item.isRegionGroupTerm && item.regionGroups) {
+        if ( ! item.isRegionGroupTerm && item.regionGroups ) {
             renderedItem.append(
                 '<div class="region-groups">' +
-                    item.regionGroups.join(', ') +
+                    item.regionGroups.join( ', ' ) +
                     '</div>'
             );
         }
-        return renderedItem.appendTo(ul);
+        return renderedItem.appendTo( ul );
     };
 
     // Override jQueryUI Autocomplete renderMenu() to add aria role.
     // eslint-disable-line prefer-arrow/prefer-arrow-functions
-    $.ui.autocomplete.prototype._renderMenu = function (ul, items) {
+    $.ui.autocomplete.prototype._renderMenu = function ( ul, items ) {
         const $this = this;
-        $.each(items, (index, item) => {
-            $this._renderItemData(ul, item);
-        });
-        $(ul).attr('role', 'listbox');
+        $.each( items, ( index, item ) => {
+            $this._renderItemData( ul, item );
+        } );
+        $( ul ).attr( 'role', 'listbox' );
     };
 
     // Initialize terms display in case terms were passed to the page.
     renderTerms();
 
     // Validate region select input on submit.
-    const forms = document.querySelectorAll('.needs-validation');
-    Array.from(forms).forEach((form) => {
+    const forms = document.querySelectorAll( '.needs-validation' );
+    Array.from( forms ).forEach( ( form ) => {
         form.addEventListener(
             'submit',
-            (event) => {
-                const regionSelect = document.getElementById('region-select');
+            ( event ) => {
+                const regionSelect = document.getElementById( 'region-select' );
                 const autocomplete = document.getElementById(
                     'region-autocomplete-input'
                 );
 
                 // If the autocomplete input is hidden, don't attempt to validate.
-                if (autocomplete.checkVisibility()) {
+                if ( autocomplete.checkVisibility() ) {
                     // Region select input must not be empty.
-                    if (regionSelect.value.length < 1) {
+                    if ( regionSelect.value.length < 1 ) {
                         autocomplete.setCustomValidity(
                             'You must select at least one location.'
                         );
                     } else {
-                        autocomplete.setCustomValidity('');
+                        autocomplete.setCustomValidity( '' );
                     }
                     autocomplete.reportValidity();
                 }
 
                 // If the form is not valid, prevent submission.
-                if (!form.checkValidity()) {
+                if ( ! form.checkValidity() ) {
                     event.preventDefault();
                     event.stopPropagation();
                 }
             },
             false
         );
-    });
+    } );
 
     // If the user is updating their preferences, scroll to the form.
-    if (isUpdate) {
-        const element = document.getElementById('subscribe-form');
-        element.scrollIntoView({ behavior: 'instant' });
+    if ( isUpdate ) {
+        const element = document.getElementById( 'subscribe-form' );
+        element.scrollIntoView( { behavior: 'instant' } );
     }
-});
+} );

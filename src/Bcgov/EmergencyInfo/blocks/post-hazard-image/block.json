@@ -6,6 +6,6 @@
     "category": "emergency-info",
     "icon": "embed-photo",
     "textdomain": "emergency-info",
-    "usesContext": ["postId", "postType"],
+    "usesContext": [ "postId", "postType" ],
     "editorScript": "file:./index.js"
 }

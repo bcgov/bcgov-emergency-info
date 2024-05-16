@@ -16,7 +16,7 @@ import apiFetch from '@wordpress/api-fetch';
  */
 class RegionGroup extends Component {
     constructor() {
-        super(...arguments);
+        super( ...arguments );
 
         this.state = {
             // The currently selected regionGroup Ids.
@@ -35,46 +35,49 @@ class RegionGroup extends Component {
     componentDidMount() {
         const { regionGroups } = this.props;
 
-        apiFetch({ path: '/wp/v2/region-group' }).then(
-            (terms) => {
+        apiFetch( { path: '/wp/v2/region-group' } ).then(
+            ( terms ) => {
                 const options = {};
                 const groupTypeLabelMap = { other: 'Other' };
 
                 // Process terms from REST request.
-                for (const term of terms) {
-                    const type = term.group_type['value'] ?? 'other';
-                    groupTypeLabelMap[type] = term.group_type['label'];
-                    if (!Object.prototype.hasOwnProperty.call(options, type)) {
-                        options[type] = [];
+                for ( const term of terms ) {
+                    const type = term.group_type[ 'value' ] ?? 'other';
+                    groupTypeLabelMap[ type ] = term.group_type[ 'label' ];
+                    if (
+                        ! Object.prototype.hasOwnProperty.call( options, type )
+                    ) {
+                        options[ type ] = [];
                     }
-                    options[type].push({
+                    options[ type ].push( {
                         label: term.name,
                         value: term.term_id,
                         type: type,
-                    });
+                    } );
                 }
 
                 // Build regionGroupRegionMap object.
                 const regionGroupRegionMap = {};
-                for (const term of terms) {
-                    regionGroupRegionMap[term.term_id] = term.included_regions;
+                for ( const term of terms ) {
+                    regionGroupRegionMap[ term.term_id ] =
+                        term.included_regions;
                 }
 
-                this.setState({
+                this.setState( {
                     selected: regionGroups,
                     options,
                     regionGroupRegionMap,
                     groupTypeLabelMap,
                     message: '',
-                });
+                } );
             },
-            (error) => {
-                this.setState({ message: error.message });
+            ( error ) => {
+                this.setState( { message: error.message } );
             }
         );
     }
 
-    onUpdateRegionGroup(checked) {
+    onUpdateRegionGroup( checked ) {
         const { onChangeRegionGroup, regions } = this.props;
         const { selected } = this.state;
         const { regionGroupId, includedRegions } = checked;
@@ -82,23 +85,25 @@ class RegionGroup extends Component {
         let newRegions = [];
         let updatedSelected = selected;
 
-        if ((index = selected.indexOf(regionGroupId)) > -1) {
+        if ( ( index = selected.indexOf( regionGroupId ) ) > -1 ) {
             // The regionGroup is being unselected. Subtract its regions from the Region input.
-            updatedSelected.splice(index, 1);
-            newRegions = regions.filter((x) => !includedRegions.includes(x));
+            updatedSelected.splice( index, 1 );
+            newRegions = regions.filter(
+                ( x ) => ! includedRegions.includes( x )
+            );
         } else {
             // The regionGroup is being selected. Add its regions to the Region input.
-            updatedSelected.push(regionGroupId);
-            newRegions = regions.concat(includedRegions);
+            updatedSelected.push( regionGroupId );
+            newRegions = regions.concat( includedRegions );
             // Ensure only unique values exist in array.
-            newRegions = [...new Set(newRegions)];
+            newRegions = [ ...new Set( newRegions ) ];
         }
 
-        this.setState({
+        this.setState( {
             selected: updatedSelected,
-        });
+        } );
 
-        onChangeRegionGroup(updatedSelected, newRegions);
+        onChangeRegionGroup( updatedSelected, newRegions );
     }
 
     render() {
@@ -112,40 +117,40 @@ class RegionGroup extends Component {
         const { taxonomy } = this.props;
         let elements = [];
 
-        if (options) {
-            for (const type in options) {
+        if ( options ) {
+            for ( const type in options ) {
                 // Build a checkbox for each regionGroup option.
-                const checkboxes = options[type].map((option) => {
+                const checkboxes = options[ type ].map( ( option ) => {
                     const regionGroupId = option.value;
                     const regionGroupLabel = option.label;
                     return (
-                        <PanelRow className="mt-0" key={regionGroupId}>
+                        <PanelRow className="mt-0" key={ regionGroupId }>
                             <CheckboxControl
                                 className="region-group-checkbox-control"
-                                label={regionGroupLabel}
-                                value={regionGroupId}
-                                checked={selected.includes(regionGroupId)}
-                                onChange={() => {
+                                label={ regionGroupLabel }
+                                value={ regionGroupId }
+                                checked={ selected.includes( regionGroupId ) }
+                                onChange={ () => {
                                     const includedRegions =
-                                        regionGroupRegionMap[regionGroupId];
-                                    this.onUpdateRegionGroup({
+                                        regionGroupRegionMap[ regionGroupId ];
+                                    this.onUpdateRegionGroup( {
                                         regionGroupId,
                                         includedRegions,
-                                    });
-                                }}
+                                    } );
+                                } }
                             />
                         </PanelRow>
                     );
-                });
+                } );
 
                 // Add the checkboxes to a Panel to allow expanding/collapsing.
                 elements.push(
                     <Panel>
                         <PanelBody
-                            title={groupTypeLabelMap[type]}
-                            initialOpen={0 === elements.length}
+                            title={ groupTypeLabelMap[ type ] }
+                            initialOpen={ 0 === elements.length }
                         >
-                            {checkboxes}
+                            { checkboxes }
                         </PanelBody>
                     </Panel>
                 );
@@ -154,52 +159,54 @@ class RegionGroup extends Component {
 
         return (
             <div>
-                {taxonomy && '' !== taxonomy.description && (
-                    <p>{taxonomy.description}</p>
-                )}
-                {elements}
-                {message && <p className="error">{message}</p>}
+                { taxonomy && '' !== taxonomy.description && (
+                    <p>{ taxonomy.description }</p>
+                ) }
+                { elements }
+                { message && <p className="error">{ message }</p> }
             </div>
         );
     }
 }
 
-const RegionGroupWrapper = compose([
-    withSelect((select) => {
+const RegionGroupWrapper = compose( [
+    withSelect( ( select ) => {
         const ret = {
             regionGroups:
-                select('core/editor').getEditedPostAttribute('region_groups'),
-            regions: select('core/editor').getEditedPostAttribute('region'),
+                select( 'core/editor' ).getEditedPostAttribute(
+                    'region_groups'
+                ),
+            regions: select( 'core/editor' ).getEditedPostAttribute( 'region' ),
         };
         return ret;
-    }),
-    withDispatch((dispatch) => ({
-        onChangeRegionGroup: (regionGroupIds, regions) => {
+    } ),
+    withDispatch( ( dispatch ) => ( {
+        onChangeRegionGroup: ( regionGroupIds, regions ) => {
             // Set regions value to non-existent term, setting to an empty array doesn't refresh the UI.
-            if (0 === regions.length) {
-                regions = [-1];
+            if ( 0 === regions.length ) {
+                regions = [ -1 ];
             }
-            dispatch('core/editor').editPost({
+            dispatch( 'core/editor' ).editPost( {
                 region: regions,
                 // Why do the elements need to be strings here? I don't know.
-                region_groups: regionGroupIds.map((id) => id.toString()),
-            });
+                region_groups: regionGroupIds.map( ( id ) => id.toString() ),
+            } );
         },
-    })),
-])(RegionGroup);
+    } ) ),
+] )( RegionGroup );
 
-const regionGroupFilter = (OriginalComponent) => {
-    const component = (props) => {
+const regionGroupFilter = ( OriginalComponent ) => {
+    const component = ( props ) => {
         const { slug } = props;
 
-        if ('region_groups' === slug) {
-            return <RegionGroupWrapper {...props} />;
+        if ( 'region_groups' === slug ) {
+            return <RegionGroupWrapper { ...props } />;
         }
 
-        return <OriginalComponent {...props} />;
+        return <OriginalComponent { ...props } />;
     };
     component.displayName = 'regionGroupFilter';
     return component;
 };
 
-addFilter('editor.PostTaxonomyType', 'emergency-info', regionGroupFilter);
+addFilter( 'editor.PostTaxonomyType', 'emergency-info', regionGroupFilter );

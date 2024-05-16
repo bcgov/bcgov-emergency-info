@@ -11,7 +11,7 @@ import apiFetch from '@wordpress/api-fetch';
  */
 class HazardType extends Component {
     constructor() {
-        super(...arguments);
+        super( ...arguments );
 
         this.state = {
             selected: 0,
@@ -23,40 +23,40 @@ class HazardType extends Component {
     componentDidMount() {
         const { hazardType } = this.props;
 
-        apiFetch({ path: '/wp/v2/hazard_type?per_page=-1' }).then(
-            (terms) => {
-                const options = terms.map((term) => {
+        apiFetch( { path: '/wp/v2/hazard_type?per_page=-1' } ).then(
+            ( terms ) => {
+                const options = terms.map( ( term ) => {
                     return { label: term.name, value: term.id };
-                });
+                } );
 
-                this.setState({ options, message: '' });
+                this.setState( { options, message: '' } );
 
-                if (hazardType && hazardType[0]) {
+                if ( hazardType && hazardType[ 0 ] ) {
                     // Set initial selected value to the current hazard type if one exists.
-                    this.setState({
-                        selected: hazardType[0],
-                    });
+                    this.setState( {
+                        selected: hazardType[ 0 ],
+                    } );
                 } else {
                     // Set initial selected value to default (first hazard type option).
-                    const defaultOption = options[0].value;
+                    const defaultOption = options[ 0 ].value;
                     // Trigger a change so admin_body_class hook is applied (see Plugin.php).
-                    this.onUpdateHazardType({ option: defaultOption });
+                    this.onUpdateHazardType( { option: defaultOption } );
                 }
             },
-            (error) => {
-                this.setState({ message: error.message });
+            ( error ) => {
+                this.setState( { message: error.message } );
             }
         );
     }
 
-    onUpdateHazardType(selected) {
+    onUpdateHazardType( selected ) {
         const { onChangeHazardType } = this.props;
 
-        this.setState({
-            selected: parseInt(selected.option, 10),
-        });
+        this.setState( {
+            selected: parseInt( selected.option, 10 ),
+        } );
 
-        onChangeHazardType(selected.option);
+        onChangeHazardType( selected.option );
     }
 
     render() {
@@ -64,71 +64,73 @@ class HazardType extends Component {
         const { taxonomy } = this.props;
         let selectControl;
 
-        if (options && options.length > 1) {
+        if ( options && options.length > 1 ) {
             selectControl = (
                 <SelectControl
-                    value={selected}
-                    options={options}
-                    onChange={(option) => {
-                        this.onUpdateHazardType({ option });
-                    }}
+                    value={ selected }
+                    options={ options }
+                    onChange={ ( option ) => {
+                        this.onUpdateHazardType( { option } );
+                    } }
                 />
             );
         }
 
         return (
             <div>
-                {taxonomy && '' !== taxonomy.description && (
-                    <p>{taxonomy.description}</p>
-                )}
-                {selectControl}
-                {message && <p className="error">{message}</p>}
+                { taxonomy && '' !== taxonomy.description && (
+                    <p>{ taxonomy.description }</p>
+                ) }
+                { selectControl }
+                { message && <p className="error">{ message }</p> }
             </div>
         );
     }
 }
 
-const HazardTypeWrapper = compose([
-    withSelect((select) => {
+const HazardTypeWrapper = compose( [
+    withSelect( ( select ) => {
         const ret = {
             hazardType:
-                select('core/editor').getEditedPostAttribute('hazard_type'),
+                select( 'core/editor' ).getEditedPostAttribute( 'hazard_type' ),
         };
         // Get currently selected hazard_type slug.
-        const hazard = select('core').getEntityRecord(
+        const hazard = select( 'core' ).getEntityRecord(
             'taxonomy',
             'hazard_type',
-            ret.hazardType[0]
+            ret.hazardType[ 0 ]
         );
         // Add the hazard_type's slug to body classes, allows hazard-specific styling.
-        if (hazard) {
+        if ( hazard ) {
             document.body.className = document.body.className.replace(
                 /(^|\s)hazard_type-\S+/g,
                 ''
             );
-            document.body.classList.add('hazard_type-' + hazard.slug);
+            document.body.classList.add( 'hazard_type-' + hazard.slug );
         }
         return ret;
-    }),
-    withDispatch((dispatch) => ({
-        onChangeHazardType: (hazardTypeId) => {
-            dispatch('core/editor').editPost({ hazard_type: [hazardTypeId] });
+    } ),
+    withDispatch( ( dispatch ) => ( {
+        onChangeHazardType: ( hazardTypeId ) => {
+            dispatch( 'core/editor' ).editPost( {
+                hazard_type: [ hazardTypeId ],
+            } );
         },
-    })),
-])(HazardType);
+    } ) ),
+] )( HazardType );
 
-const hazardTypeFilter = (OriginalComponent) => {
-    const component = (props) => {
+const hazardTypeFilter = ( OriginalComponent ) => {
+    const component = ( props ) => {
         const { slug } = props;
 
-        if ('hazard_type' === slug) {
-            return <HazardTypeWrapper {...props} />;
+        if ( 'hazard_type' === slug ) {
+            return <HazardTypeWrapper { ...props } />;
         }
 
-        return <OriginalComponent {...props} />;
+        return <OriginalComponent { ...props } />;
     };
     component.displayName = 'hazardTypeFilter';
     return component;
 };
 
-addFilter('editor.PostTaxonomyType', 'emergency-info', hazardTypeFilter);
+addFilter( 'editor.PostTaxonomyType', 'emergency-info', hazardTypeFilter );
