@@ -6,7 +6,7 @@
     "category": "emergency-info",
     "icon": "bell",
     "textdomain": "emergency-info",
-    "usesContext": ["postId", "postType"],
+    "usesContext": [ "postId", "postType" ],
     "editorScript": "file:./index.js",
     "style": "file:./style-index.css",
     "supports": {
