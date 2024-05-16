@@ -1,8 +1,7 @@
-### 1.3.0 May 10, 2024
+### 1.2.0: May 16, 2024
+* Replaced usage of browser incompatible Set functions: difference and union
 * Override subscription list filter to remove taxonomy labels ([DESCW-2354](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2354))
-
-### 1.2.0: May 3, 2024
-* Created filter to control which posts are able trigger notifications ([DESCW-2249](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2249))
+* Override subscription list filter to remove taxonomy labels ([DESCW-2354](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2354))
 * Fixed bug with hazard type color styles being added to wrong theme.json property
 * Updated Event CPT to allow export and allow rewrite without front for permanlinks (/post-slug works in addition to /events/post-slug)
 
