@@ -5,7 +5,7 @@ const Edit = () => {
     const blockProps = useBlockProps();
 
     return (
-        <div {...blockProps}>
+        <div { ...blockProps }>
             <ServerSideRender block="emergency-info/post-event-status" />
         </div>
     );

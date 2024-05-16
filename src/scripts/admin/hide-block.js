@@ -12,7 +12,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @returns {Object} Filtered block settings
  */
-const addAttributes = (settings) => {
+const addAttributes = ( settings ) => {
     settings.attributes.hideBlock = {
         type: 'boolean',
         default: false,
@@ -20,26 +20,26 @@ const addAttributes = (settings) => {
     return settings;
 };
 
-addFilter('blocks.registerBlockType', 'emergency-info', addAttributes);
+addFilter( 'blocks.registerBlockType', 'emergency-info', addAttributes );
 
 /**
  * Add hide block control to all blocks.
  */
-const addInspectorControl = createHigherOrderComponent((BlockEdit) => {
-    const component = (props) => {
+const addInspectorControl = createHigherOrderComponent( ( BlockEdit ) => {
+    const component = ( props ) => {
         const { hideBlock } = props.attributes;
         const { setAttributes } = props;
 
         return (
             <Fragment>
-                <BlockEdit {...props} />
+                <BlockEdit { ...props } />
                 <InspectorControls>
-                    <PanelBody title={__('Visibility')}>
+                    <PanelBody title={ __( 'Visibility' ) }>
                         <ToggleControl
-                            label={__('Hide block')}
-                            checked={hideBlock}
-                            onChange={(check) =>
-                                setAttributes({ hideBlock: check })
+                            label={ __( 'Hide block' ) }
+                            checked={ hideBlock }
+                            onChange={ ( check ) =>
+                                setAttributes( { hideBlock: check } )
                             }
                         />
                     </PanelBody>
@@ -49,21 +49,21 @@ const addInspectorControl = createHigherOrderComponent((BlockEdit) => {
     };
     component.displayName = 'withInspectorControl';
     return component;
-}, 'withInspectorControl');
+}, 'withInspectorControl' );
 
-addFilter('editor.BlockEdit', 'emergency-info', addInspectorControl);
+addFilter( 'editor.BlockEdit', 'emergency-info', addInspectorControl );
 
 /**
  * Add class to indicate hidden blocks in editor.
  */
 const withCustomAttributeClass = createHigherOrderComponent(
-    (BlockListBlock) => {
-        const component = (props) => {
+    ( BlockListBlock ) => {
+        const component = ( props ) => {
             const { attributes } = props;
             const { hideBlock } = attributes;
             const className = hideBlock ? 'hidden-block' : '';
 
-            return <BlockListBlock {...props} className={className} />;
+            return <BlockListBlock { ...props } className={ className } />;
         };
         component.displayName = 'withCustomAttributeClass';
         return component;
@@ -71,4 +71,8 @@ const withCustomAttributeClass = createHigherOrderComponent(
     'withCustomAttributeClass'
 );
 
-addFilter('editor.BlockListBlock', 'emergency-info', withCustomAttributeClass);
+addFilter(
+    'editor.BlockListBlock',
+    'emergency-info',
+    withCustomAttributeClass
+);

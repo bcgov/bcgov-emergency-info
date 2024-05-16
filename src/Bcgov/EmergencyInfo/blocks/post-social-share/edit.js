@@ -1,12 +1,12 @@
 import { useEntityProp } from '@wordpress/core-data';
 import { useBlockProps } from '@wordpress/block-editor';
 
-export const Edit = ({ context: { postType, postId } }) => {
+export const Edit = ( { context: { postType, postId } } ) => {
     const blockProps = useBlockProps();
-    const [link] = useEntityProp('postType', postType, 'link', postId);
+    const [ link ] = useEntityProp( 'postType', postType, 'link', postId );
 
     return (
-        <div {...blockProps}>
+        <div { ...blockProps }>
             <div className="dropdown">
                 <button
                     className="btn position-relative btn-outline-primary dropdown-toggle"
@@ -17,14 +17,14 @@ export const Edit = ({ context: { postType, postId } }) => {
                 >
                     <i
                         className="bi-send-fill me-3 align-middle"
-                        style={{ 'font-size': '24px' }}
+                        style={ { 'font-size': '24px' } }
                     ></i>
                     Share
                 </button>
                 <div className="dropdown-menu" aria-labelledby="">
                     <a
                         className="dropdown-item"
-                        href={'#https://twitter.com/intent/tweet?url=' + link}
+                        href={ '#https://twitter.com/intent/tweet?url=' + link }
                     >
                         <span className="areoi-icon">
                             <i className="text-dark bi-twitter"></i>

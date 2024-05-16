@@ -1,7 +1,9 @@
 ### 1.2.0: May 16, 2024
+* Updated to use node 20
+* Updated to use new eslint and stylelint dependencies instead of webpack-wordpress
 * Replaced usage of browser incompatible Set functions: difference and union
 * Override subscription list filter to remove taxonomy labels ([DESCW-2354](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2354))
-* Override subscription list filter to remove taxonomy labels ([DESCW-2354](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2354))
+* Created filter to control which posts are able trigger notifications ([DESCW-2249](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2249))
 * Fixed bug with hazard type color styles being added to wrong theme.json property
 * Updated Event CPT to allow export and allow rewrite without front for permanlinks (/post-slug works in addition to /events/post-slug)
 
