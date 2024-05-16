@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "850fdb5a71fa3587cbb0e345a41c3550",
+    "content-hash": "d25dcf9f65cd12288315ad18b8565956",
     "packages": [
         {
             "name": "composer/installers",
@@ -269,17 +269,17 @@
         },
         {
             "name": "bcgov/wordpress-common",
-            "version": "2.10.4",
+            "version": "2.10.5",
             "source": {
                 "type": "git",
                 "url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-wordpress-common.git",
-                "reference": "26aa1ee53e3e9abcfcd1edd95e8f5ab9928fa4e4"
+                "reference": "38ee8ba986bfa3ad5b66e61a05f016e903266918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://apps.itsm.gov.bc.ca/satis/dist/bcgov/wordpress-common/bcgov-wordpress-common-2.10.4-b8d10b.zip",
-                "reference": "26aa1ee53e3e9abcfcd1edd95e8f5ab9928fa4e4",
-                "shasum": "c6499d3812c4c5097134f29ed6cea143fc78786e"
+                "url": "https://apps.itsm.gov.bc.ca/satis/dist/bcgov/wordpress-common/bcgov-wordpress-common-2.10.5-97cd47.zip",
+                "reference": "38ee8ba986bfa3ad5b66e61a05f016e903266918",
+                "shasum": "ba3bf0abef772e6354189d56c05621d40cb28551"
             },
             "require": {
                 "bcgov/sage-lib": "~9.0.0",
@@ -328,7 +328,7 @@
                     "Bcgov\\Common\\Scripts::postProductionChecksForCommon"
                 ]
             },
-            "time": "2024-03-05T16:37:13+00:00"
+            "time": "2024-05-14T17:36:39+00:00"
         },
         {
             "name": "bcgov/wordpress-scripts",
@@ -1399,16 +1399,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.6.11",
+            "version": "1.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "81a161d0b135df89951abd52296adf97deb0723d"
+                "reference": "1f4efdd7d3beafe9807b08156dfcb176d18f1699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/81a161d0b135df89951abd52296adf97deb0723d",
-                "reference": "81a161d0b135df89951abd52296adf97deb0723d",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/1f4efdd7d3beafe9807b08156dfcb176d18f1699",
+                "reference": "1f4efdd7d3beafe9807b08156dfcb176d18f1699",
                 "shasum": ""
             },
             "require": {
@@ -1478,7 +1478,7 @@
                 "security": "https://github.com/mockery/mockery/security/advisories",
                 "source": "https://github.com/mockery/mockery"
             },
-            "time": "2024-03-21T18:34:15+00:00"
+            "time": "2024-05-16T03:13:13+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -4469,5 +4469,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

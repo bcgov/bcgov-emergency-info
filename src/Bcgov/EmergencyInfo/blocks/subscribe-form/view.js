@@ -76,7 +76,7 @@ $(() => {
     const renderTerms = () => {
         let regionList = '';
         let regionGroupList = '';
-        let regionGroups = new Set();
+        let regionGroups = [];
         let excludeRegionGroups = [];
         regionSelect.val().forEach((termId) => {
             const term = availableTerms.findLast((t) => {
@@ -98,11 +98,19 @@ $(() => {
                     term.regionGroups
                 );
             }
-            regionGroups = regionGroups.union(term.regionGroups);
+            regionGroups = regionGroups.concat(term.regionGroups);
         });
 
-        // Remove redundant region groups.
-        regionGroups = regionGroups.difference(excludeRegionGroups);
+        // Remove duplicate and redundant region groups.
+        const seen = {};
+        regionGroups = regionGroups.filter((regionGroup) => {
+            if (excludeRegionGroups.includes(regionGroup)) {
+                return false;
+            }
+            return Object.hasOwn(seen, regionGroup)
+                ? false
+                : (seen[regionGroup] = true);
+        });
 
         // Build region group pill.
         regionGroups.forEach((groupName) => {
