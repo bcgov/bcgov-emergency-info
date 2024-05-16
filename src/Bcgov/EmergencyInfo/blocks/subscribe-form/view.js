@@ -98,19 +98,19 @@ $( () => {
                     term.regionGroups
                 );
             }
-            regionGroups = regionGroups.concat(term.regionGroups);
-        });
+            regionGroups = regionGroups.concat( term.regionGroups );
+        } );
 
         // Remove duplicate and redundant region groups.
         const seen = {};
-        regionGroups = regionGroups.filter((regionGroup) => {
-            if (excludeRegionGroups.includes(regionGroup)) {
+        regionGroups = regionGroups.filter( ( regionGroup ) => {
+            if ( excludeRegionGroups.includes( regionGroup ) ) {
                 return false;
             }
-            return Object.hasOwn(seen, regionGroup)
+            return Object.hasOwn( seen, regionGroup )
                 ? false
-                : (seen[regionGroup] = true);
-        });
+                : ( seen[ regionGroup ] = true );
+        } );
 
         // Build region group pill.
         regionGroups.forEach( ( groupName ) => {
