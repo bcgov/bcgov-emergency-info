@@ -1,4 +1,5 @@
 ### 1.2.0: May 16, 2024
+* Affected Area is no longer a required field ([DESCW-2372](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2372))
 * Updated to use node 20
 * Updated to use new eslint and stylelint dependencies instead of webpack-wordpress
 * Replaced usage of browser incompatible Set functions: difference and union
