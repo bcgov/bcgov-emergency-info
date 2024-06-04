@@ -17,6 +17,8 @@
 		"fix:css": "wp-scripts lint-style 'src/**/*.scss' --fix",
 		"lint:js": "wp-scripts lint-js src",
 		"fix:js": "wp-scripts lint-js src --fix",
+		"lint:md": "wp-scripts lint-md-docs",
+		"fix:md": "wp-scripts lint-md-docs --fix",
 		"packages-update": "wp-scripts packages-update",
 		"start": "wp-scripts start --output-path=dist",
 		"test:e2e": "wp-scripts test-e2e",

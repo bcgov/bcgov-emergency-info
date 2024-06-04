@@ -20,7 +20,7 @@
         "hierarchical": "false",
         "can_export": "true",
         "rewrite": "true",
-        "rewrite_slug": "",
+        "rewrite_slug": "e",
         "rewrite_withfront": "false",
         "query_var": "true",
         "query_var_slug": "",
