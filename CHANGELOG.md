@@ -1,4 +1,7 @@
-### 1.2.0: May 16, 2024
+### 1.2.0: June 4, 2024
+
+* Changed hazard_type permalinks to /hazard/hazard-name from /hazard_types/hazard-name ([DESCW-2355](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2355))
+* Added wp-scripts markdown linting command to package.json
 * Affected Area is no longer a required field ([DESCW-2372](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2372))
 * Updated to use node 20
 * Updated to use new eslint and stylelint dependencies instead of webpack-wordpress
@@ -9,11 +12,12 @@
 * Updated Event CPT to allow export and allow rewrite without front for permanlinks (/post-slug works in addition to /events/post-slug)
 
 ### 1.1.0: April 12, 2024
+
 * Updated Subscribe Form: ([DESCW-2246](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2246))
-  * Now shows associated region groups below selected regions
-  * Autocomplete search sorts by relevancy
-  * Autocomplete no longer shows already selected regions as options
-  * Fixed in content, style that differ from mockups
+    * Now shows associated region groups below selected regions
+    * Autocomplete search sorts by relevancy
+    * Autocomplete no longer shows already selected regions as options
+    * Fixed in content, style that differ from mockups
 * Updated Subscribe Form to be able to get email address when updating an existing subscription ([DESCW-2175](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2175))
 * Improved Subscribe Form validation ([DESCW-2176](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2176))
 * Added Region Loader feature to allow Region and Region Group taxonomy terms to be inserted via JSON in an admin page ([DESCW-2248](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2248))
@@ -37,19 +41,23 @@
 * Added Region taxonomy to Events
 
 ### 1.0.3: January 11, 2024
+
 * Updated ACF fields for hazard type card metadata ([DESCW-1893](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1893))
 * Fixed error caused by calling remove_menu_page() in wrong hook (admin_init -> admin_menu)
 
 ### 1.0.2: December 21, 2023
+
 * Added requirements to the Hazard Type Image ACF field, added image preview and image column to table ([DESCW-1797](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1797))
 * Removed AIOSEO "Don't update the modified date" checkbox from editor for Events ([DESCW-1796](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1796))
 * Removed Comments item from admin menu ([DESCW-1795](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1795))
 
 ### 1.0.1: November 29, 2023
+
 * Updated hazard type styles so that adding a new hazard type no longer requires changes to code ([DESCW-1632](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1632))
 * Fixed minor accessibility issues in blocks ([DESCW-1756](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1756))
 
 ### 1.0.0: October 25, 2023
+
 * Updated PHP coding standards to latest WP ruleset ([DESCW-1583](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1583))
 * Added copy link feature to Social Share block ([DESCW-1425](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1425))
 * Updated emergency-map reusable block to include new Twitter block design ([DESCW-1362](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1362))

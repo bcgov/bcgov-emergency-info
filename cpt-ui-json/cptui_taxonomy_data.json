@@ -13,7 +13,7 @@
         "query_var": "true",
         "query_var_slug": "",
         "rewrite": "true",
-        "rewrite_slug": "",
+        "rewrite_slug": "hazard",
         "rewrite_withfront": "1",
         "rewrite_hierarchical": "0",
         "show_admin_column": "true",
