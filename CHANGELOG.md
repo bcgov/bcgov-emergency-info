@@ -1,7 +1,6 @@
 ### 1.2.0: June 4, 2024
 
-* Changed event permalinks to /e/post-name from /events/post-name ([DESCW-2355](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2355))
-* Changed hazard_type permalinks to /hazard/hazard-name from /hazard_types/hazard-name
+* Changed hazard_type permalinks to /hazard/hazard-name from /hazard_types/hazard-name ([DESCW-2355](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2355))
 * Added wp-scripts markdown linting command to package.json
 * Affected Area is no longer a required field ([DESCW-2372](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2372))
 * Updated to use node 20
