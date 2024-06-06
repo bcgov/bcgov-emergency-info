@@ -145,15 +145,29 @@ class Plugin {
     }
 
     /**
-     * Changes Query Loop Block's query to filter results on status = active meta field for event post type.
+     * Changes Query Loop Block's query to add additional filtering logic.
      *
      * @param array $query Query used by the Query Loop Block on the frontend.
-     * @return array The query with status = active filtering added.
+     * @return array The query with additional filtering added.
      */
     public function query_loop_block_query_vars( array $query ): array {
+        // Skip if the query loop isn't querying events.
         if ( 'event' !== $query['post_type'] ) {
             return $query;
         }
+
+        // Add a tax_query for the hazard type if it's the queried object.
+        // This allows the query loop to be used on hazard type archive pages.
+        $queried_object = get_queried_object();
+        if ( 'hazard_type' === $queried_object->taxonomy ) {
+            $query['tax_query'] = [
+                [
+                    'taxonomy' => $queried_object->taxonomy,
+                    'terms'    => $queried_object->term_id,
+                ],
+            ];
+        }
+
         $query['meta_key']     = 'status';
         $query['meta_value']   = 'active';
         $query['meta_compare'] = '=';
