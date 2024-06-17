@@ -34,6 +34,16 @@ export const Edit = ( { attributes: { excludedTerms }, setAttributes } ) => {
                             setAttributes( { excludedTerms: tokens } )
                         }
                     />
+                    <PanelBody
+                        title={ __( 'All Terms' ) }
+                        initialOpen={ false }
+                    >
+                        <ul>
+                            { terms.map( ( term, index ) => {
+                                return <li key={ index }>{ term }</li>;
+                            } ) }
+                        </ul>
+                    </PanelBody>
                 </PanelBody>
             </InspectorControls>
             <ServerSideRender
