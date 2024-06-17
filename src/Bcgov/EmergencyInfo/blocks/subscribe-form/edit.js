@@ -12,7 +12,7 @@ export const Edit = ( { attributes: { excludedTerms }, setAttributes } ) => {
     useEffect( () => {
         // Get array of all terms.
         wp.apiFetch( {
-            path: 'wp/v2/region',
+            path: addQueryArgs('wp/v2/region', {'per_page': 100}),
         } ).then( ( data ) => {
             const terms = data.map(
                 ( term ) => `${ term.name } (ID:${ term.id })`
