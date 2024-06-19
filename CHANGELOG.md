@@ -1,7 +1,8 @@
 # Changelog
 
-## 1.2.0: June 6, 2024
+## 1.2.0: June 18, 2024
 
+* Added "has_striped_border" meta field and relevant css for hazard types ([DESCW-2432](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2432))
 * Updated `query_loop_block_query_vars` filter to allow query loop to be used on Hazard Type archive pages ([DESCW-2450](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2450))
 * Changed hazard_type permalinks to /hazard/hazard-name from /hazard_types/hazard-name ([DESCW-2355](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2355))
 * Added wp-scripts markdown linting command to package.json

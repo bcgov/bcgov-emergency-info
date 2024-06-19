@@ -302,6 +302,20 @@ class Plugin {
      * Builds styles for each hazard type term.
      */
     public function build_hazard_styles() {
+        // CSS for striped borders.
+        $striped_border_css = '
+            background: linear-gradient(white, white) padding-box,
+                        repeating-linear-gradient(
+                            -45deg,
+                            var(--wp--preset--color--hazard-%1$s),
+                            var(--wp--preset--color--hazard-%1$s) 12px,
+                            var(--wp--preset--color--hazard-%1$s-secondary) 12px,
+                            var(--wp--preset--color--hazard-%1$s-secondary) 24px
+                        ) border-box;
+            border-color: transparent;
+        ';
+
+        // Get hazard type terms.
         $hazard_types = get_terms(
             [
 				'taxonomy'   => 'hazard_type',
@@ -310,26 +324,39 @@ class Plugin {
         );
         $styles       = [];
         foreach ( $hazard_types as $hazard_type ) {
-            $styles[] = sprintf(
-                '
-                    .hazard_type-%1$s:not(.inactive) .hazard-text {
-                        color:var(--wp--preset--color--hazard-%1$s)
+            // Base hazard type styles (text color, background colors).
+            $hazard_type_styles = '
+                .hazard_type-%1$s:not(.inactive) .hazard-text {
+                    color:var(--wp--preset--color--hazard-%1$s)
+                }
+                .hazard_type-%1$s:not(.inactive) .hazard-text i {
+                    color:var(--wp--preset--color--hazard-%1$s)!important
+                }
+                .hazard_type-%1$s:not(.inactive) .hazard-background {
+                    background-color:var(--wp--preset--color--hazard-%1$s)
+                }
+                .hazard_type-%1$s:not(.inactive) .hazard-background-secondary {
+                    background-color:var(--wp--preset--color--hazard-%1$s-secondary)
+                }
+                .hazard_type-%1$s:not(.inactive) .hazard-border {
+                    border-color:var(--wp--preset--color--hazard-%1$s)
+                }
+            ';
+
+            // Add the styles for striped borders if the hazard should use them.
+            $has_striped_border = self::get_field( 'has_striped_border', 'hazard_type_' . $hazard_type->term_id );
+            if ( $has_striped_border ) {
+                $hazard_type_styles .= "
+                    .hazard_type-%1\$s:not(.inactive) #Event-Information.hazard-border {
+                        $striped_border_css
                     }
-                    .hazard_type-%1$s:not(.inactive) .hazard-text i {
-                        color:var(--wp--preset--color--hazard-%1$s)!important
+                    .event-query-loop .hazard_type-%1\$s:not(.inactive) .hazard-border {
+                        $striped_border_css
                     }
-                    .hazard_type-%1$s:not(.inactive) .hazard-border {
-                        border-color:var(--wp--preset--color--hazard-%1$s)
-                    }
-                    .hazard_type-%1$s:not(.inactive) .hazard-background {
-                        background-color:var(--wp--preset--color--hazard-%1$s)
-                    }
-                    .hazard_type-%1$s:not(.inactive) .hazard-background-secondary {
-                        background-color:var(--wp--preset--color--hazard-%1$s-secondary)
-                    }
-                ',
-                $hazard_type->slug
-            );
+                ";
+            }
+
+            $styles[] = sprintf( $hazard_type_styles, $hazard_type->slug );
         }
         if ( count( $styles ) > 0 ) {
             $css = sprintf( '<style id="hazard-styles">%s</style>', implode( '', $styles ) );
@@ -465,7 +492,11 @@ class Plugin {
 
                 if ( $is_select_all ) {
                     // If this is a select all, set the values to All.
-                    $taxonomy_object['values'] = [ 'All ' . $taxonomy->label ];
+                    if ( 'region' === $taxonomy_slug ) {
+                        $taxonomy_object['values'] = [ 'All locations' ];
+                    } else {
+                        $taxonomy_object['values'] = [ 'All ' . $taxonomy->label ];
+                    }
                 } else {
                     // Build list, printing the labels of the taxonomy and each term.
                     foreach ( $term_ids as $term_id ) {
