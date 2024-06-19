@@ -4,6 +4,10 @@
     gap: var(--wp--preset--spacing--20);
 
     >li {
+        // Force state of emergency card to be full width.
+        &.hazard_type-provincial-state-of-emergency {
+            min-width: 100%;
+        }
 
         min-width: max(30%, 300px);
         flex-basis: 0;
