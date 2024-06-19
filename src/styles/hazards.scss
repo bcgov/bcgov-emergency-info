@@ -1,3 +1,5 @@
+@import "bootstrap/scss/bootstrap";
+
 @mixin hazard-styles($primaryColor, $secondaryColor, $important: "") {
 
     .hazard-text {
@@ -88,6 +90,33 @@
 
         img {
             max-height: 34px;
+        }
+    }
+}
+
+// Adds the Government of BC logo to Provincial State of Emergency event headers/cards.
+.hazard_type-provincial-state-of-emergency {
+
+    .state-of-emergency-bcgov-logo {
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-grow: 1;
+            align-self: flex-start;
+            width: 160px;
+            position: relative;
+            margin-right: -1rem;
+            margin-top: -1rem;
+
+            &::before {
+                content: url(../assets/State-of-Emergency.png);
+                right: 0;
+                position: absolute;
+            }
         }
     }
 }
