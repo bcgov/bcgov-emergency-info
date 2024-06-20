@@ -195,9 +195,45 @@ class Plugin {
                 ],
             ],
         ];
-        $query['orderby']    = [
+
+        $order_by = [
             'event_updated_date_clause' => 'DESC',
             'event_updated_time_clause' => 'DESC',
+        ];
+
+        // Query for events with the 'provincial-state-of-emergency' hazard type.
+        $state_of_emergency_args                = $query;
+        $state_of_emergency_args['tax_query'][] = [
+            'taxonomy' => 'hazard_type',
+            'field'    => 'slug',
+            'terms'    => 'provincial-state-of-emergency',
+        ];
+        $state_of_emergency_args['meta_query']  = $query['meta_query'];
+        $state_of_emergency_args['orderby']     = $order_by;
+        $state_of_emergency_events              = get_posts( $state_of_emergency_args );
+
+        // Query for other events excluding 'provincial-state-of-emergency'.
+        $other_args                = $query;
+        $other_args['tax_query'][] = [
+            'taxonomy' => 'hazard_type',
+            'field'    => 'slug',
+            'terms'    => 'provincial-state-of-emergency',
+            'operator' => 'NOT IN',
+        ];
+        $other_args['meta_query']  = $query['meta_query'];
+        $other_args['orderby']     = $order_by;
+        $other_events              = get_posts( $other_args );
+
+        // Merge results, prioritizing provincial-state-of-emergency events.
+        $merged_events = array_merge( $state_of_emergency_events, $other_events );
+
+        // Extract IDs for final query.
+        $merged_event_ids  = wp_list_pluck( $merged_events, 'ID' );
+        $query['post__in'] = $merged_event_ids;
+
+        // Order by post__in and then by updated_date and updated_time.
+        $query['orderby'] = [
+            'post__in' => 'ASC',
         ];
         return $query;
     }
