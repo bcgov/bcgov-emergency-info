@@ -150,93 +150,64 @@ class Plugin {
      * @param array $query Query used by the Query Loop Block on the frontend.
      * @return array The query with additional filtering added.
      */
-    public function query_loop_block_query_vars( array $query ): array {
-        // Skip if the query loop isn't querying events.
-        if ( 'event' !== $query['post_type'] ) {
-            return $query;
-        }
+	public function query_loop_block_query_vars( array $query ): array {
+		// Skip if the query loop isn't querying events.
+		if ( 'event' !== $query['post_type'] ) {
+			return $query;
+		}
 
-        // Add a tax_query for the hazard type if it's the queried object.
-        // This allows the query loop to be used on hazard type archive pages.
-        $queried_object = get_queried_object();
-        if ( 'hazard_type' === $queried_object->taxonomy ) {
-            $query['tax_query'] = [
-                [
-                    'taxonomy' => $queried_object->taxonomy,
-                    'terms'    => $queried_object->term_id,
-                ],
-            ];
-        }
+		// Add a tax_query for the hazard type if it's the queried object.
+		// This allows the query loop to be used on hazard type archive pages.
+		$queried_object = get_queried_object();
+		if ( 'hazard_type' === $queried_object->taxonomy ) {
+			$query['tax_query'] = [
+				[
+					'taxonomy' => $queried_object->taxonomy,
+					'terms'    => $queried_object->term_id,
+				],
+			];
+		}
 
-        $query['meta_key']     = 'status';
-        $query['meta_value']   = 'active';
-        $query['meta_compare'] = '=';
+		$query['meta_key']     = 'status';
+		$query['meta_value']   = 'active';
+		$query['meta_compare'] = '=';
 
-        $query['meta_query'] = [
-            'relation'                  => 'AND',
-            'event_updated_date_clause' => [
-                'key'     => 'updated_date',
-                'compare' => 'EXISTS',
-            ],
-            'event_updated_time_clause' => [
-                'key'     => 'updated_time',
-                'compare' => 'EXISTS',
-            ],
-            'event_hidden_clause'       => [
-                'relation'                => 'OR',
-                'event_hidden_not_exists' => [
-                    'key'     => 'hidden',
-                    'compare' => 'NOT EXISTS',
-                ],
-                'event_not_hidden'        => [
-                    'key'     => 'hidden',
-                    'compare' => '!=',
-                    'value'   => '1',
-                ],
-            ],
-        ];
+		$query['meta_query'] = [
+			'relation'                             => 'AND',
+			'event_updated_date_clause'            => [
+				'key'     => 'updated_date',
+				'compare' => 'EXISTS',
+			],
+			'event_updated_time_clause'            => [
+				'key'     => 'updated_time',
+				'compare' => 'EXISTS',
+			],
+			'event_hidden_clause'                  => [
+				'relation'                => 'OR',
+				'event_hidden_not_exists' => [
+					'key'     => 'hidden',
+					'compare' => 'NOT EXISTS',
+				],
+				'event_not_hidden'        => [
+					'key'     => 'hidden',
+					'compare' => '!=',
+					'value'   => '1',
+				],
+			],
+			'provincial_state_of_emergency_clause' => [
+				'key'     => 'provincial_state_of_emergency',
+				'compare' => 'EXISTS',
+			],
+		];
 
-        $order_by = [
-            'event_updated_date_clause' => 'DESC',
-            'event_updated_time_clause' => 'DESC',
-        ];
+		$query['orderby'] = [
+			'provincial_state_of_emergency_clause' => 'DESC',
+			'event_updated_date_clause'            => 'DESC',
+			'event_updated_time_clause'            => 'DESC',
+		];
 
-        // Query for events with the 'provincial-state-of-emergency' hazard type.
-        $state_of_emergency_args                = $query;
-        $state_of_emergency_args['tax_query'][] = [
-            'taxonomy' => 'hazard_type',
-            'field'    => 'slug',
-            'terms'    => 'provincial-state-of-emergency',
-        ];
-        $state_of_emergency_args['meta_query']  = $query['meta_query'];
-        $state_of_emergency_args['orderby']     = $order_by;
-        $state_of_emergency_events              = get_posts( $state_of_emergency_args );
-
-        // Query for other events excluding 'provincial-state-of-emergency'.
-        $other_args                = $query;
-        $other_args['tax_query'][] = [
-            'taxonomy' => 'hazard_type',
-            'field'    => 'slug',
-            'terms'    => 'provincial-state-of-emergency',
-            'operator' => 'NOT IN',
-        ];
-        $other_args['meta_query']  = $query['meta_query'];
-        $other_args['orderby']     = $order_by;
-        $other_events              = get_posts( $other_args );
-
-        // Merge results, prioritizing provincial-state-of-emergency events.
-        $merged_events = array_merge( $state_of_emergency_events, $other_events );
-
-        // Extract IDs for final query.
-        $merged_event_ids  = wp_list_pluck( $merged_events, 'ID' );
-        $query['post__in'] = $merged_event_ids;
-
-        // Order by post__in and then by updated_date and updated_time.
-        $query['orderby'] = [
-            'post__in' => 'ASC',
-        ];
-        return $query;
-    }
+		return $query;
+	}
 
     /**
      * Adds hazard_type colors to theme's preset colors array.
