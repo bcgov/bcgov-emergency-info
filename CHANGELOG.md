@@ -3,6 +3,7 @@
 ## 1.2.0: June 20, 2024
 
 * Override Homepage sorting so that State of Emergency events are prioritized ([DESCW-2433](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2435))
+  * Added State of Emergency metadata field to events in order to allow sorting. 
 * Changed priority of action 'enqueue_styles' from 20 to 5.
 * Added Government of BC logo in State of Emergency event header and cards ([DESCW-2435](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2435))
 * Added "has_striped_border" meta field and relevant css for hazard types ([DESCW-2432](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2432))
