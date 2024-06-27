@@ -2,6 +2,7 @@
 
 ## 1.2.0: June 27, 2024
 
+* Update post social share block to use the twitter-x icon ([DESCW-2459](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2459))
 * Override Homepage sorting so that State of Emergency events are prioritized ([DESCW-2433](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2435))
 * Changed priority of action 'enqueue_styles' from 20 to 5.
 * Added Government of BC logo in State of Emergency event header and cards ([DESCW-2435](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-2435))

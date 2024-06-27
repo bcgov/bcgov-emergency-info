@@ -27,7 +27,7 @@ export const Edit = ( { context: { postType, postId } } ) => {
                         href={ '#https://twitter.com/intent/tweet?url=' + link }
                     >
                         <span className="areoi-icon">
-                            <i className="text-dark bi-twitter"></i>
+                            <i className="text-dark bi-twitter-x"></i>
                         </span>
                         Share on X (Twitter)
                     </a>
