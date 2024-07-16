@@ -279,13 +279,8 @@ p.areoi-icon:not(.no-circle) {
         margin: 0;
     }
 
-}
-
-.alert-emergency {
-    color: var(--wp--preset--color--white);
-    background-color: var(--wp--preset--color--support-red);
-}
-
-.hide {
-    display: none;
+    &.alert-emergency {
+        color: var(--wp--preset--color--white);
+        background-color: var(--wp--preset--color--support-red);
+    }
 }
