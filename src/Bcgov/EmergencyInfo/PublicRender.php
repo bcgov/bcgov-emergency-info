@@ -60,7 +60,5 @@ class PublicRender {
         $name       = 'public';
         $asset_info = Plugin::get_asset_information( $name );
         wp_enqueue_script( $asset_info['handle'], $asset_info['dist_url'] . $name . '.js', $asset_info['dependencies'], $asset_info['version'], false );
-
-        // Enqueue info-banner.js specifically
-        wp_enqueue_script( 'info-banner-script', $asset_info['dist_url'] . $name . '.js', $asset_info['dependencies'], $asset_info['version'], true );
-    }}
+    }
+}
