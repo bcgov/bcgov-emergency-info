@@ -5,6 +5,7 @@ use Bcgov\Common\Loader;
 use Bcgov\Common\I18n;
 use WP_Theme_JSON_Data;
 use WP_REST_Response;
+use WP_Query;
 
 /**
  * The core plugin class.
@@ -80,6 +81,7 @@ class Plugin {
         $loader->add_filter( 'notify_subscription_criteria_list', $this, 'set_subscription_criteria_list', 11, 2 );
         $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
         $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
+        $loader->add_action( 'wp_head', $this, 'add_info_banner' );
 
         $loader->run();
     }
@@ -694,4 +696,89 @@ class Plugin {
     public static function get_option_name(): string {
         return str_replace( '-', '_', self::get_plugin_name() );
     }
+
+	/**
+	 * Adds an information banner to the top of the page if there is an active
+	 * provincial state of emergency event and the banner has not been dismissed by the user.
+	 *
+	 * This function checks for an active 'provincial-state-of-emergency' event.
+	 * If such an event is found and the user has not dismissed the banner, it displays
+	 * an information banner at the top of the page. The banner includes a link to the
+	 * event details and a dismiss button. Once dismissed, the banner will not reappear
+	 * for the current event.
+     *
+	 * @return void Outputs HTML and JavaScript for the banner.
+	 */
+    public function add_info_banner() {
+		// Query to check for active state of emergency events.
+		$args  = array(
+			'post_type'      => 'event',
+			'meta_query'     => array(
+				array(
+					'key'     => 'status',
+					'value'   => 'active',
+					'compare' => '=',
+				),
+			),
+			'tax_query'      => array(
+				array(
+					'taxonomy' => 'hazard_type',
+					'field'    => 'slug',
+					'terms'    => 'provincial-state-of-emergency',
+				),
+			),
+			'posts_per_page' => 1,
+		);
+		$query = new WP_Query( $args );
+
+		// Check if any posts match the query (although we expect one at most).
+		if ( $query->have_posts() ) {
+            $query->the_post();
+
+            // Get the event URL and ID for use in the banner.
+            $event_url = get_permalink();
+            $event_id  = get_the_ID();
+
+            // Output the empty banner container with inline CSS and data attribute for determining whether to show or hide the inner HTML.
+            echo '<div id="info-banner" class="bc-gov-alertbanner alert-emergency d-none" role="alert" aria-labelledby="info" aria-describedby="info-desc" data-event-id="' . esc_js( $event_id ) . '"></div>';
+
+            ?>
+            <script>
+                (() => {
+                    const infoBanner = document.getElementById("info-banner");
+                    const storedEventId = localStorage.getItem("infoBannerDismissed");
+                    const eventId = infoBanner.getAttribute("data-event-id");
+
+                    // Only show the banner if this specific event hasn't already been dismissed.
+                    if (storedEventId !== eventId) {
+                        infoBanner.innerHTML = `
+                            <div class="container">
+                                <i class="bi bi-exclamation-circle-fill"></i>
+                                <div class="content">
+                                    <p id="info-desc">B.C. has declared a provincial state of emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
+                                </div>
+                                <span class="dismiss">
+                                    <i class="bi bi-x-lg"></i>
+                                </span>
+                            </div>
+                        `;
+                        infoBanner.classList.remove("d-none");
+
+                        // Hide the banner if the dismiss icon is clicked.
+                        const dismissButton = document.querySelector("#info-banner .dismiss");
+                        if (dismissButton) {
+                            dismissButton.addEventListener("click", () => {
+                                localStorage.setItem("infoBannerDismissed", eventId);
+                                infoBanner.classList.add("d-none");
+                            });
+                        }
+                    }
+                })();
+            </script>
+            <?php
+		}
+
+		// Restore original post data.
+		wp_reset_postdata();
+	}
 }
