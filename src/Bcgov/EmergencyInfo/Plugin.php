@@ -158,8 +158,7 @@ class Plugin {
 			return $query;
 		}
 
-        // Add a tax_query for the hazard type if it's the queried object.
-        // This allows the query loop to be used on hazard type archive pages.
+        // Check if the query loop is the one excluding state of emergency events.
         $has_provincial_state_of_emergency_tax_query = false;
 		if ( isset( $query['tax_query'] ) && is_array( $query['tax_query'] ) ) {
 			foreach ( $query['tax_query'] as $tax_query ) {
@@ -172,6 +171,27 @@ class Plugin {
                 }
             }
 		}
+
+        if ( ! $has_provincial_state_of_emergency_tax_query ) {
+			$query['tax_query'][] = [
+				'taxonomy' => 'hazard_type',
+				'field'    => 'slug',
+				'terms'    => 'provincial-state-of-emergency',
+				'operator' => 'NOT IN',
+			];
+		}
+
+        // Add a tax_query for the hazard type if it's the queried object.
+        // This allows the query loop to be used on hazard type archive pages.
+        $queried_object = get_queried_object();
+        if ( 'hazard_type' === $queried_object->taxonomy ) {
+            $query['tax_query'] = [
+                [
+                    'taxonomy' => $queried_object->taxonomy,
+                    'terms'    => $queried_object->term_id,
+                ],
+            ];
+        }
 
         $query['meta_key']     = 'status';
         $query['meta_value']   = 'active';
@@ -202,15 +222,6 @@ class Plugin {
 				],
 			],
 		];
-
-        if ( ! $has_provincial_state_of_emergency_tax_query ) {
-			$query['tax_query'][] = [
-				'taxonomy' => 'hazard_type',
-				'field'    => 'slug',
-				'terms'    => 'provincial-state-of-emergency',
-				'operator' => 'NOT IN',
-			];
-		}
 
 		$query['orderby'] = [
 			'event_updated_date_clause' => 'DESC',
