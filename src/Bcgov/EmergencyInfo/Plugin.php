@@ -81,7 +81,7 @@ class Plugin {
         $loader->add_filter( 'notify_subscription_criteria_list', $this, 'set_subscription_criteria_list', 11, 2 );
         $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
         $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
-        $loader->add_action( 'wp_head', $this, 'add_info_banner', 1 );
+        $loader->add_action( 'wp_head', $this, 'add_info_banner' );
 
         $loader->run();
     }
@@ -759,9 +759,9 @@ class Plugin {
                     const infoBanner = document.getElementById("info-banner");
 
                     infoBanner.innerHTML = `
-                        <div class="container">
-                            <i class="bi bi-exclamation-circle-fill"></i>
-                            <div class="content">
+                        <div class="banner-container">
+                            <i class="banner-icon bi-exclamation-circle-fill"></i>
+                            <div class="banner-content">
                                 <p id="info-desc">B.C. has declared a provincial state of emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
                             </div>
                         </div>
