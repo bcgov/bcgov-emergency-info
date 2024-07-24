@@ -81,7 +81,7 @@ class Plugin {
         $loader->add_filter( 'notify_subscription_criteria_list', $this, 'set_subscription_criteria_list', 11, 2 );
         $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
         $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
-        $loader->add_action( 'wp_head', $this, 'add_info_banner' );
+        $loader->add_action( 'wp_head', $this, 'add_info_banner', 1 );
 
         $loader->run();
     }
@@ -751,39 +751,21 @@ class Plugin {
             $event_id  = get_the_ID();
 
             // Output the empty banner container with inline CSS and data attribute for determining whether to show or hide the inner HTML.
-            echo '<div id="info-banner" class="bc-gov-alertbanner alert-emergency d-none" role="alert" aria-labelledby="info" aria-describedby="info-desc" data-event-id="' . esc_js( $event_id ) . '"></div>';
+            echo '<div id="info-banner" class="bc-gov-alertbanner alert-emergency" role="alert" aria-labelledby="info" aria-describedby="info-desc"></div>';
 
             ?>
             <script>
                 (() => {
                     const infoBanner = document.getElementById("info-banner");
-                    const storedEventId = localStorage.getItem("infoBannerDismissed");
-                    const eventId = infoBanner.getAttribute("data-event-id");
 
-                    // Only show the banner if this specific event hasn't already been dismissed.
-                    if (storedEventId !== eventId) {
-                        infoBanner.innerHTML = `
-                            <div class="container">
-                                <i class="bi bi-exclamation-circle-fill"></i>
-                                <div class="content">
-                                    <p id="info-desc">B.C. has declared a provincial state of emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
-                                </div>
-                                <span class="dismiss">
-                                    <i class="bi bi-x-lg"></i>
-                                </span>
+                    infoBanner.innerHTML = `
+                        <div class="container">
+                            <i class="bi bi-exclamation-circle-fill"></i>
+                            <div class="content">
+                                <p id="info-desc">B.C. has declared a provincial state of emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
                             </div>
-                        `;
-                        infoBanner.classList.remove("d-none");
-
-                        // Hide the banner if the dismiss icon is clicked.
-                        const dismissButton = document.querySelector("#info-banner .dismiss");
-                        if (dismissButton) {
-                            dismissButton.addEventListener("click", () => {
-                                localStorage.setItem("infoBannerDismissed", eventId);
-                                infoBanner.classList.add("d-none");
-                            });
-                        }
-                    }
+                        </div>
+                    `;
                 })();
             </script>
             <?php

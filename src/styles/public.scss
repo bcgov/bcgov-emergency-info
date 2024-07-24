@@ -239,21 +239,21 @@ p.areoi-icon:not(.no-circle) {
 
 .bc-gov-alertbanner {
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0 2rem;
 
     .bi {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .container {
         margin-left: auto;
         margin-right: auto;
         padding: 10px 0;
-        max-width: 1440px;
+        max-width: var(--wp--style--global--wide-size);
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 1rem;
 
         .content {
             flex: 1 1 0%;
@@ -261,9 +261,6 @@ p.areoi-icon:not(.no-circle) {
             flex-wrap: wrap;
         }
 
-        .dismiss {
-            cursor: pointer;
-        }
     }
 
     a {
