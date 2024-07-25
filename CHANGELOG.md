@@ -1,6 +1,7 @@
 # Changelog
 
 ## 1.3.0: July 24, 2024
+* Remove dismiss button from emergency alert banner ([DESCW-2512](https://citz-gdx.atlassian.net/browse/DESCW-2512))
 * Add state of emergency alert banner ([DESCW-2434](https://citz-gdx.atlassian.net/browse/DESCW-2434))
 
 ## 1.2.0: June 27, 2024
