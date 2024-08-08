@@ -24,47 +24,75 @@ function render_block_emergency_info_subscribe_form(
     $get_params = $_GET;
 
     // Check to see if there is a valid email address in the URL parameters.
-    $email     = sanitize_email( $get_params['email'] ?? '' );
-    $is_update = false;
+    $email = sanitize_email( $get_params['email'] ?? '' );
 
     // If there is a valid email, modify the form to reflect updating instead of subscribing.
-    if ( $email ) {
-        $is_update = true;
-    }
+    $is_update = ! empty( $email );
 
-    // Check to see if there are terms in the URL parameters.
-    $preselected_term_ids = [];
-    foreach ( $filter_field_keys as $param ) {
-        if ( array_key_exists( $param, $get_params ) ) {
-            $value = $get_params[ $param ];
-            // Values come as comma-separated strings, split them into an array.
-            $value_array          = explode( ',', $value );
-            $value_int_array      = array_map( 'intval', $value_array );
-            $preselected_term_ids = array_merge( $preselected_term_ids, $value_int_array );
-        }
-    }
+    $preselected_term_ids = get_preselected_term_ids( $get_params, $filter_fields );
+
     $select_all_regions = 0;
     if ( array_key_exists( 'tax_region_all', $get_params ) ) {
         $select_all_regions = $get_params['tax_region_all'];
     }
 
-    // Extract term ids from term strings.
-    $excluded_terms    = $attributes['excludedTerms'] ?? [];
-    $excluded_term_ids = array_map(
+    $excluded_term_ids = get_excluded_term_ids( $attributes['excludedTerms'] ?? [] );
+    $parsed_regions    = get_parsed_regions( $excluded_term_ids );
+
+    enqueue_subscription_script( $parsed_regions, $is_update );
+
+    return render_subscribe_form( $attributes, $parsed_regions, $email, $is_update, $preselected_term_ids, $select_all_regions );
+}
+
+/**
+ * Check to see if there are terms in the URL parameters.
+ *
+ * @param array $get_params The GET parameters retrieved from the URL.
+ * @param array $filter_fields The array of filter field names.
+ * @return array
+ */
+function get_preselected_term_ids( array $get_params, array $filter_fields ): array {
+    $preselected_term_ids = [];
+    foreach ( array_keys( $filter_fields ) as $param ) {
+        if ( array_key_exists( $param, $get_params ) ) {
+            $value_array          = explode( ',', $get_params[ $param ] );
+            $value_int_array      = array_map( 'intval', $value_array );
+            $preselected_term_ids = array_merge( $preselected_term_ids, $value_int_array );
+        }
+    }
+    return $preselected_term_ids;
+}
+
+/**
+ * Extract term ids from term strings.
+ *
+ * @param array $excluded_terms An array of excluded term strings.
+ * @return array
+ */
+function get_excluded_term_ids( array $excluded_terms ): array {
+    return array_map(
         function ( $term ) {
             $term_id = explode( '(ID:', $term );
             return intval( array_pop( $term_id ) );
         },
         $excluded_terms
     );
+}
 
-    // Get all terms belonging to the region group taxonomy.
-    $region_groups        = get_terms(
+/**
+ * Retrieves and processes the region and region group terms, excluding any terms specified in the excluded_term_ids array.
+ *
+ * @param array $excluded_term_ids An array of term IDs to exclude.
+ * @return array
+ */
+function get_parsed_regions( array $excluded_term_ids ): array {
+    $region_groups = get_terms(
         [
-            'taxonomy'   => 'region_groups',
-            'hide_empty' => false,
-        ]
+			'taxonomy'   => 'region_groups',
+			'hide_empty' => false,
+		]
     );
+
     $parsed_region_groups = array_map(
         function ( $region_group ) {
 			return (object) [
@@ -75,28 +103,23 @@ function render_block_emergency_info_subscribe_form(
         $region_groups
     );
 
-    // Get all childless terms belonging to the region taxonomy.
     $regions = get_terms(
         [
-            'taxonomy'   => 'region',
-            'hide_empty' => false,
-            'childless'  => true,
-        ]
+			'taxonomy'   => 'region',
+			'hide_empty' => false,
+			'childless'  => true,
+		]
     );
 
-    $term_options   = '';
     $parsed_regions = [];
     foreach ( $regions as $region ) {
-        // Use the excludedTerms attribute to skip over those terms.
         if ( in_array( $region->term_id, $excluded_term_ids, true ) ) {
             continue;
         }
 
-        $is_region_group_term = Plugin::get_field( 'is_region_group_term', 'region_' . $region->term_id, false );
-        $is_region_group_term = '1' === $is_region_group_term;
-
-        // Add the region's region groups.
+        $is_region_group_term = '1' === Plugin::get_field( 'is_region_group_term', 'region_' . $region->term_id, false );
         $region_region_groups = [];
+
         foreach ( $parsed_region_groups as $region_group ) {
             if ( in_array( $region->term_id, $region_group->included_regions, true ) ) {
                 $region_region_groups[] = $region_group->term->name;
@@ -109,12 +132,18 @@ function render_block_emergency_info_subscribe_form(
             'regionGroups'      => $region_region_groups,
             'isRegionGroupTerm' => $is_region_group_term,
         ];
-
-        $is_selected   = in_array( $region->term_id, $preselected_term_ids, true );
-        $term_options .= sprintf( '<option value="%d" %s>%s</option>', $region->term_id, $is_selected ? 'selected' : '', $region->name );
     }
 
-    // Pass the array of region terms to JS.
+    return $parsed_regions;
+}
+/**
+ * Enqueues the subscription form script and passes the parsed region data and update status to the script.
+ *
+ * @param array   $parsed_regions The array of parsed regions to be used in the script.
+ * @param boolean $is_update Whether the form is in update mode.
+ * @return void
+ */
+function enqueue_subscription_script( array $parsed_regions, bool $is_update ): void {
     add_action(
         'wp_enqueue_scripts',
         function () use ( $parsed_regions, $is_update ) {
@@ -123,10 +152,7 @@ function render_block_emergency_info_subscribe_form(
 			wp_add_inline_script(
                 'subscribe_form_script',
                 sprintf(
-                    '
-                        const regions = %s;
-                        const update = %s;
-                    ',
+                    'const regions = %s; const update = %s;',
                     wp_json_encode( $parsed_regions ),
                     $is_update ? 'true' : 'false'
                 ),
@@ -134,6 +160,25 @@ function render_block_emergency_info_subscribe_form(
 			);
 		}
     );
+}
+
+/**
+ * Generates and returns the HTML markup for the subscription form.
+ *
+ * @param array   $attributes Block attributes, including excluded terms.
+ * @param array   $parsed_regions The array of parsed regions.
+ * @param string  $email The email address pre-filled in the form (if any).
+ * @param boolean $is_update Whether the form is in update mode.
+ * @param array   $preselected_term_ids Array of preselected term IDs.
+ * @param integer $select_all_regions Indicates if "Select All Regions" is selected (1 or 0).
+ * @return string
+ */
+function render_subscribe_form( array $attributes, array $parsed_regions, string $email, bool $is_update, array $preselected_term_ids, int $select_all_regions ): string {
+    $wrapper_attributes   = get_block_wrapper_attributes();
+    $term_options         = render_term_options( $parsed_regions, $preselected_term_ids );
+    $select_all_checked   = '1' === $select_all_regions ? 'checked' : '';
+    $select_none_checked  = '1' !== $select_all_regions ? 'checked' : '';
+    $parsed_regions_count = count( $parsed_regions );
 
     return sprintf(
         '
@@ -208,12 +253,28 @@ function render_block_emergency_info_subscribe_form(
         __( 'Your email address:' ),
         $is_update ? __( 'Update locations' ) : __( 'Notify me' ),
         $term_options,
-        '1' === $select_all_regions ? 'checked' : '',
-        '1' !== $select_all_regions ? 'checked' : '',
-        count( $parsed_regions ),
+        $select_all_checked,
+        $select_none_checked,
+        $parsed_regions_count,
         __( 'I have read and understood the Privacy and Collection Notice, Service Disclaimer and Terms of Use' ),
         $email
     );
+}
+
+/**
+ * Generates the <option> elements for the region select input based on the parsed regions and preselected term IDs.
+ *
+ * @param array $parsed_regions The array of parsed regions.
+ * @param array $preselected_term_ids Array of preselected term IDs.
+ * @return string
+ */
+function render_term_options( array $parsed_regions, array $preselected_term_ids ): string {
+    $term_options = '';
+    foreach ( $parsed_regions as $region ) {
+        $is_selected   = in_array( $region['value'], $preselected_term_ids, true );
+        $term_options .= sprintf( '<option value="%d" %s>%s</option>', $region['value'], $is_selected ? 'selected' : '', $region['label'] );
+    }
+    return $term_options;
 }
 
 /**
