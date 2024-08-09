@@ -7,7 +7,7 @@ use Bcgov\EmergencyInfo\Plugin;
  * @param array $attributes Block attributes.
  * @return string Returns the Subscribe Form block markup.
  */
-function render_block_emergency_info_subscribe_form(
+function bcei_render_block_subscribe_form(
     array $attributes
 ): string {
     $wrapper_attributes = get_block_wrapper_attributes();
@@ -29,19 +29,19 @@ function render_block_emergency_info_subscribe_form(
     // If there is a valid email, modify the form to reflect updating instead of subscribing.
     $is_update = ! empty( $email );
 
-    $preselected_term_ids = bei_get_preselected_term_ids( $get_params, $filter_fields );
+    $preselected_term_ids = bcei_get_preselected_term_ids( $get_params, $filter_fields );
 
     $select_all_regions = 0;
     if ( array_key_exists( 'tax_region_all', $get_params ) ) {
         $select_all_regions = $get_params['tax_region_all'];
     }
 
-    $excluded_term_ids = bei_get_excluded_term_ids( $attributes['excludedTerms'] ?? [] );
-    $parsed_regions    = bei_get_parsed_regions( $excluded_term_ids );
+    $excluded_term_ids = bcei_get_excluded_term_ids( $attributes['excludedTerms'] ?? [] );
+    $parsed_regions    = bcei_get_parsed_regions( $excluded_term_ids );
 
-    bei_enqueue_subscription_script( $parsed_regions, $is_update );
+    bcei_enqueue_subscription_script( $parsed_regions, $is_update );
 
-    return bei_render_subscribe_form( $attributes, $parsed_regions, $email, $is_update, $preselected_term_ids, $select_all_regions );
+    return bcei_render_subscribe_form( $attributes, $parsed_regions, $email, $is_update, $preselected_term_ids, $select_all_regions );
 }
 
 /**
@@ -51,7 +51,7 @@ function render_block_emergency_info_subscribe_form(
  * @param array $filter_fields The array of filter field names.
  * @return array
  */
-function bei_get_preselected_term_ids( array $get_params, array $filter_fields ): array {
+function bcei_get_preselected_term_ids( array $get_params, array $filter_fields ): array {
     $preselected_term_ids = [];
     foreach ( array_keys( $filter_fields ) as $param ) {
         if ( array_key_exists( $param, $get_params ) ) {
@@ -69,7 +69,7 @@ function bei_get_preselected_term_ids( array $get_params, array $filter_fields )
  * @param array $excluded_terms An array of excluded term strings.
  * @return array
  */
-function bei_get_excluded_term_ids( array $excluded_terms ): array {
+function bcei_get_excluded_term_ids( array $excluded_terms ): array {
     return array_map(
         function ( $term ) {
             $term_id = explode( '(ID:', $term );
@@ -85,7 +85,7 @@ function bei_get_excluded_term_ids( array $excluded_terms ): array {
  * @param array $excluded_term_ids An array of term IDs to exclude.
  * @return array
  */
-function bei_get_parsed_regions( array $excluded_term_ids ): array {
+function bcei_get_parsed_regions( array $excluded_term_ids ): array {
     $region_groups = get_terms(
         [
 			'taxonomy'   => 'region_groups',
@@ -143,7 +143,7 @@ function bei_get_parsed_regions( array $excluded_term_ids ): array {
  * @param boolean $is_update Whether the form is in update mode.
  * @return void
  */
-function bei_enqueue_subscription_script( array $parsed_regions, bool $is_update ): void {
+function bcei_enqueue_subscription_script( array $parsed_regions, bool $is_update ): void {
     add_action(
         'wp_enqueue_scripts',
         function () use ( $parsed_regions, $is_update ) {
@@ -173,9 +173,9 @@ function bei_enqueue_subscription_script( array $parsed_regions, bool $is_update
  * @param integer $select_all_regions Indicates if "Select All Regions" is selected (1 or 0).
  * @return string
  */
-function bei_render_subscribe_form( array $attributes, array $parsed_regions, string $email, bool $is_update, array $preselected_term_ids, int $select_all_regions ): string {
+function bcei_render_subscribe_form( array $attributes, array $parsed_regions, string $email, bool $is_update, array $preselected_term_ids, int $select_all_regions ): string {
     $wrapper_attributes   = get_block_wrapper_attributes();
-    $term_options         = bei_render_term_options( $parsed_regions, $preselected_term_ids );
+    $term_options         = bcei_render_term_options( $parsed_regions, $preselected_term_ids );
     $select_all_checked   = '1' === $select_all_regions ? 'checked' : '';
     $select_none_checked  = '1' !== $select_all_regions ? 'checked' : '';
     $parsed_regions_count = count( $parsed_regions );
@@ -268,7 +268,7 @@ function bei_render_subscribe_form( array $attributes, array $parsed_regions, st
  * @param array $preselected_term_ids Array of preselected term IDs.
  * @return string
  */
-function bei_render_term_options( array $parsed_regions, array $preselected_term_ids ): string {
+function bcei_render_term_options( array $parsed_regions, array $preselected_term_ids ): string {
     $term_options = '';
     foreach ( $parsed_regions as $region ) {
         $is_selected   = in_array( $region['value'], $preselected_term_ids, true );
@@ -283,6 +283,6 @@ function bei_render_term_options( array $parsed_regions, array $preselected_term
 register_block_type_from_metadata(
     $path . '/subscribe-form',
     array(
-        'render_callback' => 'render_block_emergency_info_subscribe_form',
+        'render_callback' => 'bcei_render_block_subscribe_form',
     )
 );
