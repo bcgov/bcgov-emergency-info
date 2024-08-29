@@ -184,7 +184,7 @@ class Plugin {
         // Add a tax_query for the hazard type if it's the queried object.
         // This allows the query loop to be used on hazard type archive pages.
         $queried_object = get_queried_object();
-        if ( 'hazard_type' === $queried_object->taxonomy ) {
+        if ( $queried_object && 'WP_Term' === get_class( $queried_object ) && 'hazard_type' === $queried_object->taxonomy ) {
             $query['tax_query'] = [
                 [
                     'taxonomy' => $queried_object->taxonomy,

@@ -1,6 +1,7 @@
 # Changelog
 
-## 1.3.1: Aug 08, 2024
+## 1.3.1: Aug 28, 2024
+* Fix PHP warning in query loop hook caused by incorrect usage of return type ([DESCW-2526](https://citz-gdx.atlassian.net/browse/DESCW-2526))
 * Refactor render subscribe form function ([DESCW-2487](https://citz-gdx.atlassian.net/browse/DESCW-2487))
 
 ## 1.3.0: July 24, 2024
