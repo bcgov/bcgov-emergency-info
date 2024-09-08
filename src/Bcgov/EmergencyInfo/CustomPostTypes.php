@@ -22,12 +22,6 @@ class CustomPostTypes {
      */
     public static $acf_json_dir = 'acf-json';
 
-    /**
-     * The name of the directory that stores CPT UI JSON files.
-     *
-     * @var string $cpt_ui_json_dir The name of the directory that stores CPT UI JSON files.
-     */
-    public static $cpt_ui_json_dir = 'cpt-ui-json';
 
     /**
      * Adds all filters and actions defined in this class.
@@ -36,6 +30,12 @@ class CustomPostTypes {
      */
     public function init() {
         $loader = new Loader();
+
+        // Register post types and taxonomies.
+        $loader->add_action( 'init', $this, 'register_hazard_type_taxonomy' );
+        $loader->add_action( 'init', $this, 'register_region_taxonomy' );
+        $loader->add_action( 'init', $this, 'register_region_group_taxonomy' );
+        $loader->add_action( 'init', $this, 'register_event_post_type' );
 
         // ACF local json saving/loading. See https://www.advancedcustomfields.com/resources/local-json/#saving-explained.
         $loader->add_filter( 'acf/settings/save_json/key=group_63db3b0481dcc', $this, 'acf_json_save_point', 20 );
@@ -48,12 +48,6 @@ class CustomPostTypes {
         $loader->add_filter( 'acf/settings/save_json/key=group_65f377d3803bc', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/save_json/key=group_6619996f06ce4', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/load_json', $this, 'acf_json_load_point', 20 );
-
-        // Set up CPT UI saving and loading.
-        $loader->add_action( 'cptui_after_update_post_type', $this, 'pluginize_local_cptui_data', 20 );
-        $loader->add_action( 'cptui_after_update_taxonomy', $this, 'pluginize_local_cptui_data', 20 );
-        $loader->add_filter( 'cptui_post_types_override', $this, 'pluginize_load_local_cptui_post_type_data', 20 );
-        $loader->add_filter( 'cptui_taxonomies_override', $this, 'pluginize_load_local_cptui_taxonomies_data', 20 );
 
         // Add columns to Hazard Type index pages.
         $loader->add_filter( 'manage_edit-hazard_type_columns', $this, 'add_hazard_type_column', 10, 1 );
@@ -187,100 +181,190 @@ class CustomPostTypes {
     }
 
     /**
-     * Saves post type and taxonomy data to JSON files in the theme directory.
-     *
-     * @param array $data Array of post type data that was just saved.
+     * Register Custom Post Type: Event
      */
-    public function pluginize_local_cptui_data( array $data = array() ) {
-        $cpt_ui_path = Plugin::$plugin_dir . self::$cpt_ui_json_dir;
-        if ( ! is_dir( $cpt_ui_path ) ) {
-            return;
-        }
+	public function register_event_post_type() {
+        $labels = array(
+            'name'              => __( 'Events' ),
+            'singular_name'     => __( 'Event' ),
+            'search_items'      => __( 'Search Events' ),
+            'all_items'         => __( 'All Events' ),
+            'parent_item'       => __( 'Parent Event' ),
+            'parent_item_colon' => __( 'Parent Event:' ),
+            'edit_item'         => __( 'Edit Event' ),
+            'update_item'       => __( 'Update Event' ),
+            'add_new'           => __( 'Add New Event' ),
+            'add_new_item'      => __( 'Add New Event' ),
+            'new_item_name'     => __( 'New Event Name' ),
+            'menu_name'         => __( 'Events' ),
+        );
+        $args   = array(
+            'labels'              => $labels,
+			'description'         => __( 'An emergency event.' ),
+			'public'              => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_icon'           => 'dashicons-megaphone',
+			'taxonomies'          => [
+				'hazard_type',
+				'region',
+				'region_groups',
+			],
+			'query_var'           => 'event',
+			'rewrite'             => [
+				'slug'       => 'event',
+				'with_front' => false,
+				'pages'      => true,
+				'feeds'      => false,
+				'ep_mask'    => true,
+			],
+			'show_in_rest'        => true,
+			'supports'            => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'excerpt',
+				'custom-fields',
+				'revisions',
+			),
+        );
 
-        $allowed_post_types = [ 'event' ];
-        $allowed_taxonomies = [ 'hazard_type', 'region' ];
-
-        if ( array_key_exists( 'cpt_custom_post_type', $data ) && in_array( $data['cpt_custom_post_type']['name'], $allowed_post_types, true ) ) {
-            // Fetch all of our post types and encode into JSON.
-            $cptui_post_types = get_option( 'cptui_post_types', array() );
-            $content          = wp_json_encode( $cptui_post_types, JSON_PRETTY_PRINT );
-            $path             = $cpt_ui_path . '/cptui_post_type_data.json';
-
-            // Save the encoded JSON to a primary file holding all of them.
-            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
-            file_put_contents( $path, $content );
-        }
-
-        if ( array_key_exists( 'cpt_custom_tax', $data ) && in_array( $data['cpt_custom_tax']['name'], $allowed_taxonomies, true ) ) {
-            // Fetch all of our taxonomies and encode into JSON.
-            $cptui_taxonomies = get_option( 'cptui_taxonomies', array() );
-            $content          = wp_json_encode( $cptui_taxonomies, JSON_PRETTY_PRINT );
-            $path             = $cpt_ui_path . '/cptui_taxonomy_data.json';
-
-            // Save the encoded JSON to a primary file holding all of them.
-            // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
-            file_put_contents( $path, $content );
-        }
+        register_post_type( 'event', $args );
     }
 
     /**
-     * Load local post type JSON data.
-     *
-     * @param array $data Existing CPT data.
-     * @return array $value Overriding content for CPTUI.
+     * Register taxonomy: Hazard Type
      */
-    public function pluginize_load_local_cptui_post_type_data( array $data ): array {
-        $loaded = $this->pluginize_load_local_cptui_data( 'cptui_post_type_data.json' );
+    public function register_hazard_type_taxonomy() {
+        $object_types = array(
+            'custom-pattern',
+            'event',
+        );
 
-        if ( false === $loaded ) {
-            return $data;
-        }
+        $labels = array(
+            'name'              => __( 'Hazard Types' ),
+            'singular_name'     => __( 'Hazard Type' ),
+            'search_items'      => __( 'Search Hazard Types' ),
+            'all_items'         => __( 'All Hazard Types' ),
+            'parent_item'       => __( 'Parent Hazard Type' ),
+            'parent_item_colon' => __( 'Parent Hazard Type:' ),
+            'edit_item'         => __( 'Edit Hazard Type' ),
+            'update_item'       => __( 'Update Hazard Type' ),
+            'add_new_item'      => __( 'Add New Hazard Type' ),
+            'new_item_name'     => __( 'New Hazard Type Name' ),
+            'menu_name'         => __( 'Hazard Types' ),
+        );
 
-        $data_new = json_decode( $loaded, true );
+        $args = array(
+            'labels'               => $labels,
+            'description'          => __( 'The type of hazard an emergency event belongs to.' ),
+            'hierarchical'         => true,
+            'show_tagcloud'        => false,
+            'show_admin_column'    => true,
+            'meta_box_cb'          => 'post_categories_meta_box',
+            'meta_box_sanitize_cb' => 'taxonomy_meta_box_sanitize_cb_checkboxes',
+            'object_type'          => array(
+				'custom-pattern',
+				'event',
+			),
+            'rewrite'              => array(
+				'with_front'   => true,
+				'hierarchical' => false,
+				'ep_mask'      => false,
+				'slug'         => 'hazard',
+			),
+            'query_var'            => 'hazard_type',
+            'show_in_rest'         => true,
+        );
 
-        if ( $data_new ) {
-            return array_merge( $data, $data_new );
-        }
-
-        return $data;
+        register_taxonomy( 'hazard_type', $object_types, $args );
     }
 
     /**
-     * Load local taxonomy JSON data.
-     *
-     * @param array $data Existing taxonomy data.
-     * @return array $value Overriding content for CPTUI.
+     * Register taxonomy: Region
      */
-    public function pluginize_load_local_cptui_taxonomies_data( array $data ): array {
-        $loaded = $this->pluginize_load_local_cptui_data( 'cptui_taxonomy_data.json' );
+    public function register_region_taxonomy() {
+        $labels = array(
+            'name'              => __( 'Regions' ),
+            'singular_name'     => __( 'Region' ),
+            'search_items'      => __( 'Search Regions' ),
+            'all_items'         => __( 'All Regions' ),
+            'parent_item'       => __( 'Parent Region' ),
+            'parent_item_colon' => __( 'Parent Region:' ),
+            'edit_item'         => __( 'Edit Region' ),
+            'update_item'       => __( 'Update Region' ),
+            'add_new_item'      => __( 'Add New Region' ),
+            'new_item_name'     => __( 'New Region Name' ),
+            'menu_name'         => __( 'Regions' ),
+        );
 
-        if ( false === $loaded ) {
-            return $data;
-        }
+        $args = array(
+            'labels'            => $labels,
+            'name'              => 'region',
+            'label'             => 'Regions',
+            'show_tagcloud'     => false,
+            'show_admin_column' => true,
+            'object_type'       => array(
+				'event',
+			),
+            'rewrite'           => array(
+				'with_front'   => true,
+				'hierarchical' => false,
+				'ep_mask'      => false,
+				'slug'         => 'region',
+			),
 
-        $data_new = json_decode( $loaded, true );
+            'query_var'         => 'region',
+            'show_in_rest'      => true,
+        );
 
-        if ( $data_new ) {
-            return array_merge( $data, $data_new );
-        }
-
-        return $data;
+        register_taxonomy( 'region', 'event', $args );
     }
 
     /**
-     * Helper function to load a specific file.
-     *
-     * @param string $file_name Name of the local JSON file.
-     * @return false|string
+     * Register taxonomy: Region Group
      */
-    private function pluginize_load_local_cptui_data( string $file_name = '' ) {
-        if ( empty( $file_name ) ) {
-            return false;
-        }
-        $cpt_ui_path = Plugin::$plugin_dir . self::$cpt_ui_json_dir;
-        $path        = $cpt_ui_path . '/' . $file_name;
+    public function register_region_group_taxonomy() {
+        $labels = array(
+            'name'              => __( 'Region Groups' ),
+            'singular_name'     => __( 'Region Group' ),
+            'search_items'      => __( 'Search Region Groups' ),
+            'all_items'         => __( 'All Regions Groups' ),
+            'parent_item'       => __( 'Parent Region Group' ),
+            'parent_item_colon' => __( 'Parent Region Group:' ),
+            'edit_item'         => __( 'Edit Region Group' ),
+            'update_item'       => __( 'Update Region Group' ),
+            'add_new_item'      => __( 'Add New Region Group' ),
+            'new_item_name'     => __( 'New Region Group Name' ),
+            'menu_name'         => __( 'Region Groups' ),
+        );
 
-        // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
-        return file_get_contents( $path );
+        $args = array(
+            'labels'             => $labels,
+            'description'        => __( 'Groups used to organize regions into various buckets, eg. regional districts, tsunami zones.' ),
+            'publicly_queryable' => false,
+            'show_tagcloud'      => false,
+            'show_in_quick_edit' => false,
+            'show_admin_column'  => true,
+            'object_type'        => array(
+				'event',
+			),
+            'rewrite'            => array(
+				'with_front'   => true,
+				'hierarchical' => false,
+				'ep_mask'      => false,
+				'slug'         => 'region_groups',
+			),
+
+            'query_var'          => 'region_groups',
+            'show_in_rest'       => true,
+            'sort'               => true,
+        );
+
+        register_taxonomy( 'region_group', 'event', $args );
     }
 }

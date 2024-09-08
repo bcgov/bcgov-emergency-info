@@ -60,7 +60,7 @@
             {
                 "param": "taxonomy",
                 "operator": "==",
-                "value": "region_groups"
+                "value": "all"
             }
         ]
     ],
@@ -73,5 +73,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711133995
+    "modified": 1725575678
 }
