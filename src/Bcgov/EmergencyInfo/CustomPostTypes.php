@@ -365,6 +365,6 @@ class CustomPostTypes {
             'sort'               => true,
         );
 
-        register_taxonomy( 'region_group', 'event', $args );
+        register_taxonomy( 'region_groups', 'event', $args );
     }
 }
