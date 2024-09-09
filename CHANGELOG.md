@@ -1,10 +1,16 @@
 # Changelog
 
+## 1.3.2 September 05, 2024
+
+* Remove dependency on CPTUI to register events ([DESCW-2560](https://citz-gdx.atlassian.net/browse/DESCW-2560))
+
 ## 1.3.1: Aug 28, 2024
+
 * Fix PHP warning in query loop hook caused by incorrect usage of return type ([DESCW-2526](https://citz-gdx.atlassian.net/browse/DESCW-2526))
 * Refactor render subscribe form function ([DESCW-2487](https://citz-gdx.atlassian.net/browse/DESCW-2487))
 
 ## 1.3.0: July 24, 2024
+
 * Remove dismiss button from emergency alert banner ([DESCW-2512](https://citz-gdx.atlassian.net/browse/DESCW-2512))
 * Add state of emergency alert banner ([DESCW-2434](https://citz-gdx.atlassian.net/browse/DESCW-2434))
 
