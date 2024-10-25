@@ -1,5 +1,5 @@
 # Changelog
-## 1.4.2 October 25, 2024
+## 1.4.0 October 25, 2024
 
 * Added custom registration for categories using event types ([DESCW-2737](https://citz-gdx.atlassian.net/browse/DESCW-2737))
 
