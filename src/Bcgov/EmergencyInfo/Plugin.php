@@ -1,4 +1,5 @@
 <?php
+
 namespace Bcgov\EmergencyInfo;
 
 use Bcgov\Common\Loader;
@@ -24,14 +25,23 @@ use WP_Query;
  */
 class Plugin {
 
-	/**
-	 * The unique identifier of this plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
-	 */
-	public static $plugin_name = 'emergency-info';
+
+
+    /**
+     * Define the hazard_types property.
+     *
+     * @var array|null $hazard_types Array of hazard types.
+     */
+    public static $hazard_types = null;
+
+    /**
+     * The unique identifier of this plugin.
+     *
+     * @since    1.0.0
+     * @access   protected
+     * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+     */
+    public static $plugin_name = 'emergency-info';
 
     /**
      * The plugin root directory.
@@ -47,19 +57,19 @@ class Plugin {
      */
     public static $inactive_statuses = [ 'expired', 'referred' ];
 
-	/**
-	 * Define the core functionality of the plugin.
-	 *
-	 * Set the plugin name and the plugin version that can be used throughout the plugin.
-	 * Load the dependencies, define the locale, and set the hooks for the admin area and
-	 * the public-facing side of the site.
-	 *
-	 * @since    1.0.0
-	 */
-	public function __construct() {
-		new I18n( 'bcgov', dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/' );
-		new Admin();
-		new PublicRender();
+    /**
+     * Define the core functionality of the plugin.
+     *
+     * Set the plugin name and the plugin version that can be used throughout the plugin.
+     * Load the dependencies, define the locale, and set the hooks for the admin area and
+     * the public-facing side of the site.
+     *
+     * @since    1.0.0
+     */
+    public function __construct() {
+        new I18n( 'bcgov', dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/' );
+        new Admin();
+        new PublicRender();
         new Blocks();
         $cpt = new CustomPostTypes( self::$plugin_name, self::$plugin_dir );
         $cpt->init();
@@ -68,7 +78,8 @@ class Plugin {
 
         $loader = new Loader();
         $loader->add_filter( 'aioseo_limit_modified_date_post_types', $this, 'disable_limit_modified_date' );
-
+        $loader->add_action( 'init', $this, 'get_hazard_types' );
+        $loader->add_action( 'init', $this, 'register_pattern_categories', 11 );
         $loader->add_filter( 'query_loop_block_query_vars', $this, 'query_loop_block_query_vars' );
         $loader->add_filter( 'wp_theme_json_data_theme', $this, 'filter_theme_json_theme' );
         $loader->add_filter( 'body_class', $this, 'add_custom_classes_to_single' );
@@ -82,8 +93,25 @@ class Plugin {
         $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
         $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
         $loader->add_action( 'wp_head', $this, 'add_info_banner' );
-
         $loader->run();
+    }
+    /**
+     * Retrieves and initializes the hazard types from the 'hazard_type' taxonomy.
+     *
+     * This function fetches all terms associated with the 'hazard_type' taxonomy,
+     * regardless of whether they are empty or not, and assigns them to the
+     * static property `$hazard_types`.
+     *
+     * @return void
+     */
+    public function get_hazard_types() {
+        self::$hazard_types = get_terms(
+            [
+                'taxonomy'   => 'hazard_type',
+                'hide_empty' => false,
+                'number'     => 0,
+            ]
+        );
     }
 
     /**
@@ -107,15 +135,15 @@ class Plugin {
         return get_field( $selector, $post_id, $format_value );
     }
 
-	/**
-	 * Get asset information including path to dist folder, asset dependencies and version.
-	 *
-	 * @since   1.0.0
-	 * @param   string $name Name of the asset (usually 'admin' or 'public').
-	 * @return  array
-	 */
-	public static function get_asset_information( string $name ): array {
-		$dist_path       = self::$plugin_dir . 'dist/scripts/';
+    /**
+     * Get asset information including path to dist folder, asset dependencies and version.
+     *
+     * @since   1.0.0
+     * @param   string $name Name of the asset (usually 'admin' or 'public').
+     * @return  array
+     */
+    public static function get_asset_information( string $name ): array {
+        $dist_path       = self::$plugin_dir . 'dist/scripts/';
         $dist_url        = plugin_dir_url( dirname( __DIR__, 2 ) ) . 'dist/scripts/';
         $asset_file_path = $dist_path . $name . '.asset.php';
         $dependencies    = [];
@@ -133,7 +161,7 @@ class Plugin {
             'dependencies' => $dependencies,
             'version'      => $version,
         ];
-	}
+    }
 
     /**
      * Removes the "Don't update the modified date" checkbox from the Event settings panel in the editor.
@@ -152,34 +180,36 @@ class Plugin {
      * @param array $query Query used by the Query Loop Block on the frontend.
      * @return array The query with additional filtering added.
      */
-	public function query_loop_block_query_vars( array $query ): array {
-		// Skip if the query loop isn't querying events.
-		if ( 'event' !== $query['post_type'] ) {
-			return $query;
-		}
+    public function query_loop_block_query_vars( array $query ): array {
+        // Skip if the query loop isn't querying events.
+        if ( 'event' !== $query['post_type'] ) {
+            return $query;
+        }
 
         // Check if the query loop is the one excluding state of emergency events.
         $has_provincial_state_of_emergency_tax_query = false;
-		if ( isset( $query['tax_query'] ) && is_array( $query['tax_query'] ) ) {
-			foreach ( $query['tax_query'] as $tax_query ) {
-				if ( isset( $tax_query['taxonomy'], $tax_query['terms'] ) &&
-                 'hazard_type' === $tax_query['taxonomy'] ) {
+        if ( isset( $query['tax_query'] ) && is_array( $query['tax_query'] ) ) {
+            foreach ( $query['tax_query'] as $tax_query ) {
+                if (
+                    isset( $tax_query['taxonomy'], $tax_query['terms'] ) &&
+                    'hazard_type' === $tax_query['taxonomy']
+                ) {
                     if ( in_array( get_term_by( 'slug', 'provincial-state-of-emergency', 'hazard_type' )->term_id, $tax_query['terms'], true ) ) {
                         $has_provincial_state_of_emergency_tax_query = true;
                         break;
                     }
                 }
             }
-		}
+        }
 
         if ( ! $has_provincial_state_of_emergency_tax_query ) {
-			$query['tax_query'][] = [
-				'taxonomy' => 'hazard_type',
-				'field'    => 'slug',
-				'terms'    => 'provincial-state-of-emergency',
-				'operator' => 'NOT IN',
-			];
-		}
+            $query['tax_query'][] = [
+                'taxonomy' => 'hazard_type',
+                'field'    => 'slug',
+                'terms'    => 'provincial-state-of-emergency',
+                'operator' => 'NOT IN',
+            ];
+        }
 
         // Add a tax_query for the hazard type if it's the queried object.
         // This allows the query loop to be used on hazard type archive pages.
@@ -197,39 +227,39 @@ class Plugin {
         $query['meta_value']   = 'active';
         $query['meta_compare'] = '=';
 
-		$query['meta_query'] = [
-			[
-				'relation'                  => 'AND',
-				'event_updated_date_clause' => [
-					'key'     => 'updated_date',
-					'compare' => 'EXISTS',
-				],
-				'event_updated_time_clause' => [
-					'key'     => 'updated_time',
-					'compare' => 'EXISTS',
-				],
-				'event_hidden_clause'       => [
-					'relation'                => 'OR',
-					'event_hidden_not_exists' => [
-						'key'     => 'hidden',
-						'compare' => 'NOT EXISTS',
-					],
-					'event_not_hidden'        => [
-						'key'     => 'hidden',
-						'compare' => '!=',
-						'value'   => '1',
-					],
-				],
-			],
-		];
+        $query['meta_query'] = [
+            [
+                'relation'                  => 'AND',
+                'event_updated_date_clause' => [
+                    'key'     => 'updated_date',
+                    'compare' => 'EXISTS',
+                ],
+                'event_updated_time_clause' => [
+                    'key'     => 'updated_time',
+                    'compare' => 'EXISTS',
+                ],
+                'event_hidden_clause'       => [
+                    'relation'                => 'OR',
+                    'event_hidden_not_exists' => [
+                        'key'     => 'hidden',
+                        'compare' => 'NOT EXISTS',
+                    ],
+                    'event_not_hidden'        => [
+                        'key'     => 'hidden',
+                        'compare' => '!=',
+                        'value'   => '1',
+                    ],
+                ],
+            ],
+        ];
 
-		$query['orderby'] = [
-			'event_updated_date_clause' => 'DESC',
-			'event_updated_time_clause' => 'DESC',
-		];
+        $query['orderby'] = [
+            'event_updated_date_clause' => 'DESC',
+            'event_updated_time_clause' => 'DESC',
+        ];
 
-		return $query;
-	}
+        return $query;
+    }
 
 
     /**
@@ -286,16 +316,8 @@ class Plugin {
             ],
         ];
 
-        // Get all terms from hazard_type taxonomy.
-        $hazard_types = get_terms(
-            [
-				'taxonomy'   => 'hazard_type',
-				'hide_empty' => false,
-                'number'     => 0,
-			]
-        );
         // Add primary and secondary colors for each hazard_type.
-        foreach ( $hazard_types as $hazard_type ) {
+        foreach ( self::$hazard_types as $hazard_type ) {
             $hazard_colour           = self::get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
             $hazard_secondary_colour = self::get_field( 'secondary_colour', 'hazard_type_' . $hazard_type->term_id );
             $hazard_name             = $hazard_type->name;
@@ -327,6 +349,32 @@ class Plugin {
 
         return $theme_json->update_with( $current_data );
     }
+    /**
+     * Registers custom block pattern categories for each hazard type and an event category.
+     *
+     * This function loops through the hazard types stored in the static property
+     * `$hazard_types` and registers a block pattern category for each hazard type
+     * using its slug. Additionally, it registers a default block pattern category
+     * for events.
+     *
+     * @return void
+     */
+    public function register_pattern_categories() {
+        foreach ( self::$hazard_types as $hazard_type ) {
+            register_block_pattern_category(
+                'eibc_' . $hazard_type->slug,
+                array(
+                    'label' => $hazard_type->name,
+                )
+            );
+        }
+        register_block_pattern_category(
+            'eibc_event',
+            array(
+                'label' => __( 'Event', 'text-domain' ),
+            )
+        );
+    }
 
     /**
      * Builds styles for each hazard type term.
@@ -345,15 +393,8 @@ class Plugin {
             border-color: transparent;
         ';
 
-        // Get hazard type terms.
-        $hazard_types = get_terms(
-            [
-				'taxonomy'   => 'hazard_type',
-				'hide_empty' => false,
-			]
-        );
-        $styles       = [];
-        foreach ( $hazard_types as $hazard_type ) {
+        $styles = [];
+        foreach ( self::$hazard_types as $hazard_type ) {
             // Base hazard type styles (text color, background colors).
             $hazard_type_styles = '
                 .hazard_type-%1$s:not(.inactive) .hazard-text {
@@ -540,7 +581,7 @@ class Plugin {
 
                 $subscription_objects[ $taxonomy_slug ] = $taxonomy_object;
 
-				// Alternatively, check if it is a meta type.
+                // Alternatively, check if it is a meta type.
             } elseif ( str_starts_with( $slug, 'meta_' ) ) {
                 $meta_slug = $slug;
 
@@ -570,7 +611,7 @@ class Plugin {
 
                 $subscription_objects[ $meta_slug ] = $meta_object;
 
-				// Does not handle criteria which are neither taxonomy nor metadata.
+                // Does not handle criteria which are neither taxonomy nor metadata.
             } else {
                 continue;
             }
@@ -677,9 +718,9 @@ class Plugin {
             $processed_term                   = (object) $term;
             $included_regions                 = self::get_field( 'included_regions', 'region_groups_' . $term->term_id, false ) ?? [];
             $type                             = self::get_field( 'group_type', 'region_groups_' . $term->term_id ) ?? [
-				'value' => 'other',
-				'label' => 'Other',
-			];
+                'value' => 'other',
+                'label' => 'Other',
+            ];
             $processed_term->included_regions = $included_regions;
             $processed_term->group_type       = $type;
             $response[]                       = $processed_term;
@@ -697,7 +738,7 @@ class Plugin {
      */
     public static function get_plugin_name(): string {
         return self::$plugin_name;
-	}
+    }
 
     /**
      * Gets option name.
@@ -708,42 +749,42 @@ class Plugin {
         return str_replace( '-', '_', self::get_plugin_name() );
     }
 
-	/**
-	 * Adds an information banner to the top of the page if there is an active
-	 * provincial state of emergency event and the banner has not been dismissed by the user.
-	 *
-	 * This function checks for an active 'provincial-state-of-emergency' event.
-	 * If such an event is found and the user has not dismissed the banner, it displays
-	 * an information banner at the top of the page. The banner includes a link to the
-	 * event details and a dismiss button. Once dismissed, the banner will not reappear
-	 * for the current event.
+    /**
+     * Adds an information banner to the top of the page if there is an active
+     * provincial state of emergency event and the banner has not been dismissed by the user.
      *
-	 * @return void Outputs HTML and JavaScript for the banner.
-	 */
+     * This function checks for an active 'provincial-state-of-emergency' event.
+     * If such an event is found and the user has not dismissed the banner, it displays
+     * an information banner at the top of the page. The banner includes a link to the
+     * event details and a dismiss button. Once dismissed, the banner will not reappear
+     * for the current event.
+     *
+     * @return void Outputs HTML and JavaScript for the banner.
+     */
     public function add_info_banner() {
-		// Query to check for active state of emergency events.
-		$args  = array(
-			'post_type'      => 'event',
-			'meta_query'     => array(
-				array(
-					'key'     => 'status',
-					'value'   => 'active',
-					'compare' => '=',
-				),
-			),
-			'tax_query'      => array(
-				array(
-					'taxonomy' => 'hazard_type',
-					'field'    => 'slug',
-					'terms'    => 'provincial-state-of-emergency',
-				),
-			),
-			'posts_per_page' => 1,
-		);
-		$query = new WP_Query( $args );
+        // Query to check for active state of emergency events.
+        $args  = array(
+            'post_type'      => 'event',
+            'meta_query'     => array(
+                array(
+                    'key'     => 'status',
+                    'value'   => 'active',
+                    'compare' => '=',
+                ),
+            ),
+            'tax_query'      => array(
+                array(
+                    'taxonomy' => 'hazard_type',
+                    'field'    => 'slug',
+                    'terms'    => 'provincial-state-of-emergency',
+                ),
+            ),
+            'posts_per_page' => 1,
+        );
+        $query = new WP_Query( $args );
 
-		// Check if any posts match the query (although we expect one at most).
-		if ( $query->have_posts() ) {
+        // Check if any posts match the query (although we expect one at most).
+        if ( $query->have_posts() ) {
             $query->the_post();
 
             // Get the event URL and ID for use in the banner.
@@ -753,7 +794,7 @@ class Plugin {
             // Output the empty banner container with inline CSS and data attribute for determining whether to show or hide the inner HTML.
             echo '<div id="info-banner" class="bc-gov-alertbanner alert-emergency" role="alert" aria-labelledby="info" aria-describedby="info-desc"></div>';
 
-            ?>
+			?>
             <script>
                 (() => {
                     const infoBanner = document.getElementById("info-banner");
@@ -768,10 +809,10 @@ class Plugin {
                     `;
                 })();
             </script>
-            <?php
-		}
+			<?php
+        }
 
-		// Restore original post data.
-		wp_reset_postdata();
-	}
+        // Restore original post data.
+        wp_reset_postdata();
+    }
 }
