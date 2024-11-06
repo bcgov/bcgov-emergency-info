@@ -1,6 +1,9 @@
 # Changelog
-## 1.4.0 October 25, 2024
+## 1.4.0 November 06, 2024
 
+* Fixed bug with Hide Block feature causing render errors when certain core WP blocks were used ([DESCW-2549](https://citz-gdx.atlassian.net/browse/DESCW-2549))
+* Added toolbar toggle control for Hide Block feature
+* Fixed minor PHP Warning in Plugin class when hazard type terms were used before they were loaded
 * Added custom registration for categories using event types ([DESCW-2737](https://citz-gdx.atlassian.net/browse/DESCW-2737))
 
 ## 1.3.2 September 05, 2024
