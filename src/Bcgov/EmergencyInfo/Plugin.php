@@ -316,21 +316,23 @@ class Plugin {
             ],
         ];
 
-        // Add primary and secondary colors for each hazard_type.
-        foreach ( self::$hazard_types as $hazard_type ) {
-            $hazard_colour           = self::get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
-            $hazard_secondary_colour = self::get_field( 'secondary_colour', 'hazard_type_' . $hazard_type->term_id );
-            $hazard_name             = $hazard_type->name;
-            $new_colours[]           = [
-                'slug'  => 'hazard-' . $hazard_type->slug,
-                'color' => $hazard_colour,
-                'name'  => $hazard_name . ' primary',
-            ];
-            $new_colours[]           = [
-                'slug'  => 'hazard-' . $hazard_type->slug . '-secondary',
-                'color' => $hazard_secondary_colour,
-                'name'  => $hazard_name . ' secondary',
-            ];
+        if ( is_array( self::$hazard_types ) ) {
+            // Add primary and secondary colors for each hazard_type.
+            foreach ( self::$hazard_types as $hazard_type ) {
+                $hazard_colour           = self::get_field( 'colour', 'hazard_type_' . $hazard_type->term_id );
+                $hazard_secondary_colour = self::get_field( 'secondary_colour', 'hazard_type_' . $hazard_type->term_id );
+                $hazard_name             = $hazard_type->name;
+                $new_colours[]           = [
+                    'slug'  => 'hazard-' . $hazard_type->slug,
+                    'color' => $hazard_colour,
+                    'name'  => $hazard_name . ' primary',
+                ];
+                $new_colours[]           = [
+                    'slug'  => 'hazard-' . $hazard_type->slug . '-secondary',
+                    'color' => $hazard_secondary_colour,
+                    'name'  => $hazard_name . ' secondary',
+                ];
+            }
         }
 
         // Add inactive hazard colors.
