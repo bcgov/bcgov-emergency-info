@@ -1,6 +1,7 @@
 # Changelog
-## 1.4.0 November 06, 2024
+## 1.4.0 November 12, 2024
 
+* Remove pattern-xml ([DESCW-2550](https://citz-gdx.atlassian.net/browse/DESCW-2550))
 * Fixed bug with Hide Block feature causing render errors when certain core WP blocks were used ([DESCW-2549](https://citz-gdx.atlassian.net/browse/DESCW-2549))
 * Added toolbar toggle control for Hide Block feature
 * Fixed minor PHP Warning in Plugin class when hazard type terms were used before they were loaded
