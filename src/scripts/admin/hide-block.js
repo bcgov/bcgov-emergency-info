@@ -1,38 +1,89 @@
 import { addFilter } from '@wordpress/hooks';
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { Fragment } from '@wordpress/element';
-import { InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, ToggleControl } from '@wordpress/components';
+import { BlockControls, InspectorControls } from '@wordpress/block-editor';
+import {
+    Button,
+    Dashicon,
+    PanelBody,
+    ToggleControl,
+    ToolbarGroup,
+    ToolbarItem,
+} from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
 /**
  * Add hideBlock attribute to all blocks.
  *
- * @param {Object} settings Original block settings
+ * @param {Object} props Original block properties.
  *
- * @returns {Object} Filtered block settings
+ * @returns {Object} Filtered block properties.
  */
-const addAttributes = ( settings ) => {
-    settings.attributes.hideBlock = {
-        type: 'boolean',
-        default: false,
-    };
-    return settings;
+const addAttribute = ( props ) => {
+    // These blocks cause "invalid attributes" errors in editor when hideBlock attribute is added to them.
+    const EXCLUDED_BLOCKS = [
+        'core/archives',
+        'core/calendar',
+        'core/latest-comments',
+        'core/tag-cloud',
+    ];
+
+    if (
+        ! EXCLUDED_BLOCKS.includes( props.name ) &&
+        Object.hasOwn( props, 'attributes' )
+    ) {
+        props.attributes.hideBlock = {
+            type: 'boolean',
+            default: false,
+        };
+    }
+    return props;
 };
 
-addFilter( 'blocks.registerBlockType', 'emergency-info', addAttributes );
+addFilter(
+    'blocks.registerBlockType',
+    'emergency-info/hideblock-attribute',
+    addAttribute
+);
 
 /**
  * Add hide block control to all blocks.
  */
-const addInspectorControl = createHigherOrderComponent( ( BlockEdit ) => {
+const addControls = createHigherOrderComponent( ( BlockEdit ) => {
     const component = ( props ) => {
         const { hideBlock } = props.attributes;
         const { setAttributes } = props;
 
         return (
             <Fragment>
-                <BlockEdit { ...props } />
+                <div className={ hideBlock ? 'hidden-block' : '' }>
+                    <BlockEdit { ...props } />
+                </div>
+
+                <BlockControls>
+                    <ToolbarGroup>
+                        <ToolbarItem
+                            as={ Button }
+                            onClick={ () => {
+                                {
+                                    true === hideBlock
+                                        ? setAttributes( {
+                                              hideBlock: false,
+                                          } )
+                                        : setAttributes( {
+                                              hideBlock: true,
+                                          } );
+                                }
+                            } }
+                        >
+                            { true === hideBlock ? (
+                                <Dashicon icon="hidden" />
+                            ) : (
+                                <Dashicon icon="visibility" />
+                            ) }
+                        </ToolbarItem>
+                    </ToolbarGroup>
+                </BlockControls>
                 <InspectorControls>
                     <PanelBody title={ __( 'Visibility' ) }>
                         <ToggleControl
@@ -51,28 +102,8 @@ const addInspectorControl = createHigherOrderComponent( ( BlockEdit ) => {
     return component;
 }, 'withInspectorControl' );
 
-addFilter( 'editor.BlockEdit', 'emergency-info', addInspectorControl );
-
-/**
- * Add class to indicate hidden blocks in editor.
- */
-const withCustomAttributeClass = createHigherOrderComponent(
-    ( BlockListBlock ) => {
-        const component = ( props ) => {
-            const { attributes } = props;
-            const { hideBlock } = attributes;
-            const className = hideBlock ? 'hidden-block' : '';
-
-            return <BlockListBlock { ...props } className={ className } />;
-        };
-        component.displayName = 'withCustomAttributeClass';
-        return component;
-    },
-    'withCustomAttributeClass'
-);
-
 addFilter(
-    'editor.BlockListBlock',
-    'emergency-info',
-    withCustomAttributeClass
+    'editor.BlockEdit',
+    'emergency-info/hideblock-controls',
+    addControls
 );

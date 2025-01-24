@@ -1,7 +1,7 @@
 {
 	"name": "bcgov-plugin/bcgov-emergency-info",
     "description": "Plugin for Emergency Info BC.",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"type": "wordpress-plugin",
 	"require": {
 		"composer/installers": "^1.0"
@@ -14,7 +14,7 @@
 	],
 	"require-dev": {
 		"bcgov/wordpress-common": "@dev",
-        "bcgov/wordpress-scripts": "2.*"
+        "bcgov/wordpress-utils": "@dev"
 	},
 	"autoload": {
 		"psr-4": {
