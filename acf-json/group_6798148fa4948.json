@@ -1,0 +1,135 @@
+{
+    "key": "group_6798148fa4948",
+    "title": "Prototype",
+    "fields": [
+        {
+            "key": "field_6798148fe535b",
+            "label": "Links",
+            "name": "links",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<ul>\r\n<li><a href=\"#\">City of Merritt website<\/a><\/li>\r\n<li><a href=\"#\">City of Merritt Twitter<\/a><\/li>\r\n<li><a href=\"#\">City of Merritt Facebook<\/a><\/li>\r\n<\/ul>",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6798189b372e6",
+            "label": "Map",
+            "name": "map",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 1,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_67981e8cc5690",
+            "label": "Evacuation Order",
+            "name": "evacuation_order",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "pdf",
+            "allow_in_bindings": 1
+        },
+        {
+            "key": "field_6799048b427d8",
+            "label": "Recommended Actions",
+            "name": "recommended_actions",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<strong>Follow all directions from officials:<\/strong>\r\n<ol>\r\n \t<li style=\"list-style-type: none;\">\r\n<ol>\r\n \t<li>If you are in the area under Evacuation Order, you are at risk. You must leave <strong>immediately.<\/strong><\/li>\r\n \t<li><strong>Evacuate using this route(s):<\/strong>\r\n<ul>\r\n \t<li><a href=\"#\">[insert link]<\/a><\/li>\r\n<\/ul>\r\n<\/li>\r\n \t<li><strong>Self-register for:<\/strong> <a href=\"#\">Emergency Support Services<\/a><\/li>\r\n \t<li>Refer to the Evacuation Order link for information specific to your community.\r\n<ul>\r\n \t<li><a href=\"#\">[insert link here]<\/a><\/li>\r\n<\/ul>\r\n<\/li>\r\n<\/ol>\r\n<\/li>\r\n<\/ol>",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_679905fd35b40",
+            "label": "Links and Resources",
+            "name": "links_and_resources",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<ul>\r\n<li><strong>Issuing authority resources<\/strong>\r\n<ul>\r\n<li><a href=\"#\">[Link 1]<\/a><\/li>\r\n<li><a href=\"#\">[Link 2]<\/a><\/li>\r\n<\/ul>\r\n<\/li>\r\n<li><a href=\"#\"><strong>Drive BC<\/strong><\/a>: Latest travel and highway updates<\/li>\r\n<li><a href=\"#\"><strong>General Emergency evacuee guidance for the public<\/strong><\/a>: What to do when you receive an Evacuation Order or Evacuation Alert<\/li>\r\n<li><a href=\"#\"><strong>PreparedBC<\/strong><\/a>: Learn how to prepare for hazards in your community with resources from PreparedBC.<\/li>\r\n<\/ul>",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1738347254
+}

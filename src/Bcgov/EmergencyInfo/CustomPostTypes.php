@@ -31,11 +31,14 @@ class CustomPostTypes {
     public function init() {
         $loader = new Loader();
 
-        // Register post types and taxonomies.
+        // Register post types, taxonomies, metadata.
         $loader->add_action( 'init', $this, 'register_hazard_type_taxonomy' );
         $loader->add_action( 'init', $this, 'register_region_taxonomy' );
         $loader->add_action( 'init', $this, 'register_region_group_taxonomy' );
         $loader->add_action( 'init', $this, 'register_event_post_type' );
+        $loader->add_action( 'init', $this, 'register_event_metadata' );
+        $loader->add_action( 'rest_api_init', $this, 'register_event_metadata' );
+        $loader->add_filter( 'get_block_type_variations', $this, 'register_block_type_variations', 10, 2 );
 
         // ACF local json saving/loading. See https://www.advancedcustomfields.com/resources/local-json/#saving-explained.
         $loader->add_filter( 'acf/settings/save_json/key=group_63db3b0481dcc', $this, 'acf_json_save_point', 20 );
@@ -47,6 +50,7 @@ class CustomPostTypes {
         $loader->add_filter( 'acf/settings/save_json/key=group_6453d2a3c0b90', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/save_json/key=group_65f377d3803bc', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/save_json/key=group_6619996f06ce4', $this, 'acf_json_save_point', 20 );
+        $loader->add_filter( 'acf/settings/save_json/key=group_6798148fa4948', $this, 'acf_json_save_point', 20 );
         $loader->add_filter( 'acf/settings/load_json', $this, 'acf_json_load_point', 20 );
 
         // Add columns to Hazard Type index pages.
@@ -366,5 +370,23 @@ class CustomPostTypes {
         );
 
         register_taxonomy( 'region_groups', 'event', $args );
+    }
+
+    /**
+     * Registers post metadata fields.
+     *
+     * @return void
+     */
+    public function register_event_metadata() {
+        register_post_meta(
+            'event',
+            'recommended_actions',
+            [
+                // Needs to be true for block bindings API.
+                'show_in_rest' => true,
+                'single'       => true,
+                'type'         => 'string',
+            ]
+        );
     }
 }

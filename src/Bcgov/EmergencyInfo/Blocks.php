@@ -59,6 +59,7 @@ class Blocks {
     public function register_blocks(): void {
         $path = plugin_dir_path( dirname( __DIR__, 2 ) ) . 'dist/Bcgov/EmergencyInfo/blocks';
         include_once __DIR__ . '/blocks/post-emergency-alert/index.php';
+        include_once __DIR__ . '/blocks/post-emergency-alert-block/index.php';
         include_once __DIR__ . '/blocks/post-event-status/index.php';
         include_once __DIR__ . '/blocks/post-hazard-image/index.php';
         include_once __DIR__ . '/blocks/post-hazard-title/index.php';

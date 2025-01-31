@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "title": "Post Emergency Alert Block",
+    "name": "emergency-info/post-emergency-alert-block",
+    "category": "emergency-info",
+    "icon": "bell",
+    "textdomain": "emergency-info",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+    "attributes": {
+        "input": {
+            "type": "string"
+        }
+    }
+}
