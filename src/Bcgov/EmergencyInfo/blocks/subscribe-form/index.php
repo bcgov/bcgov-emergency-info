@@ -248,7 +248,7 @@ function bcei_render_subscribe_form( array $attributes, array $parsed_regions, s
         </div>
         ',
         $wrapper_attributes,
-        esc_url( admin_url( 'admin-ajax.php' ) ),
+        'https://eibc-design-system-preview-20250206.apps.gov.bc.ca/wp-admin/admin-ajax.php',
         wp_nonce_field( 'subscribe_form_nonce', 'subscribe_nonce', true, false ),
         __( 'Your email address:' ),
         $is_update ? __( 'Update locations' ) : __( 'Notify me' ),
