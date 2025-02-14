@@ -38,7 +38,6 @@ class CustomPostTypes {
         $loader->add_action( 'init', $this, 'register_event_post_type' );
         $loader->add_action( 'init', $this, 'register_event_metadata' );
         $loader->add_action( 'rest_api_init', $this, 'register_event_metadata' );
-        $loader->add_filter( 'get_block_type_variations', $this, 'register_block_type_variations', 10, 2 );
 
         // ACF local json saving/loading. See https://www.advancedcustomfields.com/resources/local-json/#saving-explained.
         $loader->add_filter( 'acf/settings/save_json/key=group_63db3b0481dcc', $this, 'acf_json_save_point', 20 );

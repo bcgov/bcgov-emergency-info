@@ -111,6 +111,24 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_67ae62eb5534b",
+            "label": "Emergency Alert",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
         }
     ],
     "location": [
@@ -123,7 +141,7 @@
         ]
     ],
     "menu_order": 0,
-    "position": "side",
+    "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -131,5 +149,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1738347254
+    "modified": 1739576103
 }
