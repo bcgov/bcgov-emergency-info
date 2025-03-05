@@ -364,14 +364,14 @@ class Plugin {
     public function register_pattern_categories() {
         foreach ( self::$hazard_types as $hazard_type ) {
             register_block_pattern_category(
-                'eibc_' . $hazard_type->slug,
+                $hazard_type->slug,
                 array(
                     'label' => $hazard_type->name,
                 )
             );
         }
         register_block_pattern_category(
-            'eibc_event',
+            'event',
             array(
                 'label' => __( 'Event', 'text-domain' ),
             )

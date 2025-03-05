@@ -1,4 +1,8 @@
 # Changelog
+
+## 1.5.0 March 05, 2025
+* Update pattern Category Creation to remove 'eibc_' ([DESCW-2894](https://citz-gdx.atlassian.net/browse/DESCW-2894))
+
 ## 1.4.0 November 12, 2024
 
 * Remove pattern-xml ([DESCW-2550](https://citz-gdx.atlassian.net/browse/DESCW-2550))

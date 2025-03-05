@@ -4,10 +4,10 @@
 	"author": "Bcgov Wordpress <govwordpress@gov.bc.ca>",
 	"repository": {
 		"type": "git",
-		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/bcgov-emergency-info.git"
+		"url": "https://bitbucket.org:bc-gov/bcgov-emergency-info.git"
 	},
 	"bugs": {
-		"url": "https://apps.itsm.gov.bc.ca/bitbucket/scm/wpp/bcgov-emergency-info/issues"
+		"url": "https://bitbucket.org:bc-gov/bcgov-emergency-info/jira"
 	},
 	"licenses": "MIT",
 	"scripts": {
@@ -15,8 +15,8 @@
 		"format": "wp-scripts format src",
 		"lint:css": "wp-scripts lint-style 'src/**/*.scss'",
 		"fix:css": "wp-scripts lint-style 'src/**/*.scss' --fix",
-		"lint:js": "wp-scripts lint-js src",
-		"fix:js": "wp-scripts lint-js src --fix",
+		"lint:js": "wp-scripts lint-js src/scripts",
+		"fix:js": "wp-scripts lint-js src/scripts --fix",
 		"lint:md": "wp-scripts lint-md-docs",
 		"fix:md": "wp-scripts lint-md-docs --fix",
 		"packages-update": "wp-scripts packages-update",
@@ -29,9 +29,9 @@
 		"node": ">=20.0.0 <22.0.0"
 	},
 	"devDependencies": {
-		"@bcgov/wordpress-stylelintrc": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-wordpress-stylelintrc.git#semver:1.x",
-		"@bcgov/wordpress-eslint": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-wordpress-eslint.git#semver:1.x",
-		"@wordpress/scripts": "^26.0.0"
+		"@bcgov/wordpress-eslint": "git+https://github.com/bcgov/wordpress-eslint.git#semver:1.x",
+		"@bcgov/wordpress-stylelintrc": "git+https://github.com/bcgov/wordpress-stylelintrc.git#semver:1.x",
+		"@wordpress/scripts": "^28.6.0"
 	},
 	"dependencies": {
 		"bootstrap": "5.0.2"
