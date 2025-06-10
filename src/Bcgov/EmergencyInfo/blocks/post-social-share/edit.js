@@ -22,27 +22,6 @@ export const Edit = ( { context: { postType, postId } } ) => {
                     Share
                 </button>
                 <div className="dropdown-menu" aria-labelledby="">
-                    <a
-                        className="dropdown-item"
-                        href={ '#https://twitter.com/intent/tweet?url=' + link }
-                    >
-                        <span className="areoi-icon">
-                            <i className="text-dark bi-twitter-x"></i>
-                        </span>
-                        Share on X (Twitter)
-                    </a>
-                    <a
-                        className="dropdown-item"
-                        href={
-                            '#https://www.facebook.com/sharer/sharer.php?u=' +
-                            link
-                        }
-                    >
-                        <span className="areoi-icon">
-                            <i className="text-dark bi-facebook"></i>
-                        </span>
-                        Share on Facebook
-                    </a>
                     <a className="dropdown-item">
                         <span className="areoi-icon">
                             <i className="text-dark bi-clipboard-plus-fill"></i>

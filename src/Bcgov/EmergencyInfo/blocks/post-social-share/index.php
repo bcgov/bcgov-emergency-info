@@ -35,17 +35,9 @@ function render_block_post_social_share(
                     %3$s
                 </button>
                 <div class="dropdown-menu" role="menu" aria-labelledby="share-menu">
-                    <a class="dropdown-item" role="menuitem" href="https://twitter.com/intent/tweet?url=%2$s">		
-                        <span class="areoi-icon"><i class="text-dark bi-twitter-x"></i></span>
-                        %4$s
-                    </a>
-                    <a class="dropdown-item" role="menuitem" href="https://www.facebook.com/sharer/sharer.php?u=%2$s">
-                        <span class="areoi-icon"><i class="text-dark bi-facebook"></i></span>	
-                        %5$s
-                    </a>
                     <a class="dropdown-item copy-link" role="menuitem" href="#" data-url="%2$s">
                         <span class="areoi-icon"><i class="text-dark bi-clipboard-plus-fill link-copied-status"></i></span>
-                        %6$s
+                        %4$s
                     </a>
                 </div>
             </div>
@@ -54,8 +46,6 @@ function render_block_post_social_share(
         $wrapper_attributes,
         $link,
         __( 'Share' ),
-        __( 'Share on X (Twitter)' ),
-        __( 'Share on Facebook' ),
         __( 'Copy link' ),
     );
 }

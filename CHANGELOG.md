@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.1 June 06, 2025
+* Remove Facebook and Twitter share links from Social Media Share block ([DESCW-3035](https://citz-gdx.atlassian.net/browse/DESCW-3035))
+
 ## 1.5.0 March 05, 2025
 * Update pattern Category Creation to remove 'eibc_' ([DESCW-2894](https://citz-gdx.atlassian.net/browse/DESCW-2894))
 
