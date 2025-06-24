@@ -186,7 +186,7 @@ class Plugin {
             return $query;
         }
 
-        // Check if the query loop is the onestate-of- excluding emergency events.
+        // Check if the query loop is the one excluding state of emergency events.
         $has_state_of_provincial_emergency_tax_query = false;
         if ( isset( $query['tax_query'] ) && is_array( $query['tax_query'] ) ) {
             foreach ( $query['tax_query'] as $tax_query ) {
@@ -753,7 +753,7 @@ class Plugin {
 
     /**
      * Adds an information banner to the top of the page if there is an active
-     * state-of-provincial emergency event and the banner has not been dismissed by the user.
+     * state of provincial emergency event and the banner has not been dismissed by the user.
      *
      * This function checks for an active 'state-of-provincial-emergency' event.
      * If such an event is found and the user has not dismissed the banner, it displays
@@ -764,7 +764,10 @@ class Plugin {
      * @return void Outputs HTML and JavaScript for the banner.
      */
     public function add_info_banner() {
-        // Query to check state-of-for active emergency events.
+        global $parent_page_id;
+        $parent_page_id = get_the_ID();
+
+        // Query to check for active state of emergency events.
         $args  = array(
             'post_type'      => 'event',
             'meta_query'     => array(
@@ -793,25 +796,28 @@ class Plugin {
             $event_url = get_permalink();
             $event_id  = get_the_ID();
 
-            // Output the empty banner container with inline CSS and data attribute for determining whether to show or hide the inner HTML.
-            echo '<div id="info-banner" class="bc-gov-alertbanner alert-emergency" role="alert" aria-labelledby="info" aria-describedby="info-desc"></div>';
+            // Only add the banner if the state of emergency event is NOT the current page.
+            if ( $parent_page_id !== $event_id ) {
+                // Output the empty banner container with inline CSS and data attribute for determining whether to show or hide the inner HTML.
+                echo '<div id="info-banner" class="bc-gov-alertbanner alert-emergency" role="alert" aria-labelledby="info" aria-describedby="info-desc"></div>';
 
-			?>
-            <script>
-                (() => {
-                    const infoBanner = document.getElementById("info-banner");
+                ?>
+                <script>
+                    (() => {
+                        const infoBanner = document.getElementById("info-banner");
 
-                    infoBanner.innerHTML = `
-                        <div class="banner-container">
-                            <i class="banner-icon bi-exclamation-circle-fill"></i>
-                            <div class="banner-content">
-                                <p id="info-desc">B.C. has declared a state of provincial emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
+                        infoBanner.innerHTML = `
+                            <div class="banner-container">
+                                <i class="banner-icon bi-exclamation-circle-fill"></i>
+                                <div class="banner-content">
+                                    <p id="info-desc">B.C. has declared a state of provincial emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
+                                </div>
                             </div>
-                        </div>
-                    `;
-                })();
-            </script>
-			<?php
+                        `;
+                    })();
+                </script>
+                <?php
+            }
         }
 
         // Restore original post data.
