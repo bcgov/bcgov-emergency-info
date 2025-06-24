@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.6.0 June 24, 2025
+* Rename "Provincial State of Emergency" hazard type to "State of Provincial Emergency" ([DESCW-3057](https://citz-gdx.atlassian.net/browse/DESCW-3057))
+
 ## 1.5.1 June 06, 2025
 * Remove Facebook and Twitter share links from Social Media Share block ([DESCW-3035](https://citz-gdx.atlassian.net/browse/DESCW-3035))
 

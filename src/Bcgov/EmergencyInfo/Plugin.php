@@ -186,27 +186,27 @@ class Plugin {
             return $query;
         }
 
-        // Check if the query loop is the one excluding state of emergency events.
-        $has_provincial_state_of_emergency_tax_query = false;
+        // Check if the query loop is the onestate-of- excluding emergency events.
+        $has_state_of_provincial_emergency_tax_query = false;
         if ( isset( $query['tax_query'] ) && is_array( $query['tax_query'] ) ) {
             foreach ( $query['tax_query'] as $tax_query ) {
                 if (
                     isset( $tax_query['taxonomy'], $tax_query['terms'] ) &&
                     'hazard_type' === $tax_query['taxonomy']
                 ) {
-                    if ( in_array( get_term_by( 'slug', 'provincial-state-of-emergency', 'hazard_type' )->term_id, $tax_query['terms'], true ) ) {
-                        $has_provincial_state_of_emergency_tax_query = true;
+                    if ( in_array( get_term_by( 'slug', 'state-of-provincial-emergency', 'hazard_type' )->term_id, $tax_query['terms'], true ) ) {
+                        $has_state_of_provincial_emergency_tax_query = true;
                         break;
                     }
                 }
             }
         }
 
-        if ( ! $has_provincial_state_of_emergency_tax_query ) {
+        if ( ! $has_state_of_provincial_emergency_tax_query ) {
             $query['tax_query'][] = [
                 'taxonomy' => 'hazard_type',
                 'field'    => 'slug',
-                'terms'    => 'provincial-state-of-emergency',
+                'terms'    => 'state-of-provincial-emergency',
                 'operator' => 'NOT IN',
             ];
         }
@@ -753,9 +753,9 @@ class Plugin {
 
     /**
      * Adds an information banner to the top of the page if there is an active
-     * provincial state of emergency event and the banner has not been dismissed by the user.
+     * state-of-provincial emergency event and the banner has not been dismissed by the user.
      *
-     * This function checks for an active 'provincial-state-of-emergency' event.
+     * This function checks for an active 'state-of-provincial-emergency' event.
      * If such an event is found and the user has not dismissed the banner, it displays
      * an information banner at the top of the page. The banner includes a link to the
      * event details and a dismiss button. Once dismissed, the banner will not reappear
@@ -764,7 +764,7 @@ class Plugin {
      * @return void Outputs HTML and JavaScript for the banner.
      */
     public function add_info_banner() {
-        // Query to check for active state of emergency events.
+        // Query to check state-of-for active emergency events.
         $args  = array(
             'post_type'      => 'event',
             'meta_query'     => array(
@@ -778,7 +778,7 @@ class Plugin {
                 array(
                     'taxonomy' => 'hazard_type',
                     'field'    => 'slug',
-                    'terms'    => 'provincial-state-of-emergency',
+                    'terms'    => 'state-of-provincial-emergency',
                 ),
             ),
             'posts_per_page' => 1,
@@ -805,7 +805,7 @@ class Plugin {
                         <div class="banner-container">
                             <i class="banner-icon bi-exclamation-circle-fill"></i>
                             <div class="banner-content">
-                                <p id="info-desc">B.C. has declared a provincial state of emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
+                                <p id="info-desc">B.C. has declared a state of provincial emergency. <a href="<?php echo esc_url( $event_url ); ?>" target="_self">Learn more</a></p>
                             </div>
                         </div>
                     `;
