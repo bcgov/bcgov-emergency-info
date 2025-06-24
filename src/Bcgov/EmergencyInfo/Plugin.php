@@ -764,7 +764,6 @@ class Plugin {
      * @return void Outputs HTML and JavaScript for the banner.
      */
     public function add_info_banner() {
-        global $parent_page_id;
         $parent_page_id = get_the_ID();
 
         // Query to check for active state of emergency events.
