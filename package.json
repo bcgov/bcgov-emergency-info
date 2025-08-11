@@ -1,13 +1,13 @@
 {
 	"name": "bcgov-emergency-info",
-	"version": "1.0.0",
+	"version": "1.7.0",
 	"author": "Bcgov Wordpress <govwordpress@gov.bc.ca>",
 	"repository": {
 		"type": "git",
-		"url": "https://bitbucket.org:bc-gov/bcgov-emergency-info.git"
+		"url": "https://bitbucket.org/bc-gov/bcgov-emergency-info.git"
 	},
 	"bugs": {
-		"url": "https://bitbucket.org:bc-gov/bcgov-emergency-info/jira"
+		"url": "https://bitbucket.org/bc-gov/bcgov-emergency-info/jira"
 	},
 	"licenses": "MIT",
 	"scripts": {

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.0 August 11, 2025
+* update autoloader logic
+* update version to 1.7.0 in package.json & emergency-info.php
+([DESCW-3100](https://citz-gdx.atlassian.net/browse/DESCW-3100))
+
 ## 1.6.0 June 24, 2025
 * Rename "Provincial State of Emergency" hazard type to "State of Provincial Emergency" ([DESCW-3057](https://citz-gdx.atlassian.net/browse/DESCW-3057))
 
