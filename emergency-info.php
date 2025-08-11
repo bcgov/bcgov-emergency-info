@@ -2,17 +2,17 @@
 /**
  * The plugin bootstrap file
  *
- * @link              https://apps.itsm.gov.bc.ca/bitbucket/projects/WPP/repos/bcgov-emergency-info
+ * @link              https://bitbucket.org/bc-gov/bcgov-emergency-info/src/main/
  * @since             1.0.0
  * @package           EmergencyInfo
  *
  * @wordpress-plugin
  * Plugin Name:       BCGov Emergency Info BC
- * Plugin URI:        https://apps.itsm.gov.bc.ca/bitbucket/projects/WPP/repos/bcgov-emergency-info
+ * Plugin URI:        https://bitbucket.org/bc-gov/bcgov-emergency-info/src/main/
  * Description:       Provides custom functionality for the Emergency Info BC (EIBC) site.
- * Version:           1.6.0
+ * Version:           1.7.0
  * Author:            Michael Haswell
- * Author URI:        https://apps.itsm.gov.bc.ca/bitbucket/users/mhaswell
+ * Author URI:        https://blog.gov.bc.ca/bitbucket/users/mhaswell
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       emergency-info
@@ -25,19 +25,19 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
-* Loads the autoloader.
-*/
+ * Loads Composer autoloader if available and ensures the main plugin class exists before proceeding.
+ *
+ * - Attempts to include the Composer autoloader from the local 'vendor' directory.
+ * - Returns early if the main plugin class 'Bcgov\EmergencyInfo\Plugin' is not found.
+ *
+ * @file
+ */
+$local_composer = __DIR__ . '/vendor/autoload.php';
+if ( file_exists( $local_composer ) ) {
+    require_once $local_composer;
+}
 if ( ! class_exists( 'Bcgov\\EmergencyInfo\\Plugin' ) ) {
-    $local_composer  = __DIR__ . '/vendor/autoload.php';
-    $server_composer = __DIR__ . '/../../../../vendor/autoload.php';
-    if ( file_exists( $local_composer ) || file_exists( $server_composer ) ) {
-        if ( file_exists( $server_composer ) ) {
-            require_once $server_composer;
-        }
-        if ( ! class_exists( 'Bcgov\\EmergencyInfo\\Plugin' ) ) {
-            require_once $local_composer;
-        }
-    }
+    return;
 }
 
 /**
