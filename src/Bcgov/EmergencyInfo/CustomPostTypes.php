@@ -8,8 +8,6 @@
 
 namespace Bcgov\EmergencyInfo;
 
-use Bcgov\Common\Loader;
-
 /**
  * CustomPostTypes class sets up custom post types and meta fields.
  */
@@ -29,34 +27,31 @@ class CustomPostTypes {
      * @return void
      */
     public function init() {
-        $loader = new Loader();
-
         // Register post types and taxonomies.
-        $loader->add_action( 'init', $this, 'register_hazard_type_taxonomy' );
-        $loader->add_action( 'init', $this, 'register_region_taxonomy' );
-        $loader->add_action( 'init', $this, 'register_region_group_taxonomy' );
-        $loader->add_action( 'init', $this, 'register_event_post_type' );
+        add_action( 'init', [ $this, 'register_hazard_type_taxonomy' ] );
+        add_action( 'init', [ $this, 'register_region_taxonomy' ] );
+        add_action( 'init', [ $this, 'register_region_group_taxonomy' ] );
+        add_action( 'init', [ $this, 'register_event_post_type' ] );
 
         // ACF local json saving/loading. See https://www.advancedcustomfields.com/resources/local-json/#saving-explained.
-        $loader->add_filter( 'acf/settings/save_json/key=group_63db3b0481dcc', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_63f64c160b480', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_645e5a8f05740', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_646f96fae68e8', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_646f98e444751', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_647e01f789a0c', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_6453d2a3c0b90', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_65f377d3803bc', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/save_json/key=group_6619996f06ce4', $this, 'acf_json_save_point', 20 );
-        $loader->add_filter( 'acf/settings/load_json', $this, 'acf_json_load_point', 20 );
+        add_filter( 'acf/settings/save_json/key=group_63db3b0481dcc', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_63f64c160b480', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_645e5a8f05740', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_646f96fae68e8', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_646f98e444751', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_647e01f789a0c', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_6453d2a3c0b90', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_65f377d3803bc', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/save_json/key=group_6619996f06ce4', [ $this, 'acf_json_save_point' ], 20 );
+        add_filter( 'acf/settings/load_json', [ $this, 'acf_json_load_point' ], 20 );
 
         // Add columns to Hazard Type index pages.
-        $loader->add_filter( 'manage_edit-hazard_type_columns', $this, 'add_hazard_type_column', 10, 1 );
-        $loader->add_filter( 'manage_hazard_type_custom_column', $this, 'render_hazard_type_column', 10, 3 );
+        add_filter( 'manage_edit-hazard_type_columns', [ $this, 'add_hazard_type_column' ], 10, 1 );
+        add_filter( 'manage_hazard_type_custom_column', [ $this, 'render_hazard_type_column' ], 10, 3 );
 
         // Add columns to Region index pages.
-        $loader->add_filter( 'manage_edit-region_groups_columns', $this, 'set_region_groups_columns', 10, 1 );
-        $loader->add_filter( 'manage_region_groups_custom_column', $this, 'render_region_groups_columns', 10, 3 );
-        $loader->run();
+        add_filter( 'manage_edit-region_groups_columns', [ $this, 'set_region_groups_columns' ], 10, 1 );
+        add_filter( 'manage_region_groups_custom_column', [ $this, 'render_region_groups_columns' ], 10, 3 );
     }
 
     /**

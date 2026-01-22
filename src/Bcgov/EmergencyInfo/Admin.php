@@ -2,7 +2,6 @@
 namespace Bcgov\EmergencyInfo;
 
 use Bcgov\EmergencyInfo\Plugin;
-use Bcgov\Common\Loader;
 use Bcgov\EmergencyInfo\AdminPage\RegionLoader;
 
 /**
@@ -33,15 +32,10 @@ class Admin {
      * @return void
      */
     public function init() {
-        $loader        = new Loader();
         $region_loader = new RegionLoader();
         $region_loader->init();
-        $loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_styles' );
-        $loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_scripts' );
-
-        // Options Hooks.
-		// See [Bcgov/Common/Options/Options](https://apps.itsm.gov.bc.ca/bitbucket/projects/WP/repos/bcgov-wordpress-common/browse/src/Options) for details required.
-        $loader->run();
+        add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_styles' ] );
+        add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
     }
 
 	/**
