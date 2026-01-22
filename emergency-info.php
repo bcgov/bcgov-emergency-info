@@ -10,7 +10,7 @@
  * Plugin Name:       BCGov Emergency Info BC
  * Plugin URI:        https://bitbucket.org/bc-gov/bcgov-emergency-info/src/main/
  * Description:       Provides custom functionality for the Emergency Info BC (EIBC) site.
- * Version:           1.7.0
+ * Version:           1.8.0
  * Author:            Michael Haswell
  * Author URI:        https://blog.gov.bc.ca/bitbucket/users/mhaswell
  * License:           GPL-2.0+
