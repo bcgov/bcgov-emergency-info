@@ -2,8 +2,6 @@
 
 namespace Bcgov\EmergencyInfo\AdminPage;
 
-use Bcgov\Common\Loader;
-
 /**
  * RegionLoader class creates Region and Region Group terms from json.
  */
@@ -23,10 +21,8 @@ class RegionLoader {
      * @return void
      */
     public function init() {
-        $loader = new Loader();
-        $loader->add_action( 'admin_menu', $this, 'add_submenu_item', 13 );
-        $loader->add_action( 'wp_ajax_emergency_info_load_region_terms', $this, 'load_region_terms' );
-        $loader->run();
+        add_action( 'admin_menu', [ $this, 'add_submenu_item' ], 13 );
+        add_action( 'wp_ajax_emergency_info_load_region_terms', [ $this, 'load_region_terms' ] );
     }
 
     /**

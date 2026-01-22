@@ -1,6 +1,5 @@
-Created at 2025-08-11 12:26 pm
+Created at 2026-01-21 1:30 pm
 
-* [yes] Updated version in composer.json
 * [yes] Updated version in style.css or plugin file
 * [yes] Updated CHANGELOG.md to include jira ticket
 * [no] Updated README.md for new functionality

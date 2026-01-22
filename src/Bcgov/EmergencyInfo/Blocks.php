@@ -8,8 +8,6 @@
 
 namespace Bcgov\EmergencyInfo;
 
-use Bcgov\Common\Loader;
-
 /**
  * Blocks class setups dynamic blocks.
  */
@@ -32,12 +30,10 @@ class Blocks {
      */
     public function init() {
         add_filter( 'bcgov_blocks_theme_block_patterns', '__return_empty_array' );
-        $loader = new Loader();
-        $loader->add_filter( 'block_categories_all', $this, 'block_categories' );
-        $loader->add_action( 'init', $this, 'register_all' );
-        $loader->add_filter( 'render_block', $this, 'render_block', 10, 2 );
-        $loader->add_filter( 'allowed_block_types_all', $this, 'disallow_blocks', 20, 2 );
-        $loader->run();
+        add_filter( 'block_categories_all', [ $this, 'block_categories' ] );
+        add_action( 'init', [ $this, 'register_all' ] );
+        add_filter( 'render_block', [ $this, 'render_block' ], 10, 2 );
+        add_filter( 'allowed_block_types_all', [ $this, 'disallow_blocks' ], 20, 2 );
     }
 
     /**

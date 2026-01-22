@@ -2,8 +2,6 @@
 
 namespace Bcgov\EmergencyInfo;
 
-use Bcgov\Common\Loader;
-use Bcgov\Common\I18n;
 use WP_Theme_JSON_Data;
 use WP_REST_Response;
 use WP_Query;
@@ -67,7 +65,6 @@ class Plugin {
      * @since    1.0.0
      */
     public function __construct() {
-        new I18n( 'bcgov', dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/' );
         new Admin();
         new PublicRender();
         new Blocks();
@@ -76,24 +73,22 @@ class Plugin {
 
         remove_filter( 'notify_subscription_fields', [ 'Bcgov\NotifyClient\NotifyController', 'build_subscription_criteria_list' ], 10 );
 
-        $loader = new Loader();
-        $loader->add_filter( 'aioseo_limit_modified_date_post_types', $this, 'disable_limit_modified_date' );
-        $loader->add_action( 'init', $this, 'get_hazard_types' );
-        $loader->add_action( 'init', $this, 'register_pattern_categories', 11 );
-        $loader->add_filter( 'query_loop_block_query_vars', $this, 'query_loop_block_query_vars' );
-        $loader->add_filter( 'wp_theme_json_data_theme', $this, 'filter_theme_json_theme' );
-        $loader->add_filter( 'body_class', $this, 'add_custom_classes_to_single' );
-        $loader->add_filter( 'admin_body_class', $this, 'add_custom_classes_to_admin' );
-        $loader->add_action( 'wp_head', $this, 'build_hazard_styles' );
-        $loader->add_action( 'admin_head', $this, 'build_hazard_styles' );
-        $loader->add_action( 'admin_menu', $this, 'remove_menu_items' );
-        $loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_jquery_ui' );
-        $loader->add_filter( 'notify_subscription_fields', $this, 'set_notify_subscription_fields', 11, 1 );
-        $loader->add_filter( 'notify_subscription_criteria_list', $this, 'set_subscription_criteria_list', 11, 2 );
-        $loader->add_filter( 'notify_can_post_be_notified', $this, 'can_post_be_notified' );
-        $loader->add_action( 'rest_api_init', $this, 'register_rest_routes' );
-        $loader->add_action( 'wp_head', $this, 'add_info_banner' );
-        $loader->run();
+        add_filter( 'aioseo_limit_modified_date_post_types', [ $this, 'disable_limit_modified_date' ] );
+        add_action( 'init', [ $this, 'get_hazard_types' ] );
+        add_action( 'init', [ $this, 'register_pattern_categories' ], 11 );
+        add_filter( 'query_loop_block_query_vars', [ $this, 'query_loop_block_query_vars' ] );
+        add_filter( 'wp_theme_json_data_theme', [ $this, 'filter_theme_json_theme' ] );
+        add_filter( 'body_class', [ $this, 'add_custom_classes_to_single' ] );
+        add_filter( 'admin_body_class', [ $this, 'add_custom_classes_to_admin' ] );
+        add_action( 'wp_head', [ $this, 'build_hazard_styles' ] );
+        add_action( 'admin_head', [ $this, 'build_hazard_styles' ] );
+        add_action( 'admin_menu', [ $this, 'remove_menu_items' ] );
+        add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_jquery_ui' ] );
+        add_filter( 'notify_subscription_fields', [ $this, 'set_notify_subscription_fields' ], 11, 1 );
+        add_filter( 'notify_subscription_criteria_list', [ $this, 'set_subscription_criteria_list' ], 11, 2 );
+        add_filter( 'notify_can_post_be_notified', [ $this, 'can_post_be_notified' ] );
+        add_action( 'rest_api_init', [ $this, 'register_rest_routes' ] );
+        add_action( 'wp_head', [ $this, 'add_info_banner' ] );
     }
     /**
      * Retrieves and initializes the hazard types from the 'hazard_type' taxonomy.
